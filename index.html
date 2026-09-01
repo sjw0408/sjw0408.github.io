@@ -1,0 +1,175 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>고양이 오목 (Cat Gomoku) - TeamCP</title>
+  <meta name="description" content="귀여운 고양이들과 함께 즐기는 15×15 캐주얼 오목 게임! AI 대국, 도전 퍼즐, 실시간 1:1 온라인 대전까지!">
+  <style>
+    :root {
+      font-family: Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #4b382f;
+      background: #fff8ed;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1.6;
+      padding: 20px 0;
+    }
+    main {
+      width: min(640px, calc(100% - 32px));
+      margin: auto;
+      padding: 44px 36px;
+      background: #fffdf8;
+      border: 2px solid #ead7bd;
+      border-radius: 32px;
+      box-shadow: 0 20px 50px rgba(93, 67, 45, 0.08);
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      padding: 6px 16px;
+      background: #fff2d8;
+      color: #8d5e45;
+      font-weight: 700;
+      font-size: 0.9rem;
+      border-radius: 20px;
+      margin-bottom: 18px;
+    }
+    .icon {
+      font-size: 3.5rem;
+      margin-bottom: 8px;
+      display: block;
+    }
+    h1 {
+      margin: 0 0 10px;
+      color: #8d5e45;
+      font-size: clamp(1.8rem, 5vw, 2.4rem);
+      letter-spacing: -0.5px;
+    }
+    p.desc {
+      margin: 0 0 28px;
+      color: #76503d;
+      font-size: 1.05rem;
+      word-break: keep-all;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+      margin-bottom: 32px;
+      text-align: left;
+    }
+    .feature-card {
+      background: #faf4eb;
+      padding: 14px 16px;
+      border-radius: 16px;
+      border: 1px solid #ebdccb;
+    }
+    .feature-card h3 {
+      margin: 0 0 4px;
+      font-size: 0.95rem;
+      color: #76503d;
+    }
+    .feature-card p {
+      margin: 0;
+      font-size: 0.82rem;
+      color: #8b7769;
+      line-height: 1.4;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 360px;
+      margin: 0 auto 32px;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 15px 24px;
+      background: #8d5e45;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.05rem;
+      border-radius: 16px;
+      box-shadow: 0 6px 16px rgba(141, 94, 69, 0.25);
+      transition: all 0.2s ease;
+    }
+    .btn:hover {
+      background: #76503d;
+      transform: translateY(-1px);
+    }
+    .btn-sub {
+      background: #fff2d8;
+      color: #8d5e45;
+      border: 1px solid #ead7bd;
+      box-shadow: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+    .btn-sub:hover {
+      background: #fae7c3;
+    }
+    footer {
+      padding-top: 24px;
+      border-top: 1px solid #ead7bd;
+      font-size: 0.85rem;
+      color: #8b7769;
+    }
+    footer p { margin: 4px 0; }
+    footer a { color: #8d5e45; text-decoration: none; font-weight: 600; }
+    footer a:hover { text-decoration: underline; }
+    @media (max-width: 480px) {
+      main { padding: 32px 20px; }
+      .features { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="badge">🐾 TeamCP 공식 페이지</div>
+    <span class="icon">🐱</span>
+    <h1>고양이 오목</h1>
+    <p class="desc">귀여운 고양이들과 함께 즐기는 캐주얼 15×15 오목 게임</p>
+
+    <div class="features">
+      <div class="feature-card">
+        <h3>🤖 스마트 AI 대국</h3>
+        <p>초심자부터 숙련자까지 다양한 난이도의 AI</p>
+      </div>
+      <div class="feature-card">
+        <h3>🧩 도전 퍼즐 모드</h3>
+        <p>수읽기 실력을 키우는 단계별 묘수풀이</p>
+      </div>
+      <div class="feature-card">
+        <h3>⚔️ 실시간 1:1 대전</h3>
+        <p>전국의 집사들과 겨루는 온라인 랭킹전</p>
+      </div>
+    </div>
+
+    <div class="links">
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.teamcp.catgomoku" target="_blank" rel="noopener">
+        <span>Google Play에서 다운로드</span>
+      </a>
+      <a class="btn btn-sub" href="https://sjw0408.github.io/cat-gomoku-privacy/">
+        <span>개인정보처리방침 (Privacy Policy)</span>
+      </a>
+    </div>
+
+    <footer>
+      <p>문의 및 지원: <a href="mailto:sjw0480@gmail.com">sjw0480@gmail.com</a></p>
+      <p>© 2026 TeamCP (com.teamcp.catgomoku). All rights reserved.</p>
+    </footer>
+  </main>
+</body>
+</html>
