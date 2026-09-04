@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#e7f5ef">
+  <title>냥탐정 (Cat Detective) - TeamCP</title>
+  <meta name="description" content="장면 속 수상한 단서를 찾아 사건을 해결하는 관찰 추리 게임, 냥탐정의 공식 정보 페이지입니다.">
+  <style>
+    :root {
+      font-family: Pretendard, "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #3d342f;
+      background: #eef9f4;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 80% 8%, rgb(255 210 133 / 50%), transparent 25rem),
+        linear-gradient(160deg, #f9fffc, #e0f3eb);
+      line-height: 1.65;
+    }
+    main {
+      width: min(820px, calc(100% - 32px));
+      margin: 32px auto;
+      padding: clamp(26px, 6vw, 56px);
+      border: 1px solid rgb(51 91 76 / 14%);
+      border-radius: 32px;
+      background: rgb(255 255 255 / 82%);
+      box-shadow: 0 22px 64px rgb(45 88 71 / 13%);
+    }
+    .back {
+      color: #426f60;
+      font-size: 0.9rem;
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .hero { margin: 50px 0 38px; }
+    .badge {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 13px;
+      border-radius: 999px;
+      background: #fff1d6;
+      color: #8c6541;
+      font-size: 0.8rem;
+      font-weight: 900;
+    }
+    h1 {
+      margin: 0;
+      color: #355f51;
+      font-size: clamp(2.4rem, 8vw, 4.6rem);
+      line-height: 1.08;
+      letter-spacing: -0.055em;
+    }
+    .subtitle {
+      margin: 10px 0 0;
+      color: #6f8078;
+      font-weight: 700;
+    }
+    .lead {
+      max-width: 620px;
+      margin: 24px 0 0;
+      color: #5f5a55;
+      font-size: 1.08rem;
+      word-break: keep-all;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin: 34px 0;
+    }
+    .feature {
+      padding: 18px;
+      border: 1px solid rgb(53 95 81 / 12%);
+      border-radius: 18px;
+      background: #f4fbf8;
+    }
+    .feature strong { display: block; margin-bottom: 5px; color: #355f51; }
+    .feature span { color: #6f7d77; font-size: 0.88rem; word-break: keep-all; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+    .button {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 19px;
+      border: 1px solid #355f51;
+      border-radius: 14px;
+      background: #355f51;
+      color: white;
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .button.secondary { background: transparent; color: #355f51; }
+    .meta {
+      margin-top: 42px;
+      padding-top: 22px;
+      border-top: 1px solid rgb(53 95 81 / 15%);
+      color: #76827d;
+      font-size: 0.86rem;
+    }
+    .meta p { margin: 4px 0; }
+    .meta a { color: #426f60; font-weight: 700; }
+    @media (max-width: 640px) {
+      main { margin: 16px auto; border-radius: 24px; }
+      .hero { margin-top: 36px; }
+      .features { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="../../">← TeamCP Games</a>
+    <section class="hero">
+      <span class="badge">🔎 출시 준비 중</span>
+      <h1>냥탐정</h1>
+      <p class="subtitle">Cat Detective · 관찰 추리 게임</p>
+      <p class="lead">평범해 보이는 장면을 자세히 살펴보세요. 수상한 단서를 찾아 판단하고, 사건별 수사 단계를 하나씩 완성하는 게임입니다.</p>
+    </section>
+
+    <section class="features" aria-label="주요 특징">
+      <div class="feature">
+        <strong>👀 관찰과 추리</strong>
+        <span>장면을 확대하고 숨어 있는 이상 징후를 찾아냅니다.</span>
+      </div>
+      <div class="feature">
+        <strong>🗂️ 사건별 진행</strong>
+        <span>완료한 수사와 다음 단계를 한눈에 확인합니다.</span>
+      </div>
+      <div class="feature">
+        <strong>📴 오프라인 플레이</strong>
+        <span>광고를 보지 않아도 포인트로 계속 진행할 수 있습니다.</span>
+      </div>
+    </section>
+
+    <div class="actions">
+      <a class="button" href="privacy/">개인정보처리방침</a>
+      <a class="button secondary" href="mailto:sjw0480@gmail.com">문의 및 지원</a>
+    </div>
+
+    <footer class="meta">
+      <p>Android 패키지: com.teamcp.catdetective</p>
+      <p>개발 및 운영: TeamCP · <a href="mailto:sjw0480@gmail.com">sjw0480@gmail.com</a></p>
+    </footer>
+  </main>
+</body>
+</html>
