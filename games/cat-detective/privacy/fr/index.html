@@ -7,7 +7,7 @@
   <meta name="color-scheme" content="light">
   <meta name="theme-color" content="#eef9f4">
   <meta name="description" content="Progression locale, sauvegarde Google facultative, publicité et suppression des données dans Chat Détective.">
-  <meta name="policy-revision" content="2026-09-07-v3">
+  <meta name="policy-revision" content="2026-09-07-v4">
   <title>Politique de confidentialité de Chat Détective</title>
   <link rel="canonical" href="https://sjw0408.github.io/games/cat-detective/privacy/fr/">
   <link rel="alternate" hreflang="ko" href="https://sjw0408.github.io/games/cat-detective/privacy/">
@@ -32,14 +32,14 @@
     </nav>
     <h1>Politique de confidentialité de Chat Détective</h1>
     <p class="effective">Mise à jour : 7 septembre 2026</p>
-    <p class="notice">Vous pouvez jouer à tout le jeu en invité, sans inscription. La progression reste sur l&#39;appareil par défaut ; la sauvegarde Google est facultative. Le jeu et les points d&#39;enquête restent utilisables sans autoriser les publicités.</p>
-    <p class="version">Versions : Choisir plus tard et l&#39;exclusion de la sauvegarde automatique Android s&#39;appliquent à partir de la version candidate 1.0.0. Les anciennes versions de test interne peuvent avoir d&#39;autres fonctions ou SDK. Cette mise à jour ne signifie pas que 1.0.0 est déjà publiée.</p>
+    <p class="notice">Aucune inscription propre au jeu n&#39;est requise. L&#39;application tente une connexion Google au démarrage, mais l&#39;annulation, un échec ou l&#39;absence de réseau permettent toujours de jouer localement ; la sauvegarde cloud est un choix distinct. Les nouvelles installations utilisent les annonces contextuelles par défaut. Le jeu et les points d&#39;enquête sont utilisables sans regarder de publicité récompensée.</p>
+    <p class="version">Versions : 1.0.0, build 10, introduit la connexion Google automatique et les annonces contextuelles par défaut, sans choix publicitaire au démarrage ni nouvelle option Choisir plus tard. Les trois choix du build 9 et les reports déjà enregistrés sont distingués ci-dessous. L&#39;exclusion de la sauvegarde Android s&#39;applique depuis le build 9. Cet avis ne signifie pas que la publication générale est terminée.</p>
     <nav class="contents" aria-label="Sur cette page">
       <h2>Sur cette page</h2>
       <ul>
         <li><a href="#scope">1. Portée et opérateur</a></li>
         <li><a href="#local">2. Données sur votre appareil</a></li>
-        <li><a href="#google">3. Sauvegarde Google facultative</a></li>
+        <li><a href="#google">3. Connexion Google automatique et sauvegarde facultative</a></li>
         <li><a href="#ads">4. Publicités et données traitées</a></li>
         <li><a href="#choices">5. Vos choix publicitaires</a></li>
         <li><a href="#providers">6. Services externes et traitement à l&#39;étranger</a></li>
@@ -63,22 +63,23 @@
       <ul>
         <li>Partie en cours, étapes terminées, records et progression des affaires, de la collection, du quotidien et de l&#39;entraînement</li>
         <li>Gains et dépenses de points d&#39;enquête et récompenses publicitaires reçues</li>
-        <li>Langue, sons, mode d&#39;entrée invité/Google, choix publicitaire, version de l&#39;information et date du dernier choix</li>
+        <li>Langue et sons, état de connexion de l&#39;application et de la sauvegarde Google, choix publicitaire explicite, version de l&#39;information et date du dernier choix</li>
       </ul>
 
     </section>
     <section aria-labelledby="google">
-      <h2 id="google">3. Sauvegarde Google facultative</h2>
-      <p>En connectant Google Play Games, Google traite l&#39;authentification et les identifiants de compte. La progression cumulée —étapes, records, quotidien, collection, entraînement, dépenses et récompenses— peut être envoyée à Saved Games pour la sauvegarde et la restauration demandées.</p>
-      <p>La partie en cours, les réglages et le choix publicitaire ne figurent pas dans cet instantané. Aucune photo, piste audio ou capture d&#39;écran n&#39;est envoyée. Après vérification d&#39;une sauvegarde existante, vous pouvez la charger, transférer la progression invitée ou la supprimer. Les dépenses de points en conflit ne sont pas toujours fusionnées automatiquement.</p>
-      <p>La déconnexion désactive l&#39;entrée et la sauvegarde automatiques dans l&#39;application et revient au titre. Elle ne supprime ni le compte Google de l&#39;appareil ni la progression existante. Le jeu local reste possible sans connexion Google ou en cas d&#39;échec de communication.</p>
+      <h2 id="google">3. Connexion Google automatique et sauvegarde facultative</h2>
+      <p>Depuis le build 10, le démarrage normal vérifie l&#39;authentification Google Play Games existante et demande une fois l&#39;écran de connexion Google si nécessaire. Google traite l&#39;authentification et les identifiants de compte. Annuler ou rencontrer un échec d&#39;authentification ou de communication mène au jeu local ; une reconnexion est possible dans les réglages.</p>
+      <p>Après authentification, l&#39;application vérifie l&#39;existence d&#39;une sauvegarde cloud, mais la première connexion seule ne transfère pas la progression locale et n&#39;écrase pas de sauvegarde. Charger, transférer la progression de l&#39;appareil et supprimer la sauvegarde cloud sont des choix distincts. Une connexion de sauvegarde déjà activée tente une synchronisation automatique. Les dépenses de points en conflit nécessitent un choix.</p>
+      <p>Les données sauvegardées comprennent la progression cumulée des étapes, records, quotidien, collection, entraînement, dépenses de points et récompenses. La partie en cours, les réglages, le choix publicitaire, les photos, pistes audio et captures d&#39;écran en sont exclus.</p>
+      <p>La déconnexion dans les réglages coupe la sauvegarde de l&#39;application et laisse le titre affiché. Elle ne supprime ni le compte Google de l&#39;appareil ni la progression existante. Appuyer sur Démarrer ou relancer l&#39;application réessaie la connexion Google. L&#39;authentification Google et la personnalisation publicitaire sont indépendantes.</p>
 
 
     </section>
     <section aria-labelledby="ads">
       <h2 id="ads">4. Publicités et données traitées</h2>
       <p>La configuration 1.0.0 utilise Unity LevelPlay et Unity Ads, sans AdMob, Google UMP ni SDK AdQuality. Consultez aussi la politique Unity pour les acteurs de diffusion, médiation et mesure publicitaires.</p>
-      <p>Choisir les annonces personnalisées ou l&#39;utilisation limitée peut lancer le SDK et précharger des annonces. Les publicités pour les indices, continuations et bonus sont facultatives. Des bannières peuvent apparaître dans l&#39;accueil, les réglages, affaires, quotidien, collection, introduction de l&#39;entraînement et résultats, mais pas au titre, à sa connexion ou pendant le jeu, y compris chargement, réponses et continuation.</p>
+      <p>Sur une nouvelle installation du build 10, le mode contextuel par défaut peut lancer le SDK et précharger des annonces avant votre choix. Un état Choisir plus tard déjà enregistré est conservé à titre d&#39;exception. Les publicités pour indices, continuations et bonus sont facultatives. Des bannières peuvent apparaître dans l&#39;accueil, les réglages, affaires, quotidien, collection, introduction de l&#39;entraînement et résultats, mais pas au titre, à sa connexion ou pendant le jeu, y compris chargement, réponses et continuation.</p>
       <ul>
         <li>Adresse IP et localisation approximative déduite ; modèle, versions du système et de l&#39;application, langue et réseau</li>
         <li>Identifiants de l&#39;appareil, publicitaires et utilisateur du SDK, dans les limites des réglages et de la législation applicable</li>
@@ -89,12 +90,13 @@
     </section>
     <section aria-labelledby="choices">
       <h2 id="choices">5. Vos choix publicitaires</h2>
-      <p>Reporter après autorisation bloque les nouvelles demandes et affichages de l&#39;application et la réutilisation d&#39;annonces déjà préparées. Cela n&#39;arrête pas un SDK déjà lancé, n&#39;annule pas toute transmission en cours et n&#39;efface pas les données envoyées. Le SDK ne sera pas initialisé au prochain redémarrage de l&#39;application.</p>
-      <p>Le jeu invité et les points restent disponibles avant le choix et pendant le report. Une modification de l&#39;information peut nécessiter un nouveau choix. Les réglages Android de confidentialité/d&#39;identifiant publicitaire et les démarches auprès des prestataires restent disponibles.</p>
+      <p>Le build 10 applique les annonces contextuelles sans écran de choix initial. Ce défaut automatique n&#39;est pas enregistré comme consentement affirmatif ni comme date d&#39;un choix utilisateur. Les réglages proposent deux modes. Les anciens choix de personnalisation passent au mode contextuel ; seule une personnalisation choisie explicitement sous l&#39;information actuelle est conservée.</p>
+      <p>Un état Choisir plus tard déjà enregistré dans le build 9 ou une autre version antérieure est conservé après mise à jour. Dans cet état, le SDK n&#39;est pas initialisé et aucune annonce n&#39;est demandée ou affichée. Choisir explicitement l&#39;un des deux modes dans les réglages active les annonces ; le build 10 n&#39;a pas de bouton pour reporter de nouveau.</p>
+      <p>Changer de mode empêche la réutilisation d&#39;annonces déjà préparées et de callbacks de récompense tardifs. Passer au mode contextuel n&#39;arrête pas un SDK déjà lancé, n&#39;annule pas toute transmission et n&#39;efface pas les données envoyées.</p>
+      <p>Le mode contextuel par défaut implique aussi un traitement de données et ne remplace pas un consentement légalement requis ou des vérifications concernant les mineurs. Les réglages Android de confidentialité/d&#39;identifiant publicitaire, les procédures des prestataires et notre contact restent disponibles.</p>
       <ul>
-        <li>Annonces personnalisées autorisées : envoie le consentement à la personnalisation.</li>
-        <li>Utilisation limitée des données : refuse ce consentement et transmet les signaux d&#39;opposition à la vente/au partage. Cela n&#39;arrête pas toute collecte, notamment l&#39;accès éventuel aux identifiants publicitaires.</li>
-        <li>Choisir plus tard : n&#39;autorise pas les annonces. Reporter dès le départ laisse le SDK non initialisé, y compris aux prochains lancements. Vous pouvez choisir à nouveau dans les réglages.</li>
+        <li>Annonces contextuelles (par défaut) : refuse le consentement à la personnalisation et transmet des signaux d&#39;opposition à la vente/au partage. Cela n&#39;arrête pas tout traitement, notamment l&#39;accès éventuel aux identifiants publicitaires.</li>
+        <li>Annonces personnalisées autorisées : transmet le consentement uniquement après votre choix explicite sous l&#39;information actuelle. Vous pouvez le retirer en passant aux annonces contextuelles dans les réglages.</li>
       </ul>
 
     </section>
@@ -121,7 +123,7 @@
     <section aria-labelledby="rights">
       <h2 id="rights">8. Choix et droits</h2>
       <p>Selon la loi applicable et les conditions du traitement, vous pouvez bénéficier de droits d&#39;accès, rectification, effacement, limitation, opposition, portabilité, retrait du consentement, refus de vente/partage ou réclamation auprès d&#39;une autorité. Ils ne s&#39;appliquent pas tous de manière identique à chaque traitement.</p>
-      <p>Contactez-nous avec le nom du jeu, la demande et une adresse de réponse. N&#39;envoyez pas d&#39;emblée de documents sensibles. Les prestataires peuvent effectuer leur propre vérification d&#39;identité. Ni le consentement publicitaire ni la connexion Google ne sont nécessaires pour jouer.</p>
+      <p>Contactez-nous avec le nom du jeu, le type de demande et une adresse de réponse. N&#39;envoyez pas d&#39;emblée de documents sensibles. Les prestataires peuvent vérifier eux-mêmes l&#39;identité pour leurs données. La connexion Google et le consentement à la personnalisation ne sont pas nécessaires pour jouer, mais les annonces contextuelles par défaut d&#39;une nouvelle installation peuvent traiter des informations.</p>
 
 
     </section>

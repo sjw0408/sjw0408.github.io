@@ -1,25 +1,129 @@
 {
-  "language":"en",
-  "title":"Cat Detective Privacy Policy",
-  "description":"Local progress, optional Google saves, advertising choices and data deletion in Cat Detective.",
-  "back":"Cat Detective game information",
-  "date":"Updated: September 7, 2026",
-  "version":"Version note: Choose later and exclusion from Android automatic backup apply from the release candidate 1.0.0. Earlier internal test versions may have different features or SDKs. Updating this policy does not mean that 1.0.0 has been released.",
-  "summary":"You can play the entire game as a guest without registering. Progress is stored on your device by default; Google saving is optional. You can play and use investigation points without allowing ads.",
-  "contents":"On this page",
-  "resources":"Provider policies and privacy requests",
-  "contact":"Privacy contact",
-  "links":["Google Privacy Policy","Delete Google Play Games data","Manage your Google Account","Unity player privacy policy and privacy requests"],
-  "sections":[
-    {"id":"scope","title":"1. Scope and operator","paragraphs":["TeamCP develops and operates Cat Detective for Android (com.teamcp.catdetective). This policy explains the game's data processing and your choices. Contact: sjw0480@gmail.com.","There is no separate game account or developer-operated game server. The app does not ask you to enter your name, email or telephone number, and does not collect Google passwords or payment card/bank details. If you email support, your reply address and message are used to handle your inquiry."]},
-    {"id":"local","title":"2. Information on your device","items":["The current run, completed stages, records, case/collection/daily/tutorial progress","Investigation point earnings, spending and claimed ad rewards","Language and sound settings, guest/Google entry choice, ad choice, disclosure version and time of the last choice"],"paragraphs":["Android app-private storage supports play, resuming progress and preventing duplicate rewards. Ad choices stay on each device; there is no separate consent-record server. The release app does not send answer-tap coordinates or response-time analytics to an external server and does not use Firebase Analytics.","Version 1.0.0 configures app files and preferences to be excluded from Android automatic backup and device transfer. This is not a guarantee about every manufacturer's transfer behavior. Use optional Google saving to transfer progress."]},
-    {"id":"google","title":"3. Optional Google saving","paragraphs":["When you connect Google Play Games, Google processes authentication and account identifiers. Cumulative progress, such as completed stages, records, daily/collection/tutorial progress, point spending and reward claims, may be uploaded to Saved Games to save and restore the progress you request.","The current run, app settings and ad choice are not in this snapshot. Photos, audio and screenshots are not uploaded. After checking an existing cloud save, you can load it, transfer guest progress or delete it. Conflicting point-spending records are not always merged automatically.","Logging out clears the app's automatic entry/saving connection and returns to the title. It does not delete your device's Google Account or existing progress. Local play remains available without connecting or when communication fails."]},
-    {"id":"ads","title":"4. Ads and information processed","paragraphs":["The 1.0.0 ad configuration uses Unity LevelPlay and Unity Ads, without AdMob, Google UMP or the AdQuality SDK. See Unity's policy below for providers involved in ad delivery, mediation and measurement.","Choosing personalized or limited ads may start the SDK and preload ads. Rewarded hints, continues and bonuses are optional. Banners may appear in the lobby, settings, cases, daily, collection, practice introduction and results. They are absent from the title, title sign-in and actual play, including loading, answers and continues."],"items":["IP address and IP-based approximate location; device model, OS/app version, language and network information","Device, advertising and SDK user identifiers, where device settings and applicable law permit","Ad requests, impressions, clicks, completions, errors and diagnostics","The purchase-history category in Unity Ads disclosures; Cat Detective itself has no real-money purchases"],"after":["Purposes include ad delivery, frequency management, measurement, fraud prevention and diagnostics. Scope varies by region, device, choices and service. Google and ad services may perform their own diagnostics and product improvement; TeamCP does not operate a game-behavior analytics server."]},
-    {"id":"choices","title":"5. Your advertising choices","items":["Personalized ads allowed: sends consent for ad personalization.","Limited data use: denies personalization consent and sends sale/sharing opt-out signals. It does not stop all collection, including possible access to advertising identifiers.","Choose later: does not allow ads. Deferring from the start leaves the ad SDK uninitialized, including on subsequent launches. You can choose again in Settings."],"paragraphs":["Deferring after enabling ads blocks new app ad requests/displays and prevents reuse of previously prepared ads. It does not shut down an SDK already running, cancel every in-flight transmission or erase data already sent. The SDK will not initialize on the next app restart.","Guest play and points remain available before choosing and while deferred. A changed disclosure may require a new choice. Android advertising ID/privacy settings and provider privacy-request options are also available."]},
-    {"id":"providers","title":"6. External services and overseas processing","paragraphs":["Google Play Games and Unity services have their own policies. Their roles and processing vary by account, ad and service; not every provider acts solely as TeamCP's processor.","Cloud and advertising information may be processed outside your country. Provider policies linked below explain recipients, processing locations, transfer safeguards and processing grounds. This notice does not replace any consent required for particular processing or transfers.","TeamCP does not keep copies of progress/ad identifiers on its own game server or sell a separate customer list. Advertising processing may nevertheless count as a legal ‘sale’ or ‘sharing’ where applicable. See the ad restriction signals and providers' opt-out and rights instructions."]},
-    {"id":"delete-data","title":"7. Deletion and retention","items":["Device data: uninstall the app or clear its data in Android settings. This may be irreversible, so first check whether any progress you want to keep has been saved.","Google cloud progress: connect in Settings, select Delete cloud save and confirm. This deletes Cat Detective's snapshot and disconnects automatic sync, not your local progress/current run or Google Account. Reconnecting and transferring later can create a new save.","Without the app: use the Google Play Games deletion instructions below to manage this game's data. This is different from deleting your entire Google Account.","Advertising data: use the ad's privacy icon or the access/deletion instructions in Unity's policy below. Uninstalling, logging out or limiting ads does not itself erase data already processed by a provider.","Deletion help: email sjw0480@gmail.com with the game name and data type (device/Google/ads). Do not send passwords, verification codes or unnecessary identity documents. For data TeamCP does not hold, we direct you to the provider's verification/deletion process."],"paragraphs":["Local progress/settings remain until you delete them; there is no automatic 90-day deletion. Changing an ad choice updates the current choice and last-choice time. Provider policies govern cloud/ad retention periods, criteria and legal/security exceptions."]},
-    {"id":"rights","title":"8. Choices and rights","paragraphs":["Depending on applicable law and processing conditions, you may have rights of access, correction, deletion, restriction, objection, portability, consent withdrawal, sale/sharing opt-out or complaint to a supervisory authority. Not every right applies identically to all processing.","Contact the address below with the game name, request type and reply address. Do not send sensitive documents first. Providers may need their own identity checks for data they hold. Ad consent and Google connection are not required to play."]},
-    {"id":"young-users","title":"9. Young players and guardians","paragraphs":["Cat Detective is intended for teenagers aged 13 and older and adults, not specifically for children. An all-ages content rating does not establish eligibility to consent to data processing. Rules for minors, guardian consent and advertising vary by region.","The app does not collect dates of birth/identity documents or verify guardian consent. This policy and the ad-choice buttons are not substitutes for that verification. Contact us for questions or deletion assistance."]},
-    {"id":"updates","title":"10. Security and changes","paragraphs":["Local information is stored in Android app-private storage. Google saving and advertising transmissions use the respective providers' security mechanisms.","When features, SDKs or processing change, we update this policy and its date and announce important changes in the app or here. Each language page covers the same scope; you can contact us about translation differences."]}
+  "language": "en",
+  "title": "Cat Detective Privacy Policy",
+  "description": "Local progress, optional Google saves, advertising choices and data deletion in Cat Detective.",
+  "back": "Cat Detective game information",
+  "date": "Updated: September 7, 2026",
+  "version": "Version note: 1.0.0 build 10 introduces automatic Google sign-in and a contextual-ad default, without a startup ad-choice prompt or a new Choose later option. Build 9's three choices and previously saved deferrals are distinguished below. Android backup exclusions apply from build 9. This notice does not mean a public release is complete.",
+  "summary": "No separate game registration is required. The app tries Google sign-in at startup, but cancellation, failure or offline use still allow local play; cloud saving is a separate choice. New installations default to contextual ads. You can play and use investigation points without watching rewarded ads.",
+  "contents": "On this page",
+  "resources": "Provider policies and privacy requests",
+  "contact": "Privacy contact",
+  "links": [
+    "Google Privacy Policy",
+    "Delete Google Play Games data",
+    "Manage your Google Account",
+    "Unity player privacy policy and privacy requests"
+  ],
+  "sections": [
+    {
+      "id": "scope",
+      "title": "1. Scope and operator",
+      "paragraphs": [
+        "TeamCP develops and operates Cat Detective for Android (com.teamcp.catdetective). This policy explains the game's data processing and your choices. Contact: sjw0480@gmail.com.",
+        "There is no separate game account or developer-operated game server. The app does not ask you to enter your name, email or telephone number, and does not collect Google passwords or payment card/bank details. If you email support, your reply address and message are used to handle your inquiry."
+      ]
+    },
+    {
+      "id": "local",
+      "title": "2. Information on your device",
+      "items": [
+        "The current run, completed stages, records, case/collection/daily/tutorial progress",
+        "Investigation point earnings, spending and claimed ad rewards",
+        "Language and sound settings, app sign-in and Google save connection state, explicit ad choice, disclosure version and last-choice time"
+      ],
+      "paragraphs": [
+        "Android app-private storage supports play, resuming progress and preventing duplicate rewards. Ad choices stay on each device; there is no separate consent-record server. The release app does not send answer-tap coordinates or response-time analytics to an external server and does not use Firebase Analytics.",
+        "Version 1.0.0 configures app files and preferences to be excluded from Android automatic backup and device transfer. This is not a guarantee about every manufacturer's transfer behavior. Use optional Google saving to transfer progress."
+      ]
+    },
+    {
+      "id": "google",
+      "title": "3. Automatic Google sign-in and optional saving",
+      "paragraphs": [
+        "From build 10, normal startup checks existing Google Play Games authentication and requests the Google sign-in screen once if needed. Google processes authentication and account identifiers during this process. Cancelling sign-in or an authentication/communication failure leads to local play; you can reconnect in Settings.",
+        "Successful authentication checks whether a cloud save exists, but sign-in alone does not upload local progress or overwrite an existing save on first connection. Loading, transferring device progress and deleting the cloud save are separate choices. A previously enabled save connection attempts automatic sync. Conflicting point-spending records require a choice.",
+        "Saved data includes cumulative stage completion, records, daily/collection/practice progress, point spending and reward claims. The current run, app settings, ad choice, photos, audio and screenshots are not in this snapshot.",
+        "Logging out in Settings disconnects the app's saving connection and leaves you at the title. It does not delete the device's Google Account or existing progress. Tapping Start or launching the app again retries Google sign-in. Google authentication and ad personalization are separate."
+      ]
+    },
+    {
+      "id": "ads",
+      "title": "4. Ads and information processed",
+      "paragraphs": [
+        "The 1.0.0 ad configuration uses Unity LevelPlay and Unity Ads, without AdMob, Google UMP or the AdQuality SDK. See Unity's policy below for providers involved in ad delivery, mediation and measurement.",
+        "On a new build 10 installation, the contextual default may start the ad SDK and preload ads before you make a choice. A previously saved Choose later state is an exception and is preserved. Rewarded hints, continues and bonuses are optional. Banners may appear in the lobby, settings, cases, daily, collection, practice introduction and results, but not the title, title sign-in or actual play, including loading, answers and continues."
+      ],
+      "items": [
+        "IP address and IP-based approximate location; device model, OS/app version, language and network information",
+        "Device, advertising and SDK user identifiers, where device settings and applicable law permit",
+        "Ad requests, impressions, clicks, completions, errors and diagnostics",
+        "The purchase-history category in Unity Ads disclosures; Cat Detective itself has no real-money purchases"
+      ],
+      "after": [
+        "Purposes include ad delivery, frequency management, measurement, fraud prevention and diagnostics. Scope varies by region, device, choices and service. Google and ad services may perform their own diagnostics and product improvement; TeamCP does not operate a game-behavior analytics server."
+      ]
+    },
+    {
+      "id": "choices",
+      "title": "5. Your advertising choices",
+      "items": [
+        "Contextual ads (default): denies personalization consent and sends sale/sharing opt-out signals. It does not stop all data processing, including possible access to advertising identifiers.",
+        "Personalized ads allowed: sends personalization consent only when you explicitly choose it under the current disclosure. You can withdraw personalization consent by switching to contextual ads in Settings."
+      ],
+      "paragraphs": [
+        "Build 10 applies contextual ads without a startup prompt. This automatic default is not recorded as affirmative consent or as a user-choice timestamp. Settings offers two ad modes. Personalization choices from older disclosures become contextual; only an explicit choice under the current disclosure is retained as personalized.",
+        "A Choose later state already saved in build 9 or another earlier build is preserved after updating. In that state, the ad SDK is not initialized and ads are not requested or displayed. Explicitly choosing either ad mode in Settings enables ads; build 10 has no button to defer again.",
+        "Changing modes prevents the app from reusing previously prepared ads and late reward callbacks. Switching to contextual ads does not shut down an SDK already running, cancel every transmission or erase data already sent.",
+        "The contextual default still involves data processing and does not replace any legally required consent or checks for minors. Android advertising ID/privacy settings, provider rights procedures below and our contact address remain available."
+      ]
+    },
+    {
+      "id": "providers",
+      "title": "6. External services and overseas processing",
+      "paragraphs": [
+        "Google Play Games and Unity services have their own policies. Their roles and processing vary by account, ad and service; not every provider acts solely as TeamCP's processor.",
+        "Cloud and advertising information may be processed outside your country. Provider policies linked below explain recipients, processing locations, transfer safeguards and processing grounds. This notice does not replace any consent required for particular processing or transfers.",
+        "TeamCP does not keep copies of progress/ad identifiers on its own game server or sell a separate customer list. Advertising processing may nevertheless count as a legal ‘sale’ or ‘sharing’ where applicable. See the ad restriction signals and providers' opt-out and rights instructions."
+      ]
+    },
+    {
+      "id": "delete-data",
+      "title": "7. Deletion and retention",
+      "items": [
+        "Device data: uninstall the app or clear its data in Android settings. This may be irreversible, so first check whether any progress you want to keep has been saved.",
+        "Google cloud progress: connect in Settings, select Delete cloud save and confirm. This deletes Cat Detective's snapshot and disconnects automatic sync, not your local progress/current run or Google Account. Reconnecting and transferring later can create a new save.",
+        "Without the app: use the Google Play Games deletion instructions below to manage this game's data. This is different from deleting your entire Google Account.",
+        "Advertising data: use the ad's privacy icon or the access/deletion instructions in Unity's policy below. Uninstalling, logging out or limiting ads does not itself erase data already processed by a provider.",
+        "Deletion help: email sjw0480@gmail.com with the game name and data type (device/Google/ads). Do not send passwords, verification codes or unnecessary identity documents. For data TeamCP does not hold, we direct you to the provider's verification/deletion process."
+      ],
+      "paragraphs": [
+        "Local progress/settings remain until you delete them; there is no automatic 90-day deletion. Changing an ad choice updates the current choice and last-choice time. Provider policies govern cloud/ad retention periods, criteria and legal/security exceptions."
+      ]
+    },
+    {
+      "id": "rights",
+      "title": "8. Choices and rights",
+      "paragraphs": [
+        "Depending on applicable law and processing conditions, you may have rights of access, correction, deletion, restriction, objection, portability, consent withdrawal, sale/sharing opt-out or complaint to a supervisory authority. Not every right applies identically to all processing.",
+        "Contact us with the game name, request type and reply address. Do not send sensitive documents first. Providers may need their own identity checks for data they hold. Google connection and ad-personalization consent are not required to play, but default contextual ads on a new installation may still process information."
+      ]
+    },
+    {
+      "id": "young-users",
+      "title": "9. Young players and guardians",
+      "paragraphs": [
+        "Cat Detective is intended for teenagers aged 13 and older and adults, not specifically for children. An all-ages content rating does not establish eligibility to consent to data processing. Rules for minors, guardian consent and advertising vary by region.",
+        "The app does not collect dates of birth/identity documents or verify guardian consent. This policy and the ad-choice buttons are not substitutes for that verification. Contact us for questions or deletion assistance."
+      ]
+    },
+    {
+      "id": "updates",
+      "title": "10. Security and changes",
+      "paragraphs": [
+        "Local information is stored in Android app-private storage. Google saving and advertising transmissions use the respective providers' security mechanisms.",
+        "When features, SDKs or processing change, we update this policy and its date and announce important changes in the app or here. Each language page covers the same scope; you can contact us about translation differences."
+      ]
+    }
   ]
 }
