@@ -7,7 +7,7 @@
   <meta name="color-scheme" content="light">
   <meta name="theme-color" content="#eef9f4">
   <meta name="description" content="Lokaler Fortschritt, optionale Google-Speicherung, Werbeauswahl und Datenlöschung in Katzendetektiv.">
-  <meta name="policy-revision" content="2026-09-07-v3">
+  <meta name="policy-revision" content="2026-09-07-v4">
   <title>Datenschutzhinweise für Katzendetektiv</title>
   <link rel="canonical" href="https://sjw0408.github.io/games/cat-detective/privacy/de/">
   <link rel="alternate" hreflang="ko" href="https://sjw0408.github.io/games/cat-detective/privacy/">
@@ -32,14 +32,14 @@
     </nav>
     <h1>Datenschutzhinweise für Katzendetektiv</h1>
     <p class="effective">Aktualisiert: 7. September 2026</p>
-    <p class="notice">Du kannst das gesamte Spiel ohne Registrierung als Gast spielen. Fortschritt bleibt standardmäßig auf dem Gerät; Google-Speicherung ist freiwillig. Spiel und Ermittlungspunkte funktionieren auch ohne Werbeerlaubnis.</p>
-    <p class="version">Versionshinweis: Später entscheiden und der Ausschluss vom automatischen Android-Backup gelten ab dem Release-Kandidaten 1.0.0. Frühere interne Testversionen können andere Funktionen oder SDKs enthalten. Die Aktualisierung dieser Hinweise bedeutet nicht, dass 1.0.0 bereits veröffentlicht wurde.</p>
+    <p class="notice">Ein eigenes Spielkonto ist nicht erforderlich. Die App versucht beim Start eine Google-Anmeldung; bei Abbruch, Fehler oder offline ist lokales Spielen weiterhin möglich. Cloud-Speicherung bleibt eine gesonderte Wahl. Neue Installationen nutzen standardmäßig kontextbezogene Werbung. Spiel und Ermittlungspunkte funktionieren ohne das Ansehen von Belohnungswerbung.</p>
+    <p class="version">Versionshinweis: 1.0.0, Build 10, führt die automatische Google-Anmeldung und kontextbezogene Werbung als Standard ein, ohne Werbeauswahl beim Start oder neue Option Später entscheiden. Die drei Optionen in Build 9 und bereits gespeicherte Aufschübe werden unten unterschieden. Android-Backup-Ausschlüsse gelten seit Build 9. Dieser Hinweis bedeutet nicht, dass die allgemeine Veröffentlichung abgeschlossen ist.</p>
     <nav class="contents" aria-label="Auf dieser Seite">
       <h2>Auf dieser Seite</h2>
       <ul>
         <li><a href="#scope">1. Geltungsbereich und Betreiber</a></li>
         <li><a href="#local">2. Informationen auf deinem Gerät</a></li>
-        <li><a href="#google">3. Optionale Google-Speicherung</a></li>
+        <li><a href="#google">3. Automatische Google-Anmeldung und optionale Speicherung</a></li>
         <li><a href="#ads">4. Werbung und verarbeitete Daten</a></li>
         <li><a href="#choices">5. Deine Werbeauswahl</a></li>
         <li><a href="#providers">6. Externe Dienste und Verarbeitung im Ausland</a></li>
@@ -63,22 +63,23 @@
       <ul>
         <li>Laufende Runde, abgeschlossene Stufen, Rekorde sowie Fall-, Sammlungs-, Tages- und Übungsfortschritt</li>
         <li>Erhaltene und ausgegebene Ermittlungspunkte sowie beanspruchte Werbebelohnungen</li>
-        <li>Sprache, Ton, Gast-/Google-Einstiegswahl, Werbeauswahl, Hinweisversion und Zeitpunkt der letzten Auswahl</li>
+        <li>Sprache und Ton, Anmelde- und Google-Speicherverbindungsstatus der App, ausdrückliche Werbeauswahl, Hinweisversion und Zeitpunkt der letzten Auswahl</li>
       </ul>
 
     </section>
     <section aria-labelledby="google">
-      <h2 id="google">3. Optionale Google-Speicherung</h2>
-      <p>Bei Verbindung mit Google Play Games verarbeitet Google Authentifizierung und Kontokennungen. Kumulativer Fortschritt wie Stufen, Rekorde, Tages-/Sammlungs-/Übungsfortschritt, Punkteausgaben und Belohnungen kann für die gewünschte Speicherung und Wiederherstellung an Saved Games übertragen werden.</p>
-      <p>Laufende Runde, App-Einstellungen und Werbeauswahl gehören nicht zum Snapshot. Fotos, Audio und Screenshots werden nicht hochgeladen. Nach Prüfung eines vorhandenen Cloud-Spielstands kannst du ihn laden, Gastfortschritt übertragen oder löschen. Widersprüchliche Punkteausgaben werden nicht immer automatisch zusammengeführt.</p>
-      <p>Abmelden deaktiviert den automatischen Einstieg und die Speicherverbindung der App und führt zum Titel zurück. Das Google-Konto des Geräts und vorhandener Fortschritt werden dadurch nicht gelöscht. Lokales Spielen bleibt ohne Verbindung oder bei Kommunikationsfehlern möglich.</p>
+      <h2 id="google">3. Automatische Google-Anmeldung und optionale Speicherung</h2>
+      <p>Seit Build 10 prüft der normale Start die bestehende Google-Play-Games-Authentifizierung und fordert bei Bedarf einmal den Google-Anmeldebildschirm an. Google verarbeitet dabei Authentifizierung und Kontokennungen. Ein Abbruch oder Authentifizierungs-/Kommunikationsfehler führt zum lokalen Spiel; die Einstellungen erlauben einen erneuten Verbindungsversuch.</p>
+      <p>Nach der Authentifizierung wird ein vorhandener Cloud-Spielstand geprüft. Bei der ersten Verbindung lädt die Anmeldung allein keinen lokalen Fortschritt hoch und überschreibt keinen Spielstand. Laden, Gerätefortschritt übertragen und Cloud-Spielstand löschen sind gesonderte Entscheidungen. Eine zuvor aktivierte Speicherverbindung versucht die automatische Synchronisierung. Widersprüchliche Punkteausgaben erfordern eine Auswahl.</p>
+      <p>Gespeichert wird kumulativer Fortschritt wie Stufen, Rekorde, Tages-, Sammlungs- und Übungsfortschritt, Punkteausgaben und Belohnungen. Laufende Runde, Einstellungen, Werbeauswahl, Fotos, Audio und Screenshots gehören nicht zu diesem Snapshot.</p>
+      <p>Abmelden in den Einstellungen trennt die Speicherverbindung der App und lässt den Titel sichtbar. Das Google-Konto des Geräts und vorhandener Fortschritt bleiben erhalten. Start antippen oder die App erneut öffnen versucht die Google-Anmeldung wieder. Google-Authentifizierung und Werbepersonalisierung sind voneinander unabhängig.</p>
 
 
     </section>
     <section aria-labelledby="ads">
       <h2 id="ads">4. Werbung und verarbeitete Daten</h2>
       <p>1.0.0 nutzt Unity LevelPlay und Unity Ads, ohne AdMob, Google UMP oder das AdQuality SDK. Beachte auch Unitys Hinweise zu Anbietern für Auslieferung, Vermittlung und Messung von Werbung.</p>
-      <p>Die Auswahl personalisierter oder eingeschränkter Werbung kann das SDK starten und Werbung vorladen. Werbung für Hinweise, Fortsetzung und Boni ist freiwillig. Banner können in Lobby, Einstellungen, Fällen, Tagesaufgaben, Sammlung, Übungseinführung und Ergebnissen erscheinen, nicht jedoch im Titel, der dortigen Anmeldung oder während des Spiels einschließlich Laden, Auswertung und Fortsetzung.</p>
+      <p>Bei einer neuen Installation von Build 10 kann die kontextbezogene Standardeinstellung das SDK bereits vor einer Auswahl starten und Werbung vorladen. Ein gespeicherter Status Später entscheiden bleibt als Ausnahme erhalten. Werbung für Hinweise, Fortsetzung und Boni ist freiwillig. Banner können in Lobby, Einstellungen, Fällen, Tagesaufgaben, Sammlung, Übungseinführung und Ergebnissen erscheinen, nicht jedoch im Titel, bei der dortigen Anmeldung oder während des Spiels einschließlich Laden, Auswertung und Fortsetzung.</p>
       <ul>
         <li>IP-Adresse und daraus abgeleitete ungefähre Region; Gerätemodell, Betriebssystem-/App-Version, Sprache und Netzwerk</li>
         <li>Geräte-, Werbe- und SDK-Nutzerkennungen, soweit Geräteeinstellungen und anwendbares Recht dies erlauben</li>
@@ -89,12 +90,13 @@
     </section>
     <section aria-labelledby="choices">
       <h2 id="choices">5. Deine Werbeauswahl</h2>
-      <p>Aufschieben nach einer Erlaubnis blockiert neue Werbeanfragen/-anzeigen der App und die Wiederverwendung vorbereiteter Werbung. Ein bereits laufendes SDK wird nicht beendet; nicht jede laufende Übertragung wird abgebrochen und gesendete Daten werden nicht gelöscht. Beim nächsten App-Neustart wird das SDK nicht initialisiert.</p>
-      <p>Gastspiel und Punkte bleiben vor der Auswahl und während des Aufschubs nutzbar. Geänderte Hinweise können eine erneute Auswahl erfordern. Auch Android-Einstellungen für Werbe-ID/Datenschutz und die Rechtewege der Anbieter stehen zur Verfügung.</p>
+      <p>Build 10 nutzt kontextbezogene Werbung ohne Auswahl beim Start. Dieser automatische Standard wird weder als ausdrückliche Einwilligung noch als Zeitpunkt einer Nutzerentscheidung gespeichert. Die Einstellungen bieten zwei Modi. Personalisierungsentscheidungen unter alten Hinweisen wechseln zu kontextbezogener Werbung; nur eine ausdrückliche Auswahl unter dem aktuellen Hinweis bleibt personalisiert.</p>
+      <p>Ein in Build 9 oder einem älteren Build gespeichertes Später entscheiden bleibt nach dem Update erhalten. Dann wird das SDK nicht initialisiert und Werbung weder angefordert noch angezeigt. Eine ausdrückliche Auswahl eines der beiden Modi aktiviert Werbung; Build 10 hat keine Schaltfläche zum erneuten Aufschieben.</p>
+      <p>Ein Moduswechsel verhindert die Wiederverwendung vorbereiteter Werbung und verspäteter Belohnungs-Callbacks. Der Wechsel zu kontextbezogener Werbung beendet kein laufendes SDK, bricht nicht jede Übertragung ab und löscht keine bereits gesendeten Daten.</p>
+      <p>Auch der kontextbezogene Standard verarbeitet Daten und ersetzt keine rechtlich nötige Einwilligung oder Prüfung für Minderjährige. Android-Einstellungen für Werbe-ID/Datenschutz, die Rechteverfahren der Anbieter und unsere Kontaktadresse stehen zur Verfügung.</p>
       <ul>
-        <li>Personalisierte Werbung erlaubt: übermittelt Einwilligung zur Werbepersonalisierung.</li>
-        <li>Eingeschränkte Datennutzung: verweigert diese Einwilligung und sendet Opt-out-Signale für Verkauf/Weitergabe. Das beendet nicht jede Erhebung, einschließlich möglichen Zugriffs auf Werbekennungen.</li>
-        <li>Später entscheiden: erlaubt keine Werbung. Wird von Anfang an aufgeschoben, bleibt das Werbe-SDK auch bei späteren Starts uninitialisiert. Eine neue Auswahl ist in den Einstellungen möglich.</li>
+        <li>Kontextbezogene Werbung (Standard): verweigert die Personalisierungseinwilligung und sendet Opt-out-Signale für Verkauf/Weitergabe. Das beendet nicht jede Datenverarbeitung, einschließlich möglichen Zugriffs auf Werbekennungen.</li>
+        <li>Personalisierte Werbung erlaubt: sendet Einwilligung nur nach deiner ausdrücklichen Auswahl unter dem aktuellen Hinweis. Durch den Wechsel zu kontextbezogener Werbung in den Einstellungen kannst du die Personalisierungseinwilligung widerrufen.</li>
       </ul>
 
     </section>
@@ -121,7 +123,7 @@
     <section aria-labelledby="rights">
       <h2 id="rights">8. Wahlmöglichkeiten und Rechte</h2>
       <p>Je nach anwendbarem Recht und Verarbeitung können Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch, Übertragbarkeit, Einwilligungswiderruf, Opt-out für Verkauf/Weitergabe oder Beschwerde bei einer Aufsichtsbehörde bestehen. Nicht jedes Recht gilt für jede Verarbeitung gleich.</p>
-      <p>Kontaktiere uns mit Spielname, Anliegen und Antwortadresse. Sende nicht ungefragt sensible Unterlagen. Anbieter können eigene Identitätsprüfungen für ihre Daten benötigen. Werbeeinwilligung und Google-Verbindung sind zum Spielen nicht erforderlich.</p>
+      <p>Kontaktiere uns mit Spielname, Anliegen und Antwortadresse. Sende nicht ungefragt sensible Unterlagen. Anbieter können eigene Identitätsprüfungen für ihre Daten benötigen. Google-Verbindung und Personalisierungseinwilligung sind zum Spielen nicht erforderlich, aber die kontextbezogene Standardwerbung neuer Installationen kann Informationen verarbeiten.</p>
 
 
     </section>

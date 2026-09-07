@@ -7,7 +7,7 @@
   <meta name="color-scheme" content="light">
   <meta name="theme-color" content="#eef9f4">
   <meta name="description" content="Local progress, optional Google saves, advertising choices and data deletion in Cat Detective.">
-  <meta name="policy-revision" content="2026-09-07-v3">
+  <meta name="policy-revision" content="2026-09-07-v4">
   <title>Cat Detective Privacy Policy</title>
   <link rel="canonical" href="https://sjw0408.github.io/games/cat-detective/privacy/en/">
   <link rel="alternate" hreflang="ko" href="https://sjw0408.github.io/games/cat-detective/privacy/">
@@ -32,14 +32,14 @@
     </nav>
     <h1>Cat Detective Privacy Policy</h1>
     <p class="effective">Updated: September 7, 2026</p>
-    <p class="notice">You can play the entire game as a guest without registering. Progress is stored on your device by default; Google saving is optional. You can play and use investigation points without allowing ads.</p>
-    <p class="version">Version note: Choose later and exclusion from Android automatic backup apply from the release candidate 1.0.0. Earlier internal test versions may have different features or SDKs. Updating this policy does not mean that 1.0.0 has been released.</p>
+    <p class="notice">No separate game registration is required. The app tries Google sign-in at startup, but cancellation, failure or offline use still allow local play; cloud saving is a separate choice. New installations default to contextual ads. You can play and use investigation points without watching rewarded ads.</p>
+    <p class="version">Version note: 1.0.0 build 10 introduces automatic Google sign-in and a contextual-ad default, without a startup ad-choice prompt or a new Choose later option. Build 9&#39;s three choices and previously saved deferrals are distinguished below. Android backup exclusions apply from build 9. This notice does not mean a public release is complete.</p>
     <nav class="contents" aria-label="On this page">
       <h2>On this page</h2>
       <ul>
         <li><a href="#scope">1. Scope and operator</a></li>
         <li><a href="#local">2. Information on your device</a></li>
-        <li><a href="#google">3. Optional Google saving</a></li>
+        <li><a href="#google">3. Automatic Google sign-in and optional saving</a></li>
         <li><a href="#ads">4. Ads and information processed</a></li>
         <li><a href="#choices">5. Your advertising choices</a></li>
         <li><a href="#providers">6. External services and overseas processing</a></li>
@@ -63,22 +63,23 @@
       <ul>
         <li>The current run, completed stages, records, case/collection/daily/tutorial progress</li>
         <li>Investigation point earnings, spending and claimed ad rewards</li>
-        <li>Language and sound settings, guest/Google entry choice, ad choice, disclosure version and time of the last choice</li>
+        <li>Language and sound settings, app sign-in and Google save connection state, explicit ad choice, disclosure version and last-choice time</li>
       </ul>
 
     </section>
     <section aria-labelledby="google">
-      <h2 id="google">3. Optional Google saving</h2>
-      <p>When you connect Google Play Games, Google processes authentication and account identifiers. Cumulative progress, such as completed stages, records, daily/collection/tutorial progress, point spending and reward claims, may be uploaded to Saved Games to save and restore the progress you request.</p>
-      <p>The current run, app settings and ad choice are not in this snapshot. Photos, audio and screenshots are not uploaded. After checking an existing cloud save, you can load it, transfer guest progress or delete it. Conflicting point-spending records are not always merged automatically.</p>
-      <p>Logging out clears the app&#39;s automatic entry/saving connection and returns to the title. It does not delete your device&#39;s Google Account or existing progress. Local play remains available without connecting or when communication fails.</p>
+      <h2 id="google">3. Automatic Google sign-in and optional saving</h2>
+      <p>From build 10, normal startup checks existing Google Play Games authentication and requests the Google sign-in screen once if needed. Google processes authentication and account identifiers during this process. Cancelling sign-in or an authentication/communication failure leads to local play; you can reconnect in Settings.</p>
+      <p>Successful authentication checks whether a cloud save exists, but sign-in alone does not upload local progress or overwrite an existing save on first connection. Loading, transferring device progress and deleting the cloud save are separate choices. A previously enabled save connection attempts automatic sync. Conflicting point-spending records require a choice.</p>
+      <p>Saved data includes cumulative stage completion, records, daily/collection/practice progress, point spending and reward claims. The current run, app settings, ad choice, photos, audio and screenshots are not in this snapshot.</p>
+      <p>Logging out in Settings disconnects the app&#39;s saving connection and leaves you at the title. It does not delete the device&#39;s Google Account or existing progress. Tapping Start or launching the app again retries Google sign-in. Google authentication and ad personalization are separate.</p>
 
 
     </section>
     <section aria-labelledby="ads">
       <h2 id="ads">4. Ads and information processed</h2>
       <p>The 1.0.0 ad configuration uses Unity LevelPlay and Unity Ads, without AdMob, Google UMP or the AdQuality SDK. See Unity&#39;s policy below for providers involved in ad delivery, mediation and measurement.</p>
-      <p>Choosing personalized or limited ads may start the SDK and preload ads. Rewarded hints, continues and bonuses are optional. Banners may appear in the lobby, settings, cases, daily, collection, practice introduction and results. They are absent from the title, title sign-in and actual play, including loading, answers and continues.</p>
+      <p>On a new build 10 installation, the contextual default may start the ad SDK and preload ads before you make a choice. A previously saved Choose later state is an exception and is preserved. Rewarded hints, continues and bonuses are optional. Banners may appear in the lobby, settings, cases, daily, collection, practice introduction and results, but not the title, title sign-in or actual play, including loading, answers and continues.</p>
       <ul>
         <li>IP address and IP-based approximate location; device model, OS/app version, language and network information</li>
         <li>Device, advertising and SDK user identifiers, where device settings and applicable law permit</li>
@@ -89,12 +90,13 @@
     </section>
     <section aria-labelledby="choices">
       <h2 id="choices">5. Your advertising choices</h2>
-      <p>Deferring after enabling ads blocks new app ad requests/displays and prevents reuse of previously prepared ads. It does not shut down an SDK already running, cancel every in-flight transmission or erase data already sent. The SDK will not initialize on the next app restart.</p>
-      <p>Guest play and points remain available before choosing and while deferred. A changed disclosure may require a new choice. Android advertising ID/privacy settings and provider privacy-request options are also available.</p>
+      <p>Build 10 applies contextual ads without a startup prompt. This automatic default is not recorded as affirmative consent or as a user-choice timestamp. Settings offers two ad modes. Personalization choices from older disclosures become contextual; only an explicit choice under the current disclosure is retained as personalized.</p>
+      <p>A Choose later state already saved in build 9 or another earlier build is preserved after updating. In that state, the ad SDK is not initialized and ads are not requested or displayed. Explicitly choosing either ad mode in Settings enables ads; build 10 has no button to defer again.</p>
+      <p>Changing modes prevents the app from reusing previously prepared ads and late reward callbacks. Switching to contextual ads does not shut down an SDK already running, cancel every transmission or erase data already sent.</p>
+      <p>The contextual default still involves data processing and does not replace any legally required consent or checks for minors. Android advertising ID/privacy settings, provider rights procedures below and our contact address remain available.</p>
       <ul>
-        <li>Personalized ads allowed: sends consent for ad personalization.</li>
-        <li>Limited data use: denies personalization consent and sends sale/sharing opt-out signals. It does not stop all collection, including possible access to advertising identifiers.</li>
-        <li>Choose later: does not allow ads. Deferring from the start leaves the ad SDK uninitialized, including on subsequent launches. You can choose again in Settings.</li>
+        <li>Contextual ads (default): denies personalization consent and sends sale/sharing opt-out signals. It does not stop all data processing, including possible access to advertising identifiers.</li>
+        <li>Personalized ads allowed: sends personalization consent only when you explicitly choose it under the current disclosure. You can withdraw personalization consent by switching to contextual ads in Settings.</li>
       </ul>
 
     </section>
@@ -121,7 +123,7 @@
     <section aria-labelledby="rights">
       <h2 id="rights">8. Choices and rights</h2>
       <p>Depending on applicable law and processing conditions, you may have rights of access, correction, deletion, restriction, objection, portability, consent withdrawal, sale/sharing opt-out or complaint to a supervisory authority. Not every right applies identically to all processing.</p>
-      <p>Contact the address below with the game name, request type and reply address. Do not send sensitive documents first. Providers may need their own identity checks for data they hold. Ad consent and Google connection are not required to play.</p>
+      <p>Contact us with the game name, request type and reply address. Do not send sensitive documents first. Providers may need their own identity checks for data they hold. Google connection and ad-personalization consent are not required to play, but default contextual ads on a new installation may still process information.</p>
 
 
     </section>

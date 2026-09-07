@@ -14,7 +14,7 @@ for (const code of codes) {
   assert.ok(html.includes(`<html lang="${code}">`));
   assert.equal((html.match(/<h1>/g) ?? []).length, 1);
   assert.equal((html.match(/aria-current="page"/g) ?? []).length, 1);
-  assert.ok(html.includes('name="policy-revision" content="2026-09-07-v3"'));
+  assert.ok(html.includes('name="policy-revision" content="2026-09-07-v4"'));
   assert.ok(html.includes('id="delete-data"'));
   assert.ok(html.includes('href="mailto:128673746+sjw0408@users.noreply.github.com"'));
   assert.ok(html.includes('com.teamcp.catdetective'));

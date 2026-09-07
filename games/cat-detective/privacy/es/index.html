@@ -7,7 +7,7 @@
   <meta name="color-scheme" content="light">
   <meta name="theme-color" content="#eef9f4">
   <meta name="description" content="Progreso local, guardado de Google opcional, anuncios y eliminación de datos en Detective Felino.">
-  <meta name="policy-revision" content="2026-09-07-v3">
+  <meta name="policy-revision" content="2026-09-07-v4">
   <title>Política de privacidad de Detective Felino</title>
   <link rel="canonical" href="https://sjw0408.github.io/games/cat-detective/privacy/es/">
   <link rel="alternate" hreflang="ko" href="https://sjw0408.github.io/games/cat-detective/privacy/">
@@ -32,14 +32,14 @@
     </nav>
     <h1>Política de privacidad de Detective Felino</h1>
     <p class="effective">Actualizada: 7 de septiembre de 2026</p>
-    <p class="notice">Puedes jugar a todo el juego como invitado sin registrarte. El progreso se guarda en el dispositivo por defecto; el guardado de Google es opcional. Puedes jugar y usar puntos de investigación sin permitir anuncios.</p>
-    <p class="version">Versiones: Elegir más tarde y la exclusión de la copia automática de Android se aplican desde la versión candidata 1.0.0. Las pruebas internas anteriores pueden usar otras funciones o SDK. Actualizar esta política no significa que 1.0.0 ya se haya publicado.</p>
+    <p class="notice">No necesitas una cuenta propia del juego. La aplicación intenta acceder con Google al iniciarse, pero puedes jugar localmente si cancelas, falla o estás sin conexión; guardar en la nube es una elección aparte. Las instalaciones nuevas usan anuncios contextuales por defecto. Puedes jugar y usar puntos sin ver anuncios con recompensa.</p>
+    <p class="version">Versiones: 1.0.0, compilación 10, introduce el acceso automático con Google y anuncios contextuales por defecto, sin aviso publicitario inicial ni una nueva opción Elegir más tarde. Abajo distinguimos las tres opciones de la compilación 9 y los aplazamientos ya guardados. La exclusión del respaldo de Android se aplica desde la compilación 9. Este aviso no significa que el lanzamiento público esté completado.</p>
     <nav class="contents" aria-label="En esta página">
       <h2>En esta página</h2>
       <ul>
         <li><a href="#scope">1. Ámbito y operador</a></li>
         <li><a href="#local">2. Información en tu dispositivo</a></li>
-        <li><a href="#google">3. Guardado opcional de Google</a></li>
+        <li><a href="#google">3. Acceso automático con Google y guardado opcional</a></li>
         <li><a href="#ads">4. Anuncios y datos tratados</a></li>
         <li><a href="#choices">5. Opciones publicitarias</a></li>
         <li><a href="#providers">6. Proveedores y tratamiento en el extranjero</a></li>
@@ -63,22 +63,23 @@
       <ul>
         <li>Partida actual, etapas completadas, récords y progreso de casos, colección, retos diarios y práctica</li>
         <li>Obtención y gasto de puntos y recompensas publicitarias recibidas</li>
-        <li>Idioma, sonido, opción de entrada como invitado/Google, elección publicitaria, versión del aviso y momento de la última elección</li>
+        <li>Idioma y sonido, estado de acceso de la aplicación y conexión de guardado con Google, elección publicitaria explícita, versión del aviso y momento de la última elección</li>
       </ul>
 
     </section>
     <section aria-labelledby="google">
-      <h2 id="google">3. Guardado opcional de Google</h2>
-      <p>Al conectar Google Play Games, Google trata la autenticación y los identificadores de cuenta. El progreso acumulado —etapas, récords, diario, colección, práctica, gastos de puntos y recompensas— puede enviarse a Saved Games para guardar y restaurar lo que solicites.</p>
-      <p>La partida actual, los ajustes y la elección publicitaria no se incluyen en esa instantánea. No se suben fotos, audio ni capturas. Tras comprobar una partida en la nube, puedes cargarla, transferir el progreso de invitado o eliminarla. Los gastos de puntos en conflicto no siempre se fusionan automáticamente.</p>
-      <p>Cerrar sesión desactiva la entrada y el guardado automáticos y vuelve al título. No elimina la cuenta de Google del dispositivo ni el progreso existente. Puedes jugar localmente sin conexión a Google o si falla la comunicación.</p>
+      <h2 id="google">3. Acceso automático con Google y guardado opcional</h2>
+      <p>Desde la compilación 10, el inicio normal comprueba la autenticación existente de Google Play Games y solicita una vez la pantalla de acceso de Google si es necesario. Google trata la autenticación y los identificadores de cuenta. Si cancelas o falla la autenticación o comunicación, pasas al juego local y puedes reconectar en Ajustes.</p>
+      <p>Una autenticación correcta comprueba si existe una partida en la nube, pero el primer acceso por sí solo no sube el progreso local ni sobrescribe una partida existente. Cargar, transferir el progreso del dispositivo y borrar la partida en la nube son elecciones separadas. Una conexión de guardado habilitada previamente intenta sincronizar automáticamente. Los gastos de puntos en conflicto requieren una elección.</p>
+      <p>Se guarda el progreso acumulado: etapas, récords, diario, colección, práctica, gastos de puntos y recompensas. La partida actual, los ajustes, la elección publicitaria, fotos, audio y capturas no se incluyen en esta instantánea.</p>
+      <p>Cerrar sesión en Ajustes desconecta el guardado de la aplicación y te deja en el título. No borra la cuenta de Google del dispositivo ni el progreso existente. Al pulsar Iniciar o volver a abrir la aplicación se intenta acceder con Google de nuevo. La autenticación de Google y la personalización publicitaria son independientes.</p>
 
 
     </section>
     <section aria-labelledby="ads">
       <h2 id="ads">4. Anuncios y datos tratados</h2>
       <p>1.0.0 usa Unity LevelPlay y Unity Ads, sin AdMob, Google UMP ni el SDK AdQuality. Consulta también la política de Unity sobre los proveedores que participan en la entrega, mediación y medición de anuncios.</p>
-      <p>Elegir anuncios personalizados o uso limitado puede iniciar el SDK y precargar anuncios. Los anuncios para pistas, continuar y bonos son opcionales. Puede haber banners en el vestíbulo, ajustes, casos, diario, colección, introducción de práctica y resultados, pero no en el título, su inicio de sesión ni durante el juego, incluidas cargas, respuestas y continuación.</p>
+      <p>En una instalación nueva de la compilación 10, el modo contextual por defecto puede iniciar el SDK y precargar anuncios antes de que elijas. Un estado Elegir más tarde ya guardado se conserva como excepción. Los anuncios para pistas, continuar y bonos son opcionales. Puede haber banners en el vestíbulo, ajustes, casos, diario, colección, introducción de práctica y resultados, pero no en el título, su acceso ni durante el juego, incluidas cargas, respuestas y continuación.</p>
       <ul>
         <li>Dirección IP y ubicación aproximada basada en ella; modelo, versiones del sistema y la aplicación, idioma y red</li>
         <li>Identificadores del dispositivo, de publicidad y de usuario del SDK, cuando lo permitan los ajustes y la legislación aplicable</li>
@@ -89,12 +90,13 @@
     </section>
     <section aria-labelledby="choices">
       <h2 id="choices">5. Opciones publicitarias</h2>
-      <p>Posponer tras habilitar anuncios bloquea nuevas solicitudes y visualizaciones de la aplicación y evita reutilizar anuncios preparados. No cierra un SDK ya iniciado, cancela todas las transmisiones en curso ni borra datos enviados. El SDK no se iniciará tras reiniciar la aplicación.</p>
-      <p>El juego como invitado y los puntos siguen disponibles antes de elegir y mientras pospones. Un aviso actualizado puede pedir otra elección. También puedes usar los ajustes de privacidad/ID publicitario de Android y las opciones de derechos de cada proveedor.</p>
+      <p>La compilación 10 aplica anuncios contextuales sin aviso inicial. Este valor automático no se registra como consentimiento afirmativo ni como momento de una elección del usuario. Ajustes ofrece dos modos. Las elecciones personalizadas bajo avisos antiguos pasan a contextuales; solo se conserva la personalización elegida expresamente bajo el aviso actual.</p>
+      <p>Un estado Elegir más tarde ya guardado en la compilación 9 u otra anterior se conserva al actualizar. En ese estado no se inicia el SDK ni se solicitan o muestran anuncios. Elegir expresamente cualquiera de los dos modos en Ajustes habilita anuncios; la compilación 10 no permite volver a aplazar mediante un botón.</p>
+      <p>Cambiar de modo impide reutilizar anuncios preparados y callbacks de recompensa tardíos. Pasar al modo contextual no cierra un SDK ya iniciado, cancela toda transmisión ni borra datos enviados.</p>
+      <p>El modo contextual por defecto también trata datos y no sustituye el consentimiento legalmente necesario ni las comprobaciones para menores. Puedes usar los ajustes de privacidad/ID publicitario de Android, los procedimientos de los proveedores y nuestro contacto.</p>
       <ul>
-        <li>Permitir anuncios personalizados: envía consentimiento para personalización.</li>
-        <li>Uso limitado de datos: rechaza la personalización y envía señales de exclusión de venta/intercambio. No detiene toda recopilación, incluido el posible acceso a identificadores publicitarios.</li>
-        <li>Elegir más tarde: no permite anuncios. Si pospones desde el inicio, el SDK publicitario no se inicia, tampoco en futuros arranques. Puedes elegir de nuevo en Ajustes.</li>
+        <li>Anuncios contextuales (por defecto): rechaza el consentimiento para personalización y envía señales de exclusión de venta/intercambio. No detiene todo tratamiento de datos, incluido el posible acceso a identificadores publicitarios.</li>
+        <li>Permitir anuncios personalizados: envía consentimiento solo cuando lo eliges expresamente bajo el aviso actual. Puedes retirarlo cambiando a anuncios contextuales en Ajustes.</li>
       </ul>
 
     </section>
@@ -121,7 +123,7 @@
     <section aria-labelledby="rights">
       <h2 id="rights">8. Elecciones y derechos</h2>
       <p>Según la legislación y las condiciones del tratamiento, puedes tener derechos de acceso, rectificación, supresión, limitación, oposición, portabilidad, retirada del consentimiento, exclusión de venta/intercambio o reclamación ante una autoridad. No todos se aplican del mismo modo a todo tratamiento.</p>
-      <p>Contacta con el nombre del juego, el tipo de solicitud y una dirección de respuesta. No envíes primero documentos sensibles. Los proveedores pueden requerir sus propias comprobaciones de identidad. Consentir anuncios o conectar Google no es obligatorio para jugar.</p>
+      <p>Contacta con el nombre del juego, tipo de solicitud y dirección de respuesta. No envíes primero documentos sensibles. Los proveedores pueden requerir sus propias comprobaciones de identidad. La conexión con Google y el consentimiento para personalización no son necesarios para jugar, pero los anuncios contextuales por defecto de una instalación nueva pueden tratar información.</p>
 
 
     </section>
