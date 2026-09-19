@@ -111,6 +111,10 @@
     .gomoku { background: linear-gradient(145deg, #fffdf8, #fff0d8); }
     .detective { background: linear-gradient(145deg, #f8fffc, #dff4ed); }
     .slime { background: linear-gradient(145deg, #f7fff0, #e0f5c4); }
+    .deadfreq { background: linear-gradient(145deg, #1b2220, #0d100f); color: #d9d4c7; border-color: #2b322f; }
+    .deadfreq h2 { color: #ffb347; }
+    .deadfreq .english-name, .deadfreq .game-desc { color: #b9b4a8; }
+    .deadfreq::after { color: rgb(255 179 71 / 10%); }
     .game-card::after {
       position: absolute;
       right: -28px;
@@ -276,6 +280,18 @@
             <div class="actions">
               <a class="button" href="games/slime-express/">게임 정보</a>
               <a class="button secondary" href="games/slime-express/privacy/">개인정보처리방침</a>
+            </div>
+          </article>
+
+          <article class="game-card deadfreq" data-symbol="≋">
+            <span class="status upcoming">출시 준비 중</span>
+            <span class="game-icon" aria-hidden="true">📻</span>
+            <h2>DEAD FREQUENCY</h2>
+            <p class="english-name">DEAD FREQUENCY · com.teamcp.deadfrequency</p>
+            <p class="game-desc">재난 뒤 지하 대피소의 마지막 무전기로 생존자·군·약탈자와 교신하며 15일을 버티는 텍스트 생존 게임입니다.</p>
+            <div class="actions">
+              <a class="button" href="games/dead-frequency/">게임 정보</a>
+              <a class="button secondary" href="games/dead-frequency/privacy/">개인정보처리방침</a>
             </div>
           </article>
         </div>

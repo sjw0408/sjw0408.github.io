@@ -1,0 +1,122 @@
+{
+  "language": "de",
+  "title": "DEAD FREQUENCY Datenschutzerklärung",
+  "description": "Wie DEAD FREQUENCY Daten auf dem Gerät, Android-Backups, Werbung und das Löschen von Daten handhabt.",
+  "back": "Über DEAD FREQUENCY",
+  "date": "Zuletzt aktualisiert: 19. September 2026",
+  "version": "Gilt für Version 1.0.0. Wir aktualisieren diese Seite und ihr Datum, wenn sich Funktionen oder die Werbekonfiguration ändern.",
+  "summary": "Du spielst ohne Registrierung oder Anmeldung, und dein Fortschritt wird nur auf deinem Gerät gespeichert. TeamCP betreibt keine Spielserver. Das Internet wird nur zum Laden von Werbung genutzt, und die Werbedienste (Unity LevelPlay und Unity Ads) verarbeiten Geräteinformationen und Werbekennungen, die für die Auslieferung der Werbung erforderlich sind.",
+  "contents": "Inhalt",
+  "resources": "Richtlinien Dritter und deine Rechte",
+  "contact": "Datenschutzkontakt",
+  "links": [
+    "Unity-Datenschutzerklärung für Spieler und App-Nutzer sowie Anfragen",
+    "Wie du deine Android-Werbe-ID zurücksetzt oder löschst",
+    "Wie du Android-Backups verwaltest",
+    "Google-Datenschutzerklärung"
+  ],
+  "sections": [
+    {
+      "id": "scope",
+      "title": "1. Geltungsbereich und Verantwortlicher",
+      "paragraphs": [
+        "TeamCP entwickelt und betreibt das Android-Spiel „DEAD FREQUENCY“ (com.teamcp.deadfrequency). Diese Richtlinie erklärt, welche Informationen das Spiel verarbeitet und welche Wahlmöglichkeiten du hast. Kontakt: sjw0480@gmail.com.",
+        "Das Spiel hat keine Konten, keine Anmeldung, keine Spielserver, keinen Chat und keine In-App-Käufe. Es fragt weder nach deinem Namen, deiner E-Mail-Adresse, Telefonnummer, deinem genauen Standort (GPS), deinen Kontakten, Fotos oder deinem Mikrofon, noch erfasst es diese Daten. Wenn du den Support per E-Mail kontaktierst, verwenden wir deine Adresse und Nachricht nur, um dir zu antworten."
+      ]
+    },
+    {
+      "id": "local",
+      "title": "2. Auf deinem Gerät gespeicherte Informationen",
+      "items": [
+        "Der laufende Durchgang: Tag, Ressourcen, Entscheidungen und das Funkprotokoll (letzte 3 Durchgänge)",
+        "Archiv: gefundene Enden, Frequenzen, Kontakte und Aufzeichnungen, das Datum ihrer ersten Entdeckung und die Anzahl abgeschlossener Durchgänge",
+        "Mit Prämien-Werbung vorzeitig freigeschaltete Ende-Hinweisstufen",
+        "Einstellungen: Sprache, Textgeschwindigkeit, Ton, Musik, Vibration, Barrierefreiheitsoptionen und ob das Tutorial gesehen wurde"
+      ],
+      "paragraphs": [
+        "Diese Daten werden ausschließlich im privaten Android-Speicher der App für Spielfunktionen (Fortsetzen, Archiv, New Game Plus) aufbewahrt und niemals an TeamCP gesendet. Die App enthält keine Analysetools (wie Firebase Analytics) oder Absturzberichts-Tools."
+      ]
+    },
+    {
+      "id": "backup",
+      "title": "3. Android Auto-Backup",
+      "paragraphs": [
+        "Die App erlaubt das automatische Android-Backup. Wenn das Backup auf deinem Gerät aktiviert ist, speichert Android die oben genannten Spieldaten (sowie Einstellungen, die das Werbe-SDK innerhalb der App gespeichert hat) verschlüsselt im Backup-Speicher deines Google-Kontos und kann sie wiederherstellen, wenn du die App neu installierst oder zu einem neuen Gerät wechselst.",
+        "Dieses Backup wird von Google gemäß den Einstellungen deines Geräts bereitgestellt; TeamCP hat keinen Zugriff auf dessen Inhalt. Du kannst es unter Einstellungen > Google > Sicherung auf deinem Gerät deaktivieren oder löschen."
+      ]
+    },
+    {
+      "id": "ads",
+      "title": "4. Werbung und die von Werbediensten verarbeiteten Informationen",
+      "paragraphs": [
+        "Das Spiel ist kostenlos und wird durch Werbung finanziert. Die Werbekonfiguration besteht aus Unity LevelPlay (Vermittlung) und Unity Ads. Sie umfasst kein AdMob, kein Firebase und kein Zahlungs-SDK.",
+        "Werbung erscheint als Banner am unteren Bildschirmrand (nicht auf dem Startbildschirm oder in Zwischensequenzen), als Vollbildwerbung, wenn du etwa jeden zweiten Spieltag einen Tag beendest und wenn du einen Ende-Ergebnisbildschirm verlässt, sowie als Prämien-Werbung (Ende-Hinweise), die nur abgespielt wird, wenn du darauf tippst. Du kannst das gesamte Spiel abschließen, ohne Werbung anzusehen.",
+        "Um Werbung zu laden und anzuzeigen, können die Werbedienste Folgendes verarbeiten:"
+      ],
+      "items": [
+        "IP-Adresse und die daraus abgeleitete ungefähre Region; Gerätemodell, Betriebssystem, App-Version, Sprache und Netzwerkinformationen",
+        "Werbe- und SDK-Kennungen wie die Android-Werbe-ID und die App-Set-ID",
+        "Werbeanfragen, Impressionen, Klicks und abgeschlossene Ansichten sowie Fehler- und Diagnoseinformationen"
+      ],
+      "after": [
+        "Diese werden verwendet, um Werbung auszuliefern, ihre Häufigkeit zu begrenzen, die Leistung zu messen, Betrug zu verhindern und Probleme zu diagnostizieren. Ob Werbung personalisiert ist und wie viel verarbeitet wird, hängt von deiner Region, deinen Geräteeinstellungen und den eigenen Regeln der Werbeanbieter ab. TeamCP erhält keine individuellen Nutzerdaten von den Werbediensten; wir sehen in deren Dashboards nur aggregierte Umsatz- und Impressionsstatistiken."
+      ]
+    },
+    {
+      "id": "choices",
+      "title": "5. Deine Werbeoptionen",
+      "items": [
+        "Unter Einstellungen > Datenschutz > Werbung kannst du deine Werbe-ID zurücksetzen oder löschen. Nach dem Löschen wird stattdessen eine Folge von Nullen übermittelt, sodass sie nicht für personalisierte Werbung verwendet werden kann.",
+        "Verwende das Datenschutzsymbol in einer Anzeige oder das Verfahren in der unten verlinkten Unity-Richtlinie, um auf Werbedaten zuzugreifen, sie zu löschen oder ihrer Verwendung zu widersprechen.",
+        "Wenn du deine Internetverbindung ausschaltest, wird keine Werbung angefragt; das gesamte Spiel kann offline gespielt werden."
+      ],
+      "paragraphs": [
+        "Diese Version der App hat keinen separaten In-App-Bildschirm zur Auswahl der Werbepersonalisierung. Falls wir einen hinzufügen, aktualisieren wir diese Richtlinie."
+      ]
+    },
+    {
+      "id": "providers",
+      "title": "6. Dienste Dritter und internationale Verarbeitung",
+      "paragraphs": [
+        "Für Unity LevelPlay, Unity Ads und Android-Dienste (Google) gelten deren eigene Richtlinien. Werbedaten und Backup-Daten können außerhalb deines Landes verarbeitet werden; Empfänger, Standorte und Schutzmaßnahmen sind in der Richtlinie des jeweiligen Anbieters beschrieben.",
+        "TeamCP verkauft deine Informationen nicht. Die Datenverarbeitung im Werbeökosystem kann jedoch nach einigen lokalen Gesetzen als „Verkauf“ oder „Weitergabe“ eingestuft werden. Bitte lies daher auch die Widerspruchs- und Rechteverfahren der unten genannten Anbieter."
+      ]
+    },
+    {
+      "id": "delete-data",
+      "title": "7. Daten löschen und Aufbewahrung",
+      "items": [
+        "Spieldaten: Deinstalliere die App oder gehe zu Einstellungen > Apps > DEAD FREQUENCY > Speicher > Daten löschen. Dies kann nicht rückgängig gemacht werden.",
+        "Android-Backup: Deaktiviere das Backup oder lösche das Geräte-Backup unter Einstellungen > Google > Sicherung.",
+        "Werbedaten: Lösche oder setze deine Werbe-ID zurück und nutze das Anfrageverfahren von Unity. Das alleinige Deinstallieren der App löscht keine Daten, die Werbeanbieter bereits verarbeitet haben.",
+        "Hilfe benötigt: Schreibe eine E-Mail an sjw0480@gmail.com mit dem App-Namen und deinem Anliegen. Sende keine Passwörter oder Ausweisdokumente. Für Daten, die TeamCP nicht besitzt, verweisen wir dich an das richtige Verfahren des jeweiligen Anbieters."
+      ],
+      "paragraphs": [
+        "Spieldaten auf deinem Gerät bleiben bestehen, bis du sie löschst. Die Aufbewahrung von Backup- und Werbedaten richtet sich nach der Richtlinie des jeweiligen Anbieters. Wir bewahren Support-E-Mails nicht länger auf, als nach Erledigung deiner Anfrage nötig ist."
+      ]
+    },
+    {
+      "id": "rights",
+      "title": "8. Deine Rechte",
+      "paragraphs": [
+        "Je nachdem, wo du lebst, hast du möglicherweise das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung oder Widerspruch gegen die Verarbeitung, Widerruf der Einwilligung, Widerspruch gegen Verkauf/Weitergabe oder Beschwerde bei einer Aufsichtsbehörde. Da TeamCP keine Spieldaten auf Servern speichert, werden die meisten Anfragen über deine Geräteeinstellungen oder die Werbeanbieter bearbeitet, und wir teilen dir mit, welchen Weg du nutzen solltest."
+      ]
+    },
+    {
+      "id": "young-users",
+      "title": "9. Kinder und Erziehungsberechtigte",
+      "paragraphs": [
+        "DEAD FREQUENCY ist ein Story-Spiel über Katastrophen, Überleben und Tod und richtet sich nicht an Kinder unter 13 Jahren. Die App teilt den Werbediensten mit, dass sie sich nicht an Kinder richtet, und verfügt über keine Altersprüfung oder Funktion zur Einholung der elterlichen Zustimmung.",
+        "Wenn du glaubst, dass Informationen eines Kindes unter 13 Jahren verarbeitet wurden, kontaktiere uns, und wir erklären dir, wie sie gelöscht werden können."
+      ]
+    },
+    {
+      "id": "updates",
+      "title": "10. Sicherheit und Änderungen",
+      "paragraphs": [
+        "Spieldaten werden im privaten Android-Speicher der App aufbewahrt, auf den andere Apps nicht zugreifen können. Für Werbeverkehr und Backups werden die verschlüsselten Verbindungen des jeweiligen Anbieters verwendet.",
+        "Wenn sich Funktionen, SDKs oder die Verarbeitung ändern, aktualisieren wir diese Richtlinie und ihr Datum und kündigen wichtige Änderungen auf dieser Seite an. Wenn du meinst, dass sich die Sprachversionen dieses Dokuments unterscheiden, kontaktiere uns bitte."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "language": "fr",
+  "title": "Politique de confidentialité de DEAD FREQUENCY",
+  "description": "Comment DEAD FREQUENCY traite les données sur l'appareil, la sauvegarde Android, les publicités et la suppression des données.",
+  "back": "À propos de DEAD FREQUENCY",
+  "date": "Dernière mise à jour : 19 septembre 2026",
+  "version": "S'applique à la version 1.0.0. Nous mettons à jour cette page et sa date lorsque les fonctionnalités ou la configuration publicitaire changent.",
+  "summary": "Vous jouez sans inscription ni connexion, et votre progression est stockée uniquement sur votre appareil. TeamCP n'exploite aucun serveur de jeu. Internet est utilisé uniquement pour charger les publicités, et les services publicitaires (Unity LevelPlay et Unity Ads) traitent les informations sur l'appareil et les identifiants publicitaires nécessaires à leur diffusion.",
+  "contents": "Sommaire",
+  "resources": "Politiques des tiers et vos droits",
+  "contact": "Contact vie privée",
+  "links": [
+    "Politique de confidentialité des joueurs et utilisateurs d'applications Unity et demandes",
+    "Comment réinitialiser ou supprimer votre identifiant publicitaire Android",
+    "Comment gérer les sauvegardes Android",
+    "Politique de confidentialité de Google"
+  ],
+  "sections": [
+    {
+      "id": "scope",
+      "title": "1. Champ d'application et responsable",
+      "paragraphs": [
+        "TeamCP développe et exploite le jeu Android « DEAD FREQUENCY » (com.teamcp.deadfrequency). Cette politique explique quelles informations le jeu traite et les choix qui s'offrent à vous. Contact : sjw0480@gmail.com.",
+        "Le jeu ne comporte ni comptes, ni connexion, ni serveurs de jeu, ni chat, ni achats intégrés. Il ne demande ni ne collecte votre nom, votre adresse e-mail, votre numéro de téléphone, votre position précise (GPS), vos contacts, vos photos ou votre microphone. Si vous nous contactez par e-mail, nous utilisons votre adresse et votre message uniquement pour vous répondre."
+      ]
+    },
+    {
+      "id": "local",
+      "title": "2. Informations stockées sur votre appareil",
+      "items": [
+        "La partie en cours : jour, ressources, choix et journal des communications (3 dernières parties)",
+        "Archives : fins, fréquences, contacts et enregistrements que vous avez trouvés, la date de première découverte, et le nombre de parties terminées",
+        "Niveaux d'indices de fin débloqués à l'avance grâce aux publicités récompensées",
+        "Paramètres : langue, vitesse du texte, son, musique, vibration, options d'accessibilité et si le tutoriel a été vu"
+      ],
+      "paragraphs": [
+        "Ces données sont conservées uniquement dans le stockage privé Android de l'application pour les fonctionnalités de jeu (continuer, archives, nouvelle partie plus) et ne sont jamais envoyées à TeamCP. L'application ne contient aucun outil d'analyse (comme Firebase Analytics) ni outil de rapport de plantage."
+      ]
+    },
+    {
+      "id": "backup",
+      "title": "3. Sauvegarde automatique Android",
+      "paragraphs": [
+        "L'application autorise la sauvegarde automatique Android. Si la sauvegarde est activée sur votre appareil, Android stocke les données de jeu ci-dessus (ainsi que les paramètres enregistrés dans l'application par le SDK publicitaire) de façon chiffrée dans l'espace de sauvegarde de votre compte Google, et peut les restaurer lorsque vous réinstallez l'application ou changez d'appareil.",
+        "Cette sauvegarde est fournie par Google selon les paramètres de votre appareil ; TeamCP ne peut pas accéder à son contenu. Vous pouvez la désactiver ou la supprimer dans Paramètres > Google > Sauvegarde de votre appareil."
+      ]
+    },
+    {
+      "id": "ads",
+      "title": "4. Publicités et informations traitées par les services publicitaires",
+      "paragraphs": [
+        "Le jeu est gratuit et financé par la publicité. La configuration publicitaire repose sur Unity LevelPlay (médiation) et Unity Ads. Elle n'inclut ni AdMob, ni Firebase, ni aucun SDK de paiement.",
+        "Les publicités apparaissent sous forme de bannière en bas de l'écran (pas sur l'écran de démarrage ni pendant les cinématiques), sous forme de publicités plein écran lorsque vous terminez une journée environ tous les deux jours de jeu et lorsque vous quittez un écran de résultat de fin, ainsi que sous forme de publicités récompensées (indices de fin) qui ne se lancent que lorsque vous appuyez dessus. Vous pouvez terminer tout le jeu sans regarder aucune publicité.",
+        "Pour charger et afficher les publicités, les services publicitaires peuvent traiter :"
+      ],
+      "items": [
+        "L'adresse IP et la région approximative qui en est déduite ; le modèle de l'appareil, le système d'exploitation, la version de l'application, la langue et les informations réseau",
+        "Les identifiants publicitaires et de SDK tels que l'identifiant publicitaire Android et l'ID d'ensemble d'applications (App Set ID)",
+        "Les demandes, impressions, clics et visionnages complets de publicités, ainsi que les informations d'erreur et de diagnostic"
+      ],
+      "after": [
+        "Ces informations servent à diffuser les publicités, limiter leur fréquence d'affichage, mesurer les performances, prévenir la fraude et diagnostiquer les problèmes. La personnalisation des publicités et l'étendue des informations traitées dépendent de votre région, des paramètres de votre appareil et des règles propres aux fournisseurs de publicité. TeamCP ne reçoit aucune donnée individuelle des utilisateurs de la part des services publicitaires ; nous ne voyons que des statistiques agrégées de revenus et d'impressions dans leurs tableaux de bord."
+      ]
+    },
+    {
+      "id": "choices",
+      "title": "5. Vos choix concernant la publicité",
+      "items": [
+        "Dans Paramètres > Confidentialité > Annonces, vous pouvez réinitialiser ou supprimer votre identifiant publicitaire. Une fois supprimé, une suite de zéros est envoyée à la place, de sorte qu'il ne peut plus être utilisé pour des publicités personnalisées.",
+        "Utilisez l'icône de confidentialité à l'intérieur d'une publicité, ou la procédure indiquée dans la politique Unity ci-dessous, pour accéder à vos données publicitaires, les supprimer ou vous y opposer.",
+        "Si vous désactivez votre connexion internet, aucune publicité n'est demandée ; le jeu entier peut être joué hors ligne."
+      ],
+      "paragraphs": [
+        "Cette version de l'application ne comporte pas d'écran distinct permettant de choisir la personnalisation des publicités. Si nous en ajoutons un, nous mettrons à jour cette politique."
+      ]
+    },
+    {
+      "id": "providers",
+      "title": "6. Services tiers et traitement international",
+      "paragraphs": [
+        "Unity LevelPlay, Unity Ads et les services Android (Google) sont régis par leurs propres politiques. Les données publicitaires et de sauvegarde peuvent être traitées en dehors de votre pays ; les destinataires, les lieux de traitement et les garanties sont décrits dans la politique de chaque fournisseur.",
+        "TeamCP ne vend pas vos informations. Cependant, le traitement des données dans l'écosystème publicitaire peut être qualifié de « vente » ou de « partage » selon certaines lois locales ; veuillez donc également consulter les procédures de refus et d'exercice des droits des fournisseurs ci-dessous."
+      ]
+    },
+    {
+      "id": "delete-data",
+      "title": "7. Suppression des données et conservation",
+      "items": [
+        "Données de jeu : désinstallez l'application, ou allez dans Paramètres > Applications > DEAD FREQUENCY > Stockage > Effacer les données. Cette action est irréversible.",
+        "Sauvegarde Android : désactivez la sauvegarde ou supprimez la sauvegarde de l'appareil dans Paramètres > Google > Sauvegarde.",
+        "Données publicitaires : supprimez ou réinitialisez votre identifiant publicitaire et utilisez la procédure de demande d'Unity. La désinstallation de l'application seule ne supprime pas les données déjà traitées par les fournisseurs de publicité.",
+        "Besoin d'aide : envoyez un e-mail à sjw0480@gmail.com avec le nom de l'application et votre demande. N'envoyez pas de mots de passe ni de pièces d'identité. Pour les données que TeamCP ne détient pas, nous vous indiquerons la procédure du fournisseur concerné."
+      ],
+      "paragraphs": [
+        "Les données de jeu sur votre appareil restent jusqu'à ce que vous les supprimiez. La conservation des données de sauvegarde et de publicité suit la politique de chaque fournisseur. Nous ne conservons pas les e-mails d'assistance plus longtemps que nécessaire après le traitement de votre demande."
+      ]
+    },
+    {
+      "id": "rights",
+      "title": "8. Vos droits",
+      "paragraphs": [
+        "Selon l'endroit où vous vivez, vous pouvez avoir le droit d'accéder à vos informations, de les corriger, de les supprimer, d'en limiter ou de vous opposer au traitement, de retirer votre consentement, de refuser la vente ou le partage, ou de déposer une plainte auprès d'une autorité de contrôle. Comme TeamCP ne conserve aucune donnée de jeu sur des serveurs, la plupart des demandes sont traitées via les paramètres de votre appareil ou les fournisseurs de publicité, et nous vous indiquerons la marche à suivre."
+      ]
+    },
+    {
+      "id": "young-users",
+      "title": "9. Enfants et parents",
+      "paragraphs": [
+        "DEAD FREQUENCY est un jeu narratif portant sur la catastrophe, la survie et la mort, et ne s'adresse pas aux enfants de moins de 13 ans. L'application indique aux services publicitaires qu'elle n'est pas destinée aux enfants, et elle ne comporte ni vérification d'âge ni fonction de consentement parental.",
+        "Si vous pensez que des informations concernant un enfant de moins de 13 ans ont été traitées, contactez-nous et nous vous expliquerons comment les supprimer."
+      ]
+    },
+    {
+      "id": "updates",
+      "title": "10. Sécurité et modifications",
+      "paragraphs": [
+        "Les données de jeu sont conservées dans le stockage privé Android de l'application, que les autres applications ne peuvent pas lire. Le trafic publicitaire et les sauvegardes utilisent les connexions chiffrées de chaque fournisseur.",
+        "Lorsque les fonctionnalités, les SDK ou le traitement changent, nous mettons à jour cette politique et sa date, et annonçons les changements importants sur cette page. Si vous pensez que les versions linguistiques de ce document diffèrent, veuillez nous contacter."
+      ]
+    }
+  ]
+}

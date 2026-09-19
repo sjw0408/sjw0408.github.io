@@ -13,6 +13,7 @@ TeamCP 게임의 공식 정보와 공개 문서를 관리하는 GitHub Pages 저
 
 - 고양이 오목 (`com.teamcp.catgomoku`)
 - 냥탐정 (`com.teamcp.catdetective`)
+- DEAD FREQUENCY (`com.teamcp.deadfrequency`)
 
 ## 냥탐정 개인정보처리방침
 
@@ -25,3 +26,9 @@ TeamCP 게임의 공식 정보와 공개 문서를 관리하는 GitHub Pages 저
 번역은 자동 전수 법률 인증이 아니다. 실제 버전의 기능/SDK와 운영자 사실을 확인하고 갱신한다.
 
 새 게임을 추가할 때는 게임 소개와 개인정보처리방침을 같은 디렉터리에 추가하고 루트 `index.html`에 게임 카드를 연결한다. 광고 사업자를 추가할 때는 해당 대시보드에서 발급·검증된 판매자 정보만 `app-ads.txt`에 반영한다.
+
+## DEAD FREQUENCY 개인정보처리방침
+
+한국어 기본 URL `/games/dead-frequency/privacy/`와 `#delete-data` 앵커를 유지하고, 영어·일본어·스페인어·프랑스어·독일어는 `/games/dead-frequency/privacy/{en,ja,es,fr,de}/`에 둔다.
+`tools/privacy-dead-frequency/*.json`에서 수정하고 `node tools/build-dead-frequency-privacy.mjs`로 생성한다 (`--check`로 누락 확인).
+광고 구성(Unity LevelPlay + Unity Ads), Android 자동 백업 허용, 앱 내 광고 개인화 선택 없음을 기준으로 작성했다. 앱 동작이 바뀌면 함께 갱신한다.

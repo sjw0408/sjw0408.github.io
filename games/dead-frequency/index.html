@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0d100f">
+  <title>DEAD FREQUENCY - TeamCP</title>
+  <meta name="description" content="재난 뒤 마지막 무전기 앞에서 15일을 버티는 텍스트 생존 게임, DEAD FREQUENCY의 공식 정보 페이지입니다.">
+  <style>
+    :root {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+      color: #d9d4c7;
+      background: #0d100f;
+      color-scheme: dark;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 80% 6%, rgb(255 179 71 / 16%), transparent 24rem),
+        linear-gradient(170deg, #121715, #0a0c0b);
+      line-height: 1.65;
+    }
+    main {
+      width: min(820px, calc(100% - 32px));
+      margin: 32px auto;
+      padding: clamp(26px, 6vw, 56px);
+      border: 1px solid #2b322f;
+      border-radius: 20px;
+      background: rgb(21 26 24 / 92%);
+    }
+    .back { color: #7fe3b0; font-size: 0.9rem; font-weight: 800; text-decoration: none; }
+    .hero { margin: 50px 0 38px; }
+    .badge {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 13px;
+      border: 1px solid #ffb347;
+      border-radius: 999px;
+      color: #ffb347;
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+    }
+    h1 {
+      margin: 0;
+      color: #ffb347;
+      font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+      font-size: clamp(2.2rem, 8vw, 4.2rem);
+      line-height: 1.08;
+      letter-spacing: 0.06em;
+    }
+    .subtitle { margin: 10px 0 0; color: #9aa39e; font-weight: 700; }
+    .lead { max-width: 620px; margin: 24px 0 0; color: #c9c3b6; font-size: 1.08rem; word-break: keep-all; }
+    .features { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 34px 0; }
+    .feature { padding: 18px; border: 1px solid #2b322f; border-radius: 14px; background: #1b2220; }
+    .feature strong { display: block; margin-bottom: 5px; color: #ffb347; }
+    .feature span { color: #9aa39e; font-size: 0.88rem; word-break: keep-all; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+    .button {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 19px;
+      border: 1px solid #ffb347;
+      border-radius: 10px;
+      background: #ffb347;
+      color: #111;
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .button.secondary { background: transparent; color: #ffb347; }
+    .meta { margin-top: 42px; padding-top: 22px; border-top: 1px solid #2b322f; color: #8a938e; font-size: 0.86rem; }
+    .meta p { margin: 4px 0; }
+    .meta a { color: #7fe3b0; font-weight: 700; }
+    @media (max-width: 640px) {
+      main { margin: 16px auto; border-radius: 16px; }
+      .hero { margin-top: 36px; }
+      .features { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="../../">← TeamCP Games</a>
+    <section class="hero">
+      <span class="badge">145.850 MHz · 출시 준비 중</span>
+      <h1>DEAD FREQUENCY</h1>
+      <p class="subtitle">텍스트 생존 무전 게임</p>
+      <p class="lead">재난 뒤, 지하 대피소의 마지막 무전기. 주파수를 맞추고 생존자·군·약탈자와 교신하며 15일을 버티세요. 새벽 02:13, 존재하지 않아야 할 신호가 당신을 부릅니다.</p>
+    </section>
+
+    <section class="features" aria-label="주요 특징">
+      <div class="feature">
+        <strong>📻 주파수 탐색</strong>
+        <span>다이얼을 돌려 신호를 찾고, 선택 하나로 대피소의 운명이 바뀝니다.</span>
+      </div>
+      <div class="feature">
+        <strong>🗂️ 60개의 엔딩</strong>
+        <span>회차를 거듭하며 엔딩·주파수·인물·기록 도감을 채웁니다.</span>
+      </div>
+      <div class="feature">
+        <strong>📴 오프라인 플레이</strong>
+        <span>계정 없이, 인터넷 없이도 끝까지 플레이할 수 있습니다.</span>
+      </div>
+    </section>
+
+    <div class="actions">
+      <a class="button" href="privacy/">개인정보처리방침</a>
+      <a class="button secondary" href="mailto:sjw0480@gmail.com">문의 및 지원</a>
+    </div>
+
+    <footer class="meta">
+      <p>Android 패키지: com.teamcp.deadfrequency</p>
+      <p>지원 언어: 한국어, English, 日本語, Español, Français, Deutsch</p>
+      <p>개발 및 운영: TeamCP · <a href="mailto:sjw0480@gmail.com">sjw0480@gmail.com</a></p>
+    </footer>
+  </main>
+</body>
+</html>
