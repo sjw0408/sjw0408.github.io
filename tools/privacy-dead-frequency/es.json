@@ -1,16 +1,17 @@
 {
   "language": "es",
   "title": "Política de privacidad de DEAD FREQUENCY",
-  "description": "Cómo DEAD FREQUENCY gestiona los datos en el dispositivo, la copia de seguridad de Android, los anuncios y la eliminación de datos.",
+  "description": "Cómo DEAD FREQUENCY gestiona los datos en el dispositivo, la copia de seguridad de Android, los logros de Google Play Juegos, los anuncios y la eliminación de datos.",
   "back": "Acerca de DEAD FREQUENCY",
   "date": "Última actualización: 19 de septiembre de 2026",
   "version": "Se aplica a la versión 1.0.0. Actualizamos esta página y su fecha cuando cambian las funciones o la configuración de anuncios.",
-  "summary": "Juegas sin registrarte ni iniciar sesión, y tu progreso se guarda únicamente en tu dispositivo. TeamCP no opera servidores de juego. Internet se usa solo para cargar anuncios, y los servicios de publicidad (Unity LevelPlay y Unity Ads) procesan la información del dispositivo y los identificadores publicitarios necesarios para mostrarlos.",
+  "summary": "Juegas sin crear una cuenta, y tu progreso se guarda únicamente en tu dispositivo. TeamCP no opera servidores de juego. Opcionalmente, los logros pueden sincronizarse con Google Play Juegos, que Google procesa con tu cuenta de Google. Por lo demás, Internet se usa solo para cargar anuncios, y los servicios de publicidad (Unity LevelPlay y Unity Ads) procesan la información del dispositivo y los identificadores publicitarios necesarios para mostrarlos.",
   "contents": "Contenido",
   "resources": "Políticas de terceros y tus derechos",
   "contact": "Contacto de privacidad",
   "links": [
     "Política de privacidad para jugadores y usuarios de apps de Unity y solicitudes",
+    "Eliminar datos de Google Play Juegos",
     "Cómo restablecer o eliminar tu ID de publicidad de Android",
     "Cómo gestionar las copias de seguridad de Android",
     "Política de privacidad de Google"
@@ -21,7 +22,7 @@
       "title": "1. Alcance y responsable",
       "paragraphs": [
         "TeamCP desarrolla y opera el juego de Android «DEAD FREQUENCY» (com.teamcp.deadfrequency). Esta política explica qué información gestiona el juego y qué opciones tienes. Contacto: sjw0480@gmail.com.",
-        "El juego no tiene cuentas, inicio de sesión, servidores de juego, chat ni compras dentro de la app. No solicita ni recopila tu nombre, correo electrónico, número de teléfono, ubicación precisa (GPS), contactos, fotos ni micrófono. Si escribes al soporte por correo electrónico, usamos tu dirección y tu mensaje únicamente para responderte."
+        "El juego no tiene cuentas de TeamCP, servidores de juego, chat ni compras dentro de la app. El único inicio de sesión es el opcional de Google Play Juegos (sección 4). No solicita ni recopila tu nombre, correo electrónico, número de teléfono, ubicación precisa (GPS), contactos, fotos ni micrófono. Si escribes al soporte por correo electrónico, usamos tu dirección y tu mensaje únicamente para responderte."
       ]
     },
     {
@@ -30,6 +31,7 @@
       "items": [
         "La partida en curso: día, recursos, elecciones y el registro de comunicaciones (últimas 3 partidas)",
         "Archivo: finales, frecuencias, contactos y registros que has encontrado, la fecha en que los encontraste por primera vez y el número de partidas completadas",
+        "Los logros que has conseguido y los que ya se enviaron a Google Play Juegos",
         "Niveles de pistas de finales desbloqueados antes de tiempo con anuncios recompensados",
         "Ajustes: idioma, velocidad del texto, sonido, música, vibración, opciones de accesibilidad y si se ha visto el tutorial"
       ],
@@ -46,8 +48,16 @@
       ]
     },
     {
+      "id": "play-games",
+      "title": "4. Logros de Google Play Juegos",
+      "paragraphs": [
+        "El juego ofrece 24 logros mediante los servicios de Google Play Juegos. Al iniciar el juego, Google Play Juegos puede iniciar sesión automáticamente según tu configuración de Play Juegos, y también puedes iniciar sesión con el botón de logros de la pantalla Archivo. Iniciar sesión es opcional: si cancelas, no tienes perfil de Play Juegos o estás sin conexión, el juego completo sigue funcionando, y los logros conseguidos se guardan en el dispositivo y se envían la próxima vez que hayas iniciado sesión.",
+        "Mientras tienes la sesión iniciada, la app envía a Google solo los logros que has desbloqueado (calculados a partir de tu progreso del archivo en el dispositivo). Google procesa tu ID de jugador de Play Juegos, tu perfil (nombre de jugador y avatar) y tus registros de logros según su propia política, y los muestra en Google Play Juegos. TeamCP no recibe tu correo electrónico ni tu nombre y no almacena datos de jugadores en ningún servidor."
+      ]
+    },
+    {
       "id": "ads",
-      "title": "4. Anuncios e información que procesan los servicios de publicidad",
+      "title": "5. Anuncios e información que procesan los servicios de publicidad",
       "paragraphs": [
         "El juego es gratuito y se financia con anuncios. La configuración de anuncios utiliza Unity LevelPlay (mediación) y Unity Ads. No incluye AdMob, Firebase ni ningún SDK de pago.",
         "Los anuncios aparecen como un banner en la parte inferior de la pantalla (no en la pantalla de inicio ni en las escenas cinemáticas), como anuncios a pantalla completa al terminar un día aproximadamente cada dos días de juego y al salir de una pantalla de resultado de final, y como anuncios recompensados (pistas de finales) que solo se reproducen cuando los pulsas. Puedes terminar todo el juego sin ver ningún anuncio.",
@@ -64,7 +74,7 @@
     },
     {
       "id": "choices",
-      "title": "5. Tus opciones sobre los anuncios",
+      "title": "6. Tus opciones sobre los anuncios",
       "items": [
         "En Ajustes > Privacidad > Anuncios de Android puedes restablecer o eliminar tu ID de publicidad. Una vez eliminado, se envía en su lugar una cadena de ceros, por lo que no puede usarse para anuncios personalizados.",
         "Usa el icono de privacidad dentro de un anuncio, o el procedimiento indicado en la política de Unity que aparece a continuación, para acceder a tus datos publicitarios, eliminarlos o excluirte de su uso.",
@@ -76,18 +86,19 @@
     },
     {
       "id": "providers",
-      "title": "6. Servicios de terceros y tratamiento internacional",
+      "title": "7. Servicios de terceros y tratamiento internacional",
       "paragraphs": [
-        "Unity LevelPlay, Unity Ads y los servicios de Android (Google) se rigen por sus propias políticas. Los datos publicitarios y los datos de copia de seguridad pueden procesarse fuera de tu país; los destinatarios, las ubicaciones y las garantías se describen en la política de cada proveedor.",
+        "Unity LevelPlay, Unity Ads, los servicios de Google Play Juegos y los servicios de Android (Google) se rigen por sus propias políticas. Los datos publicitarios, los datos de logros y los datos de copia de seguridad pueden procesarse fuera de tu país; los destinatarios, las ubicaciones y las garantías se describen en la política de cada proveedor.",
         "TeamCP no vende tu información. Sin embargo, el tratamiento de datos en el ecosistema publicitario puede clasificarse como «venta» o «uso compartido» según algunas leyes locales, así que te recomendamos revisar también los procedimientos de exclusión y de ejercicio de derechos de los proveedores que se indican a continuación."
       ]
     },
     {
       "id": "delete-data",
-      "title": "7. Eliminación de datos y conservación",
+      "title": "8. Eliminación de datos y conservación",
       "items": [
         "Datos del juego: desinstala la app, o ve a Ajustes > Aplicaciones > DEAD FREQUENCY > Almacenamiento > Borrar datos de Android. Esta acción no se puede deshacer.",
         "Copia de seguridad de Android: desactiva la copia de seguridad o elimina la copia del dispositivo en Ajustes > Google > Copia de seguridad.",
+        "Google Play Juegos: puedes eliminar los datos de Play Juegos de este juego o tu perfil de Play Juegos en la configuración de Google Play Juegos (consulta «Eliminar datos de Google Play Juegos» más abajo). Esto no elimina tu cuenta de Google.",
         "Datos publicitarios: elimina o restablece tu ID de publicidad y utiliza el procedimiento de solicitud de Unity. Desinstalar la app por sí sola no elimina los datos que los proveedores de publicidad ya hayan procesado.",
         "¿Necesitas ayuda?: escribe a sjw0480@gmail.com indicando el nombre de la app y tu solicitud. No envíes contraseñas ni documentos de identidad. Para los datos que TeamCP no conserva, te indicaremos el procedimiento del proveedor correspondiente."
       ],
@@ -97,14 +108,14 @@
     },
     {
       "id": "rights",
-      "title": "8. Tus derechos",
+      "title": "9. Tus derechos",
       "paragraphs": [
         "Según el lugar donde vivas, es posible que tengas derecho a acceder a tus datos, corregirlos, eliminarlos, limitar u oponerte a su tratamiento, retirar tu consentimiento, excluirte de la venta o el uso compartido, o presentar una reclamación ante una autoridad de control. Como TeamCP no guarda datos del juego en servidores, la mayoría de las solicitudes se gestionan a través de los ajustes de tu dispositivo o de los proveedores de publicidad, y te indicaremos qué vía utilizar."
       ]
     },
     {
       "id": "young-users",
-      "title": "9. Niños y familias",
+      "title": "10. Niños y familias",
       "paragraphs": [
         "DEAD FREQUENCY es un juego narrativo sobre desastres, supervivencia y muerte, y no está dirigido a menores de 13 años. La app indica a los servicios de publicidad que no está dirigida a menores, y no cuenta con verificación de edad ni consentimiento parental.",
         "Si crees que se ha procesado información de un menor de 13 años, contáctanos y te explicaremos cómo eliminarla."
@@ -112,9 +123,9 @@
     },
     {
       "id": "updates",
-      "title": "10. Seguridad y cambios",
+      "title": "11. Seguridad y cambios",
       "paragraphs": [
-        "Los datos del juego se guardan en el almacenamiento privado de Android de la app, que otras apps no pueden leer. El tráfico publicitario y las copias de seguridad utilizan las conexiones cifradas de cada proveedor.",
+        "Los datos del juego se guardan en el almacenamiento privado de Android de la app, que otras apps no pueden leer. El tráfico publicitario, la comunicación con Play Juegos y las copias de seguridad utilizan las conexiones cifradas de cada proveedor.",
         "Cuando cambian las funciones, los SDK o el tratamiento de datos, actualizamos esta política y su fecha, y anunciamos los cambios importantes en esta página. Si crees que las versiones en distintos idiomas de este documento difieren entre sí, contáctanos."
       ]
     }

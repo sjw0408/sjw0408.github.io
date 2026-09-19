@@ -8,7 +8,7 @@ import assert from 'node:assert/strict';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const languages = { ko: '한국어', en: 'English', ja: '日本語', es: 'Español', fr: 'Français', de: 'Deutsch' };
-const ids = ['scope', 'local', 'backup', 'ads', 'choices', 'providers', 'delete-data', 'rights', 'young-users', 'updates'];
+const ids = ['scope', 'local', 'backup', 'play-games', 'ads', 'choices', 'providers', 'delete-data', 'rights', 'young-users', 'updates'];
 const base = '/games/dead-frequency/privacy/';
 const origin = 'https://sjw0408.github.io';
 const route = code => code === 'ko' ? base : `${base}${code}/`;
@@ -26,7 +26,7 @@ for (const [code, nativeName] of Object.entries(languages)) {
     assert.ok(data[key].trim());
   }
   assert.deepEqual(data.sections.map(section => section.id), ids, `${code}: section drift`);
-  assert.equal(data.links.length, 4);
+  assert.equal(data.links.length, 5);
   for (const section of data.sections) {
     assert.ok(section.title.trim());
     const text = [...(section.paragraphs ?? []), ...(section.items ?? []), ...(section.after ?? [])];
@@ -35,6 +35,7 @@ for (const [code, nativeName] of Object.entries(languages)) {
   }
   const resources = [
     'https://unity.com/legal/game-player-and-app-user-privacy-policy',
+    `https://support.google.com/googleplay/answer/9130646?hl=${googleLang[code]}`,
     `https://support.google.com/googleplay/android-developer/answer/6048248?hl=${googleLang[code]}`,
     `https://support.google.com/android/answer/2819582?hl=${googleLang[code]}`,
     `https://policies.google.com/privacy?hl=${googleLang[code]}`,
@@ -48,7 +49,7 @@ for (const [code, nativeName] of Object.entries(languages)) {
   <meta name="color-scheme" content="dark">
   <meta name="theme-color" content="#0d100f">
   <meta name="description" content="${esc(data.description)}">
-  <meta name="policy-revision" content="2026-09-19-v1">
+  <meta name="policy-revision" content="2026-09-19-v2">
   <title>${esc(data.title)}</title>
   <link rel="canonical" href="${origin}${route(code)}">
 ${Object.keys(languages).map(lang => `  <link rel="alternate" hreflang="${lang}" href="${origin}${route(lang)}">`).join('\n')}

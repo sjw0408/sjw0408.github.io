@@ -1,16 +1,17 @@
 {
   "language": "en",
   "title": "DEAD FREQUENCY Privacy Policy",
-  "description": "How DEAD FREQUENCY handles on-device data, Android backup, ads and data deletion.",
+  "description": "How DEAD FREQUENCY handles on-device data, Android backup, Google Play Games achievements, ads and data deletion.",
   "back": "About DEAD FREQUENCY",
   "date": "Last updated: September 19, 2026",
   "version": "Applies to version 1.0.0. We update this page and its date when features or the ad setup change.",
-  "summary": "You play without signing up or logging in, and your progress is stored only on your device. TeamCP runs no game servers. The internet is used only to load ads, and the ad services (Unity LevelPlay and Unity Ads) process device information and advertising identifiers needed to deliver them.",
+  "summary": "You play without creating an account, and your progress is stored only on your device. TeamCP runs no game servers. Achievements can optionally be synced with Google Play Games, which Google processes under your Google account. Otherwise the internet is used only to load ads, and the ad services (Unity LevelPlay and Unity Ads) process device information and advertising identifiers needed to deliver them.",
   "contents": "Contents",
   "resources": "Third-party policies and your rights",
   "contact": "Privacy contact",
   "links": [
     "Unity Game Player & App User Privacy Policy and requests",
+    "Delete Google Play Games data",
     "How to reset or delete your Android advertising ID",
     "How to manage Android backups",
     "Google Privacy Policy"
@@ -21,7 +22,7 @@
       "title": "1. Scope and operator",
       "paragraphs": [
         "TeamCP develops and operates the Android game ‘DEAD FREQUENCY’ (com.teamcp.deadfrequency). This policy explains what information the game handles and the choices you have. Contact: sjw0480@gmail.com.",
-        "The game has no accounts, logins, game servers, chat or in-app purchases. It does not ask for or collect your name, email, phone number, precise location (GPS), contacts, photos or microphone. If you email support, we use your address and message only to answer you."
+        "The game has no TeamCP accounts, game servers, chat or in-app purchases. The only sign-in is the optional Google Play Games sign-in (section 4). It does not ask for or collect your name, email, phone number, precise location (GPS), contacts, photos or microphone. If you email support, we use your address and message only to answer you."
       ]
     },
     {
@@ -30,6 +31,7 @@
       "items": [
         "The run in progress: day, resources, choices and the communication log (last 3 runs)",
         "Archive: endings, frequencies, contacts and records you found, the date first found, and the number of completed runs",
+        "Which achievements you earned and which have already been sent to Google Play Games",
         "Ending hint levels unlocked early with rewarded ads",
         "Settings: language, text speed, sound, music, vibration, accessibility options and whether the tutorial was seen"
       ],
@@ -46,8 +48,16 @@
       ]
     },
     {
+      "id": "play-games",
+      "title": "4. Google Play Games achievements",
+      "paragraphs": [
+        "The game offers 24 achievements through Google Play Games services. When the game starts, Google Play Games may sign you in automatically according to your Play Games settings, and you can also sign in with the achievements button on the Archive screen. Signing in is optional: if you cancel, have no Play Games profile or are offline, the whole game still works, and earned achievements are kept on the device and sent the next time you are signed in.",
+        "While you are signed in, the app sends Google only which achievements you unlocked (worked out from your archive progress on the device). Google processes your Play Games player ID, profile (gamer name and avatar) and achievement records under its own policy and shows them in Google Play Games. TeamCP does not receive your email address or name and stores no player data on any server."
+      ]
+    },
+    {
       "id": "ads",
-      "title": "4. Ads and the information ad services process",
+      "title": "5. Ads and the information ad services process",
       "paragraphs": [
         "The game is free and supported by ads. The ad setup is Unity LevelPlay (mediation) and Unity Ads. It does not include AdMob, Firebase or any payment SDK.",
         "Ads appear as a banner at the bottom of the screen (not on the start screen or in cutscenes), as full-screen ads when you end a day roughly every other in-game day and when you leave an ending result screen, and as rewarded ads (ending hints) that play only when you tap them. You can finish the whole game without watching any ad.",
@@ -64,7 +74,7 @@
     },
     {
       "id": "choices",
-      "title": "5. Your ad choices",
+      "title": "6. Your ad choices",
       "items": [
         "In Android Settings > Privacy > Ads you can reset or delete your advertising ID. Once deleted, a string of zeros is sent instead, so it cannot be used for personalized ads.",
         "Use the privacy icon inside an ad, or the procedure in Unity’s policy below, to access, delete or opt out of ad data.",
@@ -76,18 +86,19 @@
     },
     {
       "id": "providers",
-      "title": "6. Third-party services and international processing",
+      "title": "7. Third-party services and international processing",
       "paragraphs": [
-        "Unity LevelPlay, Unity Ads and Android (Google) services are governed by their own policies. Ad data and backup data may be processed outside your country; recipients, locations and safeguards are described in each provider’s policy.",
+        "Unity LevelPlay, Unity Ads, Google Play Games services and Android (Google) services are governed by their own policies. Ad data, achievement data and backup data may be processed outside your country; recipients, locations and safeguards are described in each provider’s policy.",
         "TeamCP does not sell your information. However, data processing in the advertising ecosystem may be classified as a ‘sale’ or ‘sharing’ under some local laws, so please also review the opt-out and rights procedures of the providers below."
       ]
     },
     {
       "id": "delete-data",
-      "title": "7. Deleting data and retention",
+      "title": "8. Deleting data and retention",
       "items": [
         "Game data: uninstall the app, or go to Android Settings > Apps > DEAD FREQUENCY > Storage > Clear data. This cannot be undone.",
         "Android backup: turn off backup or delete the device backup in Settings > Google > Backup.",
+        "Google Play Games: you can delete this game’s Play Games data or your Play Games profile in Google Play Games settings (see ‘Delete Google Play Games data’ below). This does not delete your Google account.",
         "Ad data: delete or reset your advertising ID and use Unity’s request procedure. Uninstalling the app alone does not delete data ad providers have already processed.",
         "Need help: email sjw0480@gmail.com with the app name and your request. Do not send passwords or ID documents. For data TeamCP does not hold, we will point you to the right provider’s procedure."
       ],
@@ -97,14 +108,14 @@
     },
     {
       "id": "rights",
-      "title": "8. Your rights",
+      "title": "9. Your rights",
       "paragraphs": [
         "Depending on where you live, you may have the right to access, correct, delete, restrict or object to processing, withdraw consent, opt out of sale/sharing, or complain to a supervisory authority. Because TeamCP keeps no game data on servers, most requests are handled through your device settings or the ad providers, and we will tell you which route to use."
       ]
     },
     {
       "id": "young-users",
-      "title": "9. Children and parents",
+      "title": "10. Children and parents",
       "paragraphs": [
         "DEAD FREQUENCY is a story game about disaster, survival and death and is not directed at children under 13. The app tells the ad services that it is not child-directed, and it has no age check or parental consent feature.",
         "If you believe information from a child under 13 has been processed, contact us and we will explain how to delete it."
@@ -112,9 +123,9 @@
     },
     {
       "id": "updates",
-      "title": "10. Security and changes",
+      "title": "11. Security and changes",
       "paragraphs": [
-        "Game data is kept in the app’s private Android storage, which other apps cannot read. Ad traffic and backups use each provider’s encrypted connections.",
+        "Game data is kept in the app’s private Android storage, which other apps cannot read. Ad traffic, Play Games communication and backups use each provider’s encrypted connections.",
         "When features, SDKs or processing change, we update this policy and its date and announce important changes on this page. If you think the language versions of this document differ, please contact us."
       ]
     }
