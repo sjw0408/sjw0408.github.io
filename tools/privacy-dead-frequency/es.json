@@ -3,7 +3,7 @@
   "title": "Política de privacidad de DEAD FREQUENCY",
   "description": "Cómo DEAD FREQUENCY gestiona los datos en el dispositivo, la copia de seguridad de Android, los logros de Google Play Juegos, los anuncios y la eliminación de datos.",
   "back": "Acerca de DEAD FREQUENCY",
-  "date": "Última actualización: 19 de septiembre de 2026",
+  "date": "Última actualización: 20 de septiembre de 2026",
   "version": "Se aplica a la versión 1.0.0. Actualizamos esta página y su fecha cuando cambian las funciones o la configuración de anuncios.",
   "summary": "Juegas sin crear una cuenta, y tu progreso se guarda únicamente en tu dispositivo. TeamCP no opera servidores de juego. Opcionalmente, los logros pueden sincronizarse con Google Play Juegos, que Google procesa con tu cuenta de Google. Por lo demás, Internet se usa solo para cargar anuncios, y los servicios de publicidad (Unity LevelPlay y Unity Ads) procesan la información del dispositivo y los identificadores publicitarios necesarios para mostrarlos.",
   "contents": "Contenido",
@@ -76,12 +76,13 @@
       "id": "choices",
       "title": "6. Tus opciones sobre los anuncios",
       "items": [
+        "En el Espacio Económico Europeo y el Reino Unido, la app pide tu consentimiento para la personalización de anuncios al abrirla por primera vez y no inicia el SDK de publicidad hasta que elijas. Si lo rechazas, sigues teniendo el juego completo, solo que con anuncios no personalizados. Puedes cambiarlo cuando quieras en Ajustes > Anuncios > Anuncios personalizados.",
         "En Ajustes > Privacidad > Anuncios de Android puedes restablecer o eliminar tu ID de publicidad. Una vez eliminado, se envía en su lugar una cadena de ceros, por lo que no puede usarse para anuncios personalizados.",
         "Usa el icono de privacidad dentro de un anuncio, o el procedimiento indicado en la política de Unity que aparece a continuación, para acceder a tus datos publicitarios, eliminarlos o excluirte de su uso.",
         "Si desactivas la conexión a internet no se solicitará ningún anuncio; se puede jugar a todo el juego sin conexión."
       ],
       "paragraphs": [
-        "Esta versión de la app no tiene una pantalla propia para elegir la personalización de anuncios. Si añadimos una, actualizaremos esta política."
+        "Tu elección se guarda solo en tu dispositivo y se transmite al servicio de mediación publicitaria (Unity LevelPlay) como señal de consentimiento. Fuera de esos países no se muestra la pantalla de consentimiento y los anuncios siguen las normas de tu región."
       ]
     },
     {

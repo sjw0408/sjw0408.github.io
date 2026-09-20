@@ -3,7 +3,7 @@
   "title": "DEAD FREQUENCY Datenschutzerklärung",
   "description": "Wie DEAD FREQUENCY Daten auf dem Gerät, Android-Backups, Google Play Spiele-Erfolge, Werbung und das Löschen von Daten handhabt.",
   "back": "Über DEAD FREQUENCY",
-  "date": "Zuletzt aktualisiert: 19. September 2026",
+  "date": "Zuletzt aktualisiert: 20. September 2026",
   "version": "Gilt für Version 1.0.0. Wir aktualisieren diese Seite und ihr Datum, wenn sich Funktionen oder die Werbekonfiguration ändern.",
   "summary": "Du spielst ohne ein Konto zu erstellen, und dein Fortschritt wird nur auf deinem Gerät gespeichert. TeamCP betreibt keine Spielserver. Erfolge können optional mit Google Play Spiele synchronisiert werden; diese Daten verarbeitet Google über dein Google-Konto. Ansonsten wird das Internet nur zum Laden von Werbung genutzt, und die Werbedienste (Unity LevelPlay und Unity Ads) verarbeiten Geräteinformationen und Werbekennungen, die für die Auslieferung der Werbung erforderlich sind.",
   "contents": "Inhalt",
@@ -76,12 +76,13 @@
       "id": "choices",
       "title": "6. Deine Werbeoptionen",
       "items": [
+        "Im Europäischen Wirtschaftsraum und im Vereinigten Königreich fragt die App beim ersten Start nach der Einwilligung in personalisierte Werbung und startet das Werbe-SDK erst nach deiner Auswahl. Lehnst du ab, bekommst du trotzdem das ganze Spiel, nur mit nicht personalisierter Werbung. Du kannst die Auswahl jederzeit unter Einstellungen > Werbung > Personalisierte Werbung ändern.",
         "Unter Einstellungen > Datenschutz > Werbung kannst du deine Werbe-ID zurücksetzen oder löschen. Nach dem Löschen wird stattdessen eine Folge von Nullen übermittelt, sodass sie nicht für personalisierte Werbung verwendet werden kann.",
         "Verwende das Datenschutzsymbol in einer Anzeige oder das Verfahren in der unten verlinkten Unity-Richtlinie, um auf Werbedaten zuzugreifen, sie zu löschen oder ihrer Verwendung zu widersprechen.",
         "Wenn du deine Internetverbindung ausschaltest, wird keine Werbung angefragt; das gesamte Spiel kann offline gespielt werden."
       ],
       "paragraphs": [
-        "Diese Version der App hat keinen separaten In-App-Bildschirm zur Auswahl der Werbepersonalisierung. Falls wir einen hinzufügen, aktualisieren wir diese Richtlinie."
+        "Deine Auswahl wird nur auf deinem Gerät gespeichert und als Einwilligungssignal an den Werbevermittler (Unity LevelPlay) übergeben. Außerhalb dieser Länder wird der Einwilligungsdialog nicht angezeigt und Werbung richtet sich nach den Regeln deiner Region."
       ]
     },
     {

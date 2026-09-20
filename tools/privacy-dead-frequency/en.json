@@ -3,7 +3,7 @@
   "title": "DEAD FREQUENCY Privacy Policy",
   "description": "How DEAD FREQUENCY handles on-device data, Android backup, Google Play Games achievements, ads and data deletion.",
   "back": "About DEAD FREQUENCY",
-  "date": "Last updated: September 19, 2026",
+  "date": "Last updated: September 20, 2026",
   "version": "Applies to version 1.0.0. We update this page and its date when features or the ad setup change.",
   "summary": "You play without creating an account, and your progress is stored only on your device. TeamCP runs no game servers. Achievements can optionally be synced with Google Play Games, which Google processes under your Google account. Otherwise the internet is used only to load ads, and the ad services (Unity LevelPlay and Unity Ads) process device information and advertising identifiers needed to deliver them.",
   "contents": "Contents",
@@ -76,12 +76,13 @@
       "id": "choices",
       "title": "6. Your ad choices",
       "items": [
+        "In the European Economic Area and the United Kingdom, the app asks for ad personalization consent on first launch and does not start the ad SDK until you choose. If you decline you still get the whole game, with non-personalized ads only. You can change the choice at any time in Settings > Ads > Personalised ads.",
         "In Android Settings > Privacy > Ads you can reset or delete your advertising ID. Once deleted, a string of zeros is sent instead, so it cannot be used for personalized ads.",
         "Use the privacy icon inside an ad, or the procedure in Unity’s policy below, to access, delete or opt out of ad data.",
         "If you turn off your internet connection no ads are requested; the whole game can be played offline."
       ],
       "paragraphs": [
-        "This version of the app has no separate in-app screen for choosing ad personalization. If we add one, we will update this policy."
+        "Your choice is stored only on your device and passed to the ad mediation service (Unity LevelPlay) as a consent signal. Outside those countries the consent screen is not shown and ads follow the rules of your region."
       ]
     },
     {
