@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0d111d">
+  <title>3분 냥냥 던전 (CatRush 3) - TeamCP</title>
+  <meta name="description" content="3분 동안 몰려오는 몬스터를 물리치며 폭풍 성장! 다양한 고양이 영웅과 스킬 시너지를 조합하는 초단기 로그라이크 RPG, 3분 냥냥 던전의 공식 정보 페이지입니다.">
+  <style>
+    :root {
+      font-family: Pretendard, "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #e2e8f0;
+      background: #0d111d;
+      color-scheme: dark;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 80% 8%, rgb(245 158 11 / 14%), transparent 26rem),
+        radial-gradient(circle at 15% 30%, rgb(56 189 248 / 10%), transparent 24rem),
+        linear-gradient(175deg, #131929, #0a0d16);
+      line-height: 1.65;
+    }
+    main {
+      width: min(820px, calc(100% - 32px));
+      margin: 32px auto;
+      padding: clamp(26px, 6vw, 56px);
+      border: 1px solid #232c45;
+      border-radius: 28px;
+      background: rgb(18 24 38 / 92%);
+      box-shadow: 0 24px 64px rgb(0 0 0 / 45%);
+    }
+    .back {
+      color: #38bdf8;
+      font-size: 0.9rem;
+      font-weight: 800;
+      text-decoration: none;
+      transition: color 150ms ease;
+    }
+    .back:hover {
+      color: #7dd3fc;
+    }
+    .hero { margin: 44px 0 36px; }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      margin-bottom: 16px;
+      padding: 6px 14px;
+      border: 1px solid rgb(245 158 11 / 40%);
+      border-radius: 999px;
+      background: rgb(245 158 11 / 12%);
+      color: #fbbf24;
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+    }
+    .badge::before {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #fbbf24;
+      content: "";
+      box-shadow: 0 0 8px #fbbf24;
+    }
+    h1 {
+      margin: 0;
+      color: #f8fafc;
+      font-size: clamp(2.3rem, 7.5vw, 4.4rem);
+      line-height: 1.1;
+      letter-spacing: -0.045em;
+    }
+    .subtitle {
+      margin: 10px 0 0;
+      color: #94a3b8;
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+    .lead {
+      max-width: 660px;
+      margin: 22px 0 0;
+      color: #cbd5e1;
+      font-size: 1.05rem;
+      word-break: keep-all;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin: 36px 0;
+    }
+    .feature {
+      padding: 20px 18px;
+      border: 1px solid #232c45;
+      border-radius: 18px;
+      background: #141a2c;
+      transition: border-color 150ms ease;
+    }
+    .feature:hover {
+      border-color: #334155;
+    }
+    .feature strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #fbbf24;
+      font-size: 1rem;
+    }
+    .feature span {
+      color: #94a3b8;
+      font-size: 0.88rem;
+      word-break: keep-all;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 10px;
+    }
+    .button {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 22px;
+      border: 1px solid #f59e0b;
+      border-radius: 14px;
+      background: #f59e0b;
+      color: #0b0f19;
+      font-weight: 800;
+      text-decoration: none;
+      transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
+    }
+    .button:hover,
+    .button:focus-visible {
+      background: #fbbf24;
+      box-shadow: 0 8px 24px rgb(245 158 11 / 28%);
+      transform: translateY(-2px);
+    }
+    .button.secondary {
+      border-color: #334155;
+      background: rgb(255 255 255 / 6%);
+      color: #f8fafc;
+    }
+    .button.secondary:hover,
+    .button.secondary:focus-visible {
+      border-color: #475569;
+      background: rgb(255 255 255 / 10%);
+      box-shadow: 0 8px 20px rgb(0 0 0 / 25%);
+    }
+    .meta {
+      margin-top: 44px;
+      padding-top: 24px;
+      border-top: 1px solid #232c45;
+      color: #64748b;
+      font-size: 0.86rem;
+    }
+    .meta p { margin: 5px 0; }
+    .meta a {
+      color: #38bdf8;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .meta a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 680px) {
+      main { margin: 16px auto; border-radius: 20px; }
+      .hero { margin-top: 32px; }
+      .features { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="../../">← TeamCP Games</a>
+    <section class="hero">
+      <span class="badge">출시 준비 중</span>
+      <h1>3분 냥냥 던전</h1>
+      <p class="subtitle">CatRush 3 · 초단기 성장형 로그라이크 RPG</p>
+      <p class="lead">
+        귀여운 고양이 영웅과 함께 3분 동안 폭발적으로 성장하며 몰려오는 몬스터와 거대 보스를 처치하세요!
+        다양한 스킬과 시너지 조합, 강력한 유물을 수집하여 극한의 던전을 돌파하는 쾌속 로그라이크 액션 RPG입니다.
+      </p>
+    </section>
+
+    <section class="features" aria-label="주요 특징">
+      <div class="feature">
+        <strong>⚡ 3분 쾌속 던전</strong>
+        <span>단 3분 안에 파밍, 레벨업, 보스전까지! 지루할 틈 없이 언제 어디서나 즐기는 빠른 템포의 전투</span>
+      </div>
+      <div class="feature">
+        <strong>🐾 10종 영웅 & 시너지</strong>
+        <span>기사냥, 궁수냥, 마법냥 등 개성 있는 고양이들과 20종 스킬, 12종 시너지 원소 조합의 무한한 빌드</span>
+      </div>
+      <div class="feature">
+        <strong>💎 30종 유물 & 영구 성장</strong>
+        <span>던전에서 획득한 골드와 다이아로 영구 능력치를 강화하고 전설 유물을 수집하는 도감 완성의 재미</span>
+      </div>
+      <div class="feature">
+        <strong>📴 100% 오프라인 플레이</strong>
+        <span>회원가입 없이 즉시 시작! 비행기 모드나 네트워크가 없는 환경에서도 데이터 걱정 없이 플레이 가능</span>
+      </div>
+      <div class="feature">
+        <strong>🎁 유저 친화적 보상</strong>
+        <span>강제 전면 광고나 방해 팝업 일절 없음! 골드 2배 등 원할 때만 직접 선택하는 보상형 광고 제공</span>
+      </div>
+      <div class="feature">
+        <strong>🎮 60 FPS 네이티브 액션</strong>
+        <span>Android Jetpack Compose 기반 60 FPS 최적화 엔진과 손끝에 전해지는 짜릿한 햅틱 타격감</span>
+      </div>
+    </section>
+
+    <div class="actions">
+      <a class="button" href="privacy/">개인정보처리방침</a>
+      <a class="button secondary" href="mailto:sjw0480@gmail.com">문의 및 지원</a>
+    </div>
+
+    <footer class="meta">
+      <p>Android 패키지: com.teamcp.catrush3</p>
+      <p>지원 언어: 한국어, English, 日本語</p>
+      <p>개발 및 운영: TeamCP · <a href="mailto:sjw0480@gmail.com">sjw0480@gmail.com</a></p>
+    </footer>
+  </main>
+</body>
+</html>

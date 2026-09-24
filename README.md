@@ -13,7 +13,9 @@ TeamCP 게임의 공식 정보와 공개 문서를 관리하는 GitHub Pages 저
 
 - 고양이 오목 (`com.teamcp.catgomoku`)
 - 냥탐정 (`com.teamcp.catdetective`)
+- 슬라임 택배 (`com.teamcp.slimeexpress`)
 - DEAD FREQUENCY (`com.teamcp.deadfrequency`)
+- 3분 냥냥 던전 (`com.teamcp.catrush3`)
 
 ## 냥탐정 개인정보처리방침
 
