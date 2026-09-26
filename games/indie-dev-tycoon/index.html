@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#101318">
+  <title>인디 개발 타이쿤 - TeamCP</title>
+  <meta name="description" content="원룸 1인 개발자에서 글로벌 게임회사까지 성장하는 게임 회사 경영 시뮬레이션, 인디 개발 타이쿤(Indie Dev Tycoon)의 공식 정보 페이지입니다.">
+  <style>
+    :root {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
+      color: #e6e9f0;
+      background: #101318;
+      color-scheme: dark;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 82% 4%, rgb(255 203 87 / 15%), transparent 24rem),
+        radial-gradient(circle at 8% 96%, rgb(125 178 255 / 12%), transparent 22rem),
+        linear-gradient(170deg, #161a21, #0c0f14);
+      line-height: 1.65;
+    }
+    main {
+      width: min(820px, calc(100% - 32px));
+      margin: 32px auto;
+      padding: clamp(26px, 6vw, 56px);
+      border: 1px solid #2c3340;
+      border-radius: 20px;
+      background: rgb(22 26 33 / 92%);
+    }
+    .back { color: #7db2ff; font-size: 0.9rem; font-weight: 800; text-decoration: none; }
+    .hero { margin: 50px 0 38px; }
+    .badge {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 13px;
+      border: 1px solid #ffcb57;
+      border-radius: 999px;
+      color: #ffcb57;
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+    }
+    h1 {
+      margin: 0;
+      color: #ffcb57;
+      font-size: clamp(2.2rem, 8vw, 3.8rem);
+      line-height: 1.12;
+      letter-spacing: -0.01em;
+    }
+    .subtitle { margin: 10px 0 0; color: #b7bfcd; font-weight: 700; }
+    .lead { max-width: 640px; margin: 24px 0 0; color: #d4d9e3; font-size: 1.08rem; word-break: keep-all; }
+    .features { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 34px 0; }
+    .feature { padding: 18px; border: 1px solid #2c3340; border-radius: 14px; background: #1b2029; }
+    .feature strong { display: block; margin-bottom: 5px; color: #ffcb57; }
+    .feature span { color: #b7bfcd; font-size: 0.88rem; word-break: keep-all; }
+    .english { margin: 0 0 30px; padding: 18px 20px; border-left: 3px solid #7db2ff; border-radius: 0 12px 12px 0; background: #1b2029; color: #b7bfcd; font-size: 0.93rem; }
+    .english strong { color: #e6e9f0; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+    .button {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 19px;
+      border: 1px solid #ffcb57;
+      border-radius: 10px;
+      background: #ffcb57;
+      color: #1a1405;
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .button.secondary { background: transparent; color: #ffcb57; }
+    .meta { margin-top: 42px; padding-top: 22px; border-top: 1px solid #2c3340; color: #8c95a6; font-size: 0.86rem; }
+    .meta p { margin: 4px 0; }
+    .meta a { color: #7db2ff; font-weight: 700; }
+    @media (max-width: 640px) {
+      main { margin: 16px auto; border-radius: 16px; }
+      .hero { margin-top: 36px; }
+      .features { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="../../">← TeamCP Games</a>
+    <section class="hero">
+      <span class="badge">게임 회사 경영 시뮬레이션 · 출시 준비 중</span>
+      <h1>인디 개발 타이쿤</h1>
+      <p class="subtitle">Indie Dev Tycoon</p>
+      <p class="lead">원룸에서 혼자 게임을 만들던 당신, 세계 최고의 게임 회사를 세울 수 있을까요? 장르·테마·메커닉의 궁합을 찾고, 직원을 키우고, 자체 엔진과 콘솔까지 만들며 원룸을 글로벌 HQ로 키워 보세요.</p>
+    </section>
+
+    <section class="features" aria-label="주요 특징">
+      <div class="feature">
+        <strong>🎮 게임 만들기</strong>
+        <span>장르 12 · 테마 18 · 메커닉 12의 조합과 단계별 개발 비중으로 비평가와 팬을 사로잡으세요.</span>
+      </div>
+      <div class="feature">
+        <strong>🏢 회사 키우기</strong>
+        <span>전설의 개발자 영입, 시설·정책, 프랜차이즈, 퍼블리싱, e스포츠, 자체 콘솔, IPO와 인수합병까지.</span>
+      </div>
+      <div class="feature">
+        <strong>🏆 16가지 엔딩</strong>
+        <span>메인 엔딩까지 약 10시간. 레거시 특전·창업 배경·난이도·시나리오로 매번 다른 회차를 즐기세요.</span>
+      </div>
+    </section>
+
+    <p class="english" lang="en"><strong>Indie Dev Tycoon</strong> — start alone in a tiny bedroom office and grow into the world’s greatest game company. Discover genre synergies, hire legendary developers, build your own engine and console, and collect all 16 endings. Plays fully offline; available in Korean and English.</p>
+
+    <div class="actions">
+      <a class="button" href="privacy/">개인정보처리방침</a>
+      <a class="button secondary" href="privacy/en/">Privacy Policy (English)</a>
+      <a class="button secondary" href="mailto:sjw0480@gmail.com">문의 및 지원</a>
+    </div>
+
+    <footer class="meta">
+      <p>Android 패키지: com.teamcp.indiedevtycoon</p>
+      <p>지원 언어: 한국어, English</p>
+      <p>계정 없이 오프라인 플레이 · 광고 포함(Unity LevelPlay) · 앱 내 결제 없음</p>
+      <p>개발 및 운영: TeamCP · <a href="mailto:sjw0480@gmail.com">sjw0480@gmail.com</a></p>
+    </footer>
+  </main>
+</body>
+</html>

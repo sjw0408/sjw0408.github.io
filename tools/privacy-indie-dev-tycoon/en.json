@@ -1,0 +1,124 @@
+{
+  "language": "en",
+  "title": "Indie Dev Tycoon Privacy Policy",
+  "description": "How Indie Dev Tycoon handles on-device storage, Android backup, ads and ad consent, and data deletion.",
+  "back": "Indie Dev Tycoon game info",
+  "date": "Last updated: September 26, 2026",
+  "version": "Applies to version 1.0.0. We update this page and its date whenever features or the ad setup change.",
+  "summary": "You play without an account or login, and your progress is stored only on your device. TeamCP does not run game servers. The internet is used only to load ads, and the ad services (Unity LevelPlay and Unity Ads) process device information and advertising identifiers needed to deliver ads. On first launch the game asks whether you allow personalized ads, and the ad SDK does not start until you choose.",
+  "contents": "Contents",
+  "resources": "Third-party policies and your rights",
+  "contact": "Privacy contact",
+  "links": [
+    "Unity game player privacy policy and rights requests",
+    "How to reset or delete your Android advertising ID",
+    "How to manage Android backups",
+    "Google Privacy Policy"
+  ],
+  "sections": [
+    {
+      "id": "scope",
+      "title": "1. Scope and operator",
+      "paragraphs": [
+        "TeamCP develops and operates the Android game “Indie Dev Tycoon” (인디 개발 타이쿤, com.teamcp.indiedevtycoon). This policy explains what information the game handles and the choices you have. Contact: sjw0480@gmail.com.",
+        "The game has no accounts, login, game servers, chat or in-app purchases. We do not request or collect your name, email, phone number, location (GPS), contacts, photos or microphone. The only permissions are internet and network state (ads), advertising ID (ads) and vibration (release and achievement feedback). If you email us, we use your address and message only to answer you."
+      ]
+    },
+    {
+      "id": "local",
+      "title": "2. Information stored on your device",
+      "items": [
+        "Your current company: campaign saves (main, backup and office-move checkpoint) and scenario-mode saves",
+        "Cross-run records: achievements, ending gallery, synergy/genre/talent/event codex, hall of fame, legacy points and perks, scenario ranks, run history",
+        "Rewarded-ad ledger: reward IDs and timestamps kept so the same reward is never granted twice",
+        "Settings: language, sound effects, music, vibration, text size, default speed, tutorial status, personalized-ads choice"
+      ],
+      "paragraphs": [
+        "This data stays in the app’s private Android storage to provide game features (continue, offline progress, codex, multiple runs) and is never sent to TeamCP. The app contains no analytics (such as Firebase Analytics) or crash-reporting tools."
+      ]
+    },
+    {
+      "id": "backup",
+      "title": "3. Android Auto Backup",
+      "paragraphs": [
+        "This app allows Android Auto Backup and device-to-device transfer. If backup is on, Android encrypts the game saves and settings above into your Google Account backup and can restore them when you reinstall or move to a new device.",
+        "This backup is a Google feature controlled by your device settings; TeamCP cannot access it. You can turn it off or delete it in Settings > Google > Backup."
+      ]
+    },
+    {
+      "id": "ads",
+      "title": "4. Ads and the information ad services process",
+      "paragraphs": [
+        "The game is free and supported by ads, served through Unity LevelPlay (mediation) and Unity Ads. It does not include AdMob, Firebase or payment SDKs.",
+        "Ads appear as a banner at the bottom of management screens (never over decision dialogs or the tutorial), interstitials only at natural breaks such as a game-launch report or the year-end awards and at least 8 minutes apart (never in the tutorial or scenario mode), and rewarded ads that play only when you tap them (investor support, research grant and more, up to 15 per day). Every ending can be reached without watching ads.",
+        "To load and show ads, the ad services may process:"
+      ],
+      "items": [
+        "IP address and approximate region derived from it; device model, OS, app version, language and network information",
+        "Android advertising ID, app set ID and other ad/SDK identifiers",
+        "Ad request, impression, click and completion events, plus error and diagnostic data"
+      ],
+      "after": [
+        "These are used to deliver ads, manage frequency, measure performance, prevent fraud and diagnose problems. The app is marked as “not directed to children” with the ad services, and ads rated 17+ are blocked. TeamCP does not receive individual user data from the ad services; we only see aggregated revenue and impression statistics in their dashboards."
+      ]
+    },
+    {
+      "id": "choices",
+      "title": "5. Your ad choices",
+      "items": [
+        "Every player is asked on first launch whether to allow personalized ads, and the ad SDK does not start until you choose. If you decline, you see the same number of ads but they are not personalized, and the whole game remains playable.",
+        "You can change this anytime in Settings > Personalized ads; the change applies from the next launch.",
+        "In Android Settings > Privacy > Ads you can reset or delete your advertising ID. Once deleted, a zeroed value is sent instead and cannot be used for personalized ads.",
+        "Use the privacy icon inside an ad or the Unity policy below to access, delete or opt out of ad data.",
+        "With the internet turned off no ad requests are made, and the game is fully playable offline."
+      ],
+      "paragraphs": [
+        "Your choice is stored only on your device and passed to the mediation service (Unity LevelPlay) as a consent signal."
+      ]
+    },
+    {
+      "id": "providers",
+      "title": "6. Third-party services and international processing",
+      "paragraphs": [
+        "Unity LevelPlay, Unity Ads and Android (Google) services are governed by their own policies. Ad data and backups may be processed outside your country; see each provider’s policy for recipients, locations and safeguards.",
+        "TeamCP does not sell your information. However, some laws may treat data processing in the advertising ecosystem as a “sale” or “sharing”, so please also review the opt-out and rights information from the providers below."
+      ]
+    },
+    {
+      "id": "delete-data",
+      "title": "7. Deleting data and retention",
+      "items": [
+        "Game data: uninstall the app, or go to Android Settings > Apps > Indie Dev Tycoon > Storage > Clear data. This erases your company, codex, achievements and legacy and cannot be undone.",
+        "Android backup: turn off backup or delete the device backup in Settings > Google > Backup.",
+        "Ad data: delete or reset your advertising ID and use Unity’s request process. Uninstalling the app does not erase data an ad provider has already processed.",
+        "Help: email sjw0480@gmail.com with the app name and your request. Do not send passwords or ID documents. For data TeamCP does not hold, we will point you to the right provider process."
+      ],
+      "paragraphs": [
+        "Game data on your device remains until you delete it. Backup and ad data are retained according to each provider’s policy. Support emails are not kept longer than needed after we reply."
+      ]
+    },
+    {
+      "id": "rights",
+      "title": "8. Your rights",
+      "paragraphs": [
+        "Depending on where you live, you may have rights to access, correct, delete, restrict or object to processing, withdraw consent, opt out of sale/sharing, or complain to a supervisory authority. Because TeamCP keeps no game data on servers, most requests are handled through device settings or the ad providers, and we will tell you which route to use."
+      ]
+    },
+    {
+      "id": "young-users",
+      "title": "9. Children and parents",
+      "paragraphs": [
+        "Indie Dev Tycoon is a game-studio management sim and is not directed to children under 13. The app is marked “not directed to children” with the ad services and has no age check or parental-consent feature.",
+        "If you believe a child under 13 has had information processed, contact us and we will explain how to delete it."
+      ]
+    },
+    {
+      "id": "updates",
+      "title": "10. Security and changes",
+      "paragraphs": [
+        "Game data is kept in the app’s private Android storage, which other apps cannot read. Ad traffic and backups use each provider’s encrypted connections.",
+        "When features, SDKs or processing change, we update this policy and its date and announce important changes on this page. If the Korean and English versions seem to differ, please contact us."
+      ]
+    }
+  ]
+}
