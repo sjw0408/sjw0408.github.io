@@ -17,6 +17,7 @@ TeamCP 게임의 공식 정보와 공개 문서를 관리하는 GitHub Pages 저
 - DEAD FREQUENCY (`com.teamcp.deadfrequency`)
 - 3분 냥냥 던전 (`com.teamcp.catrush3`)
 - 인디 개발 타이쿤 (`com.teamcp.indiedevtycoon`)
+- 냥냥 해적단: 야식 대작전 (`com.teamcp.catpirates`)
 
 ## 냥탐정 개인정보처리방침
 
@@ -41,3 +42,9 @@ TeamCP 게임의 공식 정보와 공개 문서를 관리하는 GitHub Pages 저
 한국어 기본 URL `/games/indie-dev-tycoon/privacy/`와 `#delete-data` 앵커를 유지하고, 영어는 `/games/indie-dev-tycoon/privacy/en/`에 둔다(게임 지원 언어와 동일).
 `tools/privacy-indie-dev-tycoon/*.json`에서 수정하고 `node tools/build-indie-dev-tycoon-privacy.mjs`로 생성한다 (`--check`로 누락 확인).
 광고 구성(Unity LevelPlay + Unity Ads, 17+ 광고 제한), 모든 이용자 대상 첫 실행 맞춤 광고 동의(선택 전 SDK 미시작), Android 자동 백업 허용을 기준으로 작성했다. 앱 동작이 바뀌면 함께 갱신한다.
+
+## 냥냥 해적단 개인정보처리방침
+
+한국어 기본 URL `/games/cat-pirates/privacy/`와 `#delete-data` 앵커를 유지하고, 영어는 `/games/cat-pirates/privacy/en/`에 둔다(게임 UI는 한국어).
+`tools/privacy-cat-pirates/*.json`에서 수정하고 `node tools/build-cat-pirates-privacy.mjs`로 생성한다 (`--check`로 누락 확인).
+광고 구성(Unity LevelPlay + Unity Ads, 보상형·전면, 배너 없음, 어린이 대상 아님), 모든 이용자 대상 첫 실행 맞춤 광고 동의(선택 전 SDK 미시작, 설정에서 변경), Google Play 게임즈 v2 자동 로그인·업적·리더보드(클라우드 저장 없음), Room + DataStore 기기 저장, Android 자동 백업 허용, 앱 내 결제 없음을 기준으로 작성했다. 앱 동작이 바뀌면 함께 갱신한다.

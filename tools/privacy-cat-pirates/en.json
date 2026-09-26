@@ -1,0 +1,142 @@
+{
+  "language": "en",
+  "title": "Cat Pirates Privacy Policy",
+  "description": "How Cat Pirates: Midnight Snack Heist handles on-device storage, Google Play Games, Android backup, ads and ad consent, and data deletion.",
+  "back": "Cat Pirates game info",
+  "date": "Last updated: September 27, 2026",
+  "version": "Applies to version 1.0.0. We update this page and its date when features or ad setup change.",
+  "summary": "You play without creating an account, and your progress is saved on your device. If you are signed in to Google Play Games, your achievements and leaderboard scores are stored by Google. TeamCP runs no game servers and the game has no in-app purchases. The ad services (Unity LevelPlay and Unity Ads) process device information and advertising identifiers needed to deliver ads; on first launch we ask about personalized ads and do not start the ad SDK until you choose.",
+  "contents": "Contents",
+  "resources": "Third-party policies and your rights",
+  "contact": "Privacy contact",
+  "links": [
+    "Unity game player privacy policy and rights requests",
+    "How to reset or delete your Android advertising ID",
+    "How to manage Android backups",
+    "Google Privacy Policy"
+  ],
+  "sections": [
+    {
+      "id": "scope",
+      "title": "1. Scope and operator",
+      "paragraphs": [
+        "TeamCP develops and operates the Android game “Cat Pirates: Midnight Snack Heist” (냥냥 해적단: 야식 대작전, com.teamcp.catpirates). This policy explains what information the game handles and the choices you have. Contact: sjw0480@gmail.com.",
+        "The game has no account sign-up of its own, no game servers, no chat and no in-app purchases. The only sign-in is Google Play Games. We do not request or collect your name, email, phone number, location (GPS), contacts, microphone or camera, and the app does not access your device photos or gallery (the in-game “photo album” is a collection of in-game pictures). The app only requests internet and network state (ads and Play Games), the advertising ID (ads) and vibration. If you contact support by email, we use your address and message only to reply."
+      ]
+    },
+    {
+      "id": "local",
+      "title": "2. Information stored on your device",
+      "items": [
+        "Game progress: the in-game day and current stage, snack count, cleared and attempted stages, scouted obstacles, tutorial progress, Endless Night records, total heists and successes, and the in-game day you last opened the gift box",
+        "Cats: which cats have joined, level and experience, mood, fatigue, fullness and bond, unavailable status and number of heists",
+        "Collections and logs: snack collection, photo album, event history and scheduled events",
+        "Settings: sound effects, music, fast night playback, personalized-ads choice"
+      ],
+      "paragraphs": [
+        "This information is kept in the app's private Android storage (the app database and settings file) for game features such as continuing and collections, and is never sent to TeamCP servers. There is no cloud save. The app contains no analytics (such as Firebase Analytics) or crash-reporting tools."
+      ]
+    },
+    {
+      "id": "play-games",
+      "title": "3. Google Play Games",
+      "paragraphs": [
+        "When the app starts it tries to sign in automatically with the Google Play Games account set up on your device. If you are not signed in or sign-in fails, you can still play the whole game; only achievements and leaderboard scores are not recorded.",
+        "While you are signed in, Google Play Games (Google LLC) processes the following:"
+      ],
+      "items": [
+        "Your Play Games player ID, gamer nickname and profile image (your Google account email is not shared with the game)",
+        "Unlocks of the game's 18 achievements",
+        "Leaderboard scores for “Endless Night best” and “Total successful heists” — leaderboard scores and nicknames may be visible to other players"
+      ],
+      "after": [
+        "Your game progress is not uploaded to Google (no cloud save). TeamCP does not keep this data on its own servers and only sees aggregated achievement and leaderboard statistics in Play Console. Google's Privacy Policy and the Google Play Games Services terms apply to this processing."
+      ]
+    },
+    {
+      "id": "backup",
+      "title": "4. Android Auto Backup",
+      "paragraphs": [
+        "This app allows Android Auto Backup and device-to-device transfer. If backup is on, Android encrypts the game saves and settings above into your Google Account backup and can restore them when you reinstall or move to a new device.",
+        "This backup is a Google feature controlled by your device settings; TeamCP cannot access it. You can turn it off or delete it in Settings > Google > Backup."
+      ]
+    },
+    {
+      "id": "ads",
+      "title": "5. Ads and the information ad services process",
+      "paragraphs": [
+        "The game is free and supported by ads, served through Unity LevelPlay (mediation) and Unity Ads. It does not include AdMob, Firebase or payment SDKs.",
+        "Ads are rewarded ads that play only when you tap them (retrying a failed night and doubling a successful night's reward, each once per night; the gift box once per in-game day), and interstitials shown only when you move on to the next day and at least 4 minutes apart. Interstitials are never shown during the tutorial (stages 1–5) or right after a rewarded ad, and there are no banner ads. You can clear every stage and reach the ending without watching ads.",
+        "To load and show ads, the ad services may process:"
+      ],
+      "items": [
+        "IP address and approximate region derived from it; device model, OS, app version, language and network information",
+        "Android advertising ID, app set ID and other ad/SDK identifiers",
+        "Ad request, impression, click and completion events, plus error and diagnostic data"
+      ],
+      "after": [
+        "These are used to deliver ads, manage frequency, measure performance, prevent fraud and diagnose problems. The app is marked as “not directed to children” with the ad services. TeamCP does not receive individual user data from the ad services; we only see aggregated revenue and impression statistics in their dashboards."
+      ]
+    },
+    {
+      "id": "choices",
+      "title": "6. Your ad choices",
+      "items": [
+        "Every player is asked on first launch whether to allow personalized ads, and the ad SDK does not start until you choose. If you decline, you see the same number of ads but they are not personalized, and the whole game remains playable.",
+        "You can change this anytime in the game's Settings screen.",
+        "In Android Settings > Privacy > Ads you can reset or delete your advertising ID. Once deleted, a zeroed value is sent instead and cannot be used for personalized ads.",
+        "Use the privacy icon inside an ad or the Unity policy below to access, delete or opt out of ad data.",
+        "With the internet turned off no ad requests are made, and the game can still be played offline (only rewarded-ad bonuses are unavailable)."
+      ],
+      "paragraphs": [
+        "Your choice is stored only on your device and passed to the mediation service (Unity LevelPlay) as a consent signal."
+      ]
+    },
+    {
+      "id": "providers",
+      "title": "7. Third-party services and international processing",
+      "paragraphs": [
+        "Unity LevelPlay and Unity Ads, Google Play Games and Android (Google) services are governed by their own policies. Ad information, Play Games data and backup data may be processed outside your country; see each provider's policy for recipients, locations and safeguards.",
+        "TeamCP does not sell your information. However, some laws may treat data processing in the advertising ecosystem as a “sale” or “sharing”, so please also review the opt-out and rights information from the providers below."
+      ]
+    },
+    {
+      "id": "delete-data",
+      "title": "8. Deleting data and retention",
+      "items": [
+        "In the game: Settings > Start over (처음부터 다시 하기) erases the progress, cats, collections and event history on this device. This cannot be undone. It does not remove Google Play Games achievements or leaderboard scores.",
+        "On the device: uninstall the app, or use Android Settings > Apps > 냥냥 해적단 (Cat Pirates) > Storage > Clear data to erase all game data including settings.",
+        "Google Play Games: you can remove achievement and leaderboard records and your Play Games profile by deleting the game data or profile in the Google Play Games app (or Play Store) settings.",
+        "Android backup: turn off or delete backups under Settings > Google > Backup.",
+        "Ad information: delete or reset your advertising ID and use the request process in Unity's policy. Uninstalling the app does not erase information ad providers have already processed.",
+        "Need help? Email sjw0480@gmail.com with the app name and your request. Never send passwords or ID documents. For data TeamCP does not hold, we will point you to the right provider's process."
+      ],
+      "paragraphs": [
+        "Game data on your device remains until you delete it. Retention of Play Games, backup and ad information follows each provider's policy. We keep support emails no longer than needed after replying."
+      ]
+    },
+    {
+      "id": "rights",
+      "title": "9. Your rights",
+      "paragraphs": [
+        "Depending on where you live, you may have rights to access, correct, delete, restrict or object to processing, withdraw consent, opt out of sale/sharing, or complain to a supervisory authority. Because TeamCP keeps no game data on its own servers, most requests are handled with the in-game delete option, device settings, Google Play Games or the ad providers, and we will tell you which route to use."
+      ]
+    },
+    {
+      "id": "young-users",
+      "title": "10. Children and parents",
+      "paragraphs": [
+        "Cat Pirates is a stealth-puzzle and management game about caring for cats and planning nightly snack heists, and it is not directed to children under 13. The app is marked “not directed to children” with the ad services and has no age check or parental-consent feature.",
+        "If you believe a child under 13 has had information processed, contact us and we will explain how to delete it."
+      ]
+    },
+    {
+      "id": "updates",
+      "title": "11. Security and changes",
+      "paragraphs": [
+        "Game data is kept in the app’s private Android storage, which other apps cannot read. Ad traffic, Play Games and backups use each provider’s encrypted connections.",
+        "When features, SDKs or processing change, we update this policy and its date and announce important changes on this page. The game’s screens are in Korean; if the Korean and English versions of this policy seem to differ, please contact us."
+      ]
+    }
+  ]
+}

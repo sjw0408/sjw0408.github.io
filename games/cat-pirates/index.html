@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#fff4e3">
+  <title>냥냥 해적단: 야식 대작전 - TeamCP</title>
+  <meta name="description" content="낮에는 고양이를 돌보고 밤에는 간식을 노리는 잠입 퍼즐·경영 게임, 냥냥 해적단: 야식 대작전(Cat Pirates: Midnight Snack Heist)의 공식 정보 페이지입니다.">
+  <style>
+    :root {
+      font-family: Pretendard, "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #43342c;
+      background: #fff4e3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 84% 6%, rgb(47 58 90 / 16%), transparent 24rem),
+        radial-gradient(circle at 10% 92%, rgb(255 196 128 / 40%), transparent 24rem),
+        linear-gradient(165deg, #fffaf1, #f8e4c8);
+      line-height: 1.65;
+    }
+    main {
+      width: min(820px, calc(100% - 32px));
+      margin: 32px auto;
+      padding: clamp(26px, 6vw, 56px);
+      border: 1px solid rgb(91 53 33 / 12%);
+      border-radius: 32px;
+      background: rgb(255 252 246 / 88%);
+      box-shadow: 0 22px 64px rgb(91 53 33 / 12%);
+    }
+    .back {
+      color: #a2432a;
+      font-size: 0.9rem;
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .hero { margin: 50px 0 38px; }
+    .badge {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 13px;
+      border-radius: 999px;
+      background: #2f3a5a;
+      color: #ffe2a8;
+      font-size: 0.8rem;
+      font-weight: 900;
+    }
+    h1 {
+      margin: 0;
+      color: #5b3521;
+      font-size: clamp(2.3rem, 8vw, 4.4rem);
+      line-height: 1.08;
+      letter-spacing: -0.055em;
+      word-break: keep-all;
+    }
+    h1 small {
+      display: block;
+      margin-top: 6px;
+      color: #a2432a;
+      font-size: 0.5em;
+      letter-spacing: -0.03em;
+    }
+    .subtitle {
+      margin: 12px 0 0;
+      color: #8a7162;
+      font-weight: 700;
+    }
+    .lead {
+      max-width: 640px;
+      margin: 24px 0 0;
+      color: #5f4d43;
+      font-size: 1.08rem;
+      word-break: keep-all;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin: 34px 0 20px;
+    }
+    .feature {
+      padding: 18px;
+      border: 1px solid rgb(91 53 33 / 12%);
+      border-radius: 18px;
+      background: #fff6e8;
+    }
+    .feature.night {
+      border-color: #2f3a5a;
+      background: linear-gradient(160deg, #36426a, #232b45);
+    }
+    .feature strong { display: block; margin-bottom: 5px; color: #5b3521; }
+    .feature span { color: #75625a; font-size: 0.88rem; word-break: keep-all; }
+    .feature.night strong { color: #ffd98a; }
+    .feature.night span { color: #d5d9e8; }
+    .crew {
+      margin: 0 0 30px;
+      padding: 18px 20px;
+      border-radius: 18px;
+      background: #fff0da;
+    }
+    .crew h2 {
+      margin: 0 0 10px;
+      color: #5b3521;
+      font-size: 1rem;
+    }
+    .crew ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .crew li {
+      padding: 4px 11px;
+      border: 1px solid rgb(91 53 33 / 14%);
+      border-radius: 999px;
+      background: #fffcf6;
+      color: #5b3521;
+      font-size: 0.86rem;
+      font-weight: 700;
+    }
+    .english {
+      margin: 0 0 30px;
+      padding: 18px 20px;
+      border-left: 3px solid #2f3a5a;
+      border-radius: 0 14px 14px 0;
+      background: #fff6e8;
+      color: #6a584d;
+      font-size: 0.93rem;
+    }
+    .english strong { color: #43342c; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+    .button {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 19px;
+      border: 1px solid #5b3521;
+      border-radius: 14px;
+      background: #5b3521;
+      color: white;
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .button.secondary { background: transparent; color: #5b3521; }
+    .meta {
+      margin-top: 42px;
+      padding-top: 22px;
+      border-top: 1px solid rgb(91 53 33 / 14%);
+      color: #86716a;
+      font-size: 0.86rem;
+    }
+    .meta p { margin: 4px 0; }
+    .meta a { color: #a2432a; font-weight: 700; }
+    @media (max-width: 640px) {
+      main { margin: 16px auto; border-radius: 22px; }
+      .hero { margin-top: 36px; }
+      .features { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="../../">← TeamCP Games</a>
+    <section class="hero">
+      <span class="badge">잠입 퍼즐 · 경영 · 출시 준비 중</span>
+      <h1>냥냥 해적단<small>야식 대작전</small></h1>
+      <p class="subtitle">Cat Pirates: Midnight Snack Heist</p>
+      <p class="lead">집사가 잠든 밤, 고양이 해적단이 간식을 향해 출항합니다! 낮에는 고양이들을 돌보며 집 안을 정찰하고, 밤에는 최대 3마리로 팀을 꾸려 CCTV·로봇청소기·동작 센서·잠긴 문을 피해 간식을 손에 넣으세요.</p>
+    </section>
+
+    <section class="features" aria-label="주요 특징">
+      <div class="feature">
+        <strong>☀️ 낮: 돌보고 정찰하기</strong>
+        <span>쓰다듬기와 간식으로 컨디션을 챙기고, 집 안을 살펴 오늘 밤의 장애물을 미리 확인하세요.</span>
+      </div>
+      <div class="feature night">
+        <strong>🌙 밤: 간식 대작전</strong>
+        <span>능력치와 특성이 다른 고양이를 골라 원정대를 짜세요. 주방에서 간식 금고까지 50스테이지.</span>
+      </div>
+      <div class="feature">
+        <strong>📖 모으고 계속하기</strong>
+        <span>돌발 이벤트 23종과 새 가족 영입, 간식 도감·기념 사진 수집, 엔딩 뒤 엔드리스 나이트.</span>
+      </div>
+    </section>
+
+    <section class="crew" aria-labelledby="crew-title">
+      <h2 id="crew-title">🐾 해적단 고양이 10마리</h2>
+      <ul>
+        <li>선장냥</li>
+        <li>뚱냥</li>
+        <li>그림자냥</li>
+        <li>날쌘냥</li>
+        <li>꼬마냥</li>
+        <li>척척냥</li>
+        <li>복냥</li>
+        <li>귀쫑냥</li>
+        <li>먹보냥</li>
+        <li>보들냥</li>
+      </ul>
+    </section>
+
+    <p class="english" lang="en"><strong>Cat Pirates: Midnight Snack Heist</strong> — a cozy stealth-puzzle and management game. By day, care for your cats and scout the house; by night, send a crew of up to three cats past CCTV, robot vacuums, sensors and locked doors to steal snacks. 10 cats, 50 stages across five rooms, 23 events, a photo album and Endless Night after the ending. Free with optional rewarded ads, Google Play Games achievements and leaderboards; Korean UI.</p>
+
+    <div class="actions">
+      <a class="button" href="privacy/">개인정보처리방침</a>
+      <a class="button secondary" href="privacy/en/">Privacy Policy (English)</a>
+      <a class="button secondary" href="mailto:sjw0480@gmail.com">문의 및 지원</a>
+    </div>
+
+    <footer class="meta">
+      <p>Android 패키지: com.teamcp.catpirates</p>
+      <p>지원 언어: 한국어</p>
+      <p>계정 없이 기기 저장 · Google Play 게임즈 업적·리더보드 · 광고 포함(Unity LevelPlay) · 앱 내 결제 없음</p>
+      <p>개발 및 운영: TeamCP · <a href="mailto:sjw0480@gmail.com">sjw0480@gmail.com</a></p>
+    </footer>
+  </main>
+</body>
+</html>
