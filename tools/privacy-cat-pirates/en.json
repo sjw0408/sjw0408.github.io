@@ -83,13 +83,13 @@
       "title": "6. Your ad choices",
       "items": [
         "Every player is asked on first launch whether to allow personalized ads, and the ad SDK does not start until you choose. If you decline, you see the same number of ads but they are not personalized, and the whole game remains playable.",
-        "You can change this anytime in the game's Settings screen.",
+        "You can change this anytime under Settings > \"맞춤형 광고\" (Personalized ads); the new choice applies from the next launch.",
         "In Android Settings > Privacy > Ads you can reset or delete your advertising ID. Once deleted, a zeroed value is sent instead and cannot be used for personalized ads.",
         "Use the privacy icon inside an ad or the Unity policy below to access, delete or opt out of ad data.",
         "With the internet turned off no ad requests are made, and the game can still be played offline (only rewarded-ad bonuses are unavailable)."
       ],
       "paragraphs": [
-        "Your choice is stored only on your device and passed to the mediation service (Unity LevelPlay) as a consent signal."
+        "Your choice is stored only on your device and passed to the mediation service (Unity LevelPlay) as a consent signal. If you decline, a \"do not sell or share\" signal under certain U.S. state laws is sent as well."
       ]
     },
     {
