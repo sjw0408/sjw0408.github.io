@@ -7,8 +7,8 @@ import { fileURLToPath } from 'node:url';
 import assert from 'node:assert/strict';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-// 방침은 한국어·영어로 제공한다 (앱의 일본어·독일어·스페인어·프랑스어 화면은 영어 방침으로 연결)
-const languages = { ko: '한국어', en: 'English' };
+// 게임이 지원하는 6개 언어로 제공한다 (앱 설정의 언어와 같은 방침으로 연결)
+const languages = { ko: '한국어', ja: '日本語', en: 'English', de: 'Deutsch', es: 'Español', fr: 'Français' };
 const ids = ['scope', 'local', 'play-games', 'backup', 'ads', 'choices', 'providers', 'delete-data', 'rights', 'young-users', 'updates'];
 const base = '/games/indie-dev-tycoon/privacy/';
 const origin = 'https://sjw0408.github.io';
