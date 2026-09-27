@@ -1,0 +1,142 @@
+{
+  "language": "de",
+  "title": "Datenschutzerklärung von Indie Dev Tycoon",
+  "description": "Wie Indie Dev Tycoon mit Speicherung auf dem Gerät, dem optionalen Google Play Games, dem Android-Backup, Werbung und Werbe-Einwilligung sowie der Löschung von Daten umgeht.",
+  "back": "Zu den Indie Dev Tycoon Spielinfos",
+  "date": "Zuletzt aktualisiert: 26. September 2026",
+  "version": "Gilt für Version 1.1.0. Wir aktualisieren diese Seite und ihr Datum, wenn sich Funktionen oder die Werbekonfiguration ändern.",
+  "summary": "Du spielst, ohne ein Konto anzulegen, und dein Fortschritt wird auf deinem Gerät gespeichert. Wenn du möchtest, kannst du dich bei Google Play Games anmelden, um Erfolge, eine Bestenliste und Cloud-Speicherstände zu nutzen; diese Daten werden von Google gespeichert. TeamCP betreibt keine Spiel-Server. Die Werbedienste (Unity LevelPlay und Unity Ads) verarbeiten Geräteinformationen und Werbe-IDs, die für die Anzeige von Werbung benötigt werden; beim ersten Start fragen wir nach personalisierter Werbung und starten das Werbe-SDK erst, nachdem du deine Wahl getroffen hast.",
+  "contents": "Inhalt",
+  "resources": "Richtlinien Dritter und deine Rechte",
+  "contact": "Datenschutzkontakt",
+  "links": [
+    "Datenschutzerklärung von Unity für Spieler und Rechteanfragen",
+    "So setzt du deine Android-Werbe-ID zurück oder löschst sie",
+    "So verwaltest du Android-Backups",
+    "Datenschutzerklärung von Google"
+  ],
+  "sections": [
+    {
+      "id": "scope",
+      "title": "1. Geltungsbereich und Betreiber",
+      "paragraphs": [
+        "TeamCP entwickelt und betreibt das Android-Spiel „Indie Dev Tycoon“ (인디 개발 타이쿤, com.teamcp.indiedevtycoon). Diese Erklärung beschreibt, welche Informationen das Spiel verarbeitet und welche Wahlmöglichkeiten du hast. Kontakt: sjw0480@gmail.com.",
+        "Das Spiel hat keine eigene Kontoregistrierung, keine Spiel-Server, keinen Chat und keine In-App-Käufe. Die einzige Anmeldung ist die optionale Anmeldung bei Google Play Games. Wir fragen deinen Namen, deine E-Mail-Adresse, Telefonnummer, deinen Standort (GPS), Kontakte, Fotos oder dein Mikrofon weder ab noch erfassen wir sie. Die App fordert lediglich Internet- und Netzwerkstatus (Werbung und Play Games), die Werbe-ID (Werbung) und Vibration (Benachrichtigungen bei Veröffentlichungen und Erfolgen) an. Wenn du uns per E-Mail kontaktierst, verwenden wir deine Adresse und Nachricht ausschließlich zur Beantwortung."
+      ]
+    },
+    {
+      "id": "local",
+      "title": "2. Auf deinem Gerät gespeicherte Informationen",
+      "items": [
+        "Deine aktuelle Firma: Kampagnen-Speicherstände (Haupt-, Sicherungs- und Büroumzugs-Speicherpunkt) sowie Speicherstände im Szenario-Modus",
+        "Durchlaufübergreifende Aufzeichnungen: Erfolge, Enden-Sammlung, Kompendium zu Synergien/Genres/Talenten/Ereignissen, Ruhmeshalle, Vermächtnispunkte und Vorteile, Szenario-Ränge, Durchlaufverlauf",
+        "Belohnungswerbungs-Journal: Belohnungs-IDs und Zeitstempel, damit dieselbe Belohnung nie zweimal vergeben wird",
+        "Einstellungen: Sprache, Soundeffekte, Musik, Vibration, Textgröße, Standardgeschwindigkeit, Tutorial-Status, Wahl zur personalisierten Werbung"
+      ],
+      "paragraphs": [
+        "Diese Informationen werden im privaten Android-Speicher der App für Spielfunktionen (Fortsetzen, Offline-Fortschritt, Kompendium, wiederholte Durchläufe) abgelegt. Nur wenn du die Cloud-Speicherstände von Google Play Games nutzt, werden dieselben Inhalte zusätzlich bei Google gespeichert, wie in Abschnitt 3 beschrieben; sie werden niemals an Server von TeamCP gesendet. Die App enthält keine Analyse- (wie Firebase Analytics) oder Absturzbericht-Tools."
+      ]
+    },
+    {
+      "id": "play-games",
+      "title": "3. Google Play Games (optional)",
+      "paragraphs": [
+        "Beim Start der App versucht sie, sich automatisch mit dem auf deinem Gerät eingerichteten Google Play Games-Konto anzumelden, wobei beim ersten Mal ein Anmeldefenster erscheinen kann. Du kannst das gesamte Spiel ohne Anmeldung genießen und dich jederzeit unter Einstellungen > Google Play Games anmelden.",
+        "Wenn du dich anmeldest, verarbeitet Google Play Games (Google LLC) Folgendes:"
+      ],
+      "items": [
+        "Deine Play Games-Spieler-ID, deinen Spielernamen und dein Profilbild (die E-Mail-Adresse deines Google-Kontos wird nicht an das Spiel weitergegeben)",
+        "Freigeschaltete Erfolge und deinen „besten Durchlauf-Score“ in der Bestenliste – Bestenlisten-Werte und Spielernamen können für andere Spieler sichtbar sein",
+        "Cloud-Speicherstand: eine Speicherdatei, die deine laufende Firma und durchlaufübergreifende Aufzeichnungen (Erfolge, Enden, Vermächtnis usw.) zusammenfasst. Solange du angemeldet bist, wird sie beim Schließen der App oder Antippen von „In der Cloud speichern“ in den Play Games-Speicher deines Google-Kontos (den app-eigenen Bereich von Google Drive) hochgeladen und kann auf einem anderen Gerät geladen werden"
+      ],
+      "after": [
+        "TeamCP speichert diese Daten nicht auf eigenen Servern und sieht in der Play Console nur zusammengefasste Erfolgs- und Bestenlisten-Statistiken. Für diese Verarbeitung gelten die Datenschutzerklärung von Google und die Nutzungsbedingungen von Google Play Games Services."
+      ]
+    },
+    {
+      "id": "backup",
+      "title": "4. Automatisches Android-Backup",
+      "paragraphs": [
+        "Diese App erlaubt das automatische Android-Backup und die Übertragung von Gerät zu Gerät. Ist das Backup aktiviert, verschlüsselt Android die oben genannten Spielstände und Einstellungen in deinem Google-Konto-Backup und kann sie bei einer Neuinstallation oder einem Gerätewechsel wiederherstellen.",
+        "Dieses Backup ist eine Google-Funktion, die über deine Geräteeinstellungen gesteuert wird; TeamCP hat keinen Zugriff darauf. Du kannst es unter Einstellungen > Google > Sichern deaktivieren oder löschen."
+      ]
+    },
+    {
+      "id": "ads",
+      "title": "5. Werbung und die von den Werbediensten verarbeiteten Informationen",
+      "paragraphs": [
+        "Das Spiel ist kostenlos und wird durch Werbung finanziert, die über Unity LevelPlay (Mediation) und Unity Ads ausgeliefert wird. Es enthält kein AdMob, kein Firebase und keine Zahlungs-SDKs.",
+        "Werbung erscheint als Banner am unteren Bildschirmrand (kann keine Anzeige geladen werden, wird stattdessen ein TeamCP-Bild angezeigt), als Interstitials nur an natürlichen Übergängen wie Veröffentlichungsergebnissen oder der Jahresend-Preisverleihung und mit mindestens 8 Minuten Abstand (niemals während des Tutorials oder im Szenario-Modus), sowie als Belohnungswerbung, die nur abgespielt wird, wenn du sie antippst (etwa für Investitionen oder Forschungszuschüsse, bis zu 15 pro Tag). Du kannst jedes Ende erreichen, ohne Werbung anzusehen.",
+        "Um Werbung zu laden und anzuzeigen, können die Werbedienste Folgendes verarbeiten:"
+      ],
+      "items": [
+        "IP-Adresse und die daraus abgeleitete ungefähre Region; Gerätemodell, Betriebssystem, App-Version, Sprache und Netzwerkinformationen",
+        "Android-Werbe-ID, App-Set-ID und weitere Werbe-/SDK-Kennungen",
+        "Ereignisse zu Werbeanfrage, Impression, Klick und Abschluss sowie Fehler- und Diagnosedaten"
+      ],
+      "after": [
+        "Diese Daten dienen der Auslieferung von Werbung, der Steuerung der Häufigkeit, der Erfolgsmessung, der Betrugsprävention und der Fehlerdiagnose. Die App ist bei den Werbediensten als „nicht für Kinder bestimmt“ gekennzeichnet, und für Erwachsene ab 17 Jahren eingestufte Werbung wird blockiert. TeamCP erhält von den Werbediensten keine individuellen Nutzerdaten; wir sehen in deren Dashboards nur zusammengefasste Umsatz- und Impressionsstatistiken."
+      ]
+    },
+    {
+      "id": "choices",
+      "title": "6. Deine Werbeoptionen",
+      "items": [
+        "Jeder Spieler wird beim ersten Start gefragt, ob personalisierte Werbung erlaubt werden soll, und das Werbe-SDK startet erst, nachdem du deine Wahl getroffen hast. Lehnst du ab, siehst du gleich viel Werbung, aber nicht personalisiert, und das gesamte Spiel bleibt vollständig spielbar.",
+        "Du kannst dies jederzeit unter Einstellungen > Personalisierte Werbung ändern; die Änderung gilt ab dem nächsten Start.",
+        "Unter Android-Einstellungen > Datenschutz > Werbung kannst du deine Werbe-ID zurücksetzen oder löschen. Nach dem Löschen wird stattdessen ein Nullwert gesendet, der nicht für personalisierte Werbung verwendet werden kann.",
+        "Nutze das Datenschutzsymbol innerhalb einer Anzeige oder die untenstehende Unity-Richtlinie, um auf Werbedaten zuzugreifen, sie zu löschen oder ihnen zu widersprechen.",
+        "Ist das Internet ausgeschaltet, werden keine Werbeanfragen gestellt, und das Spiel ist vollständig offline spielbar."
+      ],
+      "paragraphs": [
+        "Deine Wahl wird nur auf deinem Gerät gespeichert und als Einwilligungssignal an den Mediationsdienst (Unity LevelPlay) weitergegeben."
+      ]
+    },
+    {
+      "id": "providers",
+      "title": "7. Dienste Dritter und internationale Verarbeitung",
+      "paragraphs": [
+        "Für Unity LevelPlay und Unity Ads, Google Play Games sowie Android-Dienste (Google) gelten deren eigene Richtlinien. Werbedaten, Play Games-Daten und Backup-Daten können außerhalb deines Landes verarbeitet werden; Einzelheiten zu Empfängern, Standorten und Schutzmaßnahmen findest du in der jeweiligen Richtlinie des Anbieters.",
+        "TeamCP verkauft deine Informationen nicht. Manche Gesetze behandeln die Datenverarbeitung im Werbe-Ökosystem jedoch möglicherweise als „Verkauf“ oder „Weitergabe“; bitte lies daher auch die Opt-out- und Rechteinformationen der unten genannten Anbieter."
+      ]
+    },
+    {
+      "id": "delete-data",
+      "title": "8. Löschen von Daten und Aufbewahrung",
+      "items": [
+        "Im Spiel: Einstellungen > Google Play Games > Speicherdaten löschen entfernt die Firmen, das Vermächtnis, die Enden und Erfolgsaufzeichnungen auf diesem Gerät sowie, falls du angemeldet bist, deinen Google Play Games-Cloud-Speicherstand. Dies kann nicht rückgängig gemacht werden.",
+        "Auf dem Gerät: Deinstalliere die App, oder nutze Android-Einstellungen > Apps > Indie Dev Tycoon > Speicher > Daten löschen. Dadurch wird dein Cloud-Speicherstand nicht entfernt.",
+        "Google Play Games: Du kannst Erfolgs- und Bestenlisten-Einträge sowie dein Play Games-Profil entfernen, indem du die Spieldaten oder dein Profil in den Einstellungen der Google Play Games-App (oder des Play Store) löschst.",
+        "Android-Backup: Deaktiviere oder lösche Backups unter Einstellungen > Google > Sichern.",
+        "Werbedaten: Lösche oder setze deine Werbe-ID zurück und nutze das Anfrageverfahren in der Unity-Richtlinie. Eine Deinstallation der App löscht keine Informationen, die Werbeanbieter bereits verarbeitet haben.",
+        "Brauchst du Hilfe? Schreib eine E-Mail an sjw0480@gmail.com mit dem App-Namen und deinem Anliegen. Sende niemals Passwörter oder Ausweisdokumente. Für Daten, die TeamCP nicht besitzt, verweisen wir dich an das passende Verfahren des jeweiligen Anbieters."
+      ],
+      "paragraphs": [
+        "Spieldaten auf deinem Gerät und dein Cloud-Speicherstand bleiben bestehen, bis du sie löschst. Die Aufbewahrung von Play Games-, Backup- und Werbedaten richtet sich nach der jeweiligen Richtlinie des Anbieters. Support-E-Mails bewahren wir nach der Beantwortung nicht länger als nötig auf."
+      ]
+    },
+    {
+      "id": "rights",
+      "title": "9. Deine Rechte",
+      "paragraphs": [
+        "Je nachdem, wo du lebst, hast du möglicherweise das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung oder Widerspruch, auf Widerruf deiner Einwilligung, auf Widerspruch gegen Verkauf/Weitergabe oder auf Beschwerde bei einer Aufsichtsbehörde. Da TeamCP keine Spieldaten auf eigenen Servern speichert, werden die meisten Anfragen über die Löschfunktion im Spiel, die Geräteeinstellungen, Google Play Games oder die Werbeanbieter bearbeitet; wir sagen dir, welchen Weg du nutzen solltest."
+      ]
+    },
+    {
+      "id": "young-users",
+      "title": "10. Kinder und Eltern",
+      "paragraphs": [
+        "Indie Dev Tycoon ist eine Spielefirmen-Management-Simulation und richtet sich nicht an Kinder unter 13 Jahren. Die App ist bei den Werbediensten als „nicht für Kinder bestimmt“ gekennzeichnet und verfügt über keine Altersprüfung oder Funktion zur elterlichen Einwilligung.",
+        "Falls du glaubst, dass Informationen eines Kindes unter 13 Jahren verarbeitet wurden, kontaktiere uns; wir erklären dir, wie sie gelöscht werden."
+      ]
+    },
+    {
+      "id": "updates",
+      "title": "11. Sicherheit und Änderungen",
+      "paragraphs": [
+        "Spieldaten werden im privaten Android-Speicher der App abgelegt, auf den andere Apps nicht zugreifen können. Werbeverkehr und Backups nutzen die verschlüsselten Verbindungen der jeweiligen Anbieter.",
+        "Wenn sich Funktionen, SDKs oder die Verarbeitung ändern, aktualisieren wir diese Erklärung und ihr Datum und kündigen wichtige Änderungen auf dieser Seite an. Diese Richtlinie wird auf Koreanisch, Englisch, Japanisch, Deutsch, Spanisch und Französisch bereitgestellt; sollten sich die Fassungen zu unterscheiden scheinen, kontaktiere uns bitte."
+      ]
+    }
+  ]
+}
