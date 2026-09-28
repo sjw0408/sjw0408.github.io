@@ -3,7 +3,7 @@
   "title": "Indie Dev Tycoon Privacy Policy",
   "description": "How Indie Dev Tycoon handles on-device storage, optional Google Play Games, Android backup, ads and ad consent, and data deletion.",
   "back": "Indie Dev Tycoon game info",
-  "date": "Last updated: September 26, 2026",
+  "date": "Last updated: September 28, 2026",
   "version": "Applies to version 1.1.0. We update this page and its date when features or ad setup change.",
   "summary": "You play without creating an account, and your progress is saved on your device. If you choose, you can sign in to Google Play Games for achievements, a leaderboard and cloud saves; that data is stored by Google. TeamCP runs no game servers. The ad services (Unity LevelPlay and Unity Ads) process device information and advertising identifiers needed to deliver ads; on first launch we ask about personalized ads and do not start the ad SDK until you choose.",
   "contents": "Contents",
@@ -72,6 +72,7 @@
       "items": [
         "IP address and approximate region derived from it; device model, OS, app version, language and network information",
         "Android advertising ID, app set ID and other ad/SDK identifiers",
+        "Information about certain installed apps (for example, whether app stores such as Google Play are installed)",
         "Ad request, impression, click and completion events, plus error and diagnostic data"
       ],
       "after": [
@@ -135,7 +136,7 @@
       "title": "11. Security and changes",
       "paragraphs": [
         "Game data is kept in the app’s private Android storage, which other apps cannot read. Ad traffic and backups use each provider’s encrypted connections.",
-        "When features, SDKs or processing change, we update this policy and its date and announce important changes on this page. If the Korean and English versions seem to differ, please contact us."
+        "When features, SDKs or processing change, we update this policy and its date and announce important changes on this page. This policy is available in Korean, English, Japanese, German, Spanish and French. If the versions seem to differ, please contact us."
       ]
     }
   ]
