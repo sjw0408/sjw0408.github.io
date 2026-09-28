@@ -3,7 +3,7 @@
   "title": "Datenschutzerklärung von Indie Dev Tycoon",
   "description": "Wie Indie Dev Tycoon mit Speicherung auf dem Gerät, dem optionalen Google Play Games, dem Android-Backup, Werbung und Werbe-Einwilligung sowie der Löschung von Daten umgeht.",
   "back": "Zu den Indie Dev Tycoon Spielinfos",
-  "date": "Zuletzt aktualisiert: 26. September 2026",
+  "date": "Zuletzt aktualisiert: 28. September 2026",
   "version": "Gilt für Version 1.1.0. Wir aktualisieren diese Seite und ihr Datum, wenn sich Funktionen oder die Werbekonfiguration ändern.",
   "summary": "Du spielst, ohne ein Konto anzulegen, und dein Fortschritt wird auf deinem Gerät gespeichert. Wenn du möchtest, kannst du dich bei Google Play Games anmelden, um Erfolge, eine Bestenliste und Cloud-Speicherstände zu nutzen; diese Daten werden von Google gespeichert. TeamCP betreibt keine Spiel-Server. Die Werbedienste (Unity LevelPlay und Unity Ads) verarbeiten Geräteinformationen und Werbe-IDs, die für die Anzeige von Werbung benötigt werden; beim ersten Start fragen wir nach personalisierter Werbung und starten das Werbe-SDK erst, nachdem du deine Wahl getroffen hast.",
   "contents": "Inhalt",
@@ -72,6 +72,7 @@
       "items": [
         "IP-Adresse und die daraus abgeleitete ungefähre Region; Gerätemodell, Betriebssystem, App-Version, Sprache und Netzwerkinformationen",
         "Android-Werbe-ID, App-Set-ID und weitere Werbe-/SDK-Kennungen",
+        "Informationen zu bestimmten installierten Apps (z. B. ob App-Stores wie Google Play installiert sind)",
         "Ereignisse zu Werbeanfrage, Impression, Klick und Abschluss sowie Fehler- und Diagnosedaten"
       ],
       "after": [
