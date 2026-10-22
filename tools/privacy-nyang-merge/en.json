@@ -32,7 +32,7 @@
         "Settings: sound and vibration, personalized-ads choice"
       ],
       "paragraphs": [
-        "This information is kept in the app's private Android storage so you can continue playing and keep your settings, and is never sent to TeamCP servers. There is no cloud save. The app contains no analytics (such as Firebase Analytics) or crash-reporting tools."
+        "This information is kept in the app's private Android storage to keep your best score and settings, and is never sent to TeamCP servers. There is no cloud save. The app contains no analytics (such as Firebase Analytics) or crash-reporting tools."
       ]
     },
     {
