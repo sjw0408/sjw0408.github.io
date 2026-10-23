@@ -1,11 +1,11 @@
 {
   "language": "en",
   "title": "Nyang Merge Privacy Policy",
-  "description": "How Nyang Merge handles on-device storage, Android backup, ads and ad consent, and data deletion.",
+  "description": "How Nyang Merge handles on-device storage, Google Play Games, Android backup, ads and ad consent, and data deletion.",
   "back": "Nyang Merge game info",
   "date": "Last updated: October 23, 2026",
   "version": "Applies to version 1.0.0. We update this page and its date when features or ad setup change.",
-  "summary": "You play without creating an account or signing in, and your records are stored only on your device. TeamCP runs no game servers, and the game has no in-app purchases and no Google Play Games integration. The ad services (Unity LevelPlay and Unity Ads) process device information and advertising identifiers needed to deliver ads; on first launch we ask whether you consent to personalized ads and do not start the ad SDK until you choose.",
+  "summary": "You play without creating an account, and your game records are stored on your device. If you sign in to Google Play Games, your best score is stored on Google's leaderboard. TeamCP runs no game servers and the game has no in-app purchases. The ad services (Unity LevelPlay and Unity Ads) process device information and advertising identifiers needed to deliver ads; on first launch we ask whether you consent to personalized ads and do not start the ad SDK until you choose.",
   "contents": "Contents",
   "resources": "Third-party policies and your rights",
   "contact": "Privacy contact",
@@ -21,7 +21,7 @@
       "title": "1. Scope and operator",
       "paragraphs": [
         "TeamCP develops and operates the Android game “Nyang Merge” (냥이 합치기, com.teamcp.nyangmerge). This policy explains what information the game handles and the choices you have. Contact: sjw0480@gmail.com.",
-        "The game has no account sign-up of its own, no sign-in, no game servers, no chat and no in-app purchases, and it does not use Google Play Games. We do not request or collect your name, email, phone number, location (GPS), contacts, microphone, camera or storage. The only permissions the app itself uses are internet and network state (loading ads) and the advertising ID (AD_ID); the Android ad services attribution and topics APIs may be used by the ad SDK, and the WAKE_LOCK, RECEIVE_BOOT_COMPLETED and FOREGROUND_SERVICE permissions are included by the ad SDK libraries. If you contact support by email, we use your address and message only to reply."
+        "The game has no account sign-up of its own, no game servers, no chat and no in-app purchases. Signing in is optional, and the only sign-in is Google Play Games. We do not request or collect your name, email, phone number, location (GPS), contacts, microphone, camera or storage. The only permissions the app itself uses are internet and network state (loading ads and Play Games) and the advertising ID (AD_ID); the Android ad services attribution and topics APIs may be used by the ad SDK, and the WAKE_LOCK, RECEIVE_BOOT_COMPLETED and FOREGROUND_SERVICE permissions are included by the ad SDK libraries. If you contact support by email, we use your address and message only to reply."
       ]
     },
     {
@@ -36,8 +36,22 @@
       ]
     },
     {
+      "id": "play-games",
+      "title": "3. Google Play Games",
+      "paragraphs": [
+        "When the app starts it tries to sign in automatically with the Google Play Games account set up on your device. Signing in is optional: if you are not signed in or sign-in fails, you can still play the whole game; only the leaderboard record is not kept.",
+        "While you are signed in, at game over your best score is submitted to the Google Play Games leaderboard and a ranking screen is shown. Google Play Games (Google LLC) then processes the following:"
+      ],
+      "items": [
+        "Your Play Games profile name (player name) and leaderboard best score — scores and profile names may be shown to other players on the ranking screen"
+      ],
+      "after": [
+        "The game does not separately receive or store your name, profile picture or email (Google Play Games services handle them). Your game progress is not uploaded to Google (no cloud save), and because the app has no servers, TeamCP does not store this information either and only sees aggregated leaderboard statistics in Play Console. Google's Privacy Policy and the Google Play Games Services terms apply to this processing."
+      ]
+    },
+    {
       "id": "backup",
-      "title": "3. Android Auto Backup",
+      "title": "4. Android Auto Backup",
       "paragraphs": [
         "This app does not turn off Android Auto Backup, so backup and device-to-device transfer are allowed. If Google backup is turned on in your device settings, the game records and settings above may be included in your Google Account backup under Google's policies and restored when you reinstall the app or move to a new device.",
         "This backup is a Google feature controlled by your device settings; TeamCP cannot access it. You can turn it off or delete it in Settings > Google > Backup."
@@ -45,7 +59,7 @@
     },
     {
       "id": "ads",
-      "title": "4. Ads and the information ad services process",
+      "title": "5. Ads and the information ad services process",
       "paragraphs": [
         "The game is free and supported by ads, served through Unity LevelPlay (mediation) and Unity Ads. It does not include AdMob, Google ad SDKs, Firebase or payment SDKs.",
         "Ads are: a banner shown at the bottom of the game screen at all times once you have made your consent choice (hidden while a full-screen ad is showing); interstitials shown between rounds with frequency and interval limits; and a rewarded ad (“one more chance” at game over) that plays only when you choose it. You never have to watch a rewarded ad to keep playing.",
@@ -64,7 +78,7 @@
     },
     {
       "id": "choices",
-      "title": "5. Your ad choices",
+      "title": "6. Your ad choices",
       "items": [
         "Every player is shown an allow/decline choice — “Do you consent to personalized ads?” — on first launch; the ad SDK does not start and no ads are shown until you choose. If you decline, you see the same number of ads but they are not personalized.",
         "You can make the choice again anytime under Settings > “광고 동의 다시 보기” (review ad consent).",
@@ -78,35 +92,36 @@
     },
     {
       "id": "providers",
-      "title": "6. Third-party services and international processing",
+      "title": "7. Third-party services and international processing",
       "paragraphs": [
-        "Unity LevelPlay and Unity Ads (Unity Technologies) and Google's Android backup and ad services are governed by their own policies. Ad information and backup data may be processed outside your country; see each provider's policy for recipients, locations and safeguards.",
+        "Unity LevelPlay and Unity Ads (Unity Technologies) and Google's Play Games, Android backup and ad services are governed by their own policies. Ad information, Play Games data and backup data may be processed outside your country; see each provider's policy for recipients, locations and safeguards.",
         "TeamCP does not sell your information. However, some laws may treat data processing in the advertising ecosystem as a “sale” or “sharing”, so please also review the opt-out and rights information from the providers below."
       ]
     },
     {
       "id": "delete-data",
-      "title": "7. Deleting data and retention",
+      "title": "8. Deleting data and retention",
       "items": [
         "On the device: uninstall the app, or use Android Settings > Apps > 냥이 합치기 (Nyang Merge) > Storage > Clear data to erase all game data including settings. TeamCP keeps no information on its servers.",
+        "Google Play Games: you can remove leaderboard scores and your Play Games profile by deleting the game data or profile, or signing out, in the Google Play Games app (or Play Store) settings.",
         "Android backup: turn off or delete backups under Settings > Google > Backup.",
         "Ad information: delete or reset your advertising ID and use the request process in Unity's policy. Uninstalling the app does not erase information ad providers have already processed.",
         "Need help? Email sjw0480@gmail.com with the app name and your request. Never send passwords or ID documents. For data TeamCP does not hold, we will point you to the right provider's process."
       ],
       "paragraphs": [
-        "Game data on your device remains until you delete it. Retention of backup and ad information follows each provider's policy. We keep support emails no longer than needed after replying."
+        "Game data on your device remains until you delete it. Retention of Play Games, backup and ad information follows each provider's policy. We keep support emails no longer than needed after replying."
       ]
     },
     {
       "id": "rights",
-      "title": "8. Your rights",
+      "title": "9. Your rights",
       "paragraphs": [
-        "Depending on where you live, you may have rights to access, correct, delete, restrict or object to processing, withdraw consent, opt out of sale/sharing, or complain to a supervisory authority. Because TeamCP keeps no game data on its own servers, most requests are handled with device settings and the ad providers' processes, and we will tell you which route to use."
+        "Depending on where you live, you may have rights to access, correct, delete, restrict or object to processing, withdraw consent, opt out of sale/sharing, or complain to a supervisory authority. Because TeamCP keeps no game data on its own servers, most requests are handled with device settings, Google Play Games or the ad providers' processes, and we will tell you which route to use."
       ]
     },
     {
       "id": "young-users",
-      "title": "9. Children and parents",
+      "title": "10. Children and parents",
       "paragraphs": [
         "Nyang Merge is a puzzle game about dropping cats and merging cats of the same tier. It is an all-ages game, but because it contains ads it is not directed to children under 13. The app is marked “not directed to children” with the ad services and has no age check or parental-consent feature.",
         "If you believe a child under 13 has had information processed, contact us and we will explain how to delete it."
@@ -114,9 +129,9 @@
     },
     {
       "id": "updates",
-      "title": "10. Security and changes",
+      "title": "11. Security and changes",
       "paragraphs": [
-        "Game data is kept in the app’s private Android storage, which other apps cannot read. Ad traffic and backups use each provider’s encrypted connections.",
+        "Game data is kept in the app’s private Android storage, which other apps cannot read. Ad traffic, Play Games and backups use each provider’s encrypted connections.",
         "When features, SDKs or processing change, we update this policy and its date and announce important changes on this page. If the Korean and English versions of this policy seem to differ, please contact us."
       ]
     }

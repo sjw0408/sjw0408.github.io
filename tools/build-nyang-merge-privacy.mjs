@@ -9,7 +9,7 @@ import assert from 'node:assert/strict';
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 // 방침은 한국어·영어로 제공한다 (영어는 스토어·국외 이용자용)
 const languages = { ko: '한국어', en: 'English' };
-const ids = ['scope', 'local', 'backup', 'ads', 'choices', 'providers', 'delete-data', 'rights', 'young-users', 'updates'];
+const ids = ['scope', 'local', 'play-games', 'backup', 'ads', 'choices', 'providers', 'delete-data', 'rights', 'young-users', 'updates'];
 const base = '/games/nyang-merge/privacy/';
 const origin = 'https://sjw0408.github.io';
 const route = code => code === 'ko' ? base : `${base}${code}/`;
@@ -48,7 +48,7 @@ for (const [code, nativeName] of Object.entries(languages)) {
   <meta name="color-scheme" content="light">
   <meta name="theme-color" content="#fff4e3">
   <meta name="description" content="${esc(data.description)}">
-  <meta name="policy-revision" content="2026-10-23-v1">
+  <meta name="policy-revision" content="2026-10-23-v2">
   <title>${esc(data.title)}</title>
   <link rel="canonical" href="${origin}${route(code)}">
 ${Object.keys(languages).map(lang => `  <link rel="alternate" hreflang="${lang}" href="${origin}${route(lang)}">`).join('\n')}
