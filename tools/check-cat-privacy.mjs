@@ -16,7 +16,7 @@ for (const code of codes) {
   assert.equal((html.match(/aria-current="page"/g) ?? []).length, 1);
   assert.ok(html.includes('name="policy-revision" content="2026-09-07-v4"'));
   assert.ok(html.includes('id="delete-data"'));
-  assert.ok(html.includes('href="mailto:sjw0480@gmail.com"'));
+  assert.ok(html.includes('href="mailto:teamcp.channel@gmail.com"'));
   assert.ok(html.includes('com.teamcp.catdetective'));
   const names = { ko: '냥탐정', en: 'Cat Detective', ja: 'ニャン探偵', es: 'Detective Felino', fr: 'Chat Détective', de: 'Katzendetektiv' };
   assert.ok(html.includes(`<title>`) && html.match(/<title>([^<]+)<\/title>/)[1].includes(names[code]), `${code}: app title differs`);

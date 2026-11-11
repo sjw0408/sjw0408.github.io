@@ -21,7 +21,7 @@
       "id": "scope",
       "title": "1. Geltungsbereich und Verantwortlicher",
       "paragraphs": [
-        "TeamCP entwickelt und betreibt das Android-Spiel „DEAD FREQUENCY“ (com.teamcp.deadfrequency). Diese Richtlinie erklärt, welche Informationen das Spiel verarbeitet und welche Wahlmöglichkeiten du hast. Kontakt: sjw0480@gmail.com.",
+        "TeamCP entwickelt und betreibt das Android-Spiel „DEAD FREQUENCY“ (com.teamcp.deadfrequency). Diese Richtlinie erklärt, welche Informationen das Spiel verarbeitet und welche Wahlmöglichkeiten du hast. Kontakt: teamcp.channel@gmail.com.",
         "Das Spiel hat keine TeamCP-Konten, keine Spielserver, keinen Chat und keine In-App-Käufe. Die einzige Anmeldung ist die optionale Anmeldung bei Google Play Spiele (Abschnitt 4). Es fragt weder nach deinem Namen, deiner E-Mail-Adresse, Telefonnummer, deinem genauen Standort (GPS), deinen Kontakten, Fotos oder deinem Mikrofon, noch erfasst es diese Daten. Wenn du den Support per E-Mail kontaktierst, verwenden wir deine Adresse und Nachricht nur, um dir zu antworten."
       ]
     },
@@ -101,7 +101,7 @@
         "Android-Backup: Deaktiviere das Backup oder lösche das Geräte-Backup unter Einstellungen > Google > Sicherung.",
         "Google Play Spiele: In den Einstellungen von Google Play Spiele kannst du die Play Spiele-Daten dieses Spiels oder dein Play Spiele-Profil löschen (siehe „Google Play Spiele-Daten löschen“ unten). Dein Google-Konto wird dadurch nicht gelöscht.",
         "Werbedaten: Lösche oder setze deine Werbe-ID zurück und nutze das Anfrageverfahren von Unity. Das alleinige Deinstallieren der App löscht keine Daten, die Werbeanbieter bereits verarbeitet haben.",
-        "Hilfe benötigt: Schreibe eine E-Mail an sjw0480@gmail.com mit dem App-Namen und deinem Anliegen. Sende keine Passwörter oder Ausweisdokumente. Für Daten, die TeamCP nicht besitzt, verweisen wir dich an das richtige Verfahren des jeweiligen Anbieters."
+        "Hilfe benötigt: Schreibe eine E-Mail an teamcp.channel@gmail.com mit dem App-Namen und deinem Anliegen. Sende keine Passwörter oder Ausweisdokumente. Für Daten, die TeamCP nicht besitzt, verweisen wir dich an das richtige Verfahren des jeweiligen Anbieters."
       ],
       "paragraphs": [
         "Spieldaten auf deinem Gerät bleiben bestehen, bis du sie löschst. Die Aufbewahrung von Backup- und Werbedaten richtet sich nach der Richtlinie des jeweiligen Anbieters. Wir bewahren Support-E-Mails nicht länger auf, als nach Erledigung deiner Anfrage nötig ist."

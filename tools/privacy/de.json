@@ -20,7 +20,7 @@
       "id": "scope",
       "title": "1. Geltungsbereich und Betreiber",
       "paragraphs": [
-        "TeamCP entwickelt und betreibt Katzendetektiv für Android (Cat Detective, com.teamcp.catdetective). Diese Hinweise erläutern die Datenverarbeitung und deine Wahlmöglichkeiten. Kontakt: sjw0480@gmail.com.",
+        "TeamCP entwickelt und betreibt Katzendetektiv für Android (Cat Detective, com.teamcp.catdetective). Diese Hinweise erläutern die Datenverarbeitung und deine Wahlmöglichkeiten. Kontakt: teamcp.channel@gmail.com.",
         "Es gibt kein eigenes Spielkonto und keinen Spielserver des Entwicklers. Die App fragt nicht nach Name, E-Mail oder Telefonnummer und erhebt keine Google-Passwörter, Zahlungskarten- oder Bankdaten. Bei einer Support-E-Mail verwenden wir Antwortadresse und Nachricht zur Bearbeitung deiner Anfrage."
       ]
     },
@@ -95,7 +95,7 @@
         "Google-Cloud: In den Einstellungen verbinden, Cloud-Spielstand löschen wählen und bestätigen. Der Snapshot dieses Spiels wird gelöscht und automatische Synchronisierung deaktiviert. Lokaler Fortschritt, laufende Runde und Google-Konto bleiben bestehen. Erneutes Verbinden und Übertragen kann einen neuen Spielstand anlegen.",
         "Ohne App: Die unten verlinkte Google Play Games-Anleitung ermöglicht die Verwaltung der Spieldaten. Das ist nicht die Löschung des gesamten Google-Kontos.",
         "Werbedaten: Nutze das Datenschutzsymbol der Anzeige oder Unitys Verfahren für Auskunft/Löschung. Deinstallation, Abmeldung oder Werbeeinschränkung löschen nicht automatisch bereits beim Anbieter verarbeitete Daten.",
-        "Hilfe: E-Mail an sjw0480@gmail.com mit Spielname und Datenart (Gerät/Google/Werbung). Keine Passwörter, Bestätigungscodes oder unnötigen Ausweisdokumente senden. Für Daten, die TeamCP nicht besitzt, verweisen wir auf das Prüf- und Löschverfahren des Anbieters."
+        "Hilfe: E-Mail an teamcp.channel@gmail.com mit Spielname und Datenart (Gerät/Google/Werbung). Keine Passwörter, Bestätigungscodes oder unnötigen Ausweisdokumente senden. Für Daten, die TeamCP nicht besitzt, verweisen wir auf das Prüf- und Löschverfahren des Anbieters."
       ],
       "paragraphs": [
         "Lokaler Fortschritt und Einstellungen bleiben bis zu deiner Löschung gespeichert; keine automatische Löschung nach 90 Tagen. Eine geänderte Werbeauswahl aktualisiert die aktuelle Wahl und ihren letzten Zeitpunkt. Anbieterhinweise regeln Fristen, Kriterien und rechtliche/Sicherheitsausnahmen für Cloud- und Werbedaten."

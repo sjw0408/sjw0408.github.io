@@ -20,7 +20,7 @@
       "id": "scope",
       "title": "1. Scope and operator",
       "paragraphs": [
-        "TeamCP develops and operates the Android game “Indie Dev Tycoon” (인디 개발 타이쿤, com.teamcp.indiedevtycoon). This policy explains what information the game handles and the choices you have. Contact: sjw0480@gmail.com.",
+        "TeamCP develops and operates the Android game “Indie Dev Tycoon” (인디 개발 타이쿤, com.teamcp.indiedevtycoon). This policy explains what information the game handles and the choices you have. Contact: teamcp.channel@gmail.com.",
         "The game has no account sign-up of its own, no game servers, no chat and no in-app purchases. The only sign-in is the optional Google Play Games sign-in. We do not request or collect your name, email, phone number, location (GPS), contacts, photos or microphone. The app only requests internet and network state (ads and Play Games), the advertising ID (ads) and vibration (release and achievement alerts). If you contact support by email, we use your address and message only to reply."
       ]
     },
@@ -110,7 +110,7 @@
         "Google Play Games: you can remove achievement and leaderboard records and your Play Games profile by deleting the game data or profile in the Google Play Games app (or Play Store) settings.",
         "Android backup: turn off or delete backups under Settings > Google > Backup.",
         "Ad information: delete or reset your advertising ID and use the request process in Unity's policy. Uninstalling the app does not erase information ad providers have already processed.",
-        "Need help? Email sjw0480@gmail.com with the app name and your request. Never send passwords or ID documents. For data TeamCP does not hold, we will point you to the right provider's process."
+        "Need help? Email teamcp.channel@gmail.com with the app name and your request. Never send passwords or ID documents. For data TeamCP does not hold, we will point you to the right provider's process."
       ],
       "paragraphs": [
         "Game data on your device and your cloud save remain until you delete them. Retention of Play Games, backup and ad information follows each provider's policy. We keep support emails no longer than needed after replying."

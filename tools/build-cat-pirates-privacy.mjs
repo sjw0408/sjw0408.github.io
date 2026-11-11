@@ -85,7 +85,7 @@ ${resources.map((href, i) => `        <li><a href="${href}">${esc(data.links[i])
     </section>
     <footer>
       <h2>${esc(data.contact)}</h2>
-      <p><a href="mailto:sjw0480@gmail.com">sjw0480@gmail.com</a></p>
+      <p><a href="mailto:teamcp.channel@gmail.com">teamcp.channel@gmail.com</a></p>
       <p>TeamCP · Cat Pirates: Midnight Snack Heist · com.teamcp.catpirates</p>
       <p lang="${code}">${esc(nativeName)}</p>
     </footer>

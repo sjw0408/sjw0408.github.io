@@ -20,7 +20,7 @@
       "id": "scope",
       "title": "1. Scope and operator",
       "paragraphs": [
-        "TeamCP develops and operates Cat Detective for Android (com.teamcp.catdetective). This policy explains the game's data processing and your choices. Contact: sjw0480@gmail.com.",
+        "TeamCP develops and operates Cat Detective for Android (com.teamcp.catdetective). This policy explains the game's data processing and your choices. Contact: teamcp.channel@gmail.com.",
         "There is no separate game account or developer-operated game server. The app does not ask you to enter your name, email or telephone number, and does not collect Google passwords or payment card/bank details. If you email support, your reply address and message are used to handle your inquiry."
       ]
     },
@@ -95,7 +95,7 @@
         "Google cloud progress: connect in Settings, select Delete cloud save and confirm. This deletes Cat Detective's snapshot and disconnects automatic sync, not your local progress/current run or Google Account. Reconnecting and transferring later can create a new save.",
         "Without the app: use the Google Play Games deletion instructions below to manage this game's data. This is different from deleting your entire Google Account.",
         "Advertising data: use the ad's privacy icon or the access/deletion instructions in Unity's policy below. Uninstalling, logging out or limiting ads does not itself erase data already processed by a provider.",
-        "Deletion help: email sjw0480@gmail.com with the game name and data type (device/Google/ads). Do not send passwords, verification codes or unnecessary identity documents. For data TeamCP does not hold, we direct you to the provider's verification/deletion process."
+        "Deletion help: email teamcp.channel@gmail.com with the game name and data type (device/Google/ads). Do not send passwords, verification codes or unnecessary identity documents. For data TeamCP does not hold, we direct you to the provider's verification/deletion process."
       ],
       "paragraphs": [
         "Local progress/settings remain until you delete them; there is no automatic 90-day deletion. Changing an ad choice updates the current choice and last-choice time. Provider policies govern cloud/ad retention periods, criteria and legal/security exceptions."
