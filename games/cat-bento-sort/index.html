@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#fff8ed">
+  <title>냥냥 도시락 공장 - TeamCP</title>
+  <meta name="description" content="도는 벨트에서 간식을 골라 고양이 손님의 도시락 주문을 채우는 정리 퍼즐, 냥냥 도시락 공장(Cat Bento Sort)의 공식 정보 페이지입니다.">
+  <style>
+    :root {
+      font-family: Pretendard, "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #43342c;
+      background: #fff8ed;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 84% 6%, rgb(18 140 126 / 16%), transparent 24rem),
+        radial-gradient(circle at 10% 92%, rgb(255 196 128 / 40%), transparent 24rem),
+        linear-gradient(165deg, #fffaf1, #f8e4c8);
+      line-height: 1.65;
+    }
+    main {
+      width: min(820px, calc(100% - 32px));
+      margin: 32px auto;
+      padding: clamp(26px, 6vw, 56px);
+      border: 1px solid rgb(91 53 33 / 12%);
+      border-radius: 32px;
+      background: rgb(255 252 246 / 88%);
+      box-shadow: 0 22px 64px rgb(91 53 33 / 12%);
+    }
+    .back {
+      color: #a2432a;
+      font-size: 0.9rem;
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .hero { margin: 50px 0 38px; }
+    .badge {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 13px;
+      border-radius: 999px;
+      background: #128c7e;
+      color: #fff8ed;
+      font-size: 0.8rem;
+      font-weight: 900;
+    }
+    h1 {
+      margin: 0;
+      color: #5b3521;
+      font-size: clamp(2.3rem, 8vw, 4.4rem);
+      line-height: 1.08;
+      letter-spacing: -0.055em;
+      word-break: keep-all;
+    }
+    h1 small {
+      display: block;
+      margin-top: 6px;
+      color: #a2432a;
+      font-size: 0.5em;
+      letter-spacing: -0.03em;
+    }
+    .subtitle {
+      margin: 12px 0 0;
+      color: #8a7162;
+      font-weight: 700;
+    }
+    .lead {
+      max-width: 640px;
+      margin: 24px 0 0;
+      color: #5f4d43;
+      font-size: 1.08rem;
+      word-break: keep-all;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin: 34px 0 20px;
+    }
+    .feature {
+      padding: 18px;
+      border: 1px solid rgb(91 53 33 / 12%);
+      border-radius: 18px;
+      background: #fff6e8;
+    }
+    .feature.night {
+      border-color: #128c7e;
+      background: linear-gradient(160deg, #149e8e, #0d6f64);
+    }
+    .feature strong { display: block; margin-bottom: 5px; color: #5b3521; }
+    .feature span { color: #75625a; font-size: 0.88rem; word-break: keep-all; }
+    .feature.night strong { color: #fff3c4; }
+    .feature.night span { color: #e2f5f2; }
+    .english {
+      margin: 0 0 30px;
+      padding: 18px 20px;
+      border-left: 3px solid #128c7e;
+      border-radius: 0 14px 14px 0;
+      background: #fff6e8;
+      color: #6a584d;
+      font-size: 0.93rem;
+    }
+    .english strong { color: #43342c; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+    .button {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 19px;
+      border: 1px solid #5b3521;
+      border-radius: 14px;
+      background: #5b3521;
+      color: white;
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .button.secondary { background: transparent; color: #5b3521; }
+    .meta {
+      margin-top: 42px;
+      padding-top: 22px;
+      border-top: 1px solid rgb(91 53 33 / 14%);
+      color: #86716a;
+      font-size: 0.86rem;
+    }
+    .meta p { margin: 4px 0; }
+    .meta a { color: #a2432a; font-weight: 700; }
+    @media (max-width: 640px) {
+      main { margin: 16px auto; border-radius: 22px; }
+      .hero { margin-top: 36px; }
+      .features { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="../../">← TeamCP Games</a>
+    <section class="hero">
+      <span class="badge">정리 퍼즐 · 출시 준비 중</span>
+      <h1>냥냥 도시락 공장</h1>
+      <p class="subtitle">Cat Bento Sort</p>
+      <p class="lead">고양이 손님들이 도시락을 주문했어요! 빙글빙글 도는 간식 벨트에서 탭 구역에 들어온 간식을 톡 눌러 맞는 도시락 통에 담으세요. 맞는 통이 없으면 보관 슬롯에서 기다리지만, 먼저 넣은 간식부터 나가요. 슬롯이 가득 차 벨트가 막히기 전에 주문을 모두 채우면 성공입니다.</p>
+    </section>
+
+    <section class="features" aria-label="주요 특징">
+      <div class="feature">
+        <strong>🍱 60개 레벨과 새 요소</strong>
+        <span>얼음 간식, 큰 통, 섞인 주문, 빨라지는 러시, 왕주문까지 — 레벨이 오를수록 새 요소가 하나씩 등장합니다.</span>
+      </div>
+      <div class="feature night">
+        <strong>🐾 손님 도감</strong>
+        <span>판을 깨고 모은 동전으로 고양이 손님을 초대해 도감을 채워 보세요. 막혔을 땐 냥이 찬스!</span>
+      </div>
+      <div class="feature">
+        <strong>🔌 오프라인 · 8개 언어</strong>
+        <span>로그인 없이 기기에 저장합니다. 한국어·영어·일본어·스페인어·포르투갈어·중국어(번체)·독일어·프랑스어.</span>
+      </div>
+    </section>
+
+    <p class="english" lang="en"><strong>Cat Bento Sort</strong> — a relaxed sorting puzzle. Snacks ride around a looping belt; tap the ones passing the tap zone to drop them into the cat guests' bento orders. No matching bento? The snack waits in the holding slots, and the first one in leaves first — fill every order before the slots fill up and the belt jams. 60 levels with iced snacks, big bentos, mixed orders, rush and king orders, plus a guest book to fill with coins. No account — progress stays on your device. Free, ad-supported (banner, interstitial and rewarded ads through Unity LevelPlay, with a first-launch personalized-ads choice). No in-app purchases.</p>
+
+    <div class="actions">
+      <a class="button" href="privacy/">개인정보처리방침</a>
+      <a class="button secondary" href="privacy/en/">Privacy Policy (English)</a>
+      <a class="button secondary" href="mailto:teamcp.channel@gmail.com">문의 및 지원</a>
+    </div>
+
+    <footer class="meta">
+      <p>Android 패키지: com.teamcp.catbentosort</p>
+      <p>계정 없이 기기 저장 · 오프라인 플레이 · 광고 포함(Unity LevelPlay, 첫 실행 맞춤 광고 선택) · 설정에서 직접 보내는 오류 신고 · 앱 내 결제 없음</p>
+      <p>다른 언어의 개인정보처리방침: <a href="privacy/ja/" lang="ja">日本語</a> · <a href="privacy/es/" lang="es">Español</a> · <a href="privacy/pt-br/" lang="pt-BR">Português</a> · <a href="privacy/zh-tw/" lang="zh-TW">中文（繁體）</a> · <a href="privacy/de/" lang="de">Deutsch</a> · <a href="privacy/fr/" lang="fr">Français</a></p>
+      <p>개발 및 운영: TeamCP · <a href="mailto:teamcp.channel@gmail.com">teamcp.channel@gmail.com</a></p>
+    </footer>
+  </main>
+</body>
+</html>

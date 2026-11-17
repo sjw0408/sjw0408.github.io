@@ -1,0 +1,131 @@
+{
+  "language": "de",
+  "title": "Datenschutzerklärung der Katzen-Bento-Fabrik",
+  "description": "Wie die Katzen-Bento-Fabrik Daten auf deinem Gerät speichert, wie Werbung und Werbeeinwilligung funktionieren, Fehlermeldungen und wie du Daten löschst.",
+  "back": "Spielinformationen zur Katzen-Bento-Fabrik",
+  "date": "Zuletzt aktualisiert: 17. November 2026",
+  "version": "Gilt für Version 1.0.0. Wenn sich Funktionen oder die Werbeeinbindung ändern, aktualisieren wir diese Seite und ihr Datum.",
+  "summary": "Du spielst ohne Registrierung oder Anmeldung, und deine Spielstände bleiben auf deinem Gerät. Es gibt keine In-App-Käufe. Der Werbedienst (Unity LevelPlay) verarbeitet Geräteinformationen und Werbe-IDs, die für die Auslieferung von Werbung nötig sind; beim ersten Start fragt das Spiel, ob du personalisierte Werbung erlaubst, und startet das Werbe-SDK erst, nachdem du gewählt hast. Eine Fehlermeldung wird nur dann an den Meldungsserver von TeamCP gesendet, wenn du sie selbst in den Einstellungen absendest.",
+  "contents": "Inhalt",
+  "resources": "Richtlinien von Drittanbietern und deine Rechte",
+  "contact": "Kontakt zum Datenschutz",
+  "links": [
+    "Unity-Datenschutzerklärung für Spieler und Anträge zu Betroffenenrechten",
+    "Android-Werbe-ID zurücksetzen oder löschen",
+    "Informationen zur Datensicherheit bei Google Play",
+    "Datenschutzerklärung von Google"
+  ],
+  "sections": [
+    {
+      "id": "scope",
+      "title": "1. Geltungsbereich und Betreiber",
+      "paragraphs": [
+        "TeamCP entwickelt und betreibt das Android-Spiel „Katzen-Bento-Fabrik“ (Cat Bento Sort, com.teamcp.catbentosort). Diese Erklärung beschreibt, welche Informationen das Spiel verarbeitet und welche Wahlmöglichkeiten du hast. Kontakt: teamcp.channel@gmail.com.",
+        "Das Spiel hat keine Registrierung, keine Anmeldung, keinen Chat und keine In-App-Käufe. Es fragt weder nach deinem Namen, deiner E-Mail-Adresse, deiner Telefonnummer oder deinem genauen Standort (GPS) noch nach Zugriff auf Kontakte, Mikrofon, Kamera, Fotos oder Speicher, und es erhebt diese Daten nicht. Die Berechtigungen, die die App selbst nutzt, sind Internet und Netzwerkstatus (Werbung und Fehlermeldungen), Vibration (Effekte) und die Werbe-ID (AD_ID). Die Attributions- und Topics-APIs der Android-Werbedienste sowie die Berechtigungen WAKE_LOCK, RECEIVE_BOOT_COMPLETED und FOREGROUND_SERVICE stammen aus den Bibliotheken des Werbe-SDK. Wenn du dem Support eine E-Mail schreibst, verwenden wir deine Antwortadresse und deine Nachricht nur, um dir zu antworten."
+      ]
+    },
+    {
+      "id": "local",
+      "title": "2. Auf deinem Gerät gespeicherte Informationen",
+      "items": [
+        "Spielstände: Sterne, Bestzeit, Highscore und Anzahl der Abschlüsse pro Level, Münzen, das Gästebuch (eingeladene Gäste und servierte Bentos), die Anzahl der begonnenen Runden sowie ein Protokoll der Prämien aus Anzeigen mit Prämie, damit dieselbe Prämie nicht zweimal gewährt wird",
+        "Einstellungen: Musik, Soundeffekte, Vibration, Sprache und deine Wahl zu personalisierter Werbung",
+        "Nicht gesendete Fehlermeldungen: Eine von dir abgeschickte Meldung wird auf dem Gerät aufbewahrt (bis zu 50), bis der Server sie annimmt, und erneut gesendet"
+      ],
+      "paragraphs": [
+        "Diese Informationen werden nur im privaten Android-Speicher der App aufbewahrt, um deinen Fortschritt und deine Einstellungen zu erhalten. Spielstände und Einstellungen werden nie an einen Server von TeamCP gesendet. Es gibt keine Cloud-Speicherung, und die automatische Android-Sicherung ist für diese App deaktiviert, daher sind diese Daten nicht in der Sicherung deines Google-Kontos enthalten. Die App enthält keine Analysetools (wie Firebase Analytics) und keine automatische Absturzberichterstattung."
+      ]
+    },
+    {
+      "id": "ads",
+      "title": "3. Werbung und was die Werbedienste verarbeiten",
+      "paragraphs": [
+        "Das Spiel ist kostenlos und finanziert sich über Werbung. Die Werbeeinbindung besteht aus Unity LevelPlay (Werbe-Mediation, Unity Technologies) mit Unity Ads. AdMob, Firebase oder ein Zahlungs-SDK sind nicht enthalten.",
+        "Am unteren Bildschirmrand befindet sich immer ein eigenes Banner von TeamCP; sobald du deine Einwilligungsentscheidung getroffen hast und eine Anzeige bereit ist, wird an seiner Stelle eine Banneranzeige gezeigt. Das eigene Banner öffnet die Website von TeamCP nur dann im Browser, wenn du darauf tippst. Außerdem können nach einer gewonnenen Runde Interstitial-Anzeigen erscheinen, begrenzt in Anzahl und Abstand (nie in den ersten fünf Runden und nie direkt nach einer verlorenen Runde), sowie Anzeigen mit Prämie (Katzen-Chance), die nur abgespielt werden, wenn du dich dafür entscheidest. Du kannst weiterspielen, ohne Anzeigen mit Prämie anzusehen.",
+        "Um Anzeigen zu laden und anzuzeigen, können die Werbedienste folgende Informationen verarbeiten."
+      ],
+      "items": [
+        "Werbe- und SDK-Kennungen wie die Werbe-ID und die App-Set-ID",
+        "Geräteinformationen wie Modell, Betriebssystem, Sprache, Bildschirm, Netzwerktyp und Mobilfunkanbieter",
+        "IP-Adresse und die daraus abgeleitete ungefähre Region",
+        "Interaktionen wie Anzeigenimpressionen und -klicks sowie werbebezogene Fehler- und Diagnoseinformationen",
+        "Einige Informationen über auf dem Gerät installierte Apps (zum Beispiel, ob ein App-Store installiert ist)"
+      ],
+      "after": [
+        "Die Zwecke sind die Anzeige und Messung von Werbung, die Verhinderung von Betrug (Werbebetrug) und, wenn du einwilligst, personalisierte Werbung. Die App teilt den Werbediensten mit, dass sie sich nicht an Kinder richtet. TeamCP erhält keine Informationen über einzelne Nutzer, die von den Werbediensten erhoben werden; wir sehen in den Dashboards nur zusammengefasste Umsatz- und Impressionsstatistiken."
+      ]
+    },
+    {
+      "id": "choices",
+      "title": "4. Deine Wahlmöglichkeiten bei Werbung",
+      "items": [
+        "Beim ersten Start wählen alle Nutzer zwischen „Personalisierte Werbung erlauben“ und „Nur nicht personalisierte Werbung“. Bis du gewählt hast, wird das Werbe-SDK nicht gestartet und es werden keine Werbeanfragen gesendet. Wenn du „Nur nicht personalisierte Werbung“ wählst, siehst du gleich viele Anzeigen, die aber nicht personalisiert sind.",
+        "Du kannst jederzeit unter Einstellungen > „Werbeeinwilligung ansehen“ erneut wählen.",
+        "In Android unter Einstellungen > Datenschutz > Werbung kannst du deine Werbe-ID zurücksetzen oder löschen. Wenn sie gelöscht ist, wird stattdessen eine Folge von Nullen gesendet, die nicht für personalisierte Werbung genutzt werden kann.",
+        "Über das Datenschutzsymbol in einer Anzeige oder über das Verfahren in der unten genannten Richtlinie von Unity kannst du Auskunft über Werbedaten oder deren Löschung verlangen oder widersprechen (Opt-out).",
+        "Wenn du die Internetverbindung des Geräts ausschaltest, werden keine Werbeanfragen gestellt; das Spiel ist auch offline spielbar."
+      ],
+      "paragraphs": [
+        "Deine Wahl wird nur auf dem Gerät gespeichert und als Einwilligungssignal an den Werbedienst (Unity LevelPlay) übermittelt. Wenn du „Nur nicht personalisierte Werbung“ wählst, werden außerdem eine Verweigerung der Einwilligung nach der GDPR und ein Do-not-sell-Signal (Widerspruch gegen Verkauf/Weitergabe) nach den Gesetzen bestimmter US-Bundesstaaten gesendet."
+      ]
+    },
+    {
+      "id": "reports",
+      "title": "5. Fehlermeldungen",
+      "paragraphs": [
+        "Eine Meldung wird nur gesendet, wenn du unter Einstellungen > „Fehler melden“ eine Beschreibung schreibst und auf Senden tippst. Es gibt keine automatischen Meldungen und keine Absturzberichte. Eine Meldung enthält:"
+      ],
+      "items": [
+        "Die von dir geschriebene Beschreibung (bis zu 2.000 Zeichen) und die von dir gewählte Art der Meldung",
+        "Automatisch angehängt: Name und Version der App, Name des Bildschirms, von dem aus du gemeldet hast, App-Sprache, Modellname des Geräts und eine zufällige Meldungsnummer, die für jede Meldung neu erzeugt wird"
+      ],
+      "after": [
+        "Meldungen enthalten nie deine Werbe-ID, ein Konto, deine Spielstände oder deinen Standort. Bitte schreib keine personenbezogenen Daten wie deinen Namen oder deine Kontaktdaten in die Beschreibung. Meldungen werden über eine verschlüsselte Verbindung (HTTPS) übertragen, auf einem von TeamCP betriebenen Meldungsserver gespeichert (Webhosting: Cafe24, Republik Korea) und nur verwendet, um Fehler zu finden und zu beheben. Der Server und der Hosting-Anbieter können deine IP-Adresse bei der Übertragung in Verbindungsprotokollen verarbeiten. Wir bewahren Meldungen so lange auf, wie es zur Untersuchung und Behebung des Problems nötig ist, und löschen sie auf Anfrage."
+      ]
+    },
+    {
+      "id": "providers",
+      "title": "6. Drittanbieterdienste und Verarbeitung im Ausland",
+      "paragraphs": [
+        "Für die Dienste von Unity LevelPlay/Unity Technologies und Google (Android-Werbedienste) gelten deren eigene Richtlinien. Werbeinformationen können außerhalb deines Landes verarbeitet werden; Empfänger, Orte und Schutzmaßnahmen findest du in der Richtlinie des jeweiligen Anbieters. Fehlermeldungen werden auf einem Hosting-Server in der Republik Korea gespeichert.",
+        "TeamCP verkauft keine Nutzerdaten. Die Datenverarbeitung im Werbe-Ökosystem kann jedoch nach manchen örtlichen Gesetzen als „Verkauf“ oder „Weitergabe“ gelten; bitte lies daher auch die unten aufgeführten Informationen der Anbieter zu Widerspruch und Rechten."
+      ]
+    },
+    {
+      "id": "delete-data",
+      "title": "7. Löschen von Daten und Speicherdauer",
+      "items": [
+        "Auf dem Gerät: Deinstalliere die App oder nutze in Android Einstellungen > Apps > Katzen-Bento-Fabrik > Speicher > Daten löschen, um alle Spieldaten einschließlich Einstellungen und nicht gesendeter Meldungen zu löschen. Spielstände werden auf keinem Server von TeamCP gespeichert.",
+        "Gesendete Meldungen: Schreib an teamcp.channel@gmail.com mit dem Sendedatum und deinem Gerätemodell (und wenn möglich einem Teil des Textes); wir suchen die Meldung heraus und löschen sie.",
+        "Werbeinformationen: Lösche deine Werbe-ID oder setze sie zurück und nutze das Antragsverfahren in der Richtlinie von Unity. Das Deinstallieren der App allein löscht keine Informationen, die Werbeanbieter bereits verarbeitet haben.",
+        "Hilfe: Schreib an teamcp.channel@gmail.com mit dem Namen der App und deinem Anliegen. Sende keine Passwörter oder Ausweisdokumente. Für Daten, die TeamCP nicht speichert, nennen wir dir das Verfahren des jeweiligen Anbieters."
+      ],
+      "paragraphs": [
+        "Spieldaten auf dem Gerät bleiben erhalten, bis du sie löschst. Werbeinformationen werden gemäß der Richtlinie des jeweiligen Anbieters aufbewahrt. Support-E-Mails werden nach der Beantwortung nicht länger als nötig aufbewahrt."
+      ]
+    },
+    {
+      "id": "rights",
+      "title": "8. Deine Rechte",
+      "paragraphs": [
+        "Je nach Wohnort hast du möglicherweise das Recht auf Auskunft, Berichtigung oder Löschung von Daten, auf Einschränkung der Verarbeitung oder Widerspruch dagegen, auf Widerruf der Einwilligung, auf Widerspruch gegen Verkauf/Weitergabe oder auf Beschwerde bei einer Aufsichtsbehörde. Da TeamCP keine Spieldaten auf eigenen Servern speichert, werden die meisten Anliegen über die Geräteeinstellungen und die Verfahren der Werbeanbieter bearbeitet; Anliegen zu Fehlermeldungen bearbeitet TeamCP direkt. Wir sagen dir, welchen Weg du nutzen kannst."
+      ]
+    },
+    {
+      "id": "young-users",
+      "title": "9. Kinder und Eltern",
+      "paragraphs": [
+        "Die Katzen-Bento-Fabrik ist ein Puzzlespiel, in dem du Snacks von einem Förderband auswählst, um die Bento-Bestellungen von Katzengästen zu erfüllen. Es ist für alle Altersgruppen geeignet, enthält aber Werbung und richtet sich nicht an Kinder unter 13 Jahren. Die App teilt den Werbediensten mit, dass sie sich nicht an Kinder richtet, und hat weder eine Altersprüfung noch eine Funktion für die Einwilligung der Eltern.",
+        "Wenn du glaubst, dass Informationen eines Kindes unter 13 Jahren verarbeitet wurden, kontaktiere uns bitte; wir erklären dir dann, wie sie gelöscht werden können."
+      ]
+    },
+    {
+      "id": "updates",
+      "title": "10. Sicherheit und Änderungen dieser Erklärung",
+      "paragraphs": [
+        "Spieldaten werden im privaten Android-Speicher der App aufbewahrt, den andere Apps nicht lesen können. Der Datenverkehr für Werbung und Fehlermeldungen nutzt verschlüsselte Verbindungen (HTTPS).",
+        "Wenn sich Funktionen, SDKs oder die Verarbeitung ändern, aktualisieren wir zuerst diese Erklärung und ihr Datum und kündigen wichtige Änderungen auf dieser Seite an. Dieses Dokument ist in acht Sprachen verfügbar; wenn du glaubst, dass sich die Übersetzungen unterscheiden, kontaktiere uns bitte. Maßgeblich ist die koreanische Fassung."
+      ]
+    }
+  ]
+}
