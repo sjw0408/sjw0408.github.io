@@ -3,7 +3,7 @@
   "title": "Datenschutzerklärung der Katzen-Bento-Fabrik",
   "description": "Wie die Katzen-Bento-Fabrik Daten auf deinem Gerät speichert, wie Werbung und Werbeeinwilligung funktionieren, Fehlermeldungen und wie du Daten löschst.",
   "back": "Spielinformationen zur Katzen-Bento-Fabrik",
-  "date": "Zuletzt aktualisiert: 17. November 2026",
+  "date": "Zuletzt aktualisiert: 18. November 2026",
   "version": "Gilt für Version 1.0.0. Wenn sich Funktionen oder die Werbeeinbindung ändern, aktualisieren wir diese Seite und ihr Datum.",
   "summary": "Du spielst ohne Registrierung oder Anmeldung, und deine Spielstände bleiben auf deinem Gerät. Es gibt keine In-App-Käufe. Der Werbedienst (Unity LevelPlay) verarbeitet Geräteinformationen und Werbe-IDs, die für die Auslieferung von Werbung nötig sind; beim ersten Start fragt das Spiel, ob du personalisierte Werbung erlaubst, und startet das Werbe-SDK erst, nachdem du gewählt hast. Eine Fehlermeldung wird nur dann an den Meldungsserver von TeamCP gesendet, wenn du sie selbst in den Einstellungen absendest.",
   "contents": "Inhalt",
@@ -80,7 +80,7 @@
         "Automatisch angehängt: Name und Version der App, Name des Bildschirms, von dem aus du gemeldet hast, App-Sprache, Modellname des Geräts und eine zufällige Meldungsnummer, die für jede Meldung neu erzeugt wird"
       ],
       "after": [
-        "Meldungen enthalten nie deine Werbe-ID, ein Konto, deine Spielstände oder deinen Standort. Bitte schreib keine personenbezogenen Daten wie deinen Namen oder deine Kontaktdaten in die Beschreibung. Meldungen werden über eine verschlüsselte Verbindung (HTTPS) übertragen, auf einem von TeamCP betriebenen Meldungsserver gespeichert (Webhosting: Cafe24, Republik Korea) und nur verwendet, um Fehler zu finden und zu beheben. Der Server und der Hosting-Anbieter können deine IP-Adresse bei der Übertragung in Verbindungsprotokollen verarbeiten. Wir bewahren Meldungen so lange auf, wie es zur Untersuchung und Behebung des Problems nötig ist, und löschen sie auf Anfrage."
+        "Meldungen enthalten nie deine Werbe-ID, ein Konto, deine Spielstände oder deinen Standort. Bitte schreib keine personenbezogenen Daten wie deinen Namen oder deine Kontaktdaten in die Beschreibung. Meldungen werden über eine verschlüsselte Verbindung (HTTPS) übertragen, auf einem von TeamCP betriebenen Meldungsserver gespeichert (Webhosting: Cafe24, Republik Korea) und nur verwendet, um Fehler zu finden und zu beheben. Der Server und der Hosting-Anbieter können deine IP-Adresse bei der Übertragung in Verbindungsprotokollen verarbeiten. Auf dem Server gespeicherte Meldungen werden ab dem Eingang 90 Tage aufbewahrt und danach gelöscht; wenn du die Löschung früher verlangst, löschen wir sie sofort."
       ]
     },
     {
@@ -101,7 +101,7 @@
         "Hilfe: Schreib an teamcp.channel@gmail.com mit dem Namen der App und deinem Anliegen. Sende keine Passwörter oder Ausweisdokumente. Für Daten, die TeamCP nicht speichert, nennen wir dir das Verfahren des jeweiligen Anbieters."
       ],
       "paragraphs": [
-        "Spieldaten auf dem Gerät bleiben erhalten, bis du sie löschst. Werbeinformationen werden gemäß der Richtlinie des jeweiligen Anbieters aufbewahrt. Support-E-Mails werden nach der Beantwortung nicht länger als nötig aufbewahrt."
+        "Spieldaten auf dem Gerät bleiben erhalten, bis du sie löschst. An den Server gesendete Fehlermeldungen werden 90 Tage nach dem Eingang gelöscht. Werbeinformationen werden gemäß der Richtlinie des jeweiligen Anbieters aufbewahrt. Support-E-Mails werden nach der Beantwortung nicht länger als nötig aufbewahrt."
       ]
     },
     {

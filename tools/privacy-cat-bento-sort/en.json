@@ -3,7 +3,7 @@
   "title": "Cat Bento Sort Privacy Policy",
   "description": "How Cat Bento Sort stores data on your device, how ads and ad consent work, issue reports, and how to delete data.",
   "back": "Cat Bento Sort game information",
-  "date": "Last updated: November 17, 2026",
+  "date": "Last updated: November 18, 2026",
   "version": "Applies to version 1.0.0. We update this page and its date whenever features or the ad setup change.",
   "summary": "You play without signing up or logging in, and your game records stay on your device. There are no in-app purchases. The ad service (Unity LevelPlay) processes device information and advertising identifiers needed to deliver ads; on first launch the game asks whether you allow personalized ads and does not start the ad SDK before you choose. An issue report is sent to TeamCP's report server only when you send one yourself from Settings.",
   "contents": "Contents",
@@ -80,7 +80,7 @@
         "Attached automatically: app name and version, the name of the screen you reported from, app language, device model name, and a random report number created for each report"
       ],
       "after": [
-        "Reports never include your advertising ID, an account, your game records or your location. Please do not write personal information such as your name or contact details in the description. Reports are sent over an encrypted connection (HTTPS) and stored on a report server operated by TeamCP (web hosting: Cafe24, Republic of Korea), and are used only to find and fix problems. The server and the hosting company may process your IP address in connection logs while the request is handled. We keep reports for as long as needed to investigate and fix the problem, and delete them on request."
+        "Reports never include your advertising ID, an account, your game records or your location. Please do not write personal information such as your name or contact details in the description. Reports are sent over an encrypted connection (HTTPS) and stored on a report server operated by TeamCP (web hosting: Cafe24, Republic of Korea), and are used only to find and fix problems. The server and the hosting company may process your IP address in connection logs while the request is handled. Reports stored on the server are kept for 90 days from the day they are received and then deleted; if you ask us to delete one sooner, we delete it right away."
       ]
     },
     {
@@ -101,7 +101,7 @@
         "Help: email teamcp.channel@gmail.com with the app name and your request. Do not send passwords or ID documents. For data TeamCP does not hold, we will point you to the provider's procedure."
       ],
       "paragraphs": [
-        "Game data on the device remains until you delete it. Ad information is retained according to each provider's policy. Support emails are not kept longer than needed after we have answered."
+        "Game data on the device remains until you delete it. Issue reports sent to the server are deleted 90 days after they are received. Ad information is retained according to each provider's policy. Support emails are not kept longer than needed after we have answered."
       ]
     },
     {
