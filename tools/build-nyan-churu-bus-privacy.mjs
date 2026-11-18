@@ -1,5 +1,5 @@
-// 냥이 츄르 버스 개인정보처리방침 정적 페이지 생성기 (BJ24-NEXT, 냥이 합치기 생성기 복제). 런타임 JS·원격 폰트·추적 없음.
-// 원문: tools/privacy-nyan-churu-bus/<lang>.json  →  games/nyan-churu-bus/privacy/[<lang>/]index.html
+// 냥이 츄르 버스 개인정보처리방침 정적 페이지 생성기 (NyanChuruBus BJ-QA1FIX: 8개 언어·오류 신고 절, 냥냥 도시락 공장 생성기와 같은 구조). 런타임 JS·원격 폰트·추적 없음.
+// 원문: tools/privacy-nyan-churu-bus/<lang>.json  →  games/nyan-churu-bus/privacy/[<path>/]index.html
 // 사용: node tools/build-nyan-churu-bus-privacy.mjs [--check]
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
@@ -7,19 +7,32 @@ import { fileURLToPath } from 'node:url';
 import assert from 'node:assert/strict';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-// 방침은 한국어·영어로 제공한다 (영어는 스토어·국외 이용자용)
-const languages = { ko: '한국어', en: 'English' };
-const ids = ['scope', 'local', 'ads', 'choices', 'providers', 'delete-data', 'rights', 'young-users', 'updates'];
+// 게임의 8개 언어와 같다. 앱 설정·첫 실행 동의 카드의 '개인정보처리방침'이 앱 언어의 경로를 연다(앱 ads 모듈 PrivacyLinks: ko 는 기본 경로, 나머지는 소문자 폴더).
+const languages = {
+  ko: '한국어',
+  en: 'English',
+  ja: '日本語',
+  es: 'Español',
+  'pt-BR': 'Português (Brasil)',
+  'zh-TW': '中文（繁體）',
+  de: 'Deutsch',
+  fr: 'Français',
+};
+const ids = ['scope', 'local', 'ads', 'choices', 'reports', 'providers', 'delete-data', 'rights', 'young-users', 'updates'];
 const base = '/games/nyan-churu-bus/privacy/';
 const origin = 'https://sjw0408.github.io';
-const route = code => code === 'ko' ? base : `${base}${code}/`;
+const route = code => code === 'ko' ? base : `${base}${code.toLowerCase()}/`;
 const esc = text => String(text).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
 const paragraph = list => (list ?? []).map(text => `      <p>${esc(text)}</p>`).join('\n');
 const list = items => items?.length ? `      <ul>\n${items.map(text => `        <li>${esc(text)}</li>`).join('\n')}\n      </ul>` : '';
+// 다른 게임의 이름, 그리고 이 원문의 본이 된 방침(다른 게임)의 낱말이 남지 않게 한다.
+const forbidden = ['모리', '마린', '엘리', '리아', '로이', 'Yarn Tangle', 'yarntangle', '털실', '가위'];
 
 let changed = 0;
 for (const [code, nativeName] of Object.entries(languages)) {
-  const data = JSON.parse(readFileSync(resolve(root, 'tools/privacy-nyan-churu-bus', `${code}.json`), 'utf8'));
+  const raw = readFileSync(resolve(root, 'tools/privacy-nyan-churu-bus', `${code}.json`), 'utf8');
+  for (const name of forbidden) assert.ok(!raw.includes(name), `${code}: forbidden name ${name}`);
+  const data = JSON.parse(raw);
   assert.equal(data.language, code);
   for (const key of ['title', 'description', 'back', 'date', 'version', 'summary', 'contents', 'resources', 'contact']) {
     assert.equal(typeof data[key], 'string', `${code}: ${key}`);
@@ -48,7 +61,7 @@ for (const [code, nativeName] of Object.entries(languages)) {
   <meta name="color-scheme" content="light">
   <meta name="theme-color" content="#fff4e3">
   <meta name="description" content="${esc(data.description)}">
-  <meta name="policy-revision" content="2026-11-17-v1">
+  <meta name="policy-revision" content="2026-11-18-v1">
   <title>${esc(data.title)}</title>
   <link rel="canonical" href="${origin}${route(code)}">
 ${Object.keys(languages).map(lang => `  <link rel="alternate" hreflang="${lang}" href="${origin}${route(lang)}">`).join('\n')}
@@ -93,6 +106,7 @@ ${resources.map((href, i) => `        <li><a href="${href}">${esc(data.links[i])
 </body>
 </html>
 `;
+  assert.equal((html.match(/id="delete-data"/g) ?? []).length, 1, `${code}: #delete-data`);
   const target = resolve(root, `.${route(code)}`, 'index.html');
   let existing = null;
   try { existing = readFileSync(target, 'utf8'); } catch (error) { if (error.code !== 'ENOENT') throw error; }

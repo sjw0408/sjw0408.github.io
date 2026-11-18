@@ -1,0 +1,131 @@
+{
+  "language": "es",
+  "title": "Política de privacidad de Bus Churu Gatuno",
+  "description": "Qué guarda Bus Churu Gatuno en tu dispositivo, cómo funcionan los anuncios y el consentimiento publicitario, los informes de errores y cómo eliminar tus datos.",
+  "back": "Información del juego Bus Churu Gatuno",
+  "date": "Última actualización: 18 de noviembre de 2026",
+  "version": "Se aplica a la versión 1.0.0. Actualizamos esta página y su fecha siempre que cambian las funciones o la configuración de anuncios.",
+  "summary": "Juegas sin registrarte ni iniciar sesión, y tus registros de juego se guardan solo en tu dispositivo. No hay compras dentro de la aplicación. El servicio de anuncios (Unity LevelPlay) trata la información del dispositivo y los identificadores publicitarios necesarios para mostrar anuncios; al abrir el juego por primera vez se te pregunta si permites los anuncios personalizados, y el SDK de anuncios no se inicia hasta que eliges. Un informe de error solo se envía al servidor de informes de TeamCP cuando tú mismo lo envías desde Ajustes.",
+  "contents": "Contenido",
+  "resources": "Políticas de terceros y ejercicio de tus derechos",
+  "contact": "Contacto sobre privacidad",
+  "links": [
+    "Política de privacidad de Unity para jugadores y solicitudes de derechos",
+    "Cómo restablecer o eliminar tu ID de publicidad de Android",
+    "Información sobre la seguridad de los datos en Google Play",
+    "Política de privacidad de Google"
+  ],
+  "sections": [
+    {
+      "id": "scope",
+      "title": "1. Ámbito y operador",
+      "paragraphs": [
+        "TeamCP desarrolla y gestiona el juego para Android «Bus Churu Gatuno» (Nyan Churu Bus, com.teamcp.nyanchurubus). Esta política explica qué información trata el juego y qué opciones tienes. Contacto: teamcp.channel@gmail.com.",
+        "El juego no tiene registro, inicio de sesión, chat ni compras dentro de la aplicación. No solicita ni recopila tu nombre, correo electrónico, número de teléfono, ubicación precisa (GPS), contactos, micrófono, cámara, fotos ni almacenamiento. Los permisos que usa la propia aplicación son internet y estado de la red (anuncios e informes de errores), vibración (efectos) y el ID de publicidad (AD_ID). Las API de atribución y de temas de los servicios de anuncios de Android y los permisos WAKE_LOCK, RECEIVE_BOOT_COMPLETED y FOREGROUND_SERVICE provienen de las bibliotecas del SDK de anuncios. Si escribes al correo de asistencia, usamos tu dirección de respuesta y tu mensaje solo para contestarte."
+      ]
+    },
+    {
+      "id": "local",
+      "title": "2. Información guardada en tu dispositivo",
+      "items": [
+        "Registros de juego: mejores estrellas por nivel, monedas, Decorar el bus (los aspectos que tienes y el que está en uso), la partida en curso (Continuar), el número de intentos y un registro de las recompensas de anuncios con recompensa para que no se conceda dos veces la misma recompensa",
+        "Ajustes: música, efectos de sonido, vibración, guía de ruta, idioma y tu elección sobre los anuncios personalizados",
+        "Informes de errores no enviados: un informe que enviaste se guarda en el dispositivo (hasta 50) hasta que el servidor lo recibe, y se vuelve a enviar"
+      ],
+      "paragraphs": [
+        "Esta información se guarda solo en el almacenamiento privado de la aplicación en Android para conservar tu progreso y tus ajustes. Los registros de juego y los ajustes nunca se envían a un servidor de TeamCP. No hay guardado en la nube, y la copia de seguridad automática de Android está desactivada para esta aplicación, por lo que no se incluye en la copia de seguridad de tu cuenta de Google. La aplicación no contiene herramientas de análisis (como Firebase Analytics) ni informes automáticos de fallos."
+      ]
+    },
+    {
+      "id": "ads",
+      "title": "3. Anuncios y qué tratan los servicios de anuncios",
+      "paragraphs": [
+        "El juego es gratuito y se financia con anuncios. La configuración de anuncios es Unity LevelPlay (mediación de anuncios, Unity Technologies) con Unity Ads. No incluye AdMob, Firebase ni ningún SDK de pagos.",
+        "En la parte inferior de la pantalla siempre hay un banner propio de TeamCP; una vez que has hecho tu elección de consentimiento y hay un anuncio listo, en su lugar se muestra un anuncio de banner. El banner propio abre el sitio web de TeamCP en tu navegador solo cuando lo tocas. Además, pueden aparecer anuncios intersticiales después de una partida ganada, con un número y una frecuencia limitados (nunca en las cinco primeras partidas ni justo después de una partida fallida), y, cuando te atascas, anuncios con recompensa (Chance de premio: un asiento más en el banco para esa partida) que solo se reproducen cuando decides ver uno. Puedes seguir jugando sin ver anuncios con recompensa.",
+        "Para cargar y mostrar anuncios, los servicios de anuncios pueden tratar la siguiente información."
+      ],
+      "items": [
+        "Identificadores publicitarios y del SDK, como el ID de publicidad y el ID del conjunto de aplicaciones",
+        "Información del dispositivo, como modelo, sistema operativo, idioma, pantalla, tipo de red y operador",
+        "Dirección IP y la región aproximada que se deduce de ella",
+        "Interacciones, como impresiones y clics en anuncios, e información de errores y diagnóstico relacionada con los anuncios",
+        "Cierta información sobre las aplicaciones instaladas en el dispositivo (por ejemplo, si hay una tienda de aplicaciones instalada)"
+      ],
+      "after": [
+        "Las finalidades son mostrar y medir anuncios, prevenir el fraude (fraude publicitario) y, si das tu consentimiento, mostrar anuncios personalizados. La aplicación indica a los servicios de anuncios que no está dirigida a niños. TeamCP no recibe información individual de los usuarios recopilada por los servicios de anuncios; solo vemos estadísticas agregadas de ingresos e impresiones en los paneles."
+      ]
+    },
+    {
+      "id": "choices",
+      "title": "4. Tus opciones sobre los anuncios",
+      "items": [
+        "Al abrir la aplicación por primera vez, todos los usuarios eligen entre «Permitir anuncios personalizados» y «Solo anuncios no personalizados». Hasta que eliges, el SDK de anuncios no se inicia y no se envía ninguna solicitud de anuncios. Si eliges «Solo anuncios no personalizados», ves la misma cantidad de anuncios, pero no personalizados.",
+        "Puedes volver a elegir en cualquier momento en Ajustes > «Revisar consentimiento de anuncios».",
+        "En Ajustes de Android > Privacidad > Anuncios puedes restablecer o eliminar tu ID de publicidad. Si lo eliminas, en su lugar se envía una cadena de ceros que no puede usarse para anuncios personalizados.",
+        "Puedes solicitar el acceso, la eliminación o la exclusión de los datos publicitarios mediante el icono de privacidad del anuncio o el procedimiento de la política de Unity que figura más abajo.",
+        "Si desactivas la conexión a internet del dispositivo, no se realizan solicitudes de anuncios; el juego se puede jugar sin conexión."
+      ],
+      "paragraphs": [
+        "Tu elección se guarda solo en el dispositivo y se transmite al servicio de anuncios (Unity LevelPlay) como señal de consentimiento. Elegir «Solo anuncios no personalizados» también envía la denegación del consentimiento conforme al GDPR y una señal de exclusión de la venta o el uso compartido (do-not-sell) conforme a las leyes de ciertos estados de EE. UU."
+      ]
+    },
+    {
+      "id": "reports",
+      "title": "5. Informes de errores",
+      "paragraphs": [
+        "Solo se envía un informe cuando escribes una descripción en Ajustes > «Informar un problema» y tocas enviar. No hay informes automáticos ni informes de fallos. Un informe contiene:"
+      ],
+      "items": [
+        "La descripción que escribes (hasta 2000 caracteres) y el tipo de informe que eliges",
+        "Adjuntado automáticamente: nombre y versión de la aplicación, nombre de la pantalla desde la que informaste, idioma de la aplicación, nombre del modelo del dispositivo y un número de informe aleatorio que se crea para cada informe"
+      ],
+      "after": [
+        "Los informes nunca incluyen tu ID de publicidad, una cuenta, tus registros de juego ni tu ubicación. No escribas en la descripción datos personales como tu nombre o tus datos de contacto. Los informes se envían mediante una conexión cifrada (HTTPS) y se guardan en un servidor de informes gestionado por TeamCP (alojamiento web: Cafe24, República de Corea), y solo se usan para localizar y corregir problemas. El servidor y la empresa de alojamiento pueden tratar tu dirección IP en los registros de conexión durante la comunicación. Conservamos los informes durante el tiempo necesario para investigar y resolver el problema, y los eliminamos si lo solicitas."
+      ]
+    },
+    {
+      "id": "providers",
+      "title": "6. Servicios de terceros y tratamiento internacional",
+      "paragraphs": [
+        "Los servicios de Unity LevelPlay/Unity Technologies y de Google (servicios de anuncios de Android) se rigen por sus propias políticas. La información publicitaria puede tratarse fuera de tu país; consulta la política de cada proveedor para conocer los destinatarios, las ubicaciones y las garantías. Los informes de errores se guardan en un servidor de alojamiento en la República de Corea.",
+        "TeamCP no vende la información de los usuarios. Sin embargo, el tratamiento de datos en el ecosistema publicitario puede considerarse una «venta» o un «uso compartido» según algunas leyes locales, por lo que te recomendamos revisar también la información sobre exclusión y derechos de los proveedores que figura más abajo."
+      ]
+    },
+    {
+      "id": "delete-data",
+      "title": "7. Cómo eliminar los datos y plazos de conservación",
+      "items": [
+        "En el dispositivo: desinstala la aplicación o ve a Ajustes de Android > Aplicaciones > Bus Churu Gatuno > Almacenamiento > Borrar datos para eliminar todos los datos del juego, incluidos los ajustes y los informes no enviados. Los registros de juego no se guardan en ningún servidor de TeamCP.",
+        "Informes enviados: escribe a teamcp.channel@gmail.com indicando la fecha de envío y el modelo de tu dispositivo (y, si es posible, parte del texto), y lo buscaremos y eliminaremos.",
+        "Información publicitaria: elimina o restablece tu ID de publicidad y usa el procedimiento de solicitud de la política de Unity. Desinstalar la aplicación no elimina por sí solo la información que los proveedores de anuncios ya han tratado.",
+        "Ayuda: escribe a teamcp.channel@gmail.com indicando el nombre de la aplicación y tu solicitud. No envíes contraseñas ni documentos de identidad. Para los datos que TeamCP no conserva, te indicaremos el procedimiento del proveedor correspondiente."
+      ],
+      "paragraphs": [
+        "Los datos del juego en el dispositivo se conservan hasta que los eliminas. La información publicitaria se conserva según la política de cada proveedor. Los correos de asistencia no se conservan más tiempo del necesario una vez respondidos."
+      ]
+    },
+    {
+      "id": "rights",
+      "title": "8. Tus derechos",
+      "paragraphs": [
+        "Según dónde vivas, puedes tener derecho a acceder a tus datos, rectificarlos o eliminarlos, a limitar su tratamiento u oponerte a él, a retirar tu consentimiento, a excluirte de la venta o el uso compartido, o a presentar una reclamación ante una autoridad de control. Como TeamCP no guarda datos del juego en sus propios servidores, la mayoría de las solicitudes se gestionan mediante los ajustes del dispositivo y los procedimientos de los proveedores de anuncios; las solicitudes sobre informes de errores las gestiona TeamCP directamente. Te indicaremos qué vía debes usar."
+      ]
+    },
+    {
+      "id": "young-users",
+      "title": "9. Niños y padres",
+      "paragraphs": [
+        "Bus Churu Gatuno es un juego de puzles en el que envías a los gatos en el autobús de su color. Es apto para todas las edades, pero contiene anuncios y no está dirigido a menores de 13 años. La aplicación indica a los servicios de anuncios que no está dirigida a niños y no tiene verificación de edad ni función de consentimiento parental.",
+        "Si crees que se ha tratado información de un menor de 13 años, ponte en contacto con nosotros y te explicaremos cómo eliminarla."
+      ]
+    },
+    {
+      "id": "updates",
+      "title": "10. Seguridad y cambios en esta política",
+      "paragraphs": [
+        "Los datos del juego se guardan en el almacenamiento privado de la aplicación en Android, que otras aplicaciones no pueden leer. Las comunicaciones de anuncios y de informes de errores usan conexiones cifradas (HTTPS).",
+        "Si cambian las funciones, los SDK o el tratamiento de datos, primero actualizamos esta política y su fecha, y anunciamos los cambios importantes en esta página. Este documento está disponible en ocho idiomas; si crees que hay diferencias entre las traducciones, ponte en contacto con nosotros. Prevalece la versión en coreano."
+      ]
+    }
+  ]
+}

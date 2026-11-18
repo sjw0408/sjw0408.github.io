@@ -1,11 +1,11 @@
 {
   "language": "en",
   "title": "Nyan Churu Bus Privacy Policy",
-  "description": "How Nyan Churu Bus stores data on your device, uses ads and ad consent, and how to delete data.",
-  "back": "Nyan Churu Bus game info",
-  "date": "Last updated: November 17, 2026",
-  "version": "Applies to version 1.0.0. When features or the ad setup change, this page and its date are updated.",
-  "summary": "You play without an account or sign-in, and your game record stays on your device. TeamCP runs no game server and there are no in-app purchases. The ad service (Unity LevelPlay) processes device information and advertising identifiers needed to deliver ads. On first launch the game asks whether you allow personalized ads and does not start the ad SDK before you choose.",
+  "description": "How Nyan Churu Bus stores data on your device, how ads and ad consent work, issue reports, and how to delete data.",
+  "back": "Nyan Churu Bus game information",
+  "date": "Last updated: November 18, 2026",
+  "version": "Applies to version 1.0.0. We update this page and its date whenever features or the ad setup change.",
+  "summary": "You play without signing up or logging in, and your game records stay on your device. There are no in-app purchases. The ad service (Unity LevelPlay) processes device information and advertising identifiers needed to deliver ads; on first launch the game asks whether you allow personalized ads and does not start the ad SDK before you choose. An issue report is sent to TeamCP's report server only when you send one yourself from Settings.",
   "contents": "Contents",
   "resources": "Third-party policies and your rights",
   "contact": "Privacy contact",
@@ -20,95 +20,111 @@
       "id": "scope",
       "title": "1. Scope and operator",
       "paragraphs": [
-        "TeamCP develops and operates the Android game “Nyan Churu Bus” (com.teamcp.nyanchurubus). This policy explains the information the game handles and the choices you have. Contact: teamcp.channel@gmail.com.",
-        "The game has no sign-up, sign-in, game server, chat or in-app purchases. It does not ask for or collect your name, email, phone number, location (GPS), contacts, microphone, camera or storage. The permissions the app itself uses are internet and network state (ads), vibration (effects) and the advertising ID (AD_ID). The Android ad services attribution and topics APIs and the WAKE_LOCK, RECEIVE_BOOT_COMPLETED and FOREGROUND_SERVICE permissions come with the ad SDK libraries. If you email support, your address and message are used only to answer you."
+        "TeamCP develops and operates the Android game “Nyan Churu Bus” (냥이 츄르 버스, com.teamcp.nyanchurubus). This policy explains what information the game handles and the choices you have. Contact: teamcp.channel@gmail.com.",
+        "The game has no sign-up, login, chat or in-app purchases. It does not ask for or collect your name, email, phone number, precise location (GPS), contacts, microphone, camera, photos or storage. The permissions the app itself uses are internet and network state (ads and issue reports), vibration (effects) and the advertising ID (AD_ID). The Android ad services attribution and topics APIs and the WAKE_LOCK, RECEIVE_BOOT_COMPLETED and FOREGROUND_SERVICE permissions come from the ad SDK libraries. If you email support, we use your reply address and message only to answer you."
       ]
     },
     {
       "id": "local",
       "title": "2. Information stored on your device",
       "items": [
-        "Game record: best stars per level, coins, bus decorations owned and selected, the round in progress (continue)",
-        "Settings: music, sound effects, vibration, path guide, language, your personalized-ads choice"
+        "Game records: best stars per level, coins, Bus makeover (the bus looks you own and the one in use), the round in progress (Continue), the number of attempts, and a record of rewarded-ad rewards so the same reward is not granted twice",
+        "Settings: music, sound effects, vibration, path guide, language and your personalized-ads choice",
+        "Unsent issue reports: a report you sent is kept on the device (up to 50) until the server accepts it, then retried"
       ],
       "paragraphs": [
-        "This information is kept only in the app’s private Android storage to keep your progress and settings, and is not sent to TeamCP servers. There is no cloud save, and the app turns Android auto backup off, so it is not included in your Google account backup. The app contains no analytics (such as Firebase Analytics) and no crash-reporting tool."
+        "This information is kept only in the app's private Android storage to keep your progress and settings. Game records and settings are never sent to a TeamCP server. There is no cloud save, and Android auto backup is turned off for this app, so it is not included in your Google account backup. The app contains no analytics tools (such as Firebase Analytics) and no automatic crash reporting."
       ]
     },
     {
       "id": "ads",
-      "title": "3. Ads and the information ad services process",
+      "title": "3. Ads and what the ad services process",
       "paragraphs": [
-        "The game is free and supported by ads. Ads are served through Unity LevelPlay (mediation, Unity Technologies). The app does not include AdMob, Firebase or any payment SDK.",
-        "A TeamCP house banner always sits at the bottom of the screen; after you make your consent choice and an ad is ready, a banner ad is shown in its place. The house banner opens the TeamCP website in your browser only when you tap it. Interstitial ads may appear between rounds with frequency and interval limits, and rewarded ads (the snack chance) play only when you choose to watch them. You can keep playing without watching rewarded ads.",
-        "To load and show ads, the ad service may process:"
+        "The game is free and supported by ads. The ad setup is Unity LevelPlay (ad mediation, Unity Technologies) with Unity Ads. It does not include AdMob, Firebase or any payment SDK.",
+        "A TeamCP house banner always sits at the bottom of the screen; once you have made your consent choice and an ad is ready, a banner ad is shown in its place. The house banner opens the TeamCP website in your browser only when you tap it. In addition, interstitial ads may appear after a won round, limited in number and spacing (never in the first five rounds or right after a failed round), and, when you are stuck, rewarded ads (Snack Chance: one extra bench seat for that round) that play only when you choose to watch one. You can keep playing without watching rewarded ads.",
+        "To load and show ads, the ad services may process the following information."
       ],
       "items": [
         "Advertising and SDK identifiers such as the advertising ID and app set ID",
         "Device information such as model, operating system, language, screen, network type and carrier",
-        "IP address and the approximate location derived from it",
-        "Ad interactions such as impressions and clicks, plus ad-related errors and diagnostics",
-        "Some information about installed apps (for example, whether an app store is installed)"
+        "IP address and the approximate region derived from it",
+        "Interactions such as ad impressions and clicks, and ad-related error and diagnostic information",
+        "Some information about apps installed on the device (for example, whether an app store is installed)"
       ],
       "after": [
-        "The purposes are showing and measuring ads, preventing ad fraud and, if you agree, personalized ads. The app tells the ad service it is not directed at children. TeamCP does not receive individual user data collected by the ad service; it only sees aggregated revenue and impression statistics in the dashboard."
+        "The purposes are showing and measuring ads, preventing fraud (ad fraud), and, if you agree, personalized ads. The app tells the ad services that it is not directed at children. TeamCP does not receive individual user information collected by the ad services; we only see aggregated revenue and impression statistics in the dashboards."
       ]
     },
     {
       "id": "choices",
       "title": "4. Your ad choices",
       "items": [
-        "On first launch every player chooses between “Allow personalized ads” and “Only non-personalized ads”. Before you choose, the ad SDK is not started and no ad request is sent. With non-personalized ads you see the same number of ads, just not personalized.",
+        "On first launch every user chooses between “Allow personalized ads” and “Only non-personalized ads”. Until you choose, the ad SDK is not started and no ad requests are sent. If you choose non-personalized ads, you see the same number of ads, but they are not personalized.",
         "You can choose again at any time in Settings > “Review ad consent”.",
-        "You can reset or delete your advertising ID in Android Settings > Privacy > Ads. Once deleted, a zeroed value is sent instead and cannot be used for personalized ads.",
-        "You can request access to, deletion of, or objection to ad data through the privacy icon in an ad or the Unity procedure linked below.",
-        "With the device’s internet connection off no ad requests are made, and the game can be played offline."
+        "In Android Settings > Privacy > Ads you can reset or delete your advertising ID. When it is deleted, a string of zeros is sent instead and cannot be used for personalized ads.",
+        "You can ask to access, delete or opt out of ad data through the privacy icon in an ad or the procedure in Unity's policy below.",
+        "If you turn off the internet connection, no ad requests are made; the game can be played offline."
       ],
       "paragraphs": [
-        "Your choice is stored only on your device and passed to the ad service (Unity LevelPlay) as a consent signal. Choosing “Only non-personalized ads” sends a GDPR consent refusal together with a do-not-sell signal under certain U.S. state laws."
+        "Your choice is stored only on the device and passed to the ad service (Unity LevelPlay) as a consent signal. Choosing “Only non-personalized ads” also sends a GDPR consent refusal and a do-not-sell (sale/sharing opt-out) signal under certain U.S. state laws."
+      ]
+    },
+    {
+      "id": "reports",
+      "title": "5. Issue reports",
+      "paragraphs": [
+        "A report is sent only when you write a description in Settings > “Report an issue” and tap send. There are no automatic reports or crash reports. A report contains:"
+      ],
+      "items": [
+        "The description you write (up to 2,000 characters) and the report type you pick",
+        "Attached automatically: app name and version, the name of the screen you reported from, app language, device model name, and a random report number created for each report"
+      ],
+      "after": [
+        "Reports never include your advertising ID, an account, your game records or your location. Please do not write personal information such as your name or contact details in the description. Reports are sent over an encrypted connection (HTTPS) and stored on a report server operated by TeamCP (web hosting: Cafe24, Republic of Korea), and are used only to find and fix problems. The server and the hosting company may process your IP address in connection logs while the request is handled. We keep reports for as long as needed to investigate and fix the problem, and delete them on request."
       ]
     },
     {
       "id": "providers",
-      "title": "5. Third-party services and international processing",
+      "title": "6. Third-party services and international processing",
       "paragraphs": [
-        "Services of Unity LevelPlay / Unity Technologies and Google (Android ad services) are governed by their own policies. Ad data may be processed outside your country; the recipients, locations and safeguards are described in each provider’s policy.",
-        "TeamCP does not sell your information. However, data processing in the ad ecosystem may count as a “sale” or “sharing” under some local laws, so please also check the opt-out and rights information of the providers below."
+        "Services from Unity LevelPlay/Unity Technologies and Google (Android ad services) are governed by their own policies. Ad information may be processed outside your country; see each provider's policy for recipients, locations and safeguards. Issue reports are stored on a hosting server in the Republic of Korea.",
+        "TeamCP does not sell user information. However, data processing in the ad ecosystem may count as a “sale” or “sharing” under some local laws, so please also review the providers' opt-out and rights information below."
       ]
     },
     {
       "id": "delete-data",
-      "title": "6. How to delete data and retention",
+      "title": "7. How to delete data, and retention",
       "items": [
-        "On your device: uninstall the app, or use Android Settings > Apps > Nyan Churu Bus > Storage > Clear data to remove all game data including settings. TeamCP keeps nothing on its own servers.",
-        "Ad data: delete or reset your advertising ID and use Unity’s request procedure. Uninstalling the app does not erase data the ad provider has already processed.",
-        "Need help? Email teamcp.channel@gmail.com with the app name and your request. Please do not send passwords or ID documents. For data TeamCP does not hold, we will point you to the provider’s procedure."
+        "On the device: uninstall the app, or use Android Settings > Apps > Nyan Churu Bus > Storage > Clear data to delete all game data, including settings and unsent reports. Game records are not kept on any TeamCP server.",
+        "Reports you sent: email teamcp.channel@gmail.com with the date you sent it and your device model (and, if possible, part of the text), and we will find and delete it.",
+        "Ad information: delete or reset your advertising ID and use the request procedure in Unity's policy. Uninstalling the app alone does not delete information already processed by ad providers.",
+        "Help: email teamcp.channel@gmail.com with the app name and your request. Do not send passwords or ID documents. For data TeamCP does not hold, we will point you to the provider's procedure."
       ],
       "paragraphs": [
-        "Game data on your device remains until you delete it. Ad data is retained according to each provider’s policy. Support emails are not kept longer than needed after your request is handled."
+        "Game data on the device remains until you delete it. Ad information is retained according to each provider's policy. Support emails are not kept longer than needed after we have answered."
       ]
     },
     {
       "id": "rights",
-      "title": "7. Your rights",
+      "title": "8. Your rights",
       "paragraphs": [
-        "Depending on where you live, you may have rights to access, correct, delete, restrict or object to processing, withdraw consent, opt out of sale/sharing, or complain to a supervisory authority. Because TeamCP keeps no game data on its own servers, most requests are handled through device settings and the ad provider’s procedures, and we will tell you which route to use."
+        "Depending on where you live, you may have the right to access, correct or delete data, restrict or object to processing, withdraw consent, opt out of sale/sharing, or complain to a supervisory authority. Because TeamCP does not keep game data on its own servers, most requests are handled through device settings and the ad providers' procedures; requests about issue reports are handled by TeamCP directly. We will tell you which route to use."
       ]
     },
     {
       "id": "young-users",
-      "title": "8. Children and parents",
+      "title": "9. Children and parents",
       "paragraphs": [
-        "Nyan Churu Bus is a puzzle game about sending cats off on buses of the same color. It is suitable for everyone but contains ads, so it is not directed at children under 13. The app tells the ad service it is not child-directed and has no age check or parental consent feature.",
-        "If you believe information of a child under 13 has been processed, please contact us and we will explain how to delete it."
+        "Nyan Churu Bus is a puzzle game in which you send cats off on the bus of their color. It is suitable for all ages but contains ads and is not directed at children under 13. The app tells the ad services that it is not directed at children, and it has no age check or parental consent feature.",
+        "If you believe information from a child under 13 has been processed, please contact us and we will explain how to delete it."
       ]
     },
     {
       "id": "updates",
-      "title": "9. Security and changes",
+      "title": "10. Security and changes to this policy",
       "paragraphs": [
-        "Game data is kept in the app’s private Android storage, which other apps cannot read. Ad traffic uses the provider’s encrypted connections.",
-        "When features, SDKs or processing change (for example, if an issue-report feature is added), this policy and its date are updated first and important changes are announced on this page. If you think the Korean and English versions differ, please contact us."
+        "Game data is kept in the app's private Android storage, which other apps cannot read. Ad and issue-report traffic uses encrypted connections (HTTPS).",
+        "If features, SDKs or processing change, we update this policy and its date first and announce important changes on this page. This document is available in eight languages; if you think the translations differ, please contact us. The Korean version prevails."
       ]
     }
   ]
