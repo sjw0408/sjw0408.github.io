@@ -80,7 +80,7 @@
         "Adjuntado automáticamente: nombre y versión de la aplicación, nombre de la pantalla desde la que informaste, idioma de la aplicación, nombre del modelo del dispositivo y un número de informe aleatorio que se crea para cada informe"
       ],
       "after": [
-        "Los informes nunca incluyen tu ID de publicidad, una cuenta, tus registros de juego ni tu ubicación. No escribas en la descripción datos personales como tu nombre o tus datos de contacto. Los informes se envían mediante una conexión cifrada (HTTPS) y se guardan en un servidor de informes gestionado por TeamCP (alojamiento web: Cafe24, República de Corea), y solo se usan para localizar y corregir problemas. El servidor y la empresa de alojamiento pueden tratar tu dirección IP en los registros de conexión durante la comunicación. Conservamos los informes durante el tiempo necesario para investigar y resolver el problema, y los eliminamos si lo solicitas."
+        "Los informes nunca incluyen tu ID de publicidad, una cuenta, tus registros de juego ni tu ubicación. No escribas en la descripción datos personales como tu nombre o tus datos de contacto. Los informes se envían mediante una conexión cifrada (HTTPS) y se guardan en un servidor de informes gestionado por TeamCP (alojamiento web: Cafe24, República de Corea), y solo se usan para localizar y corregir problemas. El servidor y la empresa de alojamiento pueden tratar tu dirección IP en los registros de conexión durante la comunicación. Los informes guardados en el servidor se conservan durante 90 días desde su recepción y después se eliminan; si nos pides eliminar uno antes, lo eliminamos de inmediato."
       ]
     },
     {
@@ -101,7 +101,7 @@
         "Ayuda: escribe a teamcp.channel@gmail.com indicando el nombre de la aplicación y tu solicitud. No envíes contraseñas ni documentos de identidad. Para los datos que TeamCP no conserva, te indicaremos el procedimiento del proveedor correspondiente."
       ],
       "paragraphs": [
-        "Los datos del juego en el dispositivo se conservan hasta que los eliminas. La información publicitaria se conserva según la política de cada proveedor. Los correos de asistencia no se conservan más tiempo del necesario una vez respondidos."
+        "Los datos del juego en el dispositivo se conservan hasta que los eliminas. Los informes de errores enviados al servidor se eliminan 90 días después de recibirlos. La información publicitaria se conserva según la política de cada proveedor. Los correos de asistencia no se conservan más tiempo del necesario una vez respondidos."
       ]
     },
     {

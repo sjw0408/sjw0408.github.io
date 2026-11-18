@@ -80,7 +80,7 @@
         "Anexado automaticamente: nome e versão do app, nome da tela de onde você fez o relato, idioma do app, nome do modelo do dispositivo e um número de relato aleatório criado para cada relato"
       ],
       "after": [
-        "Os relatos nunca incluem seu ID de publicidade, uma conta, seus registros de jogo nem sua localização. Não escreva na descrição informações pessoais como seu nome ou dados de contato. Os relatos são enviados por conexão criptografada (HTTPS) e armazenados em um servidor de relatos operado pela TeamCP (hospedagem web: Cafe24, República da Coreia), e são usados somente para encontrar e corrigir problemas. O servidor e a empresa de hospedagem podem tratar seu endereço IP em registros de conexão durante a comunicação. Mantemos os relatos pelo tempo necessário para investigar e corrigir o problema e os excluímos mediante solicitação."
+        "Os relatos nunca incluem seu ID de publicidade, uma conta, seus registros de jogo nem sua localização. Não escreva na descrição informações pessoais como seu nome ou dados de contato. Os relatos são enviados por conexão criptografada (HTTPS) e armazenados em um servidor de relatos operado pela TeamCP (hospedagem web: Cafe24, República da Coreia), e são usados somente para encontrar e corrigir problemas. O servidor e a empresa de hospedagem podem tratar seu endereço IP em registros de conexão durante a comunicação. Os relatos armazenados no servidor são mantidos por 90 dias a partir do recebimento e depois excluídos; se você pedir a exclusão antes disso, nós os excluímos imediatamente."
       ]
     },
     {
@@ -101,7 +101,7 @@
         "Ajuda: escreva para teamcp.channel@gmail.com informando o nome do app e sua solicitação. Não envie senhas nem documentos de identidade. Para dados que a TeamCP não mantém, indicaremos o procedimento do provedor."
       ],
       "paragraphs": [
-        "Os dados do jogo no dispositivo permanecem até que você os exclua. As informações de anúncios são retidas conforme a política de cada provedor. Os e-mails de suporte não são mantidos por mais tempo que o necessário após a resposta."
+        "Os dados do jogo no dispositivo permanecem até que você os exclua. Os relatos de erro enviados ao servidor são excluídos 90 dias após o recebimento. As informações de anúncios são retidas conforme a política de cada provedor. Os e-mails de suporte não são mantidos por mais tempo que o necessário após a resposta."
       ]
     },
     {
