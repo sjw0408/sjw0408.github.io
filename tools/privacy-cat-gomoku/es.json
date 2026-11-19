@@ -1,0 +1,96 @@
+{
+  "language": "es",
+  "title": "Política de privacidad de Cat Gomoku",
+  "description": "Política de privacidad de Cat Gomoku",
+  "back": "Información del juego",
+  "date": "Última actualización: 19 de noviembre de 2026",
+  "summary": "TeamCP opera Cat Gomoku para Android (com.teamcp.catgomoku). Puede jugar como invitado sin registrarse. No recogemos nombre, correo, teléfono ni contraseña de Google para un registro propio. Según las funciones elegidas, usamos Google Play Games, partidas en línea de Firebase, Unity LevelPlay y Unity Ads.",
+  "contents": "Contenido",
+  "resources": "Políticas de terceros",
+  "contact": "Contacto",
+  "links": [
+    "Unity LevelPlay / Unity Ads",
+    "Google Play Games",
+    "Google Firebase"
+  ],
+  "sections": [
+    {
+      "id": "scope",
+      "title": "1. Ámbito",
+      "paragraphs": [
+        "TeamCP opera Cat Gomoku para Android (com.teamcp.catgomoku). Puede jugar como invitado sin registrarse. No recogemos nombre, correo, teléfono ni contraseña de Google para un registro propio. Según las funciones elegidas, usamos Google Play Games, partidas en línea de Firebase, Unity LevelPlay y Unity Ads."
+      ]
+    },
+    {
+      "id": "local",
+      "title": "2. Datos en el dispositivo",
+      "paragraphs": [
+        "Guardamos el identificador de invitado, resultados, progreso de puzles/desafíos/torre, logros, monedas, gatos y aspectos desbloqueados/elegidos, recompensas e idioma, sonido y vibración en el almacenamiento privado de Android. El análisis de uso y los registros de diagnóstico son locales; no se envían a servidores externos de análisis o informes automáticos de fallos. El consentimiento publicitario se guarda como ajuste del dispositivo y no se incluye en Google Play Games Saved Games.",
+        "La copia automática de Android está permitida; los datos pueden incluirse según los ajustes del dispositivo y la cuenta Google. La exclusión del consentimiento de la nube se refiere a Google Play Games Saved Games, no a excluirlo de la copia Android."
+      ]
+    },
+    {
+      "id": "play-games",
+      "title": "3. Conexión con Google Play Games",
+      "paragraphs": [
+        "Conectar Google Play Games es opcional. Google puede tratar el estado de autenticación, identificador de jugador y nombre visible. Los resultados, progreso de puzles/desafíos, monedas, desbloqueos de gatos/aspectos, ajustes y progreso de logros pueden enviarse a partidas guardadas y logros para guardar/restaurar entre dispositivos y ofrecer logros."
+      ]
+    },
+    {
+      "id": "online",
+      "title": "4. Partidas en línea 1 contra 1",
+      "paragraphs": [
+        "Las partidas en línea usan autenticación anónima de Google Firebase y Realtime Database. Pueden tratar UID anónimo, nombre visible, gato elegido, Elo, nivel, victorias/derrotas/empates y clasificación, estado de emparejamiento, sala, coordenadas de jugadas, conexión, resultados y horas de tratamiento. Sirven para emparejar, sincronizar, liquidar resultados, clasificar y evitar abusos."
+      ]
+    },
+    {
+      "id": "ads",
+      "title": "5. Publicidad y datos",
+      "paragraphs": [
+        "Unity LevelPlay media los anuncios de Unity Ads: banners, intersticiales y recompensas opcionales. Pueden tratar IP y región aproximada, modelo, versión del sistema/app, idioma, red, identificadores publicitarios/del dispositivo permitidos, solicitudes, impresiones, clics, visualización completa y errores/diagnósticos publicitarios. Los fines son entrega, límites de frecuencia, medición, prevención de fraude y personalización si acepta. El alcance depende de región, ajustes Android, consentimiento y políticas del proveedor."
+      ]
+    },
+    {
+      "id": "choices",
+      "title": "6. Su consentimiento publicitario",
+      "paragraphs": [
+        "Al primer inicio todos ven una tarjeta propia de la app para elegir anuncios personalizados o solo no personalizados. Antes de elegir no se inicia el SDK ni se solicitan anuncios. Rechazar la personalización no reduce su cantidad; envía a LevelPlay una negativa de consentimiento y exclusión de venta/intercambio (do_not_sell=true). Puede volver a elegir en Ajustes y controlar privacidad/ID publicitario en Android. Las recompensas son opcionales y la falta de anuncios está diseñada para no bloquear el progreso."
+      ]
+    },
+    {
+      "id": "providers",
+      "title": "7. Proveedores y tratamiento internacional",
+      "paragraphs": [
+        "Google Play Games ofrece acceso opcional, nube y logros; Google Firebase, autenticación anónima, partidas y clasificación; Unity LevelPlay / Unity Ads, mediación, entrega, medición y prevención de fraude. Cada proveedor puede conservar o tratar datos en el extranjero según su política. TeamCP no vende información personal. Consulte la política de Unity para derechos publicitarios y exclusión de venta/intercambio."
+      ]
+    },
+    {
+      "id": "delete-data",
+      "title": "8. Conservación y eliminación",
+      "paragraphs": [
+        "Borre datos locales con el restablecimiento de la app, Borrar datos de Android o desinstalando. Gestione Google Play Games con la eliminación de datos de Google Play en la app y los controles de la cuenta; rige la conservación de Google. Los perfiles, puntuaciones y partidas de Firebase se conservan lo necesario para funciones en línea y prevención de abusos; puede solicitar su eliminación por contacto. Para anuncios rigen las políticas y procedimientos de Unity; desinstalar no elimina datos ya tratados. Indique app y solicitud, nunca contraseñas ni documentos de identidad."
+      ]
+    },
+    {
+      "id": "rights",
+      "title": "9. Sus derechos",
+      "paragraphs": [
+        "Jugar solo como invitado no requiere Google Play Games ni partidas en línea. Escriba a teamcp.channel@gmail.com para acceso, rectificación, eliminación, limitación, oposición o retirada del consentimiento según su región. Para datos que TeamCP no posee, indicaremos el procedimiento del proveedor."
+      ]
+    },
+    {
+      "id": "young-users",
+      "title": "10. Menores",
+      "paragraphs": [
+        "El juego no está diseñado específicamente para niños; el público actual de la tienda es de 13 años o más. La clasificación de contenido no lo designa como servicio infantil. Informamos al servicio de anuncios que no está dirigido a niños. Si descubrimos una recogida directa de datos infantiles sin el consentimiento tutelar requerido, adoptaremos medidas, incluida la eliminación."
+      ]
+    },
+    {
+      "id": "updates",
+      "title": "11. Seguridad y cambios",
+      "paragraphs": [
+        "Los datos locales están en el almacenamiento privado de Android. Google Play Games, Firebase y anuncios usan comunicaciones seguras de cada proveedor; limitamos accesos y reglas de seguridad de Firebase a lo necesario. Actualizamos política y fecha cuando cambian datos, proveedores o funciones; los cambios importantes se anuncian en la app, tienda o esta página."
+      ]
+    }
+  ]
+}

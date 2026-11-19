@@ -1,0 +1,96 @@
+{
+  "language": "en",
+  "title": "Cat Gomoku Privacy Policy",
+  "description": "Cat Gomoku Privacy Policy",
+  "back": "Game information",
+  "date": "Last updated: November 19, 2026",
+  "summary": "TeamCP operates Cat Gomoku for Android (com.teamcp.catgomoku). You can play as a guest without signing up. We do not collect a name, email, phone number or Google password for our own registration. Depending on the features you choose, the game uses Google Play Games, Firebase online matches, Unity LevelPlay and Unity Ads.",
+  "contents": "Contents",
+  "resources": "Third-party policies",
+  "contact": "Contact",
+  "links": [
+    "Unity LevelPlay / Unity Ads",
+    "Google Play Games",
+    "Google Firebase"
+  ],
+  "sections": [
+    {
+      "id": "scope",
+      "title": "1. Scope",
+      "paragraphs": [
+        "TeamCP operates Cat Gomoku for Android (com.teamcp.catgomoku). You can play as a guest without signing up. We do not collect a name, email, phone number or Google password for our own registration. Depending on the features you choose, the game uses Google Play Games, Firebase online matches, Unity LevelPlay and Unity Ads."
+      ]
+    },
+    {
+      "id": "local",
+      "title": "2. Information on your device",
+      "paragraphs": [
+        "The app stores your guest identifier, match record, puzzle/challenge/tower progress, achievements, currency, cats and cosmetic unlocks/selections, reward history, language, audio and vibration settings in private Android app storage. Usage analysis and diagnostic logs are local implementations and are not sent to an external analytics or automatic crash-reporting server. Ad consent is stored as a device setting and excluded from Google Play Games Saved Games.",
+        "Android auto backup is allowed, so app data may be included in Android backups depending on your device and Google account settings. The exclusion of ad consent from cloud saves refers to Google Play Games Saved Games, not an exclusion from Android backup."
+      ]
+    },
+    {
+      "id": "play-games",
+      "title": "3. Google Play Games connection",
+      "paragraphs": [
+        "Connecting Google Play Games is optional. Google may process authentication status, player identifier and display name. Match records, puzzle/challenge progress, currency, cat/cosmetic unlocks, settings, achievement completion and incremental progress may be sent to Saved Games and achievements to provide cross-device saving/restoration and achievements."
+      ]
+    },
+    {
+      "id": "online",
+      "title": "4. Online 1:1 matches",
+      "paragraphs": [
+        "Choosing online matches uses Google Firebase anonymous authentication and Realtime Database. It may process anonymous UID, display name, selected cat, Elo rating, tier, wins/losses/draws and ranking, matchmaking state, room identifier, move coordinates, connection status, match results and processing times. Purposes are matchmaking, real-time synchronization, result settlement, rankings and abuse prevention."
+      ]
+    },
+    {
+      "id": "ads",
+      "title": "5. Ads and data processing",
+      "paragraphs": [
+        "Unity LevelPlay mediates ads supplied by Unity Ads: banner, interstitial and optional rewarded ads. Providers may process IP address and approximate region, device model, OS/app version, language, network information, permitted advertising/device identifiers, ad requests, impressions, clicks, viewing completion and ad error/diagnostic data. Purposes are ad delivery, frequency limits, measurement, fraud prevention and personalized ads if you agree. Actual processing depends on region, Android settings, consent and provider policies."
+      ]
+    },
+    {
+      "id": "choices",
+      "title": "6. Your ad consent choice",
+      "paragraphs": [
+        "On first launch every user sees the app’s own consent card and chooses personalized ads or only non-personalized ads. Before a choice, the ad SDK is not started and no ads are requested. Declining personalization does not reduce the number of ads; it sends LevelPlay a consent refusal and sale/sharing opt-out signal (do_not_sell=true). You can choose again in Settings at any time and control advertising ID/privacy in Android settings. Rewarded viewing is optional, and failure to load ads is designed not to block game progress."
+      ]
+    },
+    {
+      "id": "providers",
+      "title": "7. Providers and international processing",
+      "paragraphs": [
+        "Google Play Games provides optional login, cloud saves and achievements; Google Firebase provides anonymous authentication, online matches and rankings; Unity LevelPlay / Unity Ads provides ad mediation, delivery, measurement and fraud prevention. Each provider may retain or process data abroad under its policy. TeamCP does not sell user information. See Unity’s policy for advertising rights and sale/sharing opt-out procedures."
+      ]
+    },
+    {
+      "id": "delete-data",
+      "title": "8. Retention and data deletion",
+      "paragraphs": [
+        "Delete device data with the app’s data reset, Android Clear app data, or uninstalling. Manage Google Play Games data with the app’s Google Play data deletion and Google account controls; Google’s retention policy applies. Firebase profiles, ratings and match information are kept as needed for online features and abuse prevention; contact us to request deletion. Unity’s retention/deletion policies and rights procedures apply to ad data; uninstalling alone does not delete data already processed by ad providers. Send your app name and request, never passwords or identity documents."
+      ]
+    },
+    {
+      "id": "rights",
+      "title": "9. Your rights",
+      "paragraphs": [
+        "Guest single-player does not require Google Play Games or online matches. Contact teamcp.channel@gmail.com to request access, correction, deletion, restriction, objection or consent withdrawal as available in your region. For data TeamCP does not hold, we will direct you to the provider’s procedure."
+      ]
+    },
+    {
+      "id": "young-users",
+      "title": "10. Children",
+      "paragraphs": [
+        "The game is not designed specifically for children; its current store target audience is age 13 and over. Content ratings do not designate a child-directed service. The ad service is told that the app is not child-directed. If we learn that we directly collected a child’s personal information without required guardian consent, we take appropriate steps including deletion."
+      ]
+    },
+    {
+      "id": "updates",
+      "title": "11. Security and policy changes",
+      "paragraphs": [
+        "Local data stays in private Android app storage. Google Play Games, Firebase and ad services use their providers’ secure communication methods; service access and Firebase security rules are limited as needed. We update this policy and date when information, providers or features change and announce important changes in the app, store or this page."
+      ]
+    }
+  ]
+}

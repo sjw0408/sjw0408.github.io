@@ -1,0 +1,96 @@
+{
+  "language": "de",
+  "title": "Datenschutzerklärung für Cat Gomoku",
+  "description": "Datenschutzerklärung für Cat Gomoku",
+  "back": "Spielinformationen",
+  "date": "Zuletzt aktualisiert: 19. November 2026",
+  "summary": "TeamCP betreibt Cat Gomoku für Android (com.teamcp.catgomoku). Gastspiel ist ohne Registrierung möglich. Wir erheben für eine eigene Registrierung weder Namen, E-Mail, Telefonnummer noch Google-Passwort. Je nach gewählter Funktion nutzt das Spiel Google Play Games, Firebase-Onlinespiele, Unity LevelPlay und Unity Ads.",
+  "contents": "Inhalt",
+  "resources": "Richtlinien der Anbieter",
+  "contact": "Kontakt",
+  "links": [
+    "Unity LevelPlay / Unity Ads",
+    "Google Play Games",
+    "Google Firebase"
+  ],
+  "sections": [
+    {
+      "id": "scope",
+      "title": "1. Geltungsbereich",
+      "paragraphs": [
+        "TeamCP betreibt Cat Gomoku für Android (com.teamcp.catgomoku). Gastspiel ist ohne Registrierung möglich. Wir erheben für eine eigene Registrierung weder Namen, E-Mail, Telefonnummer noch Google-Passwort. Je nach gewählter Funktion nutzt das Spiel Google Play Games, Firebase-Onlinespiele, Unity LevelPlay und Unity Ads."
+      ]
+    },
+    {
+      "id": "local",
+      "title": "2. Daten auf Ihrem Gerät",
+      "paragraphs": [
+        "Gastkennung, Ergebnisse, Rätsel-/Herausforderungs-/Turmfortschritt, Erfolge, Währung, freigeschaltete/gewählte Katzen und Designs, Belohnungen sowie Sprache, Ton und Vibration liegen im privaten Android-App-Speicher. Nutzungsanalyse und Diagnoselogs erfolgen lokal und werden nicht an externe Analyse- oder automatische Absturzmeldeserver gesendet. Die Werbeeinwilligung wird als Geräteeinstellung gespeichert und gehört nicht zu Google Play Games Saved Games.",
+        "Android Auto Backup ist erlaubt; App-Daten können je nach Geräte- und Google-Kontoeinstellungen gesichert werden. Der Ausschluss der Werbeeinwilligung aus Cloud-Spielständen betrifft Google Play Games Saved Games und bedeutet keinen Ausschluss aus Android-Backups."
+      ]
+    },
+    {
+      "id": "play-games",
+      "title": "3. Google Play Games verbinden",
+      "paragraphs": [
+        "Die Verbindung mit Google Play Games ist freiwillig. Google kann Authentifizierungsstatus, Spielerkennung und Anzeigenamen verarbeiten. Ergebnisse, Rätsel-/Herausforderungsfortschritt, Währung, Katzen-/Designfreischaltungen, Einstellungen sowie erreichte und schrittweise Erfolge können für geräteübergreifendes Speichern/Wiederherstellen und Erfolge an gespeicherte Spiele und Erfolgsdienste gesendet werden."
+      ]
+    },
+    {
+      "id": "online",
+      "title": "4. Online-Duelle",
+      "paragraphs": [
+        "Online-Duelle nutzen anonyme Google-Firebase-Authentifizierung und Realtime Database. Verarbeitet werden können anonyme UID, Anzeigename, gewählte Katze, Elo, Stufe, Siege/Niederlagen/Unentschieden und Rang, Vermittlungsstatus, Raumkennung, Zugkoordinaten, Verbindung, Ergebnisse und Zeitpunkte. Zwecke sind Spielvermittlung, Echtzeitsynchronisierung, Ergebnisabrechnung, Ranglisten und Missbrauchsschutz."
+      ]
+    },
+    {
+      "id": "ads",
+      "title": "5. Werbung und Daten",
+      "paragraphs": [
+        "Unity LevelPlay vermittelt Werbung von Unity Ads: Banner, Interstitials und freiwillige Belohnungsanzeigen. Anbieter können IP und ungefähre Region, Gerätemodell, Betriebssystem-/App-Version, Sprache, Netzwerk, erlaubte Werbe-/Gerätekennungen, Anfragen, Einblendungen, Klicks, vollständige Wiedergabe sowie Werbefehler-/Diagnosedaten verarbeiten. Zwecke sind Auslieferung, Häufigkeitsbegrenzung, Messung, Betrugsschutz und bei Zustimmung Personalisierung. Der Umfang richtet sich nach Region, Android-Einstellungen, Einwilligung und Anbieterrichtlinien."
+      ]
+    },
+    {
+      "id": "choices",
+      "title": "6. Ihre Werbeeinwilligung",
+      "paragraphs": [
+        "Beim ersten Start wählen alle Nutzer auf einer app-eigenen Einwilligungskarte personalisierte oder ausschließlich nicht personalisierte Werbung. Vor der Wahl startet das Werbe-SDK nicht und fordert keine Anzeigen an. Ablehnung verringert nicht die Anzahl, sondern übermittelt LevelPlay eine Einwilligungsverweigerung und ein Verkaufs-/Weitergabe-Opt-out (do_not_sell=true). Die Wahl lässt sich jederzeit in Einstellungen ändern; Android bietet zusätzlich Werbe-ID-/Datenschutzoptionen. Belohnungsanzeigen sind freiwillig; fehlende Anzeigen sollen den Spielfortschritt nicht blockieren."
+      ]
+    },
+    {
+      "id": "providers",
+      "title": "7. Anbieter und internationale Verarbeitung",
+      "paragraphs": [
+        "Google Play Games bietet freiwillige Anmeldung, Cloud-Spielstände und Erfolge; Google Firebase anonyme Anmeldung, Onlinespiele und Ranglisten; Unity LevelPlay / Unity Ads Vermittlung, Auslieferung, Messung und Betrugsschutz. Anbieter können Daten gemäß ihren Richtlinien im Ausland speichern/verarbeiten. TeamCP verkauft keine personenbezogenen Daten. Werberechte und Verkaufs-/Weitergabe-Opt-out werden in Unitys Richtlinie erläutert."
+      ]
+    },
+    {
+      "id": "delete-data",
+      "title": "8. Speicherung und Löschung",
+      "paragraphs": [
+        "Lokale Daten lassen sich durch App-Zurücksetzen, Android-App-Daten löschen oder Deinstallation entfernen. Google-Play-Games-Daten verwalten Sie über die Google-Play-Datenlöschung der App und Google-Kontoeinstellungen; Googles Speicherregeln gelten. Firebase-Profile, Bewertungen und Partien bleiben soweit für Onlinefunktionen und Missbrauchsschutz erforderlich; Löschung kann beim Kontakt beantragt werden. Werbedaten folgen Unitys Speicher-/Löschregeln und Rechteverfahren; Deinstallation allein löscht bereits verarbeitete Daten nicht. Nennen Sie App und Anliegen, niemals Passwörter oder Ausweisdokumente."
+      ]
+    },
+    {
+      "id": "rights",
+      "title": "9. Ihre Rechte",
+      "paragraphs": [
+        "Einzelspieler als Gast benötigt weder Google Play Games noch Onlinespiele. Für regional verfügbare Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch oder Einwilligungswiderruf wenden Sie sich an teamcp.channel@gmail.com. Bei Daten außerhalb unseres Besitzes verweisen wir auf den Anbieter."
+      ]
+    },
+    {
+      "id": "young-users",
+      "title": "10. Kinder",
+      "paragraphs": [
+        "Das Spiel richtet sich nicht speziell an Kinder; die aktuelle Store-Zielgruppe ist ab 13 Jahren. Inhaltsfreigaben bedeuten keine Ausrichtung auf Kinder. Dem Werbedienst wird mitgeteilt, dass die App nicht für Kinder bestimmt ist. Erfahren wir von direkt erhobenen Kinderdaten ohne erforderliche elterliche Zustimmung, ergreifen wir angemessene Maßnahmen einschließlich Löschung."
+      ]
+    },
+    {
+      "id": "updates",
+      "title": "11. Sicherheit und Änderungen",
+      "paragraphs": [
+        "Lokale Daten liegen im privaten Android-App-Speicher. Google Play Games, Firebase und Werbung nutzen sichere Kommunikationsverfahren ihrer Anbieter; Zugriffsrechte und Firebase-Sicherheitsregeln begrenzen wir bedarfsgerecht. Bei Änderungen von Daten, Diensten oder Funktionen aktualisieren wir Erklärung und Datum. Wichtige Änderungen kündigen wir in App, Store oder hier an."
+      ]
+    }
+  ]
+}
