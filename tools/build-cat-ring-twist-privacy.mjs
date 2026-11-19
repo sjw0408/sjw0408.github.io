@@ -7,6 +7,12 @@ import { fileURLToPath } from 'node:url';
 import assert from 'node:assert/strict';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
+// (냥이 털실 풀기 YT-QA1FIX 2026-11-19 와 같은 처리) 스타일을 페이지 안에 넣는다. 예전에는 policy.css 를 따로 받아야 첫 화면을 그렸다(렌더 차단) —
+// 어두운 테마의 기기 브라우저는 그동안 검은 빈 화면이고, 그 요청이 늦거나 멈추면 HTML 이 200 이어도 계속 검다.
+// 이제 응답 하나로 그린다. policy.css 는 원본으로 남기고(여기서 읽음) 페이지는 더 이상 링크하지 않는다.
+const css = readFileSync(resolve(root, 'games/cat-ring-twist/privacy/policy.css'), 'utf8')
+  .split(/\r?\n/).filter(line => line.trim()).map(line => `    ${line}\n`).join('');
+assert.ok(!css.includes('</style'), 'policy.css must not contain </style');
 // 게임의 8개 언어와 같다. 앱 설정의 '개인정보처리방침'이 앱 언어의 경로를 연다(앱 tools/strings.csv 의 privacy_url).
 const languages = {
   ko: '한국어',
@@ -65,7 +71,9 @@ for (const [code, nativeName] of Object.entries(languages)) {
   <link rel="canonical" href="${origin}${route(code)}">
 ${Object.keys(languages).map(lang => `  <link rel="alternate" hreflang="${lang}" href="${origin}${route(lang)}">`).join('\n')}
   <link rel="alternate" hreflang="x-default" href="${origin}${route('en')}">
-  <link rel="stylesheet" href="${base}policy.css">
+  <link rel="icon" href="data:,">
+  <style>
+${css}  </style>
 </head>
 <body>
   <main>
