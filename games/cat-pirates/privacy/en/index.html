@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
   <meta name="theme-color" content="#fff4e3">
-  <meta name="description" content="How Cat Pirates: Midnight Snack Heist handles on-device storage, Google Play Games, Android backup, ads and ad consent, and data deletion.">
-  <meta name="policy-revision" content="2026-09-27-v1">
+  <meta name="description" content="How Cat Pirates: Midnight Snack Heist handles on-device storage, Google Play Games, Android backup, ads and ad consent, problem reports, and data deletion.">
+  <meta name="policy-revision" content="2026-11-19-v2">
   <title>Cat Pirates Privacy Policy</title>
   <link rel="canonical" href="https://sjw0408.github.io/games/cat-pirates/privacy/en/">
   <link rel="alternate" hreflang="ko" href="https://sjw0408.github.io/games/cat-pirates/privacy/">
@@ -23,8 +23,8 @@
       <a href="/games/cat-pirates/privacy/en/" lang="en" hreflang="en" aria-current="page">English</a>
     </nav>
     <h1>Cat Pirates Privacy Policy</h1>
-    <p class="effective">Last updated: September 27, 2026</p>
-    <p class="notice">You play without creating an account, and your progress is saved on your device. If you are signed in to Google Play Games, your achievements and leaderboard scores are stored by Google. TeamCP runs no game servers and the game has no in-app purchases. The ad services (Unity LevelPlay and Unity Ads) process device information and advertising identifiers needed to deliver ads; on first launch we ask about personalized ads and do not start the ad SDK until you choose.</p>
+    <p class="effective">Last updated: November 19, 2026</p>
+    <p class="notice">You play without creating an account, and your progress is saved on your device. If you are signed in to Google Play Games, your achievements and leaderboard scores are stored by Google. TeamCP runs no server that receives your game records, and the game has no in-app purchases. The ad services (Unity LevelPlay and Unity Ads) process device information and advertising identifiers needed to deliver ads; on first launch we ask about personalized ads and do not start the ad SDK until you choose. A problem report is sent to TeamCP&#39;s report server only when you send one yourself from Settings.</p>
     <p class="version">Applies to version 1.0.0. We update this page and its date when features or ad setup change.</p>
     <nav class="contents" aria-label="Contents">
       <h2>Contents</h2>
@@ -35,28 +35,30 @@
         <li><a href="#backup">4. Android Auto Backup</a></li>
         <li><a href="#ads">5. Ads and the information ad services process</a></li>
         <li><a href="#choices">6. Your ad choices</a></li>
-        <li><a href="#providers">7. Third-party services and international processing</a></li>
-        <li><a href="#delete-data">8. Deleting data and retention</a></li>
-        <li><a href="#rights">9. Your rights</a></li>
-        <li><a href="#young-users">10. Children and parents</a></li>
-        <li><a href="#updates">11. Security and changes</a></li>
+        <li><a href="#reports">7. Problem reports</a></li>
+        <li><a href="#providers">8. Third-party services and international processing</a></li>
+        <li><a href="#delete-data">9. Deleting data and retention</a></li>
+        <li><a href="#rights">10. Your rights</a></li>
+        <li><a href="#young-users">11. Children and parents</a></li>
+        <li><a href="#updates">12. Security and changes</a></li>
       </ul>
     </nav>
     <section aria-labelledby="scope">
       <h2 id="scope">1. Scope and operator</h2>
       <p>TeamCP develops and operates the Android game “Cat Pirates: Midnight Snack Heist” (냥냥 해적단: 야식 대작전, com.teamcp.catpirates). This policy explains what information the game handles and the choices you have. Contact: teamcp.channel@gmail.com.</p>
-      <p>The game has no account sign-up of its own, no game servers, no chat and no in-app purchases. The only sign-in is Google Play Games. We do not request or collect your name, email, phone number, location (GPS), contacts, microphone or camera, and the app does not access your device photos or gallery (the in-game “photo album” is a collection of in-game pictures). The app only requests internet and network state (ads and Play Games), the advertising ID (ads) and vibration. If you contact support by email, we use your address and message only to reply.</p>
+      <p>The game has no account sign-up of its own, no server that receives your game records, no chat and no in-app purchases. The only sign-in is Google Play Games. We do not request or collect your name, email, phone number, location (GPS), contacts, microphone or camera, and the app does not access your device photos or gallery (the in-game “photo album” is a collection of in-game pictures). The app only requests internet and network state (ads, Play Games and problem reports), the advertising ID (ads) and vibration. If you contact support by email, we use your address and message only to reply.</p>
 
 
     </section>
     <section aria-labelledby="local">
       <h2 id="local">2. Information stored on your device</h2>
-      <p>This information is kept in the app&#39;s private Android storage (the app database and settings file) for game features such as continuing and collections, and is never sent to TeamCP servers. There is no cloud save. The app contains no analytics (such as Firebase Analytics) or crash-reporting tools.</p>
+      <p>This information is kept in the app&#39;s private Android storage (the app database and settings file) for game features such as continuing and collections. Game progress and settings are never sent to TeamCP servers. There is no cloud save. The app contains no analytics (such as Firebase Analytics) and no automatic crash reporting. A problem report is sent only when you send it yourself (section 7).</p>
       <ul>
         <li>Game progress: the in-game day and current stage, snack count, cleared and attempted stages, scouted obstacles, tutorial progress, Endless Night records, total heists and successes, and the in-game day you last opened the gift box</li>
         <li>Cats: which cats have joined, level and experience, mood, fatigue, fullness and bond, unavailable status and number of heists</li>
         <li>Collections and logs: snack collection, photo album, event history and scheduled events</li>
         <li>Settings: sound effects, music, fast night playback, personalized-ads choice</li>
+        <li>Unsent problem reports: a report you sent is kept on the device (up to 50) until the server accepts it, then sent again</li>
       </ul>
 
     </section>
@@ -102,19 +104,30 @@
       </ul>
 
     </section>
+    <section aria-labelledby="reports">
+      <h2 id="reports">7. Problem reports</h2>
+      <p>A report is sent only when you write a description under Settings &gt; “Report a problem” and tap Send. Nothing is reported automatically and there is no crash reporting. A report contains:</p>
+      <ul>
+        <li>The description you wrote (up to 2,000 characters) and the report type you chose</li>
+        <li>Attached automatically: app name and version, the name of the screen you reported from, app language, device model name, and a random report number created for each report</li>
+      </ul>
+      <p>Reports do not include your advertising ID, any account, Google Play Games information, your game progress or your location. Please do not write personal information such as your name or contact details in the description. Reports are sent over an encrypted connection (HTTPS) and stored on the report server operated by TeamCP (web hosting: Cafe24, Republic of Korea), and are used only to investigate and fix problems or answer questions. The server and hosting provider may process your IP address as a connection log while the report is sent. Reports stored on the server are kept for 90 days from receipt and then deleted, or deleted right away if you ask before then.</p>
+      <p>If you are offline or sending fails, the report is kept on the device (up to 50) and sent again while the game is open. Reports waiting on the device are not included in Android backups and are erased when you clear the app&#39;s data.</p>
+    </section>
     <section aria-labelledby="providers">
-      <h2 id="providers">7. Third-party services and international processing</h2>
-      <p>Unity LevelPlay and Unity Ads, Google Play Games and Android (Google) services are governed by their own policies. Ad information, Play Games data and backup data may be processed outside your country; see each provider&#39;s policy for recipients, locations and safeguards.</p>
+      <h2 id="providers">8. Third-party services and international processing</h2>
+      <p>Unity LevelPlay and Unity Ads, Google Play Games and Android (Google) services are governed by their own policies. Ad information, Play Games data and backup data may be processed outside your country; see each provider&#39;s policy for recipients, locations and safeguards. Problem reports are stored on a hosting server in the Republic of Korea.</p>
       <p>TeamCP does not sell your information. However, some laws may treat data processing in the advertising ecosystem as a “sale” or “sharing”, so please also review the opt-out and rights information from the providers below.</p>
 
 
     </section>
     <section aria-labelledby="delete-data">
-      <h2 id="delete-data">8. Deleting data and retention</h2>
-      <p>Game data on your device remains until you delete it. Retention of Play Games, backup and ad information follows each provider&#39;s policy. We keep support emails no longer than needed after replying.</p>
+      <h2 id="delete-data">9. Deleting data and retention</h2>
+      <p>Game data on your device remains until you delete it. Problem reports sent to the server are deleted 90 days after they are received. Retention of Play Games, backup and ad information follows each provider&#39;s policy. We keep support emails no longer than needed after replying.</p>
       <ul>
         <li>In the game: Settings &gt; Start over (처음부터 다시 하기) erases the progress, cats, collections and event history on this device. This cannot be undone. It does not remove Google Play Games achievements or leaderboard scores.</li>
-        <li>On the device: uninstall the app, or use Android Settings &gt; Apps &gt; 냥냥 해적단 (Cat Pirates) &gt; Storage &gt; Clear data to erase all game data including settings.</li>
+        <li>On the device: uninstall the app, or use Android Settings &gt; Apps &gt; 냥냥 해적단 (Cat Pirates) &gt; Storage &gt; Clear data to erase all game data including settings and unsent reports. Game progress is not kept on any TeamCP server.</li>
+        <li>Reports you sent: email teamcp.channel@gmail.com with the date you sent it and your device model (and, if possible, part of the text), and we will find and delete it.</li>
         <li>Google Play Games: you can remove achievement and leaderboard records and your Play Games profile by deleting the game data or profile in the Google Play Games app (or Play Store) settings.</li>
         <li>Android backup: turn off or delete backups under Settings &gt; Google &gt; Backup.</li>
         <li>Ad information: delete or reset your advertising ID and use the request process in Unity&#39;s policy. Uninstalling the app does not erase information ad providers have already processed.</li>
@@ -123,21 +136,21 @@
 
     </section>
     <section aria-labelledby="rights">
-      <h2 id="rights">9. Your rights</h2>
-      <p>Depending on where you live, you may have rights to access, correct, delete, restrict or object to processing, withdraw consent, opt out of sale/sharing, or complain to a supervisory authority. Because TeamCP keeps no game data on its own servers, most requests are handled with the in-game delete option, device settings, Google Play Games or the ad providers, and we will tell you which route to use.</p>
+      <h2 id="rights">10. Your rights</h2>
+      <p>Depending on where you live, you may have rights to access, correct, delete, restrict or object to processing, withdraw consent, opt out of sale/sharing, or complain to a supervisory authority. Because TeamCP keeps no game data on its own servers, most requests are handled with the in-game delete option, device settings, Google Play Games or the ad providers; requests about problem reports are handled by TeamCP directly. We will tell you which route to use.</p>
 
 
     </section>
     <section aria-labelledby="young-users">
-      <h2 id="young-users">10. Children and parents</h2>
+      <h2 id="young-users">11. Children and parents</h2>
       <p>Cat Pirates is a stealth-puzzle and management game about caring for cats and planning nightly snack heists, and it is not directed to children under 13. The app is marked “not directed to children” with the ad services and has no age check or parental-consent feature.</p>
       <p>If you believe a child under 13 has had information processed, contact us and we will explain how to delete it.</p>
 
 
     </section>
     <section aria-labelledby="updates">
-      <h2 id="updates">11. Security and changes</h2>
-      <p>Game data is kept in the app’s private Android storage, which other apps cannot read. Ad traffic, Play Games and backups use each provider’s encrypted connections.</p>
+      <h2 id="updates">12. Security and changes</h2>
+      <p>Game data is kept in the app’s private Android storage, which other apps cannot read. Ad traffic, Play Games and backups use each provider’s encrypted connections. Problem reports are sent over an encrypted connection (HTTPS).</p>
       <p>When features, SDKs or processing change, we update this policy and its date and announce important changes on this page. The game’s screens are in Korean; if the Korean and English versions of this policy seem to differ, please contact us.</p>
 
 
