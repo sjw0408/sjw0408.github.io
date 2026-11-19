@@ -5,6 +5,7 @@ import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import assert from 'node:assert/strict';
+import { policyStyle } from './policy-style.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 // 공개 방침 8개 언어. 앱의 방침 링크는 한국어 기본 주소이며 페이지 안에서 언어를 선택한다.
@@ -64,7 +65,7 @@ for (const [code, nativeName] of Object.entries(languages)) {
   <link rel="canonical" href="${origin}${route(code)}">
 ${Object.keys(languages).map(lang => `  <link rel="alternate" hreflang="${lang}" href="${origin}${route(lang)}">`).join('\n')}
   <link rel="alternate" hreflang="x-default" href="${origin}${route('en')}">
-  <link rel="stylesheet" href="${base}policy.css">
+${policyStyle(root, base)}
 </head>
 <body>
   <main>

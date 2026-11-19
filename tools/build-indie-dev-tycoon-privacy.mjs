@@ -5,6 +5,7 @@ import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import assert from 'node:assert/strict';
+import { policyStyle } from './policy-style.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 // 게임이 지원하는 6개 언어로 제공한다 (앱 설정의 언어와 같은 방침으로 연결)
@@ -53,7 +54,7 @@ for (const [code, nativeName] of Object.entries(languages)) {
   <link rel="canonical" href="${origin}${route(code)}">
 ${Object.keys(languages).map(lang => `  <link rel="alternate" hreflang="${lang}" href="${origin}${route(lang)}">`).join('\n')}
   <link rel="alternate" hreflang="x-default" href="${origin}${route('en')}">
-  <link rel="stylesheet" href="${base}policy.css">
+${policyStyle(root, base)}
 </head>
 <body>
   <main>

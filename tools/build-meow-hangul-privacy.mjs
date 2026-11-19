@@ -5,14 +5,9 @@ import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import assert from 'node:assert/strict';
+import { policyStyle } from './policy-style.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-// (냥이 털실 풀기 YT-QA1FIX·냥냥 고리 돌리기와 같은 처리) 스타일을 페이지 안에 넣는다. 예전에는 policy.css 를 따로 받아야 첫 화면을 그렸다(렌더 차단) —
-// 어두운 테마의 기기 브라우저는 그동안 검은 빈 화면이고, 그 요청이 늦거나 멈추면 HTML 이 200 이어도 계속 검다.
-// 이제 응답 하나로 그린다. policy.css 는 원본으로 남기고(여기서 읽음) 페이지는 더 이상 링크하지 않는다.
-const css = readFileSync(resolve(root, 'games/meow-hangul/privacy/policy.css'), 'utf8')
-  .split(/\r?\n/).filter(line => line.trim()).map(line => `    ${line}\n`).join('');
-assert.ok(!css.includes('</style'), 'policy.css must not contain </style');
 // 앱의 8개 언어와 같다. 게임 소개 페이지는 아직 없다(출시 전) — '돌아가기'는 TeamCP Games 첫 화면(/)으로 간다.
 const languages = {
   ko: '한국어',
@@ -70,8 +65,7 @@ for (const [code, nativeName] of Object.entries(languages)) {
 ${Object.keys(languages).map(lang => `  <link rel="alternate" hreflang="${lang}" href="${origin}${route(lang)}">`).join('\n')}
   <link rel="alternate" hreflang="x-default" href="${origin}${route('en')}">
   <link rel="icon" href="data:,">
-  <style>
-${css}  </style>
+${policyStyle(root, base)}
 </head>
 <body>
   <main>
