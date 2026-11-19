@@ -1,0 +1,131 @@
+{
+  "language": "pt-BR",
+  "title": "Política de privacidade do CatWayOut",
+  "description": "Como o CatWayOut armazena dados no seu dispositivo, como funcionam os anúncios e o consentimento de anúncios, os relatos de erro e como excluir dados.",
+  "back": "Informações do jogo CatWayOut",
+  "date": "Última atualização: 19 de novembro de 2026",
+  "version": "Aplica-se à versão 0.2.0. Atualizamos esta página e a data sempre que os recursos ou a configuração de anúncios mudam.",
+  "summary": "Você joga sem cadastro nem login, e seus registros de jogo ficam só no seu dispositivo. Não há compras no app. O serviço de anúncios (Unity LevelPlay + Unity Ads) trata informações do dispositivo e identificadores de publicidade necessários para exibir anúncios; na primeira abertura, o jogo pergunta se você permite anúncios personalizados e não inicia o SDK de anúncios antes da sua escolha. Um relato de erro só é enviado ao servidor de relatos da TeamCP quando você mesmo o envia em Configurações.",
+  "contents": "Sumário",
+  "resources": "Políticas de terceiros e exercício dos seus direitos",
+  "contact": "Contato sobre privacidade",
+  "links": [
+    "Política de privacidade da Unity para jogadores e solicitações de direitos",
+    "Como redefinir ou excluir seu ID de publicidade do Android",
+    "Informações de segurança dos dados do Google Play",
+    "Política de Privacidade do Google"
+  ],
+  "sections": [
+    {
+      "id": "scope",
+      "title": "1. Abrangência e operador",
+      "paragraphs": [
+        "A TeamCP desenvolve e opera o jogo para Android “CatWayOut” (냥냥 길 비켜, com.teamcp.catwayout). Esta política explica quais informações o jogo trata e quais escolhas você tem. Contato: teamcp.channel@gmail.com.",
+        "O jogo não tem cadastro, login, chat nem compras no app. Ele não solicita nem coleta seu nome, e-mail, número de telefone, localização precisa (GPS), contatos, microfone, câmera, fotos ou armazenamento. As permissões que o próprio app usa são internet e estado da rede (anúncios e relatos de erro), vibração (efeitos) e ID de publicidade (AD_ID). As APIs de atribuição e de tópicos dos serviços de anúncios do Android e as permissões WAKE_LOCK, RECEIVE_BOOT_COMPLETED e FOREGROUND_SERVICE vêm das bibliotecas do SDK de anúncios. Se você escrever para o e-mail de suporte, usaremos seu endereço de resposta e sua mensagem apenas para responder a você."
+      ]
+    },
+    {
+      "id": "local",
+      "title": "2. Informações armazenadas no seu dispositivo",
+      "items": [
+        "Registros de jogo: maior número de estrelas por fase, total de fases concluídas, uso diário de dicas e um registro das ações e dos respectivos horários",
+        "Configurações: efeitos sonoros, vibração, idioma e sua escolha sobre anúncios personalizados",
+        "Relatos de erro não enviados: um relato que você enviou fica guardado no dispositivo (até 50) até ser aceito pelo servidor e é reenviado"
+      ],
+      "paragraphs": [
+        "Essas informações ficam apenas no armazenamento privado do app no Android, para manter seu progresso e suas configurações. Registros de jogo e configurações nunca são enviados a um servidor da TeamCP. Não há salvamento na nuvem, e o backup automático do Android está desativado para este app; por isso, ele não é incluído no backup da sua Conta do Google. O app não contém ferramentas de análise (como o Firebase Analytics) nem relatórios automáticos de falhas."
+      ]
+    },
+    {
+      "id": "ads",
+      "title": "3. Anúncios e o que os serviços de anúncios tratam",
+      "paragraphs": [
+        "O jogo é gratuito e mantido por anúncios. A configuração de anúncios é Unity LevelPlay (mediação de anúncios, Unity Technologies) com Unity Ads. Não inclui AdMob, Firebase nem qualquer SDK de pagamento.",
+        "Um banner próprio da TeamCP aparece na parte inferior da tela. Depois que você escolher suas preferências de publicidade, um anúncio de banner pronto pode ocupar esse espaço. Tocar no banner próprio abre o site da TeamCP. Anúncios intersticiais podem aparecer entre uma fase concluída e a próxima, com limites de frequência e intervalo. Depois de usar as dicas grátis, você pode optar por assistir a um anúncio premiado até o fim para ganhar uma dica.",
+        "Para carregar e exibir anúncios, os serviços de anúncios podem tratar as seguintes informações."
+      ],
+      "items": [
+        "Identificadores de publicidade e do SDK, como o ID de publicidade e o ID do conjunto de apps",
+        "Informações do dispositivo, como modelo, sistema operacional, idioma, tela, tipo de rede e operadora",
+        "Endereço IP e a região aproximada obtida a partir dele",
+        "Interações, como impressões e cliques em anúncios, e informações de erro e diagnóstico relacionadas a anúncios",
+        "Algumas informações sobre apps instalados no dispositivo (por exemplo, se há uma loja de apps instalada)"
+      ],
+      "after": [
+        "As finalidades são exibir e medir anúncios, prevenir fraudes (fraude de anúncios) e, se você concordar, exibir anúncios personalizados. O app informa aos serviços de anúncios que não é direcionado a crianças. A TeamCP não recebe informações individuais de usuários coletadas pelos serviços de anúncios; vemos apenas estatísticas agregadas de receita e impressões nos painéis."
+      ]
+    },
+    {
+      "id": "choices",
+      "title": "4. Suas escolhas sobre anúncios",
+      "items": [
+        "Na primeira abertura, todos os usuários escolhem entre “Permitir anúncios personalizados” e “Somente anúncios não personalizados”. Até você escolher, o SDK de anúncios não é iniciado e nenhuma solicitação de anúncio é enviada. Se você escolher “Somente anúncios não personalizados”, verá a mesma quantidade de anúncios, mas eles não serão personalizados.",
+        "Você pode escolher de novo a qualquer momento em Configurações > “Consentimento de anúncios”.",
+        "Em Configurações do Android > Privacidade > Anúncios, você pode redefinir ou excluir seu ID de publicidade. Quando ele é excluído, uma sequência de zeros é enviada no lugar e não pode ser usada para anúncios personalizados.",
+        "Você pode solicitar acesso, exclusão ou recusa (opt-out) dos dados de anúncios pelo ícone de privacidade no anúncio ou pelo procedimento da política da Unity indicada abaixo.",
+        "Se você desligar a conexão com a internet do dispositivo, nenhuma solicitação de anúncio é feita; o jogo pode ser jogado off-line."
+      ],
+      "paragraphs": [
+        "Sua escolha fica armazenada apenas no dispositivo e é repassada ao serviço de anúncios (Unity LevelPlay) como sinal de consentimento. Escolher “Somente anúncios não personalizados” também envia uma recusa de consentimento nos termos do GDPR e um sinal de não venda (do-not-sell; recusa de venda/compartilhamento) previsto nas leis de alguns estados dos EUA."
+      ]
+    },
+    {
+      "id": "reports",
+      "title": "5. Relatos de erro",
+      "paragraphs": [
+        "Um relato só é enviado quando você escreve uma descrição em Configurações > “Relatar um problema” e toca em enviar. Não há relatos automáticos nem relatórios de falhas. Um relato contém:"
+      ],
+      "items": [
+        "A descrição que você escreve (até 2.000 caracteres) e o tipo de relato que você escolhe",
+        "Anexado automaticamente: nome e versão do app, nome da tela de onde você fez o relato, idioma do app, nome do modelo do dispositivo e um número de relato aleatório criado para cada relato"
+      ],
+      "after": [
+        "Os relatos nunca incluem seu ID de publicidade, uma conta, seus registros de jogo nem sua localização. Não escreva na descrição informações pessoais como seu nome ou dados de contato. Os relatos são enviados por conexão criptografada (HTTPS) e armazenados em um servidor de relatos operado pela TeamCP (hospedagem web: Cafe24, República da Coreia), e são usados somente para encontrar e corrigir problemas. O servidor e a empresa de hospedagem podem tratar seu endereço IP em registros de conexão durante a comunicação. Os relatos armazenados no servidor são mantidos por 90 dias a partir do recebimento e depois excluídos; se você pedir a exclusão antes disso, nós os excluímos imediatamente."
+      ]
+    },
+    {
+      "id": "providers",
+      "title": "6. Serviços de terceiros e tratamento internacional",
+      "paragraphs": [
+        "Os serviços da Unity LevelPlay/Unity Technologies e do Google (serviços de anúncios do Android) são regidos pelas políticas de cada empresa. As informações de anúncios podem ser tratadas fora do seu país; consulte a política de cada provedor para saber os destinatários, os locais e as salvaguardas. Os relatos de erro são armazenados em um servidor de hospedagem na República da Coreia.",
+        "A TeamCP não vende informações de usuários. No entanto, o tratamento de dados no ecossistema de anúncios pode ser considerado “venda” ou “compartilhamento” por algumas leis locais; por isso, consulte também as informações sobre recusa e direitos dos provedores indicadas abaixo."
+      ]
+    },
+    {
+      "id": "delete-data",
+      "title": "7. Como excluir dados e prazo de retenção",
+      "items": [
+        "No dispositivo: desinstale o app ou use Configurações do Android > Apps > CatWayOut > Armazenamento > Limpar dados para excluir todos os dados do jogo, incluindo configurações e relatos não enviados. Os registros de jogo não são mantidos em nenhum servidor da TeamCP.",
+        "Relatos enviados: escreva para teamcp.channel@gmail.com informando a data de envio e o modelo do dispositivo (e, se possível, parte do texto), e nós o localizaremos e excluiremos.",
+        "Informações de anúncios: exclua ou redefina seu ID de publicidade e use o procedimento de solicitação da política da Unity. Desinstalar o app, por si só, não exclui informações já tratadas pelos provedores de anúncios.",
+        "Ajuda: escreva para teamcp.channel@gmail.com informando o nome do app e sua solicitação. Não envie senhas nem documentos de identidade. Para dados que a TeamCP não mantém, indicaremos o procedimento do provedor."
+      ],
+      "paragraphs": [
+        "Os dados do jogo no dispositivo permanecem até que você os exclua. Os relatos de erro enviados ao servidor são excluídos 90 dias após o recebimento. As informações de anúncios são retidas conforme a política de cada provedor. Os e-mails de suporte não são mantidos por mais tempo que o necessário após a resposta."
+      ]
+    },
+    {
+      "id": "rights",
+      "title": "8. Seus direitos",
+      "paragraphs": [
+        "Dependendo de onde você mora, você pode ter o direito de acessar, corrigir ou excluir dados, restringir o tratamento ou se opor a ele, retirar o consentimento, recusar a venda/compartilhamento ou apresentar reclamação a uma autoridade de supervisão. Como a TeamCP não mantém dados do jogo em servidores próprios, a maioria das solicitações é atendida pelas configurações do dispositivo e pelos procedimentos dos provedores de anúncios; as solicitações sobre relatos de erro são atendidas diretamente pela TeamCP. Informaremos qual caminho usar."
+      ]
+    },
+    {
+      "id": "young-users",
+      "title": "9. Crianças e responsáveis",
+      "paragraphs": [
+        "CatWayOut é um jogo de quebra-cabeça em que você guia os gatos para fora do tabuleiro na direção para a qual estão virados. Contém anúncios e não é direcionado a crianças menores de 13 anos. O app informa aos serviços de anúncios que não é direcionado a crianças e não tem verificação de idade nem recurso de consentimento dos pais ou responsáveis.",
+        "Se você acredita que informações de uma criança menor de 13 anos foram tratadas, entre em contato conosco e explicaremos como excluí-las."
+      ]
+    },
+    {
+      "id": "updates",
+      "title": "10. Segurança e alterações desta política",
+      "paragraphs": [
+        "Os dados do jogo ficam no armazenamento privado do app no Android, que outros apps não conseguem ler. O tráfego de anúncios e de relatos de erro usa conexões criptografadas (HTTPS).",
+        "Se os recursos, os SDKs ou o tratamento de dados mudarem, primeiro atualizamos esta política e sua data, e anunciamos as alterações importantes nesta página. Este documento está disponível em oito idiomas; se você achar que há diferenças entre as traduções, entre em contato conosco. Prevalece a versão em coreano."
+      ]
+    }
+  ]
+}
