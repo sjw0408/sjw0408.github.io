@@ -1,0 +1,91 @@
+{
+  "language": "de",
+  "title": "Katzen-Angelaquarium · Datenschutzerklärung",
+  "description": "Spielfortschritt, Aquarium, Sammlung und Einstellungen bleiben auf dem Gerät. Werbung wird nach deiner Werbeauswahl angefragt. TeamCP erhält nur die Fehlerberichte, die du absendest.",
+  "back": "TeamCP-Startseite",
+  "date": "Zuletzt aktualisiert: 19. November 2026",
+  "version": "Gilt für Version 0.1.0. Wenn sich Funktionen oder die Werbeeinbindung ändern, aktualisieren wir diese Seite und ihr Datum.",
+  "summary": "Spielfortschritt, Aquarium, Sammlung und Einstellungen bleiben auf dem Gerät. Werbung wird nach deiner Werbeauswahl angefragt. TeamCP erhält nur die Fehlerberichte, die du absendest.",
+  "contents": "Inhalt",
+  "resources": "Richtlinien von Drittanbietern und deine Rechte",
+  "contact": "Kontakt zum Datenschutz",
+  "links": [
+    "Unity-Datenschutzerklärung für Spieler und Anträge zu Betroffenenrechten",
+    "Android-Werbe-ID zurücksetzen oder löschen",
+    "Informationen zur Datensicherheit bei Google Play",
+    "Datenschutzerklärung von Google"
+  ],
+  "sections": [
+    {
+      "id": "scope",
+      "title": "1. Geltungsbereich und Betreiber",
+      "paragraphs": [
+        "Diese Erklärung gilt für das Android-Spiel von TeamCP auf Google Play (com.teamcp.catfishingaquarium). Eine Registrierung, Anmeldung oder In-App-Käufe sind nicht erforderlich. Bei einer Support-E-Mail verwenden wir Adresse und Nachricht zur Beantwortung."
+      ]
+    },
+    {
+      "id": "local",
+      "title": "2. Auf deinem Gerät gespeicherte Informationen",
+      "paragraphs": [
+        "Sammlung, Dekoration, Fortschritt und Einstellungen zu Sprache, Ton und Anzeigen werden auf dem Gerät gespeichert. Cloud-Speicherung und automatische Android-Sicherungen sind deaktiviert. Ausstehende Meldungen bleiben auf dem Gerät (bis zu 50) und können beim Öffnen der App erneut gesendet werden."
+      ]
+    },
+    {
+      "id": "ads",
+      "title": "3. Werbung und was die Werbedienste verarbeiten",
+      "paragraphs": [
+        "Unity LevelPlay und Unity Ads können Werbekennungen, Geräte- und Netzwerkdaten, IP-Adresse und ungefähre Region, Werbeinteraktionen und Diagnosedaten verarbeiten, um Anzeigen auszuliefern, zu messen und Missbrauch zu verhindern. Banner-, Interstitial- und Prämienanzeigen sind möglich. Ein TeamCP-eigenes Banner öffnet die TeamCP-Website."
+      ]
+    },
+    {
+      "id": "choices",
+      "title": "4. Deine Wahlmöglichkeiten bei Werbung",
+      "paragraphs": [
+        "Du kannst personalisierte Werbung zulassen oder allgemeine Anzeigen wählen. Das Werbe-SDK startet nach deiner Auswahl. Die Wahl lässt sich in den Spieleinstellungen ändern. Die Werbe-ID lässt sich in den Android-Einstellungen zurücksetzen oder löschen."
+      ]
+    },
+    {
+      "id": "reports",
+      "title": "5. Fehlermeldungen",
+      "paragraphs": [
+        "Beim Absenden werden Kategorie, Beschreibung, App-ID und -Version, Bildschirm, Sprache, Gerätemodell und Meldungs-ID per HTTPS an den von Cafe24 in Südkorea gehosteten TeamCP-Server gesendet. Zugriffsprotokolle können IP-Adressen enthalten. Meldungen dienen der Fehlerprüfung und werden bis zu 90 Tage aufbewahrt. Gib keine personenbezogenen Daten ein."
+      ]
+    },
+    {
+      "id": "providers",
+      "title": "6. Drittanbieterdienste und Verarbeitung im Ausland",
+      "paragraphs": [
+        "Für die Dienste von Unity LevelPlay/Unity Technologies und Google (Android-Werbedienste) gelten deren eigene Richtlinien. Werbeinformationen können außerhalb deines Landes verarbeitet werden; Empfänger, Orte und Schutzmaßnahmen findest du in der Richtlinie des jeweiligen Anbieters. Fehlermeldungen werden auf einem Hosting-Server in der Republik Korea gespeichert.",
+        "TeamCP verkauft keine Nutzerdaten. Die Datenverarbeitung im Werbe-Ökosystem kann jedoch nach manchen örtlichen Gesetzen als „Verkauf“ oder „Weitergabe“ gelten; bitte lies daher auch die unten aufgeführten Informationen der Anbieter zu Widerspruch und Rechten."
+      ]
+    },
+    {
+      "id": "delete-data",
+      "title": "7. Löschen von Daten und Speicherdauer",
+      "paragraphs": [
+        "Deinstalliere die App oder lösche ihren Speicher in Android, um lokale Daten und ausstehende Meldungen zu entfernen. Für die Löschung einer gesendeten Meldung schreib an teamcp.channel@gmail.com mit dem Spielnamen, dem ungefähren Sendedatum und Angaben zum Auffinden. Für Werbedaten nutze das unten verlinkte Verfahren von Unity."
+      ]
+    },
+    {
+      "id": "rights",
+      "title": "8. Deine Rechte",
+      "paragraphs": [
+        "Je nach Wohnort hast du möglicherweise das Recht auf Auskunft, Berichtigung oder Löschung von Daten, auf Einschränkung der Verarbeitung oder Widerspruch dagegen, auf Widerruf der Einwilligung, auf Widerspruch gegen Verkauf/Weitergabe oder auf Beschwerde bei einer Aufsichtsbehörde. Da TeamCP keine Spieldaten auf eigenen Servern speichert, werden die meisten Anliegen über die Geräteeinstellungen und die Verfahren der Werbeanbieter bearbeitet; Anliegen zu Fehlermeldungen bearbeitet TeamCP direkt. Wir sagen dir, welchen Weg du nutzen kannst."
+      ]
+    },
+    {
+      "id": "young-users",
+      "title": "9. Kinder und Eltern",
+      "paragraphs": [
+        "Wenn du glaubst, dass Informationen eines Kindes unter 13 Jahren verarbeitet wurden, kontaktiere uns bitte; wir erklären dir dann, wie sie gelöscht werden können."
+      ]
+    },
+    {
+      "id": "updates",
+      "title": "10. Sicherheit und Änderungen dieser Erklärung",
+      "paragraphs": [
+        "Wenn sich Funktionen, SDKs oder die Verarbeitung ändern, aktualisieren wir zuerst diese Erklärung und ihr Datum und kündigen wichtige Änderungen auf dieser Seite an. Dieses Dokument ist in acht Sprachen verfügbar; wenn du glaubst, dass sich die Übersetzungen unterscheiden, kontaktiere uns bitte. Maßgeblich ist die koreanische Fassung."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "language": "es",
+  "title": "Acuario de pesca gatuno · Política de privacidad",
+  "description": "El progreso, el acuario, la colección y los ajustes se guardan en el dispositivo. Las solicitudes de anuncios empiezan tras tu elección. TeamCP recibe los informes de errores que decidas enviar.",
+  "back": "Inicio de TeamCP",
+  "date": "Última actualización: 19 de noviembre de 2026",
+  "version": "Se aplica a la versión 0.1.0. Actualizamos esta página y su fecha siempre que cambian las funciones o la configuración de anuncios.",
+  "summary": "El progreso, el acuario, la colección y los ajustes se guardan en el dispositivo. Las solicitudes de anuncios empiezan tras tu elección. TeamCP recibe los informes de errores que decidas enviar.",
+  "contents": "Contenido",
+  "resources": "Políticas de terceros y ejercicio de tus derechos",
+  "contact": "Contacto sobre privacidad",
+  "links": [
+    "Política de privacidad de Unity para jugadores y solicitudes de derechos",
+    "Cómo restablecer o eliminar tu ID de publicidad de Android",
+    "Información sobre la seguridad de los datos en Google Play",
+    "Política de privacidad de Google"
+  ],
+  "sections": [
+    {
+      "id": "scope",
+      "title": "1. Ámbito y operador",
+      "paragraphs": [
+        "Esta política se aplica al juego de TeamCP para Android en Google Play (com.teamcp.catfishingaquarium). No requiere registro, inicio de sesión ni compras dentro del juego. Si escribes a soporte, utilizamos tu dirección y mensaje para responder."
+      ]
+    },
+    {
+      "id": "local",
+      "title": "2. Información guardada en tu dispositivo",
+      "paragraphs": [
+        "La colección, las decoraciones, el progreso y los ajustes de idioma, sonido y anuncios se guardan en el dispositivo. El guardado en la nube y las copias automáticas de Android están desactivados. Los informes pendientes se guardan localmente (hasta 50) y pueden reenviarse al abrir el juego."
+      ]
+    },
+    {
+      "id": "ads",
+      "title": "3. Anuncios y qué tratan los servicios de anuncios",
+      "paragraphs": [
+        "Unity LevelPlay y Unity Ads pueden tratar identificadores publicitarios, datos de dispositivo y red, dirección IP y región aproximada, interacciones y diagnósticos para publicar y medir anuncios y prevenir abusos. Pueden mostrarse banners, intersticiales y anuncios con recompensa. El banner propio de TeamCP abre su sitio web al tocarlo."
+      ]
+    },
+    {
+      "id": "choices",
+      "title": "4. Tus opciones sobre los anuncios",
+      "paragraphs": [
+        "Puedes permitir anuncios personalizados o elegir solo anuncios generales. El SDK de publicidad se inicia tras tu elección. Puedes revisarla en los ajustes del juego y restablecer o eliminar el ID publicitario en los ajustes de Android."
+      ]
+    },
+    {
+      "id": "reports",
+      "title": "5. Informes de errores",
+      "paragraphs": [
+        "Al enviar un informe, su categoría y descripción, ID y versión de la aplicación, pantalla, idioma, modelo del dispositivo e ID del informe se envían por HTTPS al servidor de TeamCP alojado por Cafe24 en Corea del Sur. Los registros de acceso pueden incluir la IP. Los informes se usan para investigar incidencias y se conservan hasta 90 días. Evita incluir datos personales."
+      ]
+    },
+    {
+      "id": "providers",
+      "title": "6. Servicios de terceros y tratamiento internacional",
+      "paragraphs": [
+        "Los servicios de Unity LevelPlay/Unity Technologies y de Google (servicios de anuncios de Android) se rigen por sus propias políticas. La información publicitaria puede tratarse fuera de tu país; consulta la política de cada proveedor para conocer los destinatarios, las ubicaciones y las garantías. Los informes de errores se guardan en un servidor de alojamiento en la República de Corea.",
+        "TeamCP no vende la información de los usuarios. Sin embargo, el tratamiento de datos en el ecosistema publicitario puede considerarse una «venta» o un «uso compartido» según algunas leyes locales, por lo que te recomendamos revisar también la información sobre exclusión y derechos de los proveedores que figura más abajo."
+      ]
+    },
+    {
+      "id": "delete-data",
+      "title": "7. Cómo eliminar los datos y plazos de conservación",
+      "paragraphs": [
+        "Para borrar datos locales e informes pendientes, desinstala el juego o borra su almacenamiento en Android. Para borrar un informe enviado, escribe a teamcp.channel@gmail.com con el nombre del juego, la fecha aproximada y datos que permitan localizarlo. Para los datos publicitarios, usa el procedimiento de Unity indicado abajo."
+      ]
+    },
+    {
+      "id": "rights",
+      "title": "8. Tus derechos",
+      "paragraphs": [
+        "Según dónde vivas, puedes tener derecho a acceder a tus datos, rectificarlos o eliminarlos, a limitar su tratamiento u oponerte a él, a retirar tu consentimiento, a excluirte de la venta o el uso compartido, o a presentar una reclamación ante una autoridad de control. Como TeamCP no guarda datos del juego en sus propios servidores, la mayoría de las solicitudes se gestionan mediante los ajustes del dispositivo y los procedimientos de los proveedores de anuncios; las solicitudes sobre informes de errores las gestiona TeamCP directamente. Te indicaremos qué vía debes usar."
+      ]
+    },
+    {
+      "id": "young-users",
+      "title": "9. Niños y padres",
+      "paragraphs": [
+        "Si crees que se ha tratado información de un menor de 13 años, ponte en contacto con nosotros y te explicaremos cómo eliminarla."
+      ]
+    },
+    {
+      "id": "updates",
+      "title": "10. Seguridad y cambios en esta política",
+      "paragraphs": [
+        "Si cambian las funciones, los SDK o el tratamiento de datos, primero actualizamos esta política y su fecha, y anunciamos los cambios importantes en esta página. Este documento está disponible en ocho idiomas; si crees que hay diferencias entre las traducciones, ponte en contacto con nosotros. Prevalece la versión en coreano."
+      ]
+    }
+  ]
+}

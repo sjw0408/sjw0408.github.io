@@ -1,0 +1,91 @@
+{
+  "language": "fr",
+  "title": "L’aquarium de pêche du chat · Politique de confidentialité",
+  "description": "La progression, l’aquarium, la collection et les paramètres restent sur l’appareil. Les annonces sont demandées après ton choix. TeamCP reçoit les signalements que tu décides d’envoyer.",
+  "back": "Accueil TeamCP",
+  "date": "Dernière mise à jour : 19 novembre 2026",
+  "version": "S’applique à la version 0.1.0. Nous mettons à jour cette page et sa date chaque fois que les fonctionnalités ou la configuration publicitaire changent.",
+  "summary": "La progression, l’aquarium, la collection et les paramètres restent sur l’appareil. Les annonces sont demandées après ton choix. TeamCP reçoit les signalements que tu décides d’envoyer.",
+  "contents": "Sommaire",
+  "resources": "Politiques des services tiers et exercice de vos droits",
+  "contact": "Contact pour la confidentialité",
+  "links": [
+    "Politique de confidentialité de Unity pour les joueurs et demandes d’exercice des droits",
+    "Réinitialiser ou supprimer votre identifiant publicitaire Android",
+    "Informations sur la sécurité des données dans Google Play",
+    "Règles de confidentialité de Google"
+  ],
+  "sections": [
+    {
+      "id": "scope",
+      "title": "1. Champ d’application et exploitant",
+      "paragraphs": [
+        "Cette politique couvre le jeu Android de TeamCP sur Google Play (com.teamcp.catfishingaquarium). Il ne nécessite ni inscription, ni connexion, ni achat intégré. Si tu écris au support, ton adresse et ton message servent à répondre."
+      ]
+    },
+    {
+      "id": "local",
+      "title": "2. Informations stockées sur votre appareil",
+      "paragraphs": [
+        "La collection, les décorations, la progression et les préférences de langue, de son et de publicité restent sur l’appareil. La sauvegarde dans le cloud et la sauvegarde automatique Android sont désactivées. Les signalements en attente restent sur l’appareil (50 maximum) et peuvent être renvoyés à l’ouverture du jeu."
+      ]
+    },
+    {
+      "id": "ads",
+      "title": "3. Publicités et informations traitées par les services publicitaires",
+      "paragraphs": [
+        "Unity LevelPlay et Unity Ads peuvent traiter les identifiants publicitaires, les informations sur l’appareil et le réseau, l’adresse IP et la région approximative, les interactions et les diagnostics pour diffuser et mesurer les annonces et éviter les abus. Il peut y avoir des bannières, des annonces interstitielles et des annonces avec récompense. Une bannière interne TeamCP ouvre le site TeamCP."
+      ]
+    },
+    {
+      "id": "choices",
+      "title": "4. Vos choix en matière de publicité",
+      "paragraphs": [
+        "Tu peux autoriser les annonces personnalisées ou choisir les annonces générales. Le SDK publicitaire démarre après ton choix. Tu peux le modifier dans les paramètres du jeu et réinitialiser ou supprimer l’identifiant publicitaire dans Android."
+      ]
+    },
+    {
+      "id": "reports",
+      "title": "5. Signalements de problèmes",
+      "paragraphs": [
+        "Quand tu envoies un signalement, la catégorie, la description, l’identifiant et la version de l’application, l’écran, la langue, le modèle d’appareil et l’identifiant du signalement sont envoyés via HTTPS au serveur TeamCP hébergé par Cafe24 en Corée du Sud. Les journaux d’accès peuvent inclure l’adresse IP. Les signalements servent à examiner les problèmes et sont conservés jusqu’à 90 jours. N’y mets pas de données personnelles."
+      ]
+    },
+    {
+      "id": "providers",
+      "title": "6. Services tiers et traitement à l’étranger",
+      "paragraphs": [
+        "Les services de Unity LevelPlay/Unity Technologies et de Google (services publicitaires Android) sont régis par leurs propres politiques. Les informations publicitaires peuvent être traitées hors de votre pays ; consultez la politique de chaque fournisseur pour connaître les destinataires, les lieux de traitement et les garanties. Les signalements de problèmes sont stockés sur un serveur d’hébergement situé en République de Corée.",
+        "TeamCP ne vend pas les informations des utilisateurs. Toutefois, le traitement des données dans l’écosystème publicitaire peut être qualifié de « vente » ou de « partage » par certaines lois locales ; veuillez donc consulter également les informations des fournisseurs ci-dessous sur l’opposition et l’exercice des droits."
+      ]
+    },
+    {
+      "id": "delete-data",
+      "title": "7. Suppression des données et durée de conservation",
+      "paragraphs": [
+        "Désinstalle le jeu ou efface son stockage dans Android pour supprimer les données locales et les signalements en attente. Pour supprimer un signalement envoyé, contacte teamcp.channel@gmail.com avec le nom du jeu, la date approximative et les informations utiles pour le retrouver. Pour les données publicitaires, utilise la procédure de Unity ci-dessous."
+      ]
+    },
+    {
+      "id": "rights",
+      "title": "8. Vos droits",
+      "paragraphs": [
+        "Selon votre lieu de résidence, vous pouvez disposer du droit d’accéder à vos données, de les rectifier ou de les supprimer, de limiter leur traitement ou de vous y opposer, de retirer votre consentement, de vous opposer à leur vente ou à leur partage, ou d’introduire une réclamation auprès d’une autorité de contrôle. Comme TeamCP ne conserve pas de données de jeu sur ses propres serveurs, la plupart des demandes sont traitées via les paramètres de l’appareil et les procédures des fournisseurs publicitaires ; les demandes concernant les signalements de problèmes sont traitées directement par TeamCP. Nous vous indiquerons la voie à suivre."
+      ]
+    },
+    {
+      "id": "young-users",
+      "title": "9. Enfants et parents",
+      "paragraphs": [
+        "Si vous pensez que des informations concernant un enfant de moins de 13 ans ont été traitées, contactez-nous : nous vous expliquerons comment les supprimer."
+      ]
+    },
+    {
+      "id": "updates",
+      "title": "10. Sécurité et modifications de la présente politique",
+      "paragraphs": [
+        "Si les fonctionnalités, les SDK ou les traitements changent, nous mettons d’abord à jour la présente politique et sa date, et annonçons les changements importants sur cette page. Ce document est disponible en huit langues ; si vous pensez que les traductions diffèrent, contactez-nous. La version coréenne fait foi."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "language": "en",
+  "title": "Cat Fishing Aquarium · Privacy Policy",
+  "description": "Fishing progress, the aquarium, the collection and settings stay on the device. Ads are requested after you make an ad choice. TeamCP receives error reports you choose to submit.",
+  "back": "TeamCP home",
+  "date": "Last updated: November 19, 2026",
+  "version": "Applies to version 0.1.0. We update this page and its date whenever features or the ad setup change.",
+  "summary": "Fishing progress, the aquarium, the collection and settings stay on the device. Ads are requested after you make an ad choice. TeamCP receives error reports you choose to submit.",
+  "contents": "Contents",
+  "resources": "Third-party policies and your rights",
+  "contact": "Privacy contact",
+  "links": [
+    "Unity game player privacy policy and rights requests",
+    "How to reset or delete your Android advertising ID",
+    "Google Play data safety information",
+    "Google Privacy Policy"
+  ],
+  "sections": [
+    {
+      "id": "scope",
+      "title": "1. Scope and operator",
+      "paragraphs": [
+        "This policy covers TeamCP’s Google Play Android game Cat Fishing Aquarium (com.teamcp.catfishingaquarium). The game does not require sign-up, login or in-app purchases. If you email support, we use your address and message to answer."
+      ]
+    },
+    {
+      "id": "local",
+      "title": "2. Information stored on your device",
+      "paragraphs": [
+        "The fish collection, aquarium decorations, game progress and preferences such as language, audio and ad choice are stored in the app on your device. Cloud saves and Android automatic backups are disabled. Reports that could not be delivered are queued on the device (up to 50) and may be retried when the app is opened."
+      ]
+    },
+    {
+      "id": "ads",
+      "title": "3. Ads and what the ad services process",
+      "paragraphs": [
+        "Unity LevelPlay and Unity Ads may process advertising identifiers, device and network details, IP address and approximate region, ad interactions and diagnostics to deliver and measure ads and prevent abuse. The game may show banner, interstitial and rewarded ads. A TeamCP house banner opens the TeamCP website when tapped."
+      ]
+    },
+    {
+      "id": "choices",
+      "title": "4. Your ad choices",
+      "paragraphs": [
+        "You can allow personalized ads or choose general ads only. The ad SDK does not start before you choose. Review your choice in the game settings. You can reset or delete the ad ID in Android settings."
+      ]
+    },
+    {
+      "id": "reports",
+      "title": "5. Issue reports",
+      "paragraphs": [
+        "When you send an error report, its category and description, app ID and version, screen, language, device model and report ID are sent over HTTPS to TeamCP’s server hosted by Cafe24 in South Korea. Access logs may contain IP addresses. Reports are used to investigate issues and kept for up to 90 days. Do not include personal information such as your name or contact details."
+      ]
+    },
+    {
+      "id": "providers",
+      "title": "6. Third-party services and international processing",
+      "paragraphs": [
+        "Services from Unity LevelPlay/Unity Technologies and Google (Android ad services) are governed by their own policies. Ad information may be processed outside your country; see each provider's policy for recipients, locations and safeguards. Issue reports are stored on a hosting server in the Republic of Korea.",
+        "TeamCP does not sell user information. However, data processing in the ad ecosystem may count as a “sale” or “sharing” under some local laws, so please also review the providers' opt-out and rights information below."
+      ]
+    },
+    {
+      "id": "delete-data",
+      "title": "7. How to delete data, and retention",
+      "paragraphs": [
+        "Uninstall the app or clear its storage in Android settings to remove local progress, settings and unsent reports. To delete a submitted report, email teamcp.channel@gmail.com with the app name, approximate submission date and details that help locate it. For advertising data, use Unity’s rights process below."
+      ]
+    },
+    {
+      "id": "rights",
+      "title": "8. Your rights",
+      "paragraphs": [
+        "Depending on where you live, you may have the right to access, correct or delete data, restrict or object to processing, withdraw consent, opt out of sale/sharing, or complain to a supervisory authority. Because TeamCP does not keep game data on its own servers, most requests are handled through device settings and the ad providers' procedures; requests about issue reports are handled by TeamCP directly. We will tell you which route to use."
+      ]
+    },
+    {
+      "id": "young-users",
+      "title": "9. Children and parents",
+      "paragraphs": [
+        "If you believe information from a child under 13 has been processed, please contact us and we will explain how to delete it."
+      ]
+    },
+    {
+      "id": "updates",
+      "title": "10. Security and changes to this policy",
+      "paragraphs": [
+        "If features, SDKs or processing change, we update this policy and its date first and announce important changes on this page. This document is available in eight languages; if you think the translations differ, please contact us. The Korean version prevails."
+      ]
+    }
+  ]
+}
