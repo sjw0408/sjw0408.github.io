@@ -9,7 +9,7 @@
   "resources": "Politiques des prestataires",
   "contact": "Contact",
   "links": [
-    "Unity LevelPlay / Unity Ads",
+    "Unity LevelPlay / Unity Ads / ironSource",
     "Google Play Games",
     "Google Firebase"
   ],
@@ -47,7 +47,7 @@
       "id": "ads",
       "title": "5. Publicité et données",
       "paragraphs": [
-        "Unity LevelPlay assure la médiation des publicités Unity Ads : bannières, interstitiels et récompenses facultatives. Les prestataires peuvent traiter IP et région approximative, modèle, version système/app, langue, réseau, identifiants publicitaires/d’appareil autorisés, demandes, impressions, clics, lecture complète et erreurs/diagnostics publicitaires. Les buts sont diffusion, limitation de fréquence, mesure, prévention de fraude et personnalisation si acceptée. La portée dépend de la région, des réglages Android, du consentement et des politiques des prestataires."
+        "Unity LevelPlay assure la médiation des publicités Unity Ads et ironSource (un réseau publicitaire de la médiation Unity LevelPlay) : bannières, interstitiels et récompenses facultatives. Les prestataires peuvent traiter IP et région approximative, modèle, version système/app, langue, réseau, identifiants publicitaires/d’appareil autorisés, demandes, impressions, clics, lecture complète et erreurs/diagnostics publicitaires. Les buts sont diffusion, limitation de fréquence, mesure, prévention de fraude et personnalisation si acceptée. La portée dépend de la région, des réglages Android, du consentement et des politiques des prestataires."
       ]
     },
     {
@@ -61,7 +61,7 @@
       "id": "providers",
       "title": "7. Prestataires et traitement international",
       "paragraphs": [
-        "Google Play Games fournit connexion facultative, cloud et succès ; Google Firebase, authentification anonyme, parties et classement ; Unity LevelPlay / Unity Ads, médiation, diffusion, mesure et prévention de fraude. Chaque prestataire peut conserver ou traiter les données à l’étranger selon sa politique. TeamCP ne vend pas de données personnelles. Consultez Unity pour les droits publicitaires et le refus de vente/partage."
+        "Google Play Games fournit connexion facultative, cloud et succès ; Google Firebase, authentification anonyme, parties et classement ; Unity LevelPlay / Unity Ads / ironSource, médiation, diffusion, mesure et prévention de fraude. Chaque prestataire peut conserver ou traiter les données à l’étranger selon sa politique. TeamCP ne vend pas de données personnelles. Consultez Unity pour les droits publicitaires et le refus de vente/partage."
       ]
     },
     {

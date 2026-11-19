@@ -1,4 +1,3 @@
-google.com, pub-4802813395834110, DIRECT, f08c47fec0942fa0
 
 # Unity Ads / LevelPlay authorized sellers (synced 2026-09-04)
 appads.in, 106246, RESELLER

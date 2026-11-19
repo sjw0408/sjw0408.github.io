@@ -9,7 +9,7 @@
   "resources": "第三方政策",
   "contact": "聯絡方式",
   "links": [
-    "Unity LevelPlay / Unity Ads",
+    "Unity LevelPlay / Unity Ads / ironSource",
     "Google Play Games",
     "Google Firebase"
   ],
@@ -47,7 +47,7 @@
       "id": "ads",
       "title": "5. 廣告與資料處理",
       "paragraphs": [
-        "Unity LevelPlay 中介由 Unity Ads 提供的橫幅、插頁及選用獎勵廣告。可能處理 IP 及推估地區、裝置型號、系統／應用程式版本、語言、網路資訊、允許的廣告／裝置識別碼、請求、曝光、點擊、觀看完成及廣告錯誤／診斷資料。用途為投放、頻率限制、成效衡量、防詐及經同意的個人化廣告。實際範圍依地區、Android 設定、同意及服務商政策而異。"
+        "Unity LevelPlay 中介由 Unity Ads 與 ironSource（Unity LevelPlay 中介廣告聯播網）提供的橫幅、插頁及選用獎勵廣告。可能處理 IP 及推估地區、裝置型號、系統／應用程式版本、語言、網路資訊、允許的廣告／裝置識別碼、請求、曝光、點擊、觀看完成及廣告錯誤／診斷資料。用途為投放、頻率限制、成效衡量、防詐及經同意的個人化廣告。實際範圍依地區、Android 設定、同意及服務商政策而異。"
       ]
     },
     {
@@ -61,7 +61,7 @@
       "id": "providers",
       "title": "7. 服務商與境外處理",
       "paragraphs": [
-        "Google Play Games 提供選用登入、雲端存檔及成就；Google Firebase 提供匿名驗證、線上對局和排名；Unity LevelPlay / Unity Ads 提供廣告中介、投放、衡量及防詐。各服務商可依政策於境外保存或處理資料。TeamCP 不出售個人資料。廣告相關權利及拒絕出售／分享方式請參閱 Unity 政策。"
+        "Google Play Games 提供選用登入、雲端存檔及成就；Google Firebase 提供匿名驗證、線上對局和排名；Unity LevelPlay / Unity Ads / ironSource 提供廣告中介、投放、衡量及防詐。各服務商可依政策於境外保存或處理資料。TeamCP 不出售個人資料。廣告相關權利及拒絕出售／分享方式請參閱 Unity 政策。"
       ]
     },
     {
