@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#fff8ed">
+  <title>냥냥 고리 돌리기 - TeamCP</title>
+  <meta name="description" content="캣타워의 고리를 돌려 숨은 홈을 맞추면 층이 풀리고 고양이가 내려오는 회전 퍼즐, 냥냥 고리 돌리기(Cat Ring Twist)의 공식 정보 페이지입니다.">
+  <style>
+    :root {
+      font-family: Pretendard, "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #43342c;
+      background: #fff8ed;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 84% 6%, rgb(91 74 122 / 18%), transparent 24rem),
+        radial-gradient(circle at 10% 92%, rgb(255 196 128 / 40%), transparent 24rem),
+        linear-gradient(165deg, #fffaf1, #f8e4c8);
+      line-height: 1.65;
+    }
+    main {
+      width: min(820px, calc(100% - 32px));
+      margin: 32px auto;
+      padding: clamp(26px, 6vw, 56px);
+      border: 1px solid rgb(91 53 33 / 12%);
+      border-radius: 32px;
+      background: rgb(255 252 246 / 88%);
+      box-shadow: 0 22px 64px rgb(91 53 33 / 12%);
+    }
+    .back {
+      color: #b0457a;
+      font-size: 0.9rem;
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .hero { margin: 50px 0 38px; }
+    .badge {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 13px;
+      border-radius: 999px;
+      background: #5b4a7a;
+      color: #fff8ed;
+      font-size: 0.8rem;
+      font-weight: 900;
+    }
+    h1 {
+      margin: 0;
+      color: #3a2e58;
+      font-size: clamp(2.3rem, 8vw, 4.4rem);
+      line-height: 1.08;
+      letter-spacing: -0.055em;
+      word-break: keep-all;
+    }
+    h1 small {
+      display: block;
+      margin-top: 6px;
+      color: #b0457a;
+      font-size: 0.5em;
+      letter-spacing: -0.03em;
+    }
+    .subtitle {
+      margin: 12px 0 0;
+      color: #8a7162;
+      font-weight: 700;
+    }
+    .lead {
+      max-width: 640px;
+      margin: 24px 0 0;
+      color: #5f4d43;
+      font-size: 1.08rem;
+      word-break: keep-all;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin: 34px 0 20px;
+    }
+    .feature {
+      padding: 18px;
+      border: 1px solid rgb(91 53 33 / 12%);
+      border-radius: 18px;
+      background: #fff6e8;
+    }
+    .feature.night {
+      border-color: #5b4a7a;
+      background: linear-gradient(160deg, #4a3b6e, #2a2140);
+    }
+    .feature strong { display: block; margin-bottom: 5px; color: #3a2e58; }
+    .feature span { color: #75625a; font-size: 0.88rem; word-break: keep-all; }
+    .feature.night strong { color: #fff3c4; }
+    .feature.night span { color: #ece6f7; }
+    .english {
+      margin: 0 0 30px;
+      padding: 18px 20px;
+      border-left: 3px solid #5b4a7a;
+      border-radius: 0 14px 14px 0;
+      background: #fff6e8;
+      color: #6a584d;
+      font-size: 0.93rem;
+    }
+    .english strong { color: #43342c; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+    .button {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 19px;
+      border: 1px solid #3a2e58;
+      border-radius: 14px;
+      background: #3a2e58;
+      color: white;
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .button.secondary { background: transparent; color: #3a2e58; }
+    .meta {
+      margin-top: 42px;
+      padding-top: 22px;
+      border-top: 1px solid rgb(91 53 33 / 14%);
+      color: #86716a;
+      font-size: 0.86rem;
+    }
+    .meta p { margin: 4px 0; }
+    .meta a { color: #b0457a; font-weight: 700; }
+    @media (max-width: 640px) {
+      main { margin: 16px auto; border-radius: 22px; }
+      .hero { margin-top: 36px; }
+      .features { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="../../">← TeamCP Games</a>
+    <section class="hero">
+      <span class="badge">회전 퍼즐 · 출시 준비 중</span>
+      <h1>냥냥 고리 돌리기</h1>
+      <p class="subtitle">Cat Ring Twist</p>
+      <p class="lead">캣타워 꼭대기에서 고양이가 내려오고 싶어 해요! 층마다 끼워진 고리를 좌우로 끌어 돌리다 보면 숨은 홈이 딱 맞는 자리가 있습니다. 한 층의 고리를 모두 맞추면 그 층이 풀리고 고양이가 한 층 내려와요. 바닥까지 내려오면 낮잠 성공 — 시간 제한도 실패도 없습니다.</p>
+    </section>
+
+    <section class="features" aria-label="주요 특징">
+      <div class="feature">
+        <strong>🌀 60개 레벨과 새 요소</strong>
+        <span>맞물려 함께 도는 기어 고리, 미끄러운 고리, 이중 고리, 그림자 홈까지 — 레벨이 오를수록 새 요소가 하나씩 등장합니다.</span>
+      </div>
+      <div class="feature night">
+        <strong>🐾 고양이 도감</strong>
+        <span>판을 끝내고 모은 동전으로 새 고양이를 초대해 도감을 채워 보세요. 막혔을 땐 홈 자리를 알려 주는 힌트!</span>
+      </div>
+      <div class="feature">
+        <strong>🔌 오프라인 · 8개 언어</strong>
+        <span>로그인 없이 기기에 저장합니다. 한국어·영어·일본어·스페인어·포르투갈어·중국어(번체)·독일어·프랑스어.</span>
+      </div>
+    </section>
+
+    <p class="english" lang="en"><strong>Cat Ring Twist</strong> — a relaxed rotation puzzle with no timer and no failure. A cat sits on top of a cat tower: drag the rings on each floor left or right until their hidden grooves line up. When every ring of a floor is set, the floor comes off and the cat steps down; reach the ground for a nap. 60 levels with gear-linked rings, slippery rings, double rings and shadow grooves, plus a cat collection to fill with coins. No account — progress stays on your device. Free, ad-supported (banner, interstitial and rewarded ads through Unity LevelPlay, with a first-launch personalized-ads choice). No in-app purchases.</p>
+
+    <div class="actions">
+      <a class="button" href="privacy/">개인정보처리방침</a>
+      <a class="button secondary" href="privacy/en/">Privacy Policy (English)</a>
+      <a class="button secondary" href="mailto:teamcp.channel@gmail.com">문의 및 지원</a>
+    </div>
+
+    <footer class="meta">
+      <p>Android 패키지: com.teamcp.catringtwist</p>
+      <p>계정 없이 기기 저장 · 오프라인 플레이 · 광고 포함(Unity LevelPlay, 첫 실행 맞춤 광고 선택) · 설정에서 직접 보내는 오류 신고 · 앱 내 결제 없음</p>
+      <p>다른 언어의 개인정보처리방침: <a href="privacy/ja/" lang="ja">日本語</a> · <a href="privacy/es/" lang="es">Español</a> · <a href="privacy/pt-br/" lang="pt-BR">Português</a> · <a href="privacy/zh-tw/" lang="zh-TW">中文（繁體）</a> · <a href="privacy/de/" lang="de">Deutsch</a> · <a href="privacy/fr/" lang="fr">Français</a></p>
+      <p>개발 및 운영: TeamCP · <a href="mailto:teamcp.channel@gmail.com">teamcp.channel@gmail.com</a></p>
+    </footer>
+  </main>
+</body>
+</html>
