@@ -1,0 +1,149 @@
+{
+  "language": "fr",
+  "title": "Politique de confidentialité de Meow Hangul",
+  "description": "Comment Meow Hangul stocke des données sur votre appareil, comment fonctionnent le micro et les enregistrements, les publicités et le consentement publicitaire, les signalements de problèmes et comment supprimer vos données.",
+  "back": "Accueil TeamCP Games",
+  "date": "Dernière mise à jour : 19 novembre 2026",
+  "version": "S’applique à la version 1.0.0. Nous mettons à jour cette page et sa date chaque fois que les fonctionnalités ou la configuration publicitaire changent.",
+  "summary": "Vous apprenez sans inscription ni connexion, et vos données d’apprentissage restent sur votre appareil. Il n’y a pas d’achats intégrés. Les publicités sont diffusées via Unity LevelPlay (Unity Ads et ironSource) ; Google AdMob n’est pas utilisé. Les services publicitaires traitent les informations sur l’appareil et les identifiants publicitaires nécessaires à la diffusion des publicités ; au premier lancement, l’application vous demande si vous acceptez les publicités personnalisées et ne démarre pas le SDK publicitaire avant votre choix. Le micro n’est utilisé que lorsque vous touchez Enregistrer dans la fonction facultative « Écouter et répéter », et les enregistrements ne quittent jamais votre appareil. Un signalement de problème n’est envoyé au serveur de signalements de TeamCP que lorsque vous l’envoyez vous-même.",
+  "contents": "Sommaire",
+  "resources": "Politiques des services tiers et exercice de vos droits",
+  "contact": "Contact pour la confidentialité",
+  "links": [
+    "Politique de confidentialité de Unity (Unity LevelPlay, Unity Ads, ironSource) et demandes d’exercice des droits",
+    "Réinitialiser ou supprimer votre identifiant publicitaire Android",
+    "Informations sur la sécurité des données dans Google Play",
+    "Règles de confidentialité de Google (services Google Play)"
+  ],
+  "sections": [
+    {
+      "id": "scope",
+      "title": "1. Champ d’application et exploitant",
+      "paragraphs": [
+        "TeamCP développe et exploite l’application Android « Meow Hangul » (냥이랑 한글, com.teamcp.meowhangul), une application d’apprentissage dans laquelle un chat professeur vous aide à apprendre le hangul, l’alphabet coréen. La présente politique explique quelles informations l’application traite et quels choix s’offrent à vous. Contact : teamcp.channel@gmail.com.",
+        "L’application ne comporte ni inscription, ni connexion, ni chat, ni achats intégrés. Elle ne demande ni ne collecte votre nom, votre adresse e-mail, votre numéro de téléphone, votre position (GPS), vos contacts, ni l’accès à l’appareil photo, aux photos ou au stockage. Le micro n’est utilisé que dans la fonction facultative « Écouter et répéter », et les enregistrements ne quittent jamais votre appareil (section 3). L’application elle-même déclare deux autorisations : l’accès à Internet (publicités et signalements de problèmes) et le micro (RECORD_AUDIO, fonction facultative). L’état du réseau, l’identifiant publicitaire (AD_ID), les API d’attribution et de thèmes (Topics) des services publicitaires Android ainsi que les autorisations WAKE_LOCK, RECEIVE_BOOT_COMPLETED et FOREGROUND_SERVICE proviennent des bibliothèques du SDK publicitaire. Si vous écrivez à l’assistance par e-mail, nous utilisons votre adresse de réponse et votre message uniquement pour vous répondre."
+      ]
+    },
+    {
+      "id": "local",
+      "title": "2. Informations stockées sur votre appareil",
+      "items": [
+        "Données d’apprentissage : étapes terminées, votre position et vos réponses dans la leçon en cours, et le calendrier de révision (pour chaque carte de révision : sa boîte, la date de la prochaine révision, le nombre de révisions, ainsi que l’heure et le fuseau horaire de la dernière révision)",
+        "Paramètres : langue de l’application, coupure de la voix, lecture automatique du son, affichage de la romanisation, l’heure de fin de « Impossible d’écouter » et « Impossible de parler » (15 minutes), votre objectif d’apprentissage (voyage, K-pop, K-dramas, vivre en Corée ou non choisi) et le fait d’avoir terminé ou non l’introduction du premier lancement",
+        "Publicité : votre choix concernant les publicités personnalisées et ce qui est nécessaire pour limiter la fréquence des publicités interstitielles (le jour de votre première utilisation de l’application, l’heure de la dernière publicité interstitielle, le nombre affiché ce jour-là et le nombre de résultats terminés depuis la dernière)",
+        "Signalements non envoyés : un signalement que vous avez envoyé est conservé sur l’appareil (100 au maximum) jusqu’à ce que le serveur l’accepte, puis renvoyé au prochain lancement de l’application",
+        "Un enregistrement temporaire de « Écouter et répéter » (section 3)"
+      ],
+      "paragraphs": [
+        "Ces informations sont conservées uniquement dans le stockage privé de l’application sur Android, afin de garder votre progression et vos paramètres. Les données d’apprentissage et les paramètres ne sont jamais envoyés à un serveur de TeamCP. Il n’y a pas de sauvegarde dans le cloud, et la sauvegarde automatique d’Android est désactivée pour cette application (allowBackup=false) ; ces données ne sont donc pas incluses dans la sauvegarde de votre compte Google. L’application ne contient aucun outil d’analyse (comme Firebase Analytics) ni rapport de plantage automatique. Le SDK publicitaire peut conserver dans le stockage de l’application ses propres données nécessaires à la diffusion des publicités."
+      ]
+    },
+    {
+      "id": "voice",
+      "title": "3. Voix et micro (Écouter et répéter)",
+      "paragraphs": [
+        "La voix des leçons est constituée de fichiers générés à l’avance avec un modèle de synthèse vocale par IA (Supertonic 3) et inclus dans l’application. L’application se contente de lire ces fichiers et ne se connecte à aucun serveur pour diffuser la voix.",
+        "« Écouter et répéter » est une fonction facultative. Le micro n’est utilisé que lorsque vous touchez vous-même « M’enregistrer ». L’autorisation du micro (RECORD_AUDIO) est demandée la première fois que vous touchez Enregistrer ; si vous la refusez, toutes les leçons, tous les exercices et toutes les révisions continuent de fonctionner."
+      ],
+      "items": [
+        "Il n’existe qu’un seul enregistrement à la fois, de 15 secondes au maximum. Il se trouve uniquement dans le stockage temporaire privé de l’application sur cet appareil.",
+        "L’enregistrement n’est jamais envoyé à un serveur ni partagé avec une autre application, et il n’est ni noté ni analysé par reconnaissance vocale. L’application ne transmet pas les enregistrements aux services publicitaires et ne les joint pas aux signalements de problèmes.",
+        "Il est supprimé immédiatement lorsque vous enregistrez à nouveau, fermez le panneau Écouter et répéter, quittez la question ou l’écran, mettez l’application en arrière-plan ou la fermez. Au démarrage de l’application, tout enregistrement restant est également supprimé.",
+        "Vous pouvez désactiver l’autorisation du micro à tout moment dans Android, sous Paramètres > Applications > Meow Hangul > Autorisations."
+      ]
+    },
+    {
+      "id": "ads",
+      "title": "4. Publicités et informations traitées par les services publicitaires",
+      "paragraphs": [
+        "L’application est gratuite et financée par la publicité. Les publicités sont diffusées via Unity LevelPlay (médiation publicitaire, Unity Technologies) avec les réseaux publicitaires Unity Ads et ironSource ; ironSource fait partie de Unity. Cette application n’inclut pas Google AdMob, ni l’outil de consentement de Google (UMP), ni Firebase, ni SDK d’analyse ou de rapport de plantage, ni aucun SDK de paiement. Le SDK publicitaire lit l’identifiant publicitaire et l’identifiant de groupe d’applications (app set ID) via des bibliothèques des services Google Play ; il ne s’agit pas d’AdMob.",
+        "Un emplacement de bannière se trouve en bas de l’écran. En l’absence de publicité, il affiche une bannière maison de TeamCP ; une fois votre choix de consentement effectué et une publicité prête, une bannière publicitaire s’affiche à sa place. La bannière maison n’ouvre le site web de TeamCP dans votre navigateur que lorsque vous la touchez. Une publicité interstitielle ne peut apparaître que lorsque vous quittez l’écran de résultat d’une leçon ou d’une révision terminée. Elle n’apparaît jamais pendant que vous répondez aux questions, ni le premier jour d’utilisation de l’application, ni après votre première leçon ; jamais non plus pour deux résultats consécutifs, avec au moins 2 minutes d’intervalle et au maximum 3 fois par jour. Les publicités avec récompense ne sont diffusées que lorsque vous le choisissez en touchant « Indice · pub », « Réessayer · pub » ou « Série bonus · pub », et la récompense n’est accordée que lorsque le réseau publicitaire signale que la publicité a été vue jusqu’au bout. Vous pouvez suivre toutes les leçons sans regarder de publicités avec récompense.",
+        "Pour charger et afficher les publicités, les services publicitaires peuvent traiter les informations suivantes."
+      ],
+      "items": [
+        "Identifiants publicitaires et du SDK, comme l’identifiant publicitaire et l’identifiant de groupe d’applications (app set ID)",
+        "Informations sur l’appareil, comme le modèle, le système d’exploitation, la langue, l’écran, le type de réseau et l’opérateur",
+        "Adresse IP et région approximative qui en est déduite",
+        "Interactions, comme les impressions et les clics sur les publicités, et informations d’erreur et de diagnostic liées aux publicités",
+        "Certaines informations sur les applications installées sur l’appareil (par exemple, si une boutique d’applications est installée)"
+      ],
+      "after": [
+        "Les finalités sont l’affichage et la mesure des publicités, la prévention de la fraude (fraude publicitaire) et, si vous y consentez, les publicités personnalisées. L’application indique aux services publicitaires qu’elle ne s’adresse pas aux enfants. L’application ne transmet ni vos données d’apprentissage ni vos enregistrements aux services publicitaires. TeamCP ne reçoit pas les informations individuelles des utilisateurs collectées par les services publicitaires ; nous ne voyons que des statistiques agrégées de revenus et d’impressions dans les tableaux de bord."
+      ]
+    },
+    {
+      "id": "choices",
+      "title": "5. Vos choix en matière de publicité",
+      "items": [
+        "Au premier lancement, chaque utilisateur voit l’écran « Consentement aux publicités personnalisées », propre à l’application, et choisit entre « Accepter les publicités personnalisées » et « Publicités non personnalisées seulement ». Tant que vous n’avez pas choisi, le SDK publicitaire n’est pas démarré et aucune demande de publicité n’est envoyée. Si vous choisissez « Publicités non personnalisées seulement », vous voyez autant de publicités, mais elles ne sont pas personnalisées.",
+        "Vous pouvez refaire votre choix à tout moment dans Paramètres > « Revoir le consentement publicitaire ».",
+        "Dans Android, sous Paramètres > Confidentialité > Annonces, vous pouvez réinitialiser ou supprimer votre identifiant publicitaire. S’il est supprimé, une suite de zéros est envoyée à sa place et ne peut pas servir aux publicités personnalisées.",
+        "Vous pouvez demander l’accès aux données publicitaires ou leur suppression, ou vous opposer à leur traitement, via l’icône de confidentialité d’une publicité ou la procédure prévue par la politique de Unity ci-dessous.",
+        "Si vous coupez la connexion Internet de l’appareil, aucune demande de publicité n’est effectuée ; les leçons fonctionnent hors ligne."
+      ],
+      "paragraphs": [
+        "Votre choix est enregistré uniquement sur l’appareil et transmis au service publicitaire (Unity LevelPlay) sous forme de signal de consentement. « Accepter les publicités personnalisées » transmet le consentement. « Publicités non personnalisées seulement » transmet un refus de consentement au titre du GDPR, accompagné d’un signal d’opposition à la vente ou au partage (do-not-sell) prévu par les lois de certains États américains. Dans les deux cas, l’application indique au service publicitaire qu’elle ne s’adresse pas aux enfants."
+      ]
+    },
+    {
+      "id": "reports",
+      "title": "6. Signalements de problèmes",
+      "paragraphs": [
+        "Vous pouvez ouvrir un signalement avec le bouton en forme de drapeau d’une question ou d’un résultat (« Signaler cette question ») ou avec « Nous contacter » dans les Paramètres. Un signalement n’est envoyé que lorsque vous rédigez une description dans la fenêtre de signalement et touchez « Envoyer ». Il n’y a ni signalement automatique, ni rapport de plantage ou de diagnostic. Un signalement contient :"
+      ],
+      "items": [
+        "La description que vous rédigez (obligatoire, 2 000 caractères au maximum) et la catégorie que vous choisissez (texte erroné, réponse erronée, image ou son, autre chose ; « Nous contacter » si vous l’ouvrez depuis les Paramètres)",
+        "Joint automatiquement : l’identifiant de l’application (meowhangul), un numéro de signalement aléatoire créé pour chaque signalement, la version de l’application (nom de version et numéro de build), le nom de l’écran depuis lequel vous avez fait le signalement, l’identifiant de la question (une valeur commune pour les messages envoyés depuis les Paramètres), le texte affiché de la question signalée (type de question, texte de la question et choix de réponse, 4 000 caractères au maximum), la langue de l’application et le nom du modèle de l’appareil"
+      ],
+      "after": [
+        "Les signalements n’incluent jamais votre identifiant publicitaire, un compte, vos données d’apprentissage, des enregistrements ou du son provenant du micro, ni votre position. Veuillez ne pas écrire d’informations personnelles, comme votre nom ou vos coordonnées, dans la description. Les signalements sont envoyés via une connexion chiffrée (HTTPS) et stockés sur un serveur de signalements exploité par TeamCP (sjw0408.cafe24.com ; hébergement web : Cafe24, République de Corée) ; ils servent uniquement à trouver et à corriger les problèmes. Le serveur et l’hébergeur peuvent traiter votre adresse IP dans les journaux de connexion lors de la communication. Les signalements stockés sur le serveur sont conservés 90 jours à compter de leur réception, puis supprimés ; si vous demandez leur suppression plus tôt, nous les supprimons immédiatement.",
+        "Un signalement qui n’a pas pu être envoyé est conservé sur l’appareil et renvoyé au prochain lancement de l’application. TeamCP ne reçoit votre adresse e-mail que si vous écrivez vous-même à l’assistance (teamcp.channel@gmail.com)."
+      ]
+    },
+    {
+      "id": "providers",
+      "title": "7. Services tiers et traitement à l’étranger",
+      "paragraphs": [
+        "Les services de Unity Technologies (Unity LevelPlay, Unity Ads, ironSource) et de Google (l’identifiant publicitaire et l’identifiant de groupe d’applications des services Google Play, ainsi que les services publicitaires Android) sont régis par leurs propres politiques. Les informations publicitaires peuvent être traitées hors de votre pays ; consultez la politique de chaque fournisseur pour connaître les destinataires, les lieux de traitement et les garanties. Les signalements de problèmes sont stockés sur un serveur d’hébergement situé en République de Corée.",
+        "TeamCP ne vend pas les informations des utilisateurs. Toutefois, le traitement des données dans l’écosystème publicitaire peut être qualifié de « vente » ou de « partage » par certaines lois locales ; veuillez donc consulter également les informations des fournisseurs ci-dessous sur l’opposition et l’exercice des droits."
+      ]
+    },
+    {
+      "id": "delete-data",
+      "title": "8. Suppression des données et durée de conservation",
+      "items": [
+        "Sur l’appareil : désinstallez l’application ou utilisez, dans Android, Paramètres > Applications > Meow Hangul > Stockage > Effacer les données pour supprimer toutes les données de l’application, y compris les données d’apprentissage, les paramètres, votre choix de consentement publicitaire et les signalements non envoyés. Les données d’apprentissage ne sont conservées sur aucun serveur de TeamCP.",
+        "Enregistrements : vous n’avez rien à supprimer. L’application les supprime immédiatement, comme indiqué à la section 3.",
+        "Signalements envoyés : écrivez à teamcp.channel@gmail.com en indiquant la date d’envoi et le modèle de votre appareil (et, si possible, une partie du texte) ; nous le retrouverons et le supprimerons. Vous pouvez demander à la même adresse la suppression de vos e-mails d’assistance.",
+        "Informations publicitaires : supprimez ou réinitialisez votre identifiant publicitaire et utilisez la procédure de demande prévue par la politique de Unity. La seule désinstallation de l’application ne supprime pas les informations déjà traitées par les fournisseurs publicitaires.",
+        "Aide : écrivez à teamcp.channel@gmail.com en indiquant le nom de l’application et votre demande. N’envoyez ni mot de passe ni pièce d’identité. Pour les données que TeamCP ne détient pas, nous vous indiquerons la procédure du fournisseur concerné."
+      ],
+      "paragraphs": [
+        "Les données de l’application sur l’appareil sont conservées jusqu’à ce que vous les supprimiez. Les signalements de problèmes envoyés au serveur sont supprimés 90 jours après leur réception. Les informations publicitaires sont conservées conformément à la politique de chaque fournisseur. Les e-mails d’assistance ne sont pas conservés plus longtemps que nécessaire après notre réponse."
+      ]
+    },
+    {
+      "id": "rights",
+      "title": "9. Vos droits",
+      "paragraphs": [
+        "Selon votre lieu de résidence, vous pouvez disposer du droit d’accéder à vos données, de les rectifier ou de les supprimer, de limiter leur traitement ou de vous y opposer, de retirer votre consentement, de vous opposer à leur vente ou à leur partage, ou d’introduire une réclamation auprès d’une autorité de contrôle. Comme TeamCP ne conserve pas de données d’apprentissage sur ses propres serveurs, la plupart des demandes sont traitées via les paramètres de l’appareil et les procédures des fournisseurs publicitaires ; les demandes concernant les signalements de problèmes sont traitées directement par TeamCP. Nous vous indiquerons la voie à suivre."
+      ]
+    },
+    {
+      "id": "young-users",
+      "title": "10. Enfants et parents",
+      "paragraphs": [
+        "Meow Hangul est une application d’apprentissage du hangul conçue pour les adolescents et les adultes qui débutent en coréen. Ce n’est pas un service destiné aux enfants et elle ne s’adresse pas aux enfants de moins de 13 ans. L’application indique aux services publicitaires qu’elle ne s’adresse pas aux enfants. Elle ne demande ni date de naissance ni pièce d’identité, et elle ne comporte ni vérification de l’âge ni fonction de consentement parental.",
+        "Si vous pensez que des informations concernant un enfant de moins de 13 ans ont été traitées, contactez-nous : nous vous expliquerons comment les supprimer."
+      ]
+    },
+    {
+      "id": "updates",
+      "title": "11. Sécurité et modifications de la présente politique",
+      "paragraphs": [
+        "Les données de l’application sont conservées dans le stockage privé de l’application sur Android, que les autres applications ne peuvent pas lire. Les communications liées aux publicités et aux signalements de problèmes utilisent des connexions chiffrées (HTTPS).",
+        "Si les fonctionnalités, les SDK ou les traitements changent, nous mettons d’abord à jour la présente politique et sa date, et annonçons les changements importants sur cette page. Ce document est disponible en huit langues ; si vous pensez que les traductions diffèrent, contactez-nous. La version coréenne fait foi."
+      ]
+    }
+  ]
+}

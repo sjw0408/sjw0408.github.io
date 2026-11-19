@@ -1,0 +1,149 @@
+{
+  "language": "pt-BR",
+  "title": "Política de privacidade do Hangul com Gatinho (Meow Hangul)",
+  "description": "Como o Hangul com Gatinho (Meow Hangul) armazena dados no seu dispositivo, como funcionam o microfone e as gravações, os anúncios e o consentimento de anúncios, os relatos de problemas e como excluir dados.",
+  "back": "Início da TeamCP Games",
+  "date": "Última atualização: 19 de novembro de 2026",
+  "version": "Aplica-se à versão 1.0.0. Atualizamos esta página e a data sempre que os recursos ou a configuração de anúncios mudam.",
+  "summary": "Você aprende sem cadastro nem login, e seus registros de aprendizado ficam só no seu dispositivo. Não há compras no app. Os anúncios são exibidos por meio da Unity LevelPlay (Unity Ads e ironSource); o Google AdMob não é usado. Os serviços de anúncios tratam informações do dispositivo e identificadores de publicidade necessários para exibir anúncios; na primeira abertura, o app pergunta se você permite anúncios personalizados e não inicia o SDK de anúncios antes da sua escolha. O microfone só é usado quando você toca em Gravar no recurso opcional “Ouça e repita”, e as gravações nunca saem do seu dispositivo. Um relato de problema só é enviado ao servidor de relatos da TeamCP quando você mesmo o envia.",
+  "contents": "Sumário",
+  "resources": "Políticas de terceiros e exercício dos seus direitos",
+  "contact": "Contato sobre privacidade",
+  "links": [
+    "Política de privacidade da Unity (Unity LevelPlay, Unity Ads, ironSource) e solicitações de direitos",
+    "Como redefinir ou excluir seu ID de publicidade do Android",
+    "Informações de segurança dos dados do Google Play",
+    "Política de Privacidade do Google (Google Play Services)"
+  ],
+  "sections": [
+    {
+      "id": "scope",
+      "title": "1. Abrangência e operador",
+      "paragraphs": [
+        "A TeamCP desenvolve e opera o app para Android “Hangul com Gatinho” (Meow Hangul, 냥이랑 한글, com.teamcp.meowhangul), um app de aprendizado em que um gato professor ajuda você a aprender hangul, o alfabeto coreano. Esta política explica quais informações o app trata e quais escolhas você tem. Contato: teamcp.channel@gmail.com.",
+        "O app não tem cadastro, login, chat nem compras no app. Ele não solicita nem coleta seu nome, e-mail, número de telefone, localização (GPS), contatos, câmera, fotos ou armazenamento. O microfone só é usado no recurso opcional “Ouça e repita”, e as gravações nunca saem do seu dispositivo (seção 3). O próprio app declara duas permissões: internet (anúncios e relatos de problemas) e microfone (RECORD_AUDIO, recurso opcional). O estado da rede, o ID de publicidade (AD_ID), as APIs de atribuição e de tópicos dos serviços de anúncios do Android e as permissões WAKE_LOCK, RECEIVE_BOOT_COMPLETED e FOREGROUND_SERVICE vêm das bibliotecas do SDK de anúncios. Se você escrever para o e-mail de suporte, usaremos seu endereço de resposta e sua mensagem apenas para responder a você."
+      ]
+    },
+    {
+      "id": "local",
+      "title": "2. Informações armazenadas no seu dispositivo",
+      "items": [
+        "Registros de aprendizado: etapas concluídas, sua posição e suas respostas na lição em andamento e a agenda de revisão (para cada cartão de revisão: a caixa, a data da próxima revisão, o número de revisões e o horário e o fuso horário da última revisão)",
+        "Configurações: idioma do app, silenciar a voz, som automático, exibição da romanização, o horário de término de “Não posso ouvir agora” e “Não posso falar agora” (15 minutos), seu objetivo de aprendizado (viagem, K-pop, K-dramas, morar na Coreia ou não escolhido) e se você concluiu a introdução da primeira abertura",
+        "Anúncios: sua escolha sobre anúncios personalizados e o necessário para limitar a frequência dos anúncios intersticiais (o dia em que você usou o app pela primeira vez, o horário do último anúncio intersticial, quantos foram exibidos naquele dia e o número de resultados concluídos desde o último)",
+        "Relatos de problemas não enviados: um relato que você enviou fica guardado no dispositivo (até 100) até ser aceito pelo servidor e é reenviado na próxima vez que você abre o app",
+        "Uma gravação temporária do “Ouça e repita” (seção 3)"
+      ],
+      "paragraphs": [
+        "Essas informações ficam apenas no armazenamento privado do app no Android, para manter seu progresso e suas configurações. Registros de aprendizado e configurações nunca são enviados a um servidor da TeamCP. Não há salvamento na nuvem, e o backup automático do Android está desativado para este app (allowBackup=false); por isso, ele não é incluído no backup da sua Conta do Google. O app não contém ferramentas de análise (como o Firebase Analytics) nem relatórios automáticos de falhas. O SDK de anúncios pode manter no armazenamento do app seus próprios dados necessários para exibir anúncios."
+      ]
+    },
+    {
+      "id": "voice",
+      "title": "3. Voz e microfone (Ouça e repita)",
+      "paragraphs": [
+        "A voz das lições são arquivos gerados previamente com um modelo de voz por IA (Supertonic 3) e incluídos no app. O app apenas reproduz esses arquivos e não se conecta a um servidor para reproduzir a voz.",
+        "O “Ouça e repita” é opcional. O microfone só é usado quando você mesmo toca em “Gravar minha voz”. A permissão de microfone (RECORD_AUDIO) é solicitada na primeira vez que você toca em Gravar; se você recusar, todas as lições, práticas e revisões continuam funcionando."
+      ],
+      "items": [
+        "Há apenas uma gravação por vez, com até 15 segundos. Ela existe somente no armazenamento temporário privado do app neste dispositivo.",
+        "A gravação nunca é enviada a um servidor nem compartilhada com outro app, e não é pontuada nem passa por reconhecimento de voz. O app não repassa gravações aos serviços de anúncios nem as anexa aos relatos de problemas.",
+        "Ela é excluída imediatamente quando você grava de novo, fecha o painel do Ouça e repita, sai da pergunta ou da tela, coloca o app em segundo plano ou fecha o app. Ao iniciar, o app também exclui qualquer gravação que tenha sobrado.",
+        "Você pode desativar a permissão de microfone a qualquer momento em Configurações do Android > Apps > Hangul com Gatinho > Permissões."
+      ]
+    },
+    {
+      "id": "ads",
+      "title": "4. Anúncios e o que os serviços de anúncios tratam",
+      "paragraphs": [
+        "O app é gratuito e mantido por anúncios. Os anúncios são exibidos por meio da Unity LevelPlay (mediação de anúncios, Unity Technologies) com as redes de anúncios Unity Ads e ironSource; a ironSource faz parte da Unity. Este app não inclui o Google AdMob, nem a ferramenta de consentimento do Google (UMP), o Firebase, SDKs de análise ou de relatórios de falhas, nem qualquer SDK de pagamento. O SDK de anúncios lê o ID de publicidade e o ID do conjunto de apps por meio de bibliotecas do Google Play Services; isso não é o AdMob.",
+        "Há um espaço de banner na parte inferior da tela. Quando não há anúncio, ele mostra um banner próprio da TeamCP; depois que você faz sua escolha de consentimento e um anúncio fica pronto, um anúncio de banner aparece no lugar dele. O banner próprio abre o site da TeamCP no navegador somente quando você toca nele. Um anúncio intersticial só pode aparecer quando você sai da tela de resultado de uma lição ou revisão concluída. Ele nunca aparece enquanto você responde às perguntas, nem no primeiro dia de uso do app, nem depois da sua primeira lição; também não aparece em dois resultados seguidos, e sempre com pelo menos 2 minutos de intervalo e no máximo 3 vezes por dia. Os anúncios premiados só são exibidos quando você escolhe, tocando em “Dica · anúncio”, “Tentar de novo · anúncio” ou “Rodada bônus · anúncio”, e a recompensa só é concedida quando a rede de anúncios sinaliza que o anúncio foi concluído. Você pode fazer todas as lições sem assistir a anúncios premiados.",
+        "Para carregar e exibir anúncios, os serviços de anúncios podem tratar as seguintes informações."
+      ],
+      "items": [
+        "Identificadores de publicidade e do SDK, como o ID de publicidade e o ID do conjunto de apps",
+        "Informações do dispositivo, como modelo, sistema operacional, idioma, tela, tipo de rede e operadora",
+        "Endereço IP e a região aproximada obtida a partir dele",
+        "Interações, como impressões e cliques em anúncios, e informações de erro e diagnóstico relacionadas a anúncios",
+        "Algumas informações sobre apps instalados no dispositivo (por exemplo, se há uma loja de apps instalada)"
+      ],
+      "after": [
+        "As finalidades são exibir e medir anúncios, prevenir fraudes (fraude de anúncios) e, se você concordar, exibir anúncios personalizados. O app informa aos serviços de anúncios que não é direcionado a crianças. O app não repassa seus registros de aprendizado nem suas gravações aos serviços de anúncios. A TeamCP não recebe informações individuais de usuários coletadas pelos serviços de anúncios; vemos apenas estatísticas agregadas de receita e impressões nos painéis."
+      ]
+    },
+    {
+      "id": "choices",
+      "title": "5. Suas escolhas sobre anúncios",
+      "items": [
+        "Na primeira abertura, todos os usuários veem a tela própria do app “Consentimento de anúncios personalizados” e escolhem entre “Permitir anúncios personalizados” e “Somente anúncios não personalizados”. Até você escolher, o SDK de anúncios não é iniciado e nenhuma solicitação de anúncio é enviada. Se você escolher “Somente anúncios não personalizados”, verá a mesma quantidade de anúncios, mas eles não serão personalizados.",
+        "Você pode escolher de novo a qualquer momento em Configurações > “Rever consentimento de anúncios”.",
+        "Em Configurações do Android > Privacidade > Anúncios, você pode redefinir ou excluir seu ID de publicidade. Quando ele é excluído, uma sequência de zeros é enviada no lugar e não pode ser usada para anúncios personalizados.",
+        "Você pode solicitar acesso, exclusão ou recusa (opt-out) dos dados de anúncios pelo ícone de privacidade no anúncio ou pelo procedimento da política da Unity indicada abaixo.",
+        "Se você desligar a conexão com a internet do dispositivo, nenhuma solicitação de anúncio é feita; as lições funcionam off-line."
+      ],
+      "paragraphs": [
+        "Sua escolha fica armazenada apenas no dispositivo e é repassada ao serviço de anúncios (Unity LevelPlay) como sinal de consentimento. “Permitir anúncios personalizados” envia o consentimento. “Somente anúncios não personalizados” envia uma recusa de consentimento nos termos do GDPR, junto com um sinal de não venda (do-not-sell; recusa de venda/compartilhamento) previsto nas leis de alguns estados dos EUA. Nos dois casos, o app informa ao serviço de anúncios que não é direcionado a crianças."
+      ]
+    },
+    {
+      "id": "reports",
+      "title": "6. Relatos de problemas",
+      "paragraphs": [
+        "Você pode abrir um relato pelo botão de bandeira em uma pergunta ou resultado (“Relatar esta pergunta”) ou por “Fale conosco” em Configurações. Um relato só é enviado quando você escreve uma descrição na janela do relato e toca em “Enviar”. Não há relatos automáticos nem relatórios de falhas ou de diagnóstico. Um relato contém:"
+      ],
+      "items": [
+        "A descrição que você escreve (obrigatória, até 2.000 caracteres) e a categoria que você escolhe (texto incorreto, resposta incorreta, imagem ou som, outra coisa; “Fale conosco” quando aberto em Configurações)",
+        "Anexado automaticamente: o identificador do app (meowhangul), um número de relato aleatório criado para cada relato, a versão do app (nome da versão e número da compilação), o nome da tela de onde você fez o relato, o ID da questão (um valor comum nas mensagens enviadas por Configurações), o texto visível da questão relatada (tipo de questão, texto da questão e opções de resposta, até 4.000 caracteres), o idioma do app e o nome do modelo do dispositivo"
+      ],
+      "after": [
+        "Os relatos nunca incluem seu ID de publicidade, uma conta, seus registros de aprendizado, gravações ou áudio do microfone, nem sua localização. Não escreva na descrição informações pessoais como seu nome ou dados de contato. Os relatos são enviados por conexão criptografada (HTTPS) e armazenados em um servidor de relatos operado pela TeamCP (sjw0408.cafe24.com; hospedagem web: Cafe24, República da Coreia), e são usados somente para encontrar e corrigir problemas. O servidor e a empresa de hospedagem podem tratar seu endereço IP em registros de conexão durante a comunicação. Os relatos armazenados no servidor são mantidos por 90 dias a partir do recebimento e depois excluídos; se você pedir a exclusão antes disso, nós os excluímos imediatamente.",
+        "Um relato que não pôde ser enviado fica guardado no dispositivo e é reenviado na próxima vez que você abre o app. A TeamCP só recebe seu endereço de e-mail se você mesmo escrever para o e-mail de suporte (teamcp.channel@gmail.com)."
+      ]
+    },
+    {
+      "id": "providers",
+      "title": "7. Serviços de terceiros e tratamento internacional",
+      "paragraphs": [
+        "Os serviços da Unity Technologies (Unity LevelPlay, Unity Ads, ironSource) e do Google (o ID de publicidade e o ID do conjunto de apps do Google Play Services, e os serviços de anúncios do Android) são regidos pelas políticas de cada empresa. As informações de anúncios podem ser tratadas fora do seu país; consulte a política de cada provedor para saber os destinatários, os locais e as salvaguardas. Os relatos de problemas são armazenados em um servidor de hospedagem na República da Coreia.",
+        "A TeamCP não vende informações de usuários. No entanto, o tratamento de dados no ecossistema de anúncios pode ser considerado “venda” ou “compartilhamento” por algumas leis locais; por isso, consulte também as informações sobre recusa e direitos dos provedores indicadas abaixo."
+      ]
+    },
+    {
+      "id": "delete-data",
+      "title": "8. Como excluir dados e prazo de retenção",
+      "items": [
+        "No dispositivo: desinstale o app ou use Configurações do Android > Apps > Hangul com Gatinho > Armazenamento > Limpar dados para excluir todos os dados do app, incluindo registros de aprendizado, configurações, sua escolha de consentimento de anúncios e relatos não enviados. Os registros de aprendizado não são mantidos em nenhum servidor da TeamCP.",
+        "Gravações: você não precisa excluir nada. O app as exclui imediatamente, como descrito na seção 3.",
+        "Relatos enviados: escreva para teamcp.channel@gmail.com informando a data de envio e o modelo do dispositivo (e, se possível, parte do texto), e nós o localizaremos e excluiremos. No mesmo endereço, você pode pedir a exclusão dos seus e-mails de suporte.",
+        "Informações de anúncios: exclua ou redefina seu ID de publicidade e use o procedimento de solicitação da política da Unity. Desinstalar o app, por si só, não exclui informações já tratadas pelos provedores de anúncios.",
+        "Ajuda: escreva para teamcp.channel@gmail.com informando o nome do app e sua solicitação. Não envie senhas nem documentos de identidade. Para dados que a TeamCP não mantém, indicaremos o procedimento do provedor."
+      ],
+      "paragraphs": [
+        "Os dados do app no dispositivo permanecem até que você os exclua. Os relatos de problemas enviados ao servidor são excluídos 90 dias após o recebimento. As informações de anúncios são retidas conforme a política de cada provedor. Os e-mails de suporte não são mantidos por mais tempo que o necessário após a resposta."
+      ]
+    },
+    {
+      "id": "rights",
+      "title": "9. Seus direitos",
+      "paragraphs": [
+        "Dependendo de onde você mora, você pode ter o direito de acessar, corrigir ou excluir dados, restringir o tratamento ou se opor a ele, retirar o consentimento, recusar a venda/compartilhamento ou apresentar reclamação a uma autoridade de supervisão. Como a TeamCP não mantém registros de aprendizado em servidores próprios, a maioria das solicitações é atendida pelas configurações do dispositivo e pelos procedimentos dos provedores de anúncios; as solicitações sobre relatos de problemas são atendidas diretamente pela TeamCP. Informaremos qual caminho usar."
+      ]
+    },
+    {
+      "id": "young-users",
+      "title": "10. Crianças e responsáveis",
+      "paragraphs": [
+        "O Hangul com Gatinho é um app para aprender hangul feito para adolescentes e adultos que estão começando a aprender coreano. Não é um serviço infantil e não é direcionado a crianças menores de 13 anos. O app informa aos serviços de anúncios que não é direcionado a crianças. Ele não pede data de nascimento nem documento de identidade, e não tem verificação de idade nem recurso de consentimento dos pais ou responsáveis.",
+        "Se você acredita que informações de uma criança menor de 13 anos foram tratadas, entre em contato conosco e explicaremos como excluí-las."
+      ]
+    },
+    {
+      "id": "updates",
+      "title": "11. Segurança e alterações desta política",
+      "paragraphs": [
+        "Os dados do app ficam no armazenamento privado do app no Android, que outros apps não conseguem ler. O tráfego de anúncios e de relatos de problemas usa conexões criptografadas (HTTPS).",
+        "Se os recursos, os SDKs ou o tratamento de dados mudarem, primeiro atualizamos esta política e sua data, e anunciamos as alterações importantes nesta página. Este documento está disponível em oito idiomas; se você achar que há diferenças entre as traduções, entre em contato conosco. Prevalece a versão em coreano."
+      ]
+    }
+  ]
+}
