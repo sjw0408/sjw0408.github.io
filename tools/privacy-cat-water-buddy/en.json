@@ -1,0 +1,62 @@
+{
+  "language": "en",
+  "title": "Cat Water Buddy Privacy Policy",
+  "description": "Water intake records and reminder settings are stored on your device. Advertising services and reports you choose to submit are described below.",
+  "back": "TeamCP home",
+  "date": "Effective November 19, 2026",
+  "version": "This policy applies to the Google Play Android edition. The current version is published on this page.",
+  "summary": "Water intake records and reminder settings are stored on your device. Advertising services and reports you choose to submit are described below.",
+  "contents": "Contents",
+  "resources": "Related policies and guidance",
+  "contact": "Privacy contact",
+  "links": [
+    "Unity player and app user privacy policy",
+    "Manage the Android advertising ID",
+    "Google Play data safety information",
+    "Google Privacy Policy"
+  ],
+  "sections": [
+    {
+      "id": "scope",
+      "title": "Scope and operator",
+      "paragraphs": [
+        "TeamCP provides Cat Water Buddy (com.teamcp.catwaterbuddy) for Android on Google Play. The app does not require an account."
+      ]
+    },
+    {
+      "id": "local",
+      "title": "Information on your device",
+      "paragraphs": [
+        "The app stores your water intake amounts and times, goal and cup size, reminder settings, language, theme and ad choice on your device. Water intake records are not sent to TeamCP’s servers. Depending on your Android backup settings, supported app data may be backed up or restored."
+      ]
+    },
+    {
+      "id": "reminders",
+      "title": "Reminders and widget",
+      "paragraphs": [
+        "If you allow Android notifications, the app schedules water reminders on your device. System settings may delay delivery. The home screen widget shows today’s progress and goal. Recording a drink from a notification or widget updates the record on your device. Turn reminders off in the app or Android settings, or remove the widget from the home screen."
+      ]
+    },
+    {
+      "id": "ads",
+      "title": "Ads and choices",
+      "paragraphs": [
+        "Unity LevelPlay and Unity Ads may provide banner, interstitial and rewarded ads. Unity may process advertising identifiers, IP addresses, device and network information, ad interactions and diagnostic data to deliver and measure ads and prevent abuse. Processing may take place outside your country. You can change your ad choice in the app and reset or delete the advertising ID in Android settings."
+      ]
+    },
+    {
+      "id": "reports",
+      "title": "Issue reports and storage",
+      "paragraphs": [
+        "When you write and submit an issue report from Settings, the app sends it over HTTPS if delivery has been configured. TeamCP stores the report on its Cafe24-hosted server in South Korea to investigate the issue and keeps it for up to 90 days. It can include your description and category, app identifier and version, screen, language, device model and report identifier. Water intake records and reminder schedules are not attached automatically. Undelivered reports may remain on your device. Please leave names and contact information out of the report."
+      ]
+    },
+    {
+      "id": "delete-data",
+      "title": "Deleting data and contacting us",
+      "paragraphs": [
+        "Clear your water intake history in the app. Clearing app storage in Android settings removes local app data and unsent reports. Manage Android backups in system settings. For access, correction, deletion or retention questions about a submitted report, email us below with the app name and approximate submission date or report number. For ad data handled by Unity, use the Unity resources below."
+      ]
+    }
+  ]
+}

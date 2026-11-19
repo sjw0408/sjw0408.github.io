@@ -1,0 +1,62 @@
+{
+  "language": "es",
+  "title": "Política de privacidad de Cat Water Buddy",
+  "description": "El registro de consumo de agua y los ajustes de recordatorios se guardan en tu dispositivo. A continuación se explica el tratamiento de los datos publicitarios y de los informes que decidas enviar.",
+  "back": "Inicio de TeamCP",
+  "date": "Vigente desde el 19 de noviembre de 2026",
+  "version": "Se aplica a la edición para Android de Google Play. La versión vigente se publica en esta página.",
+  "summary": "El registro de consumo de agua y los ajustes de recordatorios se guardan en tu dispositivo. A continuación se explica el tratamiento de los datos publicitarios y de los informes que decidas enviar.",
+  "contents": "Índice",
+  "resources": "Políticas y recursos relacionados",
+  "contact": "Contacto de privacidad",
+  "links": [
+    "Política de privacidad de Unity",
+    "Gestionar el ID publicitario de Android",
+    "Seguridad de los datos en Google Play",
+    "Política de Privacidad de Google"
+  ],
+  "sections": [
+    {
+      "id": "scope",
+      "title": "Ámbito y responsable",
+      "paragraphs": [
+        "TeamCP ofrece Cat Water Buddy (com.teamcp.catwaterbuddy) para Android en Google Play. La aplicación no requiere una cuenta."
+      ]
+    },
+    {
+      "id": "local",
+      "title": "Información en tu dispositivo",
+      "paragraphs": [
+        "La aplicación guarda en tu dispositivo la cantidad y hora de cada toma de agua, el objetivo y el tamaño del vaso, los recordatorios, el idioma, el tema y tu elección de publicidad. El historial de consumo de agua no se envía a los servidores de TeamCP. Según los ajustes de copia de seguridad de Android, los datos compatibles pueden copiarse o restaurarse."
+      ]
+    },
+    {
+      "id": "reminders",
+      "title": "Recordatorios y widget",
+      "paragraphs": [
+        "Si permites las notificaciones de Android, la aplicación programa los recordatorios de hidratación en el dispositivo. Los ajustes del sistema pueden retrasarlos. El widget de la pantalla de inicio muestra el progreso y el objetivo del día. Registrar una toma desde una notificación o el widget actualiza el registro local. Puedes desactivar los recordatorios en la aplicación o en Android y quitar el widget desde la pantalla de inicio."
+      ]
+    },
+    {
+      "id": "ads",
+      "title": "Publicidad y opciones",
+      "paragraphs": [
+        "La aplicación puede mostrar anuncios de banner, intersticiales y con recompensa a través de Unity LevelPlay y Unity Ads. Unity puede tratar identificadores publicitarios, direcciones IP, datos del dispositivo y de la red, interacciones con anuncios y datos de diagnóstico para mostrar y medir anuncios y prevenir abusos. El tratamiento puede tener lugar fuera de tu país. Puedes cambiar tu elección en la aplicación y restablecer o eliminar el identificador publicitario en Android."
+      ]
+    },
+    {
+      "id": "reports",
+      "title": "Informes de errores y conservación",
+      "paragraphs": [
+        "Cuando redactas y envías un informe desde Ajustes, se transmite por HTTPS si el envío está configurado. TeamCP lo almacena en su servidor alojado por Cafe24 en Corea del Sur durante un máximo de 90 días para investigar el problema. Puede incluir la descripción y categoría, el identificador y la versión de la aplicación, la pantalla, el idioma, el modelo del dispositivo y el identificador del informe. El historial de consumo y los horarios de recordatorios no se adjuntan automáticamente. Los informes sin entregar pueden quedar en el dispositivo. Evita incluir nombres y datos de contacto."
+      ]
+    },
+    {
+      "id": "delete-data",
+      "title": "Eliminación de datos y contacto",
+      "paragraphs": [
+        "Puedes borrar el historial de consumo en la aplicación. Si borras el almacenamiento de la aplicación en Android, eliminarás los datos locales y los informes sin enviar. Gestiona las copias de seguridad desde los ajustes del sistema. Para acceder a un informe enviado, corregirlo, eliminarlo o consultar su conservación, escríbenos a la dirección indicada abajo con el nombre de la aplicación y la fecha aproximada de envío o el número de informe. Para los datos publicitarios tratados por Unity, consulta los recursos de Unity indicados abajo."
+      ]
+    }
+  ]
+}
