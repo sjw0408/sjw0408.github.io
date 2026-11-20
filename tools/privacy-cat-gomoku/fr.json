@@ -3,7 +3,7 @@
   "title": "Politique de confidentialité de Cat Gomoku",
   "description": "Politique de confidentialité de Cat Gomoku",
   "back": "Informations sur le jeu",
-  "date": "Dernière mise à jour : 19 novembre 2026",
+  "date": "Dernière mise à jour : 20 novembre 2026",
   "summary": "TeamCP exploite Cat Gomoku pour Android (com.teamcp.catgomoku). Vous pouvez jouer comme invité sans inscription. Nous ne recueillons ni nom, e-mail, téléphone ni mot de passe Google pour une inscription propre. Selon les fonctions choisies, le jeu utilise Google Play Games, les parties Firebase, Unity LevelPlay et Unity Ads.",
   "contents": "Sommaire",
   "resources": "Politiques des prestataires",
@@ -58,36 +58,52 @@
       ]
     },
     {
+      "id": "reports",
+      "title": "7. Signalements de problèmes",
+      "paragraphs": [
+        "Pour envoyer un signalement, rédigez une description dans Paramètres > « Signaler un problème / Contact » et touchez Envoyer. L’application n’envoie pas automatiquement de rapports de plantage. Le signalement contient les informations suivantes."
+      ],
+      "items": [
+        "La description que vous rédigez (2 000 caractères au maximum) et le type de signalement que vous choisissez",
+        "Joint automatiquement : identifiant et version de l’application, nom de l’écran depuis lequel vous avez fait le signalement, langue de l’application, nom du modèle de l’appareil et un numéro de signalement aléatoire créé pour chaque signalement"
+      ],
+      "after": [
+        "Si un signalement ne peut pas être envoyé, il est conservé sur votre appareil et son envoi peut être retenté une fois la connexion rétablie.",
+        "Les signalements n’incluent jamais votre identifiant publicitaire, un compte, vos données de jeu ni votre position. Veuillez ne pas écrire d’informations personnelles, comme votre nom ou vos coordonnées, dans la description. Les signalements sont envoyés via une connexion chiffrée (HTTPS) et stockés sur un serveur de signalements exploité par TeamCP (hébergement web : Cafe24, République de Corée) ; ils servent uniquement à trouver et à corriger les problèmes. Le serveur et l’hébergeur peuvent traiter votre adresse IP dans les journaux de connexion lors de la communication. Les signalements stockés sur le serveur sont conservés 90 jours à compter de leur réception, puis supprimés."
+      ]
+    },
+    {
       "id": "providers",
-      "title": "7. Prestataires et traitement international",
+      "title": "8. Prestataires et traitement international",
       "paragraphs": [
         "Google Play Games fournit connexion facultative, cloud et succès ; Google Firebase, authentification anonyme, parties et classement ; Unity LevelPlay / Unity Ads / ironSource, médiation, diffusion, mesure et prévention de fraude. Chaque prestataire peut conserver ou traiter les données à l’étranger selon sa politique. TeamCP ne vend pas de données personnelles. Consultez Unity pour les droits publicitaires et le refus de vente/partage."
       ]
     },
     {
       "id": "delete-data",
-      "title": "8. Conservation et suppression",
+      "title": "9. Conservation et suppression",
       "paragraphs": [
-        "Supprimez les données locales par réinitialisation dans l’app, Effacer les données Android ou désinstallation. Gérez Google Play Games via la suppression des données Google Play dans l’app et les contrôles du compte ; les règles Google s’appliquent. Profils, scores et parties Firebase sont conservés selon les besoins des fonctions en ligne et de la prévention des abus ; demandez leur suppression au contact ci-dessous. Les données publicitaires suivent Unity et ses procédures ; désinstaller ne supprime pas les données déjà traitées. Indiquez l’app et la demande, jamais de mots de passe ni de pièces d’identité."
+        "Supprimez les données locales par réinitialisation dans l’app, Effacer les données Android ou désinstallation. Gérez Google Play Games via la suppression des données Google Play dans l’app et les contrôles du compte ; les règles Google s’appliquent. Profils, scores et parties Firebase sont conservés selon les besoins des fonctions en ligne et de la prévention des abus ; demandez leur suppression au contact ci-dessous. Les données publicitaires suivent Unity et ses procédures ; désinstaller ne supprime pas les données déjà traitées. Indiquez l’app et la demande, jamais de mots de passe ni de pièces d’identité.",
+        "Signalements envoyés : écrivez à teamcp.channel@gmail.com en indiquant la date d’envoi et le modèle de votre appareil (et, si possible, une partie du texte) ; nous le retrouverons et le supprimerons."
       ]
     },
     {
       "id": "rights",
-      "title": "9. Vos droits",
+      "title": "10. Vos droits",
       "paragraphs": [
         "Le mode solo invité ne nécessite ni Google Play Games ni parties en ligne. Écrivez à teamcp.channel@gmail.com pour accès, rectification, suppression, limitation, opposition ou retrait du consentement selon votre région. Pour les données non détenues par TeamCP, nous indiquons la procédure du prestataire."
       ]
     },
     {
       "id": "young-users",
-      "title": "10. Enfants",
+      "title": "11. Enfants",
       "paragraphs": [
         "Le jeu ne vise pas spécifiquement les enfants ; le public actuel de la boutique est de 13 ans et plus. La classification du contenu ne désigne pas un service pour enfants. Nous signalons au service publicitaire que l’app ne leur est pas destinée. Si nous découvrons une collecte directe de données d’enfants sans consentement parental requis, nous prenons les mesures appropriées, dont la suppression."
       ]
     },
     {
       "id": "updates",
-      "title": "11. Sécurité et modifications",
+      "title": "12. Sécurité et modifications",
       "paragraphs": [
         "Les données locales restent dans l’espace privé Android. Google Play Games, Firebase et publicité utilisent les communications sécurisées de leurs prestataires ; nous limitons les accès et règles Firebase au nécessaire. Nous actualisons politique et date lorsque données, services ou fonctions changent, et annonçons les changements importants dans l’app, la boutique ou ici."
       ]

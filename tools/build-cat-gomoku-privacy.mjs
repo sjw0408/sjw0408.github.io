@@ -19,7 +19,7 @@ const languages = {
   de: 'Deutsch',
   fr: 'Français',
 };
-const ids = ['scope', 'local', 'play-games', 'online', 'ads', 'choices', 'providers', 'delete-data', 'rights', 'young-users', 'updates'];
+const ids = ['scope', 'local', 'play-games', 'online', 'ads', 'choices', 'reports', 'providers', 'delete-data', 'rights', 'young-users', 'updates'];
 const base = '/games/cat-gomoku/privacy/';
 const origin = 'https://sjw0408.github.io';
 const route = code => code === 'ko' ? base : `${base}${code.toLowerCase()}/`;
@@ -60,7 +60,7 @@ for (const [code, nativeName] of Object.entries(languages)) {
   <meta name="color-scheme" content="light">
   <meta name="theme-color" content="#fff8ed">
   <meta name="description" content="${esc(data.description)}">
-  <meta name="policy-revision" content="2026-11-19-v1">
+  <meta name="policy-revision" content="2026-11-20-v1">
   <title>${esc(data.title)}</title>
   <link rel="canonical" href="${origin}${route(code)}">
 ${Object.keys(languages).map(lang => `  <link rel="alternate" hreflang="${lang}" href="${origin}${route(lang)}">`).join('\n')}

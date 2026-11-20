@@ -3,7 +3,7 @@
   "title": "Cat Gomoku Privacy Policy",
   "description": "Cat Gomoku Privacy Policy",
   "back": "Game information",
-  "date": "Last updated: November 19, 2026",
+  "date": "Last updated: November 20, 2026",
   "summary": "TeamCP operates Cat Gomoku for Android (com.teamcp.catgomoku). You can play as a guest without signing up. We do not collect a name, email, phone number or Google password for our own registration. Depending on the features you choose, the game uses Google Play Games, Firebase online matches, Unity LevelPlay and Unity Ads.",
   "contents": "Contents",
   "resources": "Third-party policies",
@@ -58,36 +58,52 @@
       ]
     },
     {
+      "id": "reports",
+      "title": "7. Issue reports",
+      "paragraphs": [
+        "To submit a report, write a description in Settings > “Report a problem / Contact” and tap Send. The app does not send automatic crash reports. A report contains the following information."
+      ],
+      "items": [
+        "The description you write (up to 2,000 characters) and the report type you pick",
+        "Attached automatically: app identifier and version, the name of the screen you reported from, app language, device model name, and a random report number created for each report"
+      ],
+      "after": [
+        "If a report cannot be sent, it is stored on your device and may be retried when the connection returns.",
+        "Reports never include your advertising ID, an account, your game records or your location. Please do not write personal information such as your name or contact details in the description. Reports are sent over an encrypted connection (HTTPS) and stored on a report server operated by TeamCP (web hosting: Cafe24, Republic of Korea), and are used only to find and fix problems. The server and the hosting company may process your IP address in connection logs while the request is handled. Reports stored on the server are kept for 90 days from the day they are received and then deleted."
+      ]
+    },
+    {
       "id": "providers",
-      "title": "7. Providers and international processing",
+      "title": "8. Providers and international processing",
       "paragraphs": [
         "Google Play Games provides optional login, cloud saves and achievements; Google Firebase provides anonymous authentication, online matches and rankings; Unity LevelPlay / Unity Ads / ironSource provides ad mediation, delivery, measurement and fraud prevention. Each provider may retain or process data abroad under its policy. TeamCP does not sell user information. See Unity’s policy for advertising rights and sale/sharing opt-out procedures."
       ]
     },
     {
       "id": "delete-data",
-      "title": "8. Retention and data deletion",
+      "title": "9. Retention and data deletion",
       "paragraphs": [
-        "Delete device data with the app’s data reset, Android Clear app data, or uninstalling. Manage Google Play Games data with the app’s Google Play data deletion and Google account controls; Google’s retention policy applies. Firebase profiles, ratings and match information are kept as needed for online features and abuse prevention; contact us to request deletion. Unity’s retention/deletion policies and rights procedures apply to ad data; uninstalling alone does not delete data already processed by ad providers. Send your app name and request, never passwords or identity documents."
+        "Delete device data with the app’s data reset, Android Clear app data, or uninstalling. Manage Google Play Games data with the app’s Google Play data deletion and Google account controls; Google’s retention policy applies. Firebase profiles, ratings and match information are kept as needed for online features and abuse prevention; contact us to request deletion. Unity’s retention/deletion policies and rights procedures apply to ad data; uninstalling alone does not delete data already processed by ad providers. Send your app name and request, never passwords or identity documents.",
+        "Reports you sent: email teamcp.channel@gmail.com with the date you sent it and your device model (and, if possible, part of the text), and we will find and delete it."
       ]
     },
     {
       "id": "rights",
-      "title": "9. Your rights",
+      "title": "10. Your rights",
       "paragraphs": [
         "Guest single-player does not require Google Play Games or online matches. Contact teamcp.channel@gmail.com to request access, correction, deletion, restriction, objection or consent withdrawal as available in your region. For data TeamCP does not hold, we will direct you to the provider’s procedure."
       ]
     },
     {
       "id": "young-users",
-      "title": "10. Children",
+      "title": "11. Children",
       "paragraphs": [
         "The game is not designed specifically for children; its current store target audience is age 13 and over. Content ratings do not designate a child-directed service. The ad service is told that the app is not child-directed. If we learn that we directly collected a child’s personal information without required guardian consent, we take appropriate steps including deletion."
       ]
     },
     {
       "id": "updates",
-      "title": "11. Security and policy changes",
+      "title": "12. Security and policy changes",
       "paragraphs": [
         "Local data stays in private Android app storage. Google Play Games, Firebase and ad services use their providers’ secure communication methods; service access and Firebase security rules are limited as needed. We update this policy and date when information, providers or features change and announce important changes in the app, store or this page."
       ]
