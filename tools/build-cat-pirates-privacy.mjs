@@ -49,7 +49,7 @@ for (const [code, nativeName] of Object.entries(languages)) {
   <meta name="color-scheme" content="light">
   <meta name="theme-color" content="#fff4e3">
   <meta name="description" content="${esc(data.description)}">
-  <meta name="policy-revision" content="2026-11-19-v2">
+  <meta name="policy-revision" content="2026-11-23-v1">
   <title>${esc(data.title)}</title>
   <link rel="canonical" href="${origin}${route(code)}">
 ${Object.keys(languages).map(lang => `  <link rel="alternate" hreflang="${lang}" href="${origin}${route(lang)}">`).join('\n')}

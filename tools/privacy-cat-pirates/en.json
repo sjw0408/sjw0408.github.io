@@ -3,7 +3,7 @@
   "title": "Cat Pirates Privacy Policy",
   "description": "How Cat Pirates: Midnight Snack Heist handles on-device storage, Google Play Games, Android backup, ads and ad consent, problem reports, and data deletion.",
   "back": "Cat Pirates game info",
-  "date": "Last updated: November 19, 2026",
+  "date": "Last updated: November 23, 2026",
   "version": "Applies to version 1.0.0. We update this page and its date when features or ad setup change.",
   "summary": "You play without creating an account, and your progress is saved on your device. If you are signed in to Google Play Games, your achievements and leaderboard scores are stored by Google. TeamCP runs no server that receives your game records, and the game has no in-app purchases. The ad services (Unity LevelPlay and Unity Ads) process device information and advertising identifiers needed to deliver ads; on first launch we ask about personalized ads and do not start the ad SDK until you choose. A problem report is sent to TeamCP's report server only when you send one yourself from Settings.",
   "contents": "Contents",
@@ -21,7 +21,7 @@
       "title": "1. Scope and operator",
       "paragraphs": [
         "TeamCP develops and operates the Android game “Cat Pirates: Midnight Snack Heist” (냥냥 해적단: 야식 대작전, com.teamcp.catpirates). This policy explains what information the game handles and the choices you have. Contact: teamcp.channel@gmail.com.",
-        "The game has no account sign-up of its own, no server that receives your game records, no chat and no in-app purchases. The only sign-in is Google Play Games. We do not request or collect your name, email, phone number, location (GPS), contacts, microphone or camera, and the app does not access your device photos or gallery (the in-game “photo album” is a collection of in-game pictures). The app only requests internet and network state (ads, Play Games and problem reports), the advertising ID (ads) and vibration. If you contact support by email, we use your address and message only to reply."
+        "The game has no account sign-up of its own, no server that receives your game records, no chat and no in-app purchases. The only sign-in is Google Play Games. We do not request or collect your name, email, phone number, location (GPS), contacts, microphone or camera, and the app does not access your device photos or gallery (the in-game “photo album” is a collection of in-game pictures). The permissions the app itself uses are internet and network state (ads, Play Games and problem reports), vibration (effects) and the advertising ID (AD_ID). The Android ad services attribution and topics APIs and the WAKE_LOCK, RECEIVE_BOOT_COMPLETED and FOREGROUND_SERVICE permissions come from the ad SDK libraries. If you contact support by email, we use your address and message only to reply."
       ]
     },
     {
@@ -67,7 +67,7 @@
       "title": "5. Ads and the information ad services process",
       "paragraphs": [
         "The game is free and supported by ads, served through Unity LevelPlay (mediation) and Unity Ads. It does not include AdMob, Firebase or payment SDKs.",
-        "Ads are rewarded ads that play only when you tap them (retrying a failed night and doubling a successful night's reward, each once per night; the gift box once per in-game day), and interstitials shown only when you move on to the next day and at least 4 minutes apart. Interstitials are never shown during the tutorial (stages 1–5) or right after a rewarded ad, and there are no banner ads. You can clear every stage and reach the ending without watching ads.",
+        "Ads are rewarded ads that play only when you tap them (retrying a failed night and doubling a successful night's reward, each once per night; the gift box once per in-game day), and interstitials shown only when you move on to the next day and at least 4 minutes apart. Interstitials are never shown during the tutorial (stages 1–5) or right after a rewarded ad. There is one banner slot at the bottom of the screen: after you make your consent choice, a small banner ad may be shown there when one is available. When there is no banner ad, a TeamCP house banner appears in the same place, and it opens the TeamCP website in your browser only when you tap it. You can clear every stage and reach the ending without watching rewarded or interstitial ads.",
         "To load and show ads, the ad services may process:"
       ],
       "items": [
