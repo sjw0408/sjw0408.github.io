@@ -4,7 +4,7 @@
   "description": "Wie CatWayOut Daten auf deinem Gerät speichert, wie Werbung und Werbeeinwilligung funktionieren, Fehlermeldungen und wie du Daten löschst.",
   "back": "Spielinformationen zu CatWayOut",
   "date": "Zuletzt aktualisiert: 19. November 2026",
-  "version": "Gilt für Version 0.2.0. Wenn sich Funktionen oder die Werbeeinbindung ändern, aktualisieren wir diese Seite und ihr Datum.",
+  "version": "Gilt für Version 1.0.0. Wenn sich Funktionen oder die Werbeeinbindung ändern, aktualisieren wir diese Seite und ihr Datum.",
   "summary": "Du spielst ohne Registrierung oder Anmeldung, und deine Spielstände bleiben auf deinem Gerät. Es gibt keine In-App-Käufe. Der Werbedienst (Unity LevelPlay + Unity Ads) verarbeitet Geräteinformationen und Werbe-IDs, die für die Auslieferung von Werbung nötig sind; beim ersten Start fragt das Spiel, ob du personalisierte Werbung erlaubst, und startet das Werbe-SDK erst, nachdem du gewählt hast. Eine Fehlermeldung wird nur dann an den Meldungsserver von TeamCP gesendet, wenn du sie selbst in den Einstellungen absendest.",
   "contents": "Inhalt",
   "resources": "Richtlinien von Drittanbietern und deine Rechte",
