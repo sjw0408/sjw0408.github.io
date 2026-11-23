@@ -3,7 +3,7 @@
   "title": "Datenschutzerklärung von Nyan Churu Bus",
   "description": "Wie Nyan Churu Bus Daten auf deinem Gerät speichert, wie Werbung und Werbeeinwilligung funktionieren, Fehlermeldungen und wie du Daten löschst.",
   "back": "Spielinformationen zu Nyan Churu Bus",
-  "date": "Zuletzt aktualisiert: 18. November 2026",
+  "date": "Zuletzt aktualisiert: 23. November 2026",
   "version": "Gilt für Version 1.0.0. Wenn sich Funktionen oder die Werbeeinbindung ändern, aktualisieren wir diese Seite und ihr Datum.",
   "summary": "Du spielst ohne Registrierung oder Anmeldung, und deine Spielstände bleiben auf deinem Gerät. Es gibt keine In-App-Käufe. Der Werbedienst (Unity LevelPlay) verarbeitet Geräteinformationen und Werbe-IDs, die für die Auslieferung von Werbung nötig sind; beim ersten Start fragt das Spiel, ob du personalisierte Werbung erlaubst, und startet das Werbe-SDK erst, nachdem du gewählt hast. Eine Fehlermeldung wird nur dann an den Meldungsserver von TeamCP gesendet, wenn du sie selbst in den Einstellungen absendest.",
   "contents": "Inhalt",

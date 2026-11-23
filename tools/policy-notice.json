@@ -1,0 +1,1085 @@
+{
+ "_comment": "POLICY-FIX/FIX2/FIX3: 개인정보 보호법 제28조의8·제30조 추가 고지 원문. tools/policy-notice.mjs가 사용한다. 보호책임자 표기는 officer 항목만 고치면 전 쪽에 반영된다.",
+ "mail": "<a href=\"mailto:teamcp.channel@gmail.com\">teamcp.channel@gmail.com</a>",
+ "adsMode": {
+  "cat-detective": "np",
+  "dead-frequency": "eea",
+  "cat-rush3": "os",
+  "slime-express": "os"
+ },
+ "noSignal": [
+  "slime-express"
+ ],
+ "games": {
+  "cat-bento-sort": {
+   "report": true
+  },
+  "cat-fishing-aquarium": {
+   "report": true
+  },
+  "cat-ring-twist": {
+   "report": true
+  },
+  "cat-way-out": {
+   "report": true
+  },
+  "meow-hangul": {
+   "report": true
+  },
+  "nyan-churu-bus": {
+   "report": true
+  },
+  "yarn-tangle-cats": {
+   "report": true
+  },
+  "cat-water-buddy": {
+   "report": true,
+   "backup": true
+  },
+  "cat-detective": {
+   "pgs": "Play 게임즈 인증 상태와 플레이어 식별자, 이용자가 Google 저장을 선택한 경우 누적 진행 스냅샷(완료 단계·기록·데일리·도감·연습 진행, 포인트 사용·보상 기록)",
+   "pgs_why": "Google 로그인, 선택형 클라우드 저장·불러오기",
+   "pgs_refuse": "로그인을 취소하거나 설정에서 로그아웃하면 Play 게임즈 전송 없이 기기 진행으로 플레이할 수 있습니다. 이 경우 기기 간 저장·불러오기를 이용할 수 없습니다. 저장된 데이터는 앱 설정의 클라우드 저장 삭제나 Google Play 게임즈 데이터 삭제로 지울 수 있습니다.",
+   "onestore_iap": true,
+   "pgs_label": "Google Play 게임즈(Google Play판만): "
+  },
+  "cat-gomoku": {
+   "pgs": "인증 상태, 플레이어 식별자와 표시 이름, 저장된 게임(전적, 퍼즐·도전 진행도, 재화, 고양이·외형 해금, 설정)과 업적 달성·증분 진행",
+   "pgs_why": "선택형 로그인, 기기 간 저장·복원, 업적",
+   "pgs_refuse": "Google Play Games에 연결하지 않으면 전송되지 않으며 AI 대국·퍼즐 등 기본 게임은 이용할 수 있습니다. 이 경우 기기 간 저장·복원과 업적을 이용할 수 없습니다. 저장된 데이터는 앱 설정의 Google Play 데이터 삭제나 Google 계정 데이터 관리로 지울 수 있습니다.",
+   "firebase": true,
+   "report": true
+  },
+  "cat-pirates": {
+   "pgs": "Play 게임즈 플레이어 ID, 게이머 닉네임·프로필 이미지, 업적 달성 기록, 리더보드 점수(엔드리스 나이트 최고 기록·누적 작전 성공 횟수)",
+   "pgs_refuse": "Play 게임즈에 로그인하지 않으면 전송되지 않으며 게임 전체를 이용할 수 있습니다. 이 경우 업적과 리더보드 기록이 남지 않습니다.",
+   "backup": true,
+   "report": true
+  },
+  "nyang-merge": {
+   "pgs": "Play 게임즈 프로필 이름(플레이어 이름)과 리더보드 최고 점수",
+   "pgs_refuse": "Play 게임즈에 로그인하지 않으면 전송되지 않으며 게임 전체를 이용할 수 있습니다. 이 경우 리더보드 기록이 남지 않습니다.",
+   "backup": true,
+   "report": true
+  },
+  "dead-frequency": {
+   "pgs": "Play 게임즈 플레이어 ID, 프로필(게이머 이름·아바타), 달성한 업적 기록",
+   "pgs_why": "업적 제공",
+   "pgs_refuse": "Play 게임즈에 로그인하지 않으면 전송되지 않으며 게임 전체를 이용할 수 있습니다. 이 경우 Play 게임즈 업적이 기록되지 않습니다(달성 기록은 기기에 보관).",
+   "backup": true
+  },
+  "indie-dev-tycoon": {
+   "pgs": "Play 게임즈 플레이어 ID, 게이머 닉네임·프로필 이미지, 업적 달성 기록, 리더보드 ‘회차 최고 점수’, 이용자가 로그인한 경우 클라우드 저장 파일(진행 중인 회사, 회차 간 기록)",
+   "pgs_why": "로그인, 업적·리더보드, 클라우드 저장·불러오기",
+   "pgs_refuse": "Play 게임즈에 로그인하지 않으면 전송되지 않으며 게임 전체를 이용할 수 있습니다. 이 경우 업적·리더보드·클라우드 저장을 이용할 수 없습니다. 저장된 클라우드 데이터는 설정 > Google Play 게임즈 > 저장 데이터 삭제로 지울 수 있습니다.",
+   "backup": true
+  },
+  "cat-rush3": {
+   "pgs": "(Google Play판만) 인증 상태, 공개 게이머 이름·프로필, 플레이어 식별자, 최고 도달 스테이지(순위표), 업적 달성 정보",
+   "pgs_refuse": "Play 게임즈에 로그인하지 않으면 순위표·업적 정보가 전송되지 않으며 기본 싱글 플레이와 로컬 기록은 이용할 수 있습니다. ONE store판에는 이 기능이 없습니다.",
+   "backup": true
+  },
+  "slime-express": {
+   "pgs": "(Google Play판만) Google 계정 인증 상태, 플레이어 식별자·표시 이름, 리더보드에 제출하는 최고 점수",
+   "pgs_why": "선택형 로그인과 최고 점수 순위표",
+   "pgs_refuse": "Google Play Games를 연결하지 않으면 전송되지 않으며 싱글 플레이를 이용할 수 있습니다. 이 경우 순위표를 이용할 수 없습니다. 원스토어판에는 이 기능이 없습니다.",
+   "backup": true,
+   "onestore_iap": true
+  }
+ },
+ "pipaStyle": "<style>.pipa h3{margin-top:1.6em}.pipa ul{padding-left:1.4em}.pipa li+li{margin-top:.5em}.pipa-officer{list-style:none;padding:1em 1.1em!important;border:1px solid rgba(127,127,127,.35);border-radius:12px}</style>",
+ "xferStyle": "<style>.xfer{margin:1.2em 0 0;padding:1em 1.1em;border:1px solid rgba(127,127,127,.35);border-radius:12px}.xfer h3{margin-top:0}.xfer-item{margin:1em 0}.xfer-item h4{margin:.2em 0 .4em;font-size:1em}.xfer dl{display:grid;grid-template-columns:minmax(7.5em,max-content) 1fr;gap:.35em .9em;margin:0}.xfer dt{font-weight:600}.xfer dd{margin:0;overflow-wrap:anywhere}@media (max-width:560px){.xfer dl{grid-template-columns:1fr}.xfer dd{margin-bottom:.5em}}</style>",
+ "pipa": {
+  "ko": {
+   "title": "개인정보 보호법에 따른 추가 고지 (2026년 11월 23일 추가)",
+   "intro": "「개인정보 보호법」 제30조와 같은 법 시행령 제31조에 따라 이용자의 권리와 행사 방법, 만 14세 미만 아동과 법정대리인, 안전성 확보 조치, 개인정보 보호책임자를 알립니다. 이 방침의 다른 부분과 함께 적용됩니다.",
+   "r_h": "정보주체의 권리와 행사 방법",
+   "r_1": "이용자는 TeamCP가 처리하는 자신의 개인정보에 대해 언제든지 열람, 정정·삭제, 처리정지를 요구하고 동의를 철회할 수 있습니다(「개인정보 보호법」 제35조~제37조).",
+   "r_2": "요구 방법: 아래 연락처({mail})로 앱 이름과 요구 내용을 이메일로 보내 주세요. 앱에 계정이 없으므로 TeamCP가 기록을 찾을 수 있는 정보(예: 오류 신고의 대략적인 제출일·신고 번호)를 함께 적어 주세요. 법정대리인이나 위임을 받은 사람도 요구할 수 있으며, 이때 대리 관계를 확인할 수 있는 자료를 요청할 수 있습니다.",
+   "r_3": "처리 기간: 요구를 받은 날부터 10일 이내에 조치 결과를 알립니다. 법령에 따라 제한하거나 거절할 사유가 있거나 기간 안에 처리할 수 없으면 그 사유와 이의를 제기하는 방법을 함께 알립니다.",
+   "r_4": "기기에만 저장되는 정보(앱 기록·설정 등)는 TeamCP가 보관하지 않으므로, 앱 안의 삭제 기능이나 Android 설정의 앱 저장공간 삭제, 앱 삭제로 직접 지울 수 있습니다.",
+   "r_5": "광고·Google 등 외부 사업자가 처리하는 정보는 위 국외 이전 고지에 적은 각 사업자의 연락처로도 요구할 수 있습니다.",
+   "r_6": "권익 침해 구제: 개인정보분쟁조정위원회(1833-6972, www.kopico.go.kr), 개인정보침해신고센터(118, privacy.kisa.or.kr), 대검찰청(1301, www.spo.go.kr), 경찰청(182, ecrm.police.go.kr)에 분쟁 조정이나 상담을 신청할 수 있습니다.",
+   "c_h": "만 14세 미만 아동과 법정대리인",
+   "c_law": "한국 「개인정보 보호법」은 만 14세 미만 아동의 개인정보를 동의를 근거로 처리할 때 법정대리인의 동의를 받도록 정합니다(제22조의2).",
+   "c_facts": "이 앱은 생년월일이나 나이를 묻지 않고, 나이 확인이나 법정대리인 동의 확인 기능이 없습니다. 나이에 따라 처리 방식을 나누지 않으므로 만 14세 미만 이용자에게도 이 방침의 같은 처리가 적용됩니다.",
+   "c_signal": "앱은 광고 서비스에 앱 단위로 ‘어린이 대상 아님’ 신호를 보내며, 이는 개별 이용자의 나이를 확인한 결과가 아닙니다.",
+   "c_ads_choice": "맞춤형 광고: 처음 실행할 때 맞춤형 광고를 허용할지 묻고, 고르기 전에는 광고 SDK를 시작하지 않습니다. 만 14세 미만 이용자는 맞춤형 광고를 허용하지 말고 맞춤형이 아닌 일반 광고를 골라 주세요. 이미 허용했다면 앱 설정에서 바꿀 수 있습니다.",
+   "c_ads_default_np": "맞춤형 광고: 새 설치는 맞춤형이 아닌 광고가 기본값이며, 맞춤형 광고는 이용자가 설정에서 직접 고를 때만 적용됩니다. 만 14세 미만 이용자는 기본값을 유지해 주세요.",
+   "c_ads_eea": "맞춤형 광고: 앱 안의 맞춤 광고 동의 화면은 유럽경제지역(EEA)과 영국에서만 표시되며, 한국 등 그 밖의 지역에서는 표시되지 않습니다. 만 14세 미만 이용자는 보호자와 함께 Android 설정 > 개인정보 보호 > 광고에서 광고 ID를 삭제해 맞춤형 광고에 쓰이지 않게 해 주세요.",
+   "c_ads_os": "맞춤형 광고: 맞춤형 광고는 Android의 광고 개인정보·광고 ID 설정으로 제어합니다. 만 14세 미만 이용자는 보호자와 함께 Android 설정에서 광고 ID를 삭제해 맞춤형 광고에 쓰이지 않게 해 주세요.",
+   "c_no_pi": "만 14세 미만 이용자는 오류 신고나 문의에 이름·연락처 등 개인정보를 적지 말아 주세요.",
+   "c_guardian": "법정대리인의 권리와 행사 방법: 법정대리인은 아동의 개인정보에 대해 열람, 정정·삭제, 처리정지를 요구하고 동의를 철회할 수 있습니다. 방법과 처리 기간은 위 ‘정보주체의 권리와 행사 방법’과 같습니다. 보호자임을 확인하는 데 필요한 최소한의 정보만 요청하고 확인이 끝나면 지웁니다.",
+   "c_delete": "법정대리인의 동의 없이 만 14세 미만 아동의 개인정보가 처리된 사실을 알게 되면, TeamCP가 보관한 해당 정보를 지체 없이 삭제합니다.",
+   "s_h": "개인정보의 안전성 확보 조치",
+   "s_device": "기기 저장: 앱 기록과 설정은 Android가 앱마다 분리해 주는 앱 전용 저장공간에 저장되며, 이 방침에 적은 경우 외에는 TeamCP가 운영하는 서버로 보내지 않습니다.",
+   "s_transport": "전송 암호화: 앱이 인터넷으로 보내는 정보({parts})는 암호화 통신(HTTPS/TLS)으로 전송됩니다.",
+   "p_ads": "광고 요청",
+   "p_google": "Google 서비스 연동",
+   "p_report": "오류 신고",
+   "p_firebase": "온라인 대전",
+   "s_report": "신고 서버 접근 제한: 오류 신고 서버는 등록된 앱이 보낸 정해진 형식의 신고만 받으며, 앱 인증 값은 원문이 아닌 해시로 저장합니다. 서버와 데이터베이스의 관리 권한은 TeamCP 운영자 계정으로 제한합니다. 신고에는 광고 ID·계정·위치를 자동으로 넣지 않습니다.",
+   "s_firebase": "온라인 대전 정보: 이름·이메일 없이 익명 인증으로 TeamCP의 Firebase 프로젝트에 저장되며, 프로젝트 관리 권한은 TeamCP 운영자 계정으로 제한합니다.",
+   "s_min": "최소 처리: 회원가입·비밀번호·이름·전화번호를 받지 않아 TeamCP가 보관하는 개인정보를 최소화합니다.",
+   "s_ret_report": "보관과 삭제: 오류 신고는 접수일부터 90일이 지나면 삭제하고, 그 전이라도 삭제를 요청하면 지웁니다.",
+   "s_ret_fb": "보관과 삭제: 온라인 대전 정보는 온라인 기능과 부정 이용 방지에 필요한 동안 보관하고, 삭제를 요청하면 지웁니다.",
+   "s_ret_none": "보관과 삭제: TeamCP는 게임 기록을 받는 서버를 두지 않으며, 기기의 정보는 이용자가 지울 때까지 기기에 남습니다.",
+   "s_ret_mail": "문의 메일은 응대가 끝난 뒤 필요 이상 보관하지 않고 삭제합니다. 개인정보는 전자 파일로만 보관하며 보관 기간이 끝나면 삭제합니다.",
+   "s_third": "광고·Google 등 외부 사업자가 처리하는 정보의 보안 조치는 각 사업자의 방침을 따릅니다.",
+   "o_h": "개인정보 보호책임자",
+   "o_contact": "개인정보 문의, 열람·정정·삭제·처리정지 요구 접수: TeamCP · {mail}"
+  },
+  "en": {
+   "title": "Additional notice under Korea’s Personal Information Protection Act (added November 23, 2026)",
+   "intro": "Under Article 30 of Korea’s Personal Information Protection Act (PIPA) and Article 31 of its Enforcement Decree, this notice explains your rights and how to exercise them, children under 14 and their legal guardians, the security measures we take, and our privacy officer. It applies together with the rest of this policy.",
+   "r_h": "Your rights and how to exercise them",
+   "r_1": "You may at any time ask TeamCP to give you access to, correct, delete, or suspend the processing of the personal information it processes about you, and you may withdraw your consent (PIPA Articles 35–37).",
+   "r_2": "How to ask: email the app name and your request to the contact below ({mail}). Because the app has no accounts, please include information that lets TeamCP find the record (for example, the approximate date or report number of a problem report). A legal guardian or a person you authorize may also make a request; in that case we may ask for proof of that relationship.",
+   "r_3": "Response time: we will tell you the outcome within 10 days of receiving your request. If the law gives a reason to limit or refuse the request, or we cannot complete it within that time, we will tell you why and how to object.",
+   "r_4": "Information stored only on your device (app records, settings, and so on) is not held by TeamCP, so you can delete it yourself with the app’s delete options, by clearing the app’s storage in Android settings, or by uninstalling the app.",
+   "r_5": "For information processed by outside providers such as the ad services and Google, you can also contact each provider at the contact listed in the overseas transfer notice above.",
+   "r_6": "Remedies in Korea: you can apply for dispute mediation or advice to the Personal Information Dispute Mediation Committee (+82-1833-6972, www.kopico.go.kr), the Personal Information Infringement Report Center (118, privacy.kisa.or.kr), the Supreme Prosecutors’ Office (1301, www.spo.go.kr), or the Korean National Police Agency (182, ecrm.police.go.kr).",
+   "c_h": "Children under 14 and legal guardians",
+   "c_law": "Korea’s Personal Information Protection Act requires the consent of a legal guardian when the personal information of a child under 14 is processed on the basis of consent (Article 22-2).",
+   "c_facts": "This app does not ask for a date of birth or age, and it has no age check or way to confirm a guardian’s consent. Because it does not treat users differently by age, the processing described in this policy also applies to users under 14.",
+   "c_signal": "The app tells the ad services, at app level, that it is “not directed to children”. This is not the result of checking any individual user’s age.",
+   "c_ads_choice": "Personalized ads: on first launch the app asks whether to allow personalized ads and does not start the ad SDK until you choose. Users under 14 should not allow personalized ads and should choose the non-personalized option. If personalized ads were already allowed, you can change this in the app settings.",
+   "c_ads_default_np": "Personalized ads: on a new install, non-personalized ads are the default, and personalized ads apply only if you choose them yourself in settings. Users under 14 should keep the default.",
+   "c_ads_eea": "Personalized ads: the in-app consent screen for personalized ads is shown only in the European Economic Area (EEA) and the UK, and not in Korea or other regions. Users under 14 should, together with a guardian, delete the advertising ID under Android Settings > Privacy > Ads so that it is not used for personalized ads.",
+   "c_ads_os": "Personalized ads: personalized ads are controlled through Android’s ad privacy and advertising ID settings. Users under 14 should, together with a guardian, delete the advertising ID in Android settings so that it is not used for personalized ads.",
+   "c_no_pi": "Users under 14 should not include personal information such as their name or contact details in problem reports or inquiries.",
+   "c_guardian": "Guardians’ rights and how to exercise them: a legal guardian may ask for access to, correction, deletion, or suspension of processing of the child’s personal information, and may withdraw consent. The method and response time are the same as in “Your rights and how to exercise them” above. We ask only for the minimum information needed to confirm guardianship and delete it once confirmed.",
+   "c_delete": "If we learn that the personal information of a child under 14 has been processed without a legal guardian’s consent, we will promptly delete that information held by TeamCP.",
+   "s_h": "Security measures for personal information",
+   "s_device": "On-device storage: app records and settings are stored in the app-private storage that Android keeps separate for each app, and are not sent to servers operated by TeamCP except as described in this policy.",
+   "s_transport": "Encrypted transmission: information the app sends over the internet ({parts}) is sent over encrypted connections (HTTPS/TLS).",
+   "p_ads": "ad requests",
+   "p_google": "Google services",
+   "p_report": "problem reports",
+   "p_firebase": "online matches",
+   "s_report": "Report server access limits: the problem-report server accepts only reports in a fixed format sent by registered apps, and stores app authentication values as hashes, not as the original values. Administrative access to the server and database is limited to TeamCP’s operator account. Reports do not automatically include the advertising ID, account, or location.",
+   "s_firebase": "Online match data: stored in TeamCP’s Firebase project through anonymous sign-in, without a name or email address; administrative access to the project is limited to TeamCP’s operator account.",
+   "s_min": "Data minimization: we do not collect sign-ups, passwords, names, or phone numbers, which keeps the personal information held by TeamCP to a minimum.",
+   "s_ret_report": "Retention and deletion: problem reports are deleted 90 days after receipt, or earlier if you ask us to delete them.",
+   "s_ret_fb": "Retention and deletion: online match data is kept as long as needed for online features and abuse prevention, and is deleted on request.",
+   "s_ret_none": "Retention and deletion: TeamCP does not run a server that receives game records; information on your device stays there until you delete it.",
+   "s_ret_mail": "Inquiry emails are deleted once they are no longer needed after we have responded. Personal information is kept only as electronic files and is deleted when the retention period ends.",
+   "s_third": "Security for information processed by outside providers such as the ad services and Google follows each provider’s policy.",
+   "o_h": "Privacy officer",
+   "o_contact": "Privacy inquiries and requests for access, correction, deletion, or suspension of processing: TeamCP · {mail}"
+  },
+  "ja": {
+   "title": "韓国「個人情報保護法」に基づく追加のお知らせ（2026年11月23日追加）",
+   "intro": "韓国「個人情報保護法」第30条および同法施行令第31条に基づき、お客様の権利とその行使方法、14歳未満の児童と法定代理人、安全性確保措置、個人情報保護責任者についてお知らせします。本方針の他の部分とあわせて適用されます。",
+   "r_h": "情報主体の権利と行使方法",
+   "r_1": "お客様は、TeamCPが処理するご自身の個人情報について、いつでも閲覧、訂正・削除、処理停止を求め、同意を撤回することができます（韓国「個人情報保護法」第35条〜第37条）。",
+   "r_2": "求める方法：下記の連絡先（{mail}）にアプリ名とご要望をメールでお送りください。アプリにはアカウントがないため、TeamCPが記録を探せる情報（例：不具合報告のおおよその送信日や報告番号）を添えてください。法定代理人や委任を受けた方も求めることができ、その場合は代理関係を確認できる資料をお願いすることがあります。",
+   "r_3": "処理期間：ご要望を受け取った日から10日以内に結果をお知らせします。法令により制限・拒否する理由がある場合や期間内に処理できない場合は、その理由と異議を申し立てる方法をあわせてお知らせします。",
+   "r_4": "端末にのみ保存される情報（アプリの記録・設定など）はTeamCPが保有していないため、アプリ内の削除機能、Androidの設定でのアプリのストレージ削除、アプリの削除によりご自身で消去できます。",
+   "r_5": "広告・Googleなど外部事業者が処理する情報については、上記の国外移転のお知らせに記載した各事業者の連絡先にも求めることができます。",
+   "r_6": "権利侵害の救済：個人情報紛争調停委員会（+82-1833-6972、www.kopico.go.kr）、個人情報侵害申告センター（118、privacy.kisa.or.kr）、大検察庁（1301、www.spo.go.kr）、警察庁（182、ecrm.police.go.kr）に紛争調停や相談を申し込むことができます（いずれも韓国の機関）。",
+   "c_h": "14歳未満の児童と法定代理人",
+   "c_law": "韓国「個人情報保護法」は、14歳未満の児童の個人情報を同意に基づいて処理する場合、法定代理人の同意を得るよう定めています（第22条の2）。",
+   "c_facts": "このアプリは生年月日や年齢を尋ねず、年齢確認や法定代理人の同意を確認する機能はありません。年齢によって処理を分けないため、14歳未満の利用者にも本方針と同じ処理が適用されます。",
+   "c_signal": "アプリは広告サービスにアプリ単位で「児童向けではない」という信号を送ります。これは個々の利用者の年齢を確認した結果ではありません。",
+   "c_ads_choice": "パーソナライズ広告：初回起動時にパーソナライズ広告を許可するかを尋ね、選ぶまで広告SDKを開始しません。14歳未満の方はパーソナライズ広告を許可せず、パーソナライズされない広告を選んでください。すでに許可した場合はアプリの設定で変更できます。",
+   "c_ads_default_np": "パーソナライズ広告：新規インストールではパーソナライズされない広告が初期設定で、パーソナライズ広告はご自身で設定から選んだ場合にのみ適用されます。14歳未満の方は初期設定のままにしてください。",
+   "c_ads_eea": "パーソナライズ広告：アプリ内のパーソナライズ広告の同意画面は欧州経済領域（EEA）と英国でのみ表示され、韓国などその他の地域では表示されません。14歳未満の方は保護者と一緒に、Androidの設定 > プライバシー > 広告で広告IDを削除し、パーソナライズ広告に使われないようにしてください。",
+   "c_ads_os": "パーソナライズ広告：パーソナライズ広告はAndroidの広告プライバシー・広告ID設定で管理します。14歳未満の方は保護者と一緒に、Androidの設定で広告IDを削除し、パーソナライズ広告に使われないようにしてください。",
+   "c_no_pi": "14歳未満の方は、不具合報告やお問い合わせに氏名・連絡先などの個人情報を書かないでください。",
+   "c_guardian": "法定代理人の権利と行使方法：法定代理人は、児童の個人情報について閲覧、訂正・削除、処理停止を求め、同意を撤回することができます。方法と処理期間は上記「情報主体の権利と行使方法」と同じです。保護者であることの確認に必要な最小限の情報のみをお願いし、確認後は削除します。",
+   "c_delete": "法定代理人の同意なく14歳未満の児童の個人情報が処理されたことを知った場合、TeamCPが保有する該当情報を遅滞なく削除します。",
+   "s_h": "個人情報の安全性確保措置",
+   "s_device": "端末への保存：アプリの記録と設定は、Androidがアプリごとに分けて管理するアプリ専用領域に保存され、本方針に記載した場合を除きTeamCPが運営するサーバーには送信しません。",
+   "s_transport": "通信の暗号化：アプリがインターネットで送る情報（{parts}）は、暗号化通信（HTTPS/TLS）で送信されます。",
+   "p_ads": "広告リクエスト",
+   "p_google": "Googleサービス連携",
+   "p_report": "不具合報告",
+   "p_firebase": "オンライン対戦",
+   "s_report": "報告サーバーへのアクセス制限：不具合報告サーバーは登録済みアプリから送られた決まった形式の報告のみを受け付け、アプリの認証値は原文ではなくハッシュで保存します。サーバーとデータベースの管理権限はTeamCPの運営者アカウントに限定しています。報告に広告ID・アカウント・位置情報を自動で含めることはありません。",
+   "s_firebase": "オンライン対戦の情報：氏名やメールアドレスなしの匿名認証でTeamCPのFirebaseプロジェクトに保存され、プロジェクトの管理権限はTeamCPの運営者アカウントに限定しています。",
+   "s_min": "最小限の処理：会員登録・パスワード・氏名・電話番号を受け取らず、TeamCPが保有する個人情報を最小限にしています。",
+   "s_ret_report": "保存と削除：不具合報告は受付日から90日を過ぎると削除し、それ以前でも削除のご要望があれば削除します。",
+   "s_ret_fb": "保存と削除：オンライン対戦の情報は、オンライン機能と不正利用防止に必要な間保存し、削除のご要望があれば削除します。",
+   "s_ret_none": "保存と削除：TeamCPはゲームの記録を受け取るサーバーを運営しておらず、端末の情報はお客様が削除するまで端末に残ります。",
+   "s_ret_mail": "お問い合わせのメールは、対応終了後、必要以上に保存せず削除します。個人情報は電子ファイルでのみ保存し、保存期間が終われば削除します。",
+   "s_third": "広告・Googleなど外部事業者が処理する情報の安全管理措置は、各事業者の方針に従います。",
+   "o_h": "個人情報保護責任者",
+   "o_contact": "個人情報に関するお問い合わせ、閲覧・訂正・削除・処理停止の受付：TeamCP · {mail}"
+  },
+  "es": {
+   "title": "Aviso adicional conforme a la Ley de Protección de Información Personal de Corea (añadido el 23 de noviembre de 2026)",
+   "intro": "Conforme al artículo 30 de la Ley de Protección de Información Personal de Corea (PIPA) y al artículo 31 de su Decreto de Aplicación, este aviso explica tus derechos y cómo ejercerlos, los menores de 14 años y sus representantes legales, las medidas de seguridad que aplicamos y nuestro responsable de privacidad. Se aplica junto con el resto de esta política.",
+   "r_h": "Tus derechos y cómo ejercerlos",
+   "r_1": "Puedes pedir en cualquier momento a TeamCP el acceso, la rectificación, la eliminación o la suspensión del tratamiento de la información personal que trata sobre ti, y retirar tu consentimiento (artículos 35 a 37 de la PIPA).",
+   "r_2": "Cómo solicitarlo: envía por correo electrónico el nombre de la app y tu solicitud al contacto indicado abajo ({mail}). Como la app no tiene cuentas, incluye información que permita a TeamCP encontrar el registro (por ejemplo, la fecha aproximada o el número de un informe de error). También puede solicitarlo un representante legal o una persona autorizada; en ese caso podemos pedir un documento que acredite la representación.",
+   "r_3": "Plazo de respuesta: te comunicaremos el resultado en un plazo de 10 días desde la recepción de la solicitud. Si la ley permite limitarla o denegarla, o no podemos atenderla en ese plazo, te indicaremos el motivo y cómo presentar una objeción.",
+   "r_4": "La información guardada solo en tu dispositivo (registros y ajustes de la app, etc.) no la conserva TeamCP, por lo que puedes borrarla tú mismo con las opciones de borrado de la app, borrando el almacenamiento de la app en los ajustes de Android o desinstalando la app.",
+   "r_5": "Para la información que tratan proveedores externos como los servicios de anuncios y Google, también puedes dirigirte a cada proveedor en el contacto indicado en el aviso de transferencia internacional anterior.",
+   "r_6": "Vías de reclamación en Corea: puedes solicitar mediación o asesoramiento al Comité de Mediación de Conflictos de Información Personal (+82-1833-6972, www.kopico.go.kr), al Centro de Denuncias de Vulneración de Información Personal (118, privacy.kisa.or.kr), a la Fiscalía Suprema (1301, www.spo.go.kr) o a la Agencia Nacional de Policía de Corea (182, ecrm.police.go.kr).",
+   "c_h": "Menores de 14 años y representantes legales",
+   "c_law": "La Ley de Protección de Información Personal de Corea exige el consentimiento del representante legal cuando la información personal de un menor de 14 años se trata con base en el consentimiento (artículo 22-2).",
+   "c_facts": "Esta app no pide la fecha de nacimiento ni la edad y no tiene verificación de edad ni forma de confirmar el consentimiento del representante legal. Como no trata a los usuarios de forma distinta según la edad, el tratamiento descrito en esta política también se aplica a los menores de 14 años.",
+   "c_signal": "La app indica a los servicios de anuncios, a nivel de app, que «no está dirigida a niños». Esto no es el resultado de verificar la edad de cada usuario.",
+   "c_ads_choice": "Anuncios personalizados: en el primer inicio la app pregunta si permites anuncios personalizados y no inicia el SDK de anuncios hasta que eliges. Los menores de 14 años no deben permitir anuncios personalizados y deben elegir la opción no personalizada. Si ya se permitieron, puedes cambiarlo en los ajustes de la app.",
+   "c_ads_default_np": "Anuncios personalizados: en una instalación nueva, los anuncios no personalizados son la opción predeterminada, y los personalizados solo se aplican si tú los eliges en los ajustes. Los menores de 14 años deben mantener la opción predeterminada.",
+   "c_ads_eea": "Anuncios personalizados: la pantalla de consentimiento de anuncios personalizados de la app solo se muestra en el Espacio Económico Europeo (EEE) y el Reino Unido, no en Corea ni en otras regiones. Los menores de 14 años, junto con su tutor, deben eliminar el ID de publicidad en Ajustes de Android > Privacidad > Anuncios para que no se use en anuncios personalizados.",
+   "c_ads_os": "Anuncios personalizados: los anuncios personalizados se controlan con los ajustes de privacidad de anuncios e ID de publicidad de Android. Los menores de 14 años, junto con su tutor, deben eliminar el ID de publicidad en los ajustes de Android para que no se use en anuncios personalizados.",
+   "c_no_pi": "Los menores de 14 años no deben incluir información personal como su nombre o datos de contacto en informes de error ni en consultas.",
+   "c_guardian": "Derechos del representante legal y cómo ejercerlos: el representante legal puede solicitar el acceso, la rectificación, la eliminación o la suspensión del tratamiento de la información personal del menor, y retirar el consentimiento. El método y el plazo son los mismos que en «Tus derechos y cómo ejercerlos». Solo pedimos la información mínima necesaria para confirmar la representación y la eliminamos una vez confirmada.",
+   "c_delete": "Si sabemos que se ha tratado información personal de un menor de 14 años sin el consentimiento de su representante legal, eliminaremos sin demora esa información conservada por TeamCP.",
+   "s_h": "Medidas de seguridad de la información personal",
+   "s_device": "Almacenamiento en el dispositivo: los registros y ajustes de la app se guardan en el almacenamiento privado que Android separa para cada app, y no se envían a servidores gestionados por TeamCP salvo en los casos descritos en esta política.",
+   "s_transport": "Transmisión cifrada: la información que la app envía por internet ({parts}) se transmite mediante conexiones cifradas (HTTPS/TLS).",
+   "p_ads": "solicitudes de anuncios",
+   "p_google": "servicios de Google",
+   "p_report": "informes de error",
+   "p_firebase": "partidas en línea",
+   "s_report": "Acceso restringido al servidor de informes: el servidor de informes de error solo acepta informes con un formato fijo enviados por apps registradas y guarda los valores de autenticación de las apps como hashes, no como valores originales. El acceso administrativo al servidor y a la base de datos está limitado a la cuenta del operador de TeamCP. Los informes no incluyen automáticamente el ID de publicidad, la cuenta ni la ubicación.",
+   "s_firebase": "Datos de partidas en línea: se guardan en el proyecto de Firebase de TeamCP mediante autenticación anónima, sin nombre ni correo electrónico; el acceso administrativo al proyecto está limitado a la cuenta del operador de TeamCP.",
+   "s_min": "Minimización: no recogemos registros de usuario, contraseñas, nombres ni números de teléfono, lo que reduce al mínimo la información personal que conserva TeamCP.",
+   "s_ret_report": "Conservación y eliminación: los informes de error se eliminan 90 días después de su recepción, o antes si pides que se eliminen.",
+   "s_ret_fb": "Conservación y eliminación: los datos de partidas en línea se conservan mientras sean necesarios para las funciones en línea y la prevención de abusos, y se eliminan si lo solicitas.",
+   "s_ret_none": "Conservación y eliminación: TeamCP no tiene un servidor que reciba registros de juego; la información de tu dispositivo permanece en él hasta que la borres.",
+   "s_ret_mail": "Los correos de consulta se eliminan cuando dejan de ser necesarios tras responderlos. La información personal solo se conserva en archivos electrónicos y se elimina al terminar el plazo de conservación.",
+   "s_third": "La seguridad de la información que tratan proveedores externos como los servicios de anuncios y Google se rige por la política de cada proveedor.",
+   "o_h": "Responsable de privacidad",
+   "o_contact": "Consultas de privacidad y solicitudes de acceso, rectificación, eliminación o suspensión del tratamiento: TeamCP · {mail}"
+  },
+  "pt-br": {
+   "title": "Aviso adicional conforme a Lei de Proteção de Informações Pessoais da Coreia (adicionado em 23 de novembro de 2026)",
+   "intro": "Conforme o artigo 30 da Lei de Proteção de Informações Pessoais da Coreia (PIPA) e o artigo 31 do seu Decreto de Execução, este aviso explica seus direitos e como exercê-los, menores de 14 anos e seus representantes legais, as medidas de segurança que adotamos e nosso responsável pela privacidade. Ele se aplica junto com o restante desta política.",
+   "r_h": "Seus direitos e como exercê-los",
+   "r_1": "Você pode, a qualquer momento, pedir à TeamCP acesso, correção, exclusão ou suspensão do tratamento das informações pessoais que ela trata sobre você, e retirar seu consentimento (artigos 35 a 37 da PIPA).",
+   "r_2": "Como pedir: envie por e-mail o nome do app e o seu pedido para o contato abaixo ({mail}). Como o app não tem contas, inclua informações que permitam à TeamCP localizar o registro (por exemplo, a data aproximada ou o número de um relatório de problema). Um representante legal ou uma pessoa autorizada também pode fazer o pedido; nesse caso, podemos solicitar um documento que comprove a representação.",
+   "r_3": "Prazo de resposta: informaremos o resultado em até 10 dias após o recebimento do pedido. Se a lei permitir limitar ou recusar o pedido, ou se não pudermos atendê-lo nesse prazo, informaremos o motivo e como apresentar uma objeção.",
+   "r_4": "As informações guardadas apenas no seu dispositivo (registros e configurações do app etc.) não ficam com a TeamCP, então você mesmo pode apagá-las pelas opções de exclusão do app, limpando o armazenamento do app nas configurações do Android ou desinstalando o app.",
+   "r_5": "Para informações tratadas por provedores externos, como os serviços de anúncios e o Google, você também pode contatar cada provedor pelo contato indicado no aviso de transferência internacional acima.",
+   "r_6": "Meios de reparação na Coreia: você pode pedir mediação ou orientação ao Comitê de Mediação de Disputas de Informações Pessoais (+82-1833-6972, www.kopico.go.kr), ao Centro de Denúncias de Violação de Informações Pessoais (118, privacy.kisa.or.kr), à Procuradoria Suprema (1301, www.spo.go.kr) ou à Agência Nacional de Polícia da Coreia (182, ecrm.police.go.kr).",
+   "c_h": "Menores de 14 anos e representantes legais",
+   "c_law": "A Lei de Proteção de Informações Pessoais da Coreia exige o consentimento do representante legal quando as informações pessoais de uma criança menor de 14 anos são tratadas com base em consentimento (artigo 22-2).",
+   "c_facts": "Este app não pede data de nascimento nem idade e não tem verificação de idade nem meio de confirmar o consentimento do representante legal. Como não trata os usuários de forma diferente conforme a idade, o tratamento descrito nesta política também se aplica a menores de 14 anos.",
+   "c_signal": "O app informa aos serviços de anúncios, no nível do app, que “não é direcionado a crianças”. Isso não é resultado da verificação da idade de cada usuário.",
+   "c_ads_choice": "Anúncios personalizados: na primeira abertura, o app pergunta se você permite anúncios personalizados e não inicia o SDK de anúncios até você escolher. Menores de 14 anos não devem permitir anúncios personalizados e devem escolher a opção não personalizada. Se já tiverem sido permitidos, você pode alterar isso nas configurações do app.",
+   "c_ads_default_np": "Anúncios personalizados: em uma nova instalação, anúncios não personalizados são o padrão, e anúncios personalizados só se aplicam se você os escolher nas configurações. Menores de 14 anos devem manter o padrão.",
+   "c_ads_eea": "Anúncios personalizados: a tela de consentimento para anúncios personalizados do app só é exibida no Espaço Econômico Europeu (EEE) e no Reino Unido, não na Coreia nem em outras regiões. Menores de 14 anos devem, com um responsável, excluir o ID de publicidade em Configurações do Android > Privacidade > Anúncios para que ele não seja usado em anúncios personalizados.",
+   "c_ads_os": "Anúncios personalizados: os anúncios personalizados são controlados pelas configurações de privacidade de anúncios e de ID de publicidade do Android. Menores de 14 anos devem, com um responsável, excluir o ID de publicidade nas configurações do Android para que ele não seja usado em anúncios personalizados.",
+   "c_no_pi": "Menores de 14 anos não devem incluir informações pessoais, como nome ou contato, em relatórios de problema ou em consultas.",
+   "c_guardian": "Direitos do representante legal e como exercê-los: o representante legal pode pedir acesso, correção, exclusão ou suspensão do tratamento das informações pessoais da criança e retirar o consentimento. O método e o prazo são os mesmos de “Seus direitos e como exercê-los”. Pedimos apenas o mínimo necessário para confirmar a representação e o excluímos após a confirmação.",
+   "c_delete": "Se soubermos que informações pessoais de uma criança menor de 14 anos foram tratadas sem o consentimento do representante legal, excluiremos sem demora essas informações mantidas pela TeamCP.",
+   "s_h": "Medidas de segurança das informações pessoais",
+   "s_device": "Armazenamento no dispositivo: os registros e as configurações do app ficam no armazenamento privado que o Android separa para cada app e não são enviados a servidores operados pela TeamCP, exceto nos casos descritos nesta política.",
+   "s_transport": "Transmissão criptografada: as informações que o app envia pela internet ({parts}) são transmitidas por conexões criptografadas (HTTPS/TLS).",
+   "p_ads": "solicitações de anúncios",
+   "p_google": "serviços do Google",
+   "p_report": "relatórios de problema",
+   "p_firebase": "partidas on-line",
+   "s_report": "Acesso restrito ao servidor de relatórios: o servidor de relatórios de problema só aceita relatórios em formato fixo enviados por apps registrados e armazena os valores de autenticação dos apps como hashes, não como valores originais. O acesso administrativo ao servidor e ao banco de dados é limitado à conta do operador da TeamCP. Os relatórios não incluem automaticamente o ID de publicidade, a conta nem a localização.",
+   "s_firebase": "Dados de partidas on-line: são armazenados no projeto Firebase da TeamCP por autenticação anônima, sem nome nem e-mail; o acesso administrativo ao projeto é limitado à conta do operador da TeamCP.",
+   "s_min": "Minimização: não coletamos cadastros, senhas, nomes nem números de telefone, o que reduz ao mínimo as informações pessoais mantidas pela TeamCP.",
+   "s_ret_report": "Retenção e exclusão: os relatórios de problema são excluídos 90 dias após o recebimento, ou antes, se você pedir a exclusão.",
+   "s_ret_fb": "Retenção e exclusão: os dados de partidas on-line são mantidos pelo tempo necessário para os recursos on-line e a prevenção de abusos e são excluídos mediante pedido.",
+   "s_ret_none": "Retenção e exclusão: a TeamCP não mantém um servidor que receba registros do jogo; as informações no seu dispositivo ficam nele até você apagá-las.",
+   "s_ret_mail": "Os e-mails de consulta são excluídos quando deixam de ser necessários após a resposta. As informações pessoais são mantidas apenas em arquivos eletrônicos e excluídas ao fim do período de retenção.",
+   "s_third": "A segurança das informações tratadas por provedores externos, como os serviços de anúncios e o Google, segue a política de cada provedor.",
+   "o_h": "Responsável pela privacidade",
+   "o_contact": "Consultas de privacidade e pedidos de acesso, correção, exclusão ou suspensão do tratamento: TeamCP · {mail}"
+  },
+  "zh-tw": {
+   "title": "依韓國《個人資訊保護法》的補充告知（2026 年 11 月 23 日新增）",
+   "intro": "依韓國《個人資訊保護法》第 30 條及同法施行令第 31 條，本告知說明您的權利與行使方式、未滿 14 歲兒童與法定代理人、安全性確保措施，以及個人資訊保護負責人。本告知與本政策其他部分一併適用。",
+   "r_h": "當事人的權利與行使方式",
+   "r_1": "您可隨時要求 TeamCP 對其處理的您的個人資訊提供查閱、更正・刪除或停止處理，並可撤回同意（韓國《個人資訊保護法》第 35 條至第 37 條）。",
+   "r_2": "提出方式：請以電子郵件將 App 名稱與要求內容寄至下方聯絡方式（{mail}）。由於 App 沒有帳號，請一併附上 TeamCP 可據以找到紀錄的資訊（例如錯誤回報的大約送出日期或回報編號）。法定代理人或受委任者也可提出要求，此時我們可能請您提供可確認代理關係的資料。",
+   "r_3": "處理期間：我們會在收到要求之日起 10 日內告知處理結果。若依法有限制或拒絕的理由，或無法在期限內處理，將一併告知理由及提出異議的方式。",
+   "r_4": "僅儲存在裝置上的資訊（App 紀錄、設定等）不由 TeamCP 保存，您可透過 App 內的刪除功能、在 Android 設定中清除 App 儲存空間，或解除安裝 App 自行刪除。",
+   "r_5": "廣告服務、Google 等外部業者處理的資訊，也可透過上方國外移轉告知中列出的各業者聯絡方式提出要求。",
+   "r_6": "權益受損的救濟：您可向個人資訊紛爭調解委員會（+82-1833-6972，www.kopico.go.kr）、個人資訊侵害申報中心（118，privacy.kisa.or.kr）、大檢察廳（1301，www.spo.go.kr）、警察廳（182，ecrm.police.go.kr）申請紛爭調解或諮詢（皆為韓國機關）。",
+   "c_h": "未滿 14 歲兒童與法定代理人",
+   "c_law": "韓國《個人資訊保護法》規定，以同意為依據處理未滿 14 歲兒童的個人資訊時，須取得法定代理人的同意（第 22 條之 2）。",
+   "c_facts": "本 App 不詢問出生日期或年齡，也沒有年齡確認或確認法定代理人同意的功能。由於不依年齡區分處理方式，本政策所述的處理同樣適用於未滿 14 歲的使用者。",
+   "c_signal": "App 以 App 為單位向廣告服務傳送「非以兒童為對象」的訊號，這並非確認個別使用者年齡的結果。",
+   "c_ads_choice": "個人化廣告：首次啟動時，App 會詢問是否允許個人化廣告，在您選擇前不會啟動廣告 SDK。未滿 14 歲的使用者請勿允許個人化廣告，並選擇非個人化廣告。若已允許，可在 App 設定中變更。",
+   "c_ads_default_np": "個人化廣告：新安裝時預設為非個人化廣告，只有在您自行於設定中選擇時才會套用個人化廣告。未滿 14 歲的使用者請保留預設值。",
+   "c_ads_eea": "個人化廣告：App 內的個人化廣告同意畫面只在歐洲經濟區（EEA）與英國顯示，在韓國等其他地區不會顯示。未滿 14 歲的使用者請與監護人一起在 Android 設定 > 隱私權 > 廣告中刪除廣告 ID，使其不用於個人化廣告。",
+   "c_ads_os": "個人化廣告：個人化廣告透過 Android 的廣告隱私權與廣告 ID 設定控制。未滿 14 歲的使用者請與監護人一起在 Android 設定中刪除廣告 ID，使其不用於個人化廣告。",
+   "c_no_pi": "未滿 14 歲的使用者請勿在錯誤回報或詢問中填寫姓名、聯絡方式等個人資訊。",
+   "c_guardian": "法定代理人的權利與行使方式：法定代理人可要求對兒童的個人資訊進行查閱、更正・刪除或停止處理，並可撤回同意。方式與處理期間與上方「當事人的權利與行使方式」相同。我們只會要求確認監護關係所需的最少資訊，確認後即刪除。",
+   "c_delete": "若得知未經法定代理人同意而處理了未滿 14 歲兒童的個人資訊，將立即刪除 TeamCP 保存的相關資訊。",
+   "s_h": "個人資訊的安全性確保措施",
+   "s_device": "裝置內儲存：App 紀錄與設定儲存在 Android 為每個 App 分開管理的 App 專用儲存空間，除本政策所述情形外，不會傳送到 TeamCP 營運的伺服器。",
+   "s_transport": "傳輸加密：App 透過網際網路傳送的資訊（{parts}）以加密連線（HTTPS/TLS）傳輸。",
+   "p_ads": "廣告請求",
+   "p_google": "Google 服務連動",
+   "p_report": "錯誤回報",
+   "p_firebase": "線上對戰",
+   "s_report": "回報伺服器存取限制：錯誤回報伺服器只接受已登記 App 送出的固定格式回報，App 驗證值以雜湊值而非原文儲存。伺服器與資料庫的管理權限僅限 TeamCP 營運者帳號。回報不會自動附上廣告 ID、帳號或位置。",
+   "s_firebase": "線上對戰資訊：以不含姓名與電子郵件的匿名驗證儲存在 TeamCP 的 Firebase 專案中，專案管理權限僅限 TeamCP 營運者帳號。",
+   "s_min": "最少處理：不收取會員註冊、密碼、姓名、電話號碼，將 TeamCP 保存的個人資訊降到最少。",
+   "s_ret_report": "保存與刪除：錯誤回報自收件日起滿 90 日即刪除；在此之前如您要求刪除，也會刪除。",
+   "s_ret_fb": "保存與刪除：線上對戰資訊在線上功能與防止不當使用所需的期間內保存，您要求刪除時即刪除。",
+   "s_ret_none": "保存與刪除：TeamCP 沒有接收遊戲紀錄的伺服器；裝置上的資訊會保留到您刪除為止。",
+   "s_ret_mail": "詢問郵件在回覆結束後不會保存超過必要期間，屆時即刪除。個人資訊僅以電子檔案保存，保存期間結束即刪除。",
+   "s_third": "廣告服務、Google 等外部業者處理之資訊的安全措施，依各業者的政策辦理。",
+   "o_h": "個人資訊保護負責人",
+   "o_contact": "個人資訊相關詢問及查閱・更正・刪除・停止處理要求的受理：TeamCP · {mail}"
+  },
+  "de": {
+   "title": "Zusätzlicher Hinweis nach dem koreanischen Gesetz zum Schutz personenbezogener Daten (ergänzt am 23. November 2026)",
+   "intro": "Nach Artikel 30 des koreanischen Gesetzes zum Schutz personenbezogener Daten (PIPA) und Artikel 31 der zugehörigen Durchführungsverordnung erläutert dieser Hinweis deine Rechte und wie du sie ausübst, Kinder unter 14 Jahren und ihre gesetzlichen Vertreter, unsere Sicherheitsmaßnahmen und unseren Datenschutzbeauftragten. Er gilt zusammen mit dem Rest dieser Richtlinie.",
+   "r_h": "Deine Rechte und wie du sie ausübst",
+   "r_1": "Du kannst TeamCP jederzeit um Auskunft, Berichtigung, Löschung oder Aussetzung der Verarbeitung der personenbezogenen Daten bitten, die TeamCP über dich verarbeitet, und deine Einwilligung widerrufen (PIPA Artikel 35–37).",
+   "r_2": "So stellst du eine Anfrage: Sende den Namen der App und dein Anliegen per E-Mail an den unten genannten Kontakt ({mail}). Da die App keine Konten hat, gib bitte Angaben an, mit denen TeamCP den Eintrag finden kann (zum Beispiel das ungefähre Datum oder die Nummer einer Fehlermeldung). Auch ein gesetzlicher Vertreter oder eine bevollmächtigte Person kann die Anfrage stellen; in diesem Fall können wir einen Nachweis der Vertretung verlangen.",
+   "r_3": "Bearbeitungsfrist: Wir teilen dir das Ergebnis innerhalb von 10 Tagen nach Eingang der Anfrage mit. Wenn das Gesetz eine Einschränkung oder Ablehnung erlaubt oder wir die Frist nicht einhalten können, nennen wir dir den Grund und wie du Einspruch erheben kannst.",
+   "r_4": "Daten, die nur auf deinem Gerät gespeichert sind (App-Verlauf, Einstellungen usw.), werden nicht von TeamCP gespeichert. Du kannst sie selbst über die Löschfunktionen der App, durch Löschen des App-Speichers in den Android-Einstellungen oder durch Deinstallieren der App entfernen.",
+   "r_5": "Für Daten, die externe Anbieter wie die Werbedienste und Google verarbeiten, kannst du dich auch an den jeweiligen Anbieter unter dem im obigen Hinweis zur Übermittlung ins Ausland genannten Kontakt wenden.",
+   "r_6": "Rechtsbehelfe in Korea: Du kannst beim Personal Information Dispute Mediation Committee (+82-1833-6972, www.kopico.go.kr), beim Personal Information Infringement Report Center (118, privacy.kisa.or.kr), bei der Obersten Staatsanwaltschaft (1301, www.spo.go.kr) oder bei der Nationalen Polizeibehörde Koreas (182, ecrm.police.go.kr) Schlichtung oder Beratung beantragen.",
+   "c_h": "Kinder unter 14 Jahren und gesetzliche Vertreter",
+   "c_law": "Das koreanische Gesetz zum Schutz personenbezogener Daten verlangt die Einwilligung des gesetzlichen Vertreters, wenn personenbezogene Daten eines Kindes unter 14 Jahren auf Grundlage einer Einwilligung verarbeitet werden (Artikel 22-2).",
+   "c_facts": "Diese App fragt nicht nach Geburtsdatum oder Alter und hat weder eine Altersprüfung noch eine Möglichkeit, die Einwilligung eines gesetzlichen Vertreters zu bestätigen. Da sie Nutzer nicht nach Alter unterscheidet, gilt die in dieser Richtlinie beschriebene Verarbeitung auch für Nutzer unter 14 Jahren.",
+   "c_signal": "Die App teilt den Werbediensten auf App-Ebene mit, dass sie „nicht an Kinder gerichtet“ ist. Das ist nicht das Ergebnis einer Altersprüfung einzelner Nutzer.",
+   "c_ads_choice": "Personalisierte Werbung: Beim ersten Start fragt die App, ob personalisierte Werbung erlaubt werden soll, und startet das Werbe-SDK erst nach deiner Auswahl. Nutzer unter 14 Jahren sollten personalisierte Werbung nicht erlauben und die nicht personalisierte Option wählen. Wurde sie bereits erlaubt, kannst du das in den App-Einstellungen ändern.",
+   "c_ads_default_np": "Personalisierte Werbung: Bei einer Neuinstallation ist nicht personalisierte Werbung voreingestellt; personalisierte Werbung gilt nur, wenn du sie selbst in den Einstellungen wählst. Nutzer unter 14 Jahren sollten die Voreinstellung beibehalten.",
+   "c_ads_eea": "Personalisierte Werbung: Der Einwilligungsbildschirm der App für personalisierte Werbung wird nur im Europäischen Wirtschaftsraum (EWR) und im Vereinigten Königreich angezeigt, nicht in Korea oder anderen Regionen. Nutzer unter 14 Jahren sollten gemeinsam mit einem Erziehungsberechtigten die Werbe-ID unter Android-Einstellungen > Datenschutz > Werbung löschen, damit sie nicht für personalisierte Werbung verwendet wird.",
+   "c_ads_os": "Personalisierte Werbung: Personalisierte Werbung wird über die Android-Einstellungen für Werbedatenschutz und Werbe-ID gesteuert. Nutzer unter 14 Jahren sollten gemeinsam mit einem Erziehungsberechtigten die Werbe-ID in den Android-Einstellungen löschen, damit sie nicht für personalisierte Werbung verwendet wird.",
+   "c_no_pi": "Nutzer unter 14 Jahren sollten in Fehlermeldungen oder Anfragen keine personenbezogenen Daten wie Namen oder Kontaktdaten angeben.",
+   "c_guardian": "Rechte des gesetzlichen Vertreters und ihre Ausübung: Ein gesetzlicher Vertreter kann Auskunft, Berichtigung, Löschung oder Aussetzung der Verarbeitung der personenbezogenen Daten des Kindes verlangen und die Einwilligung widerrufen. Verfahren und Frist sind dieselben wie oben unter „Deine Rechte und wie du sie ausübst“. Wir verlangen nur die zur Bestätigung der Vertretung mindestens nötigen Angaben und löschen sie nach der Bestätigung.",
+   "c_delete": "Wenn wir erfahren, dass personenbezogene Daten eines Kindes unter 14 Jahren ohne Einwilligung des gesetzlichen Vertreters verarbeitet wurden, löschen wir diese bei TeamCP gespeicherten Daten unverzüglich.",
+   "s_h": "Maßnahmen zur Sicherheit personenbezogener Daten",
+   "s_device": "Speicherung auf dem Gerät: App-Verlauf und Einstellungen werden im App-eigenen Speicher abgelegt, den Android für jede App getrennt hält, und – außer in den in dieser Richtlinie beschriebenen Fällen – nicht an von TeamCP betriebene Server gesendet.",
+   "s_transport": "Verschlüsselte Übertragung: Daten, die die App über das Internet sendet ({parts}), werden über verschlüsselte Verbindungen (HTTPS/TLS) übertragen.",
+   "p_ads": "Werbeanfragen",
+   "p_google": "Google-Dienste",
+   "p_report": "Fehlermeldungen",
+   "p_firebase": "Online-Partien",
+   "s_report": "Zugriffsbeschränkung des Meldeservers: Der Server für Fehlermeldungen nimmt nur Meldungen in einem festen Format von registrierten Apps an und speichert die Authentifizierungswerte der Apps als Hashwerte, nicht im Original. Der administrative Zugriff auf Server und Datenbank ist auf das Betreiberkonto von TeamCP beschränkt. Meldungen enthalten nicht automatisch Werbe-ID, Konto oder Standort.",
+   "s_firebase": "Daten aus Online-Partien: werden über eine anonyme Anmeldung ohne Namen oder E-Mail-Adresse im Firebase-Projekt von TeamCP gespeichert; der administrative Zugriff auf das Projekt ist auf das Betreiberkonto von TeamCP beschränkt.",
+   "s_min": "Datenminimierung: Wir erheben keine Registrierungen, Passwörter, Namen oder Telefonnummern und halten die bei TeamCP gespeicherten personenbezogenen Daten so gering wie möglich.",
+   "s_ret_report": "Speicherung und Löschung: Fehlermeldungen werden 90 Tage nach Eingang gelöscht, auf Wunsch auch früher.",
+   "s_ret_fb": "Speicherung und Löschung: Daten aus Online-Partien werden so lange gespeichert, wie es für die Online-Funktionen und die Missbrauchsverhinderung nötig ist, und auf Wunsch gelöscht.",
+   "s_ret_none": "Speicherung und Löschung: TeamCP betreibt keinen Server, der Spielstände empfängt; Daten auf deinem Gerät bleiben dort, bis du sie löschst.",
+   "s_ret_mail": "Anfrage-E-Mails werden gelöscht, sobald sie nach der Beantwortung nicht mehr benötigt werden. Personenbezogene Daten werden nur als elektronische Dateien gespeichert und nach Ablauf der Speicherfrist gelöscht.",
+   "s_third": "Für die Sicherheit von Daten, die externe Anbieter wie die Werbedienste und Google verarbeiten, gelten die Richtlinien des jeweiligen Anbieters.",
+   "o_h": "Datenschutzbeauftragter",
+   "o_contact": "Datenschutzanfragen sowie Anträge auf Auskunft, Berichtigung, Löschung oder Aussetzung der Verarbeitung: TeamCP · {mail}"
+  },
+  "fr": {
+   "title": "Avis complémentaire au titre de la loi coréenne sur la protection des informations personnelles (ajouté le 23 novembre 2026)",
+   "intro": "Conformément à l’article 30 de la loi coréenne sur la protection des informations personnelles (PIPA) et à l’article 31 de son décret d’application, cet avis explique vos droits et comment les exercer, les enfants de moins de 14 ans et leurs représentants légaux, les mesures de sécurité que nous appliquons et notre responsable de la protection des données. Il s’applique avec le reste de cette politique.",
+   "r_h": "Vos droits et comment les exercer",
+   "r_1": "Vous pouvez à tout moment demander à TeamCP l’accès, la rectification, la suppression ou la suspension du traitement des informations personnelles qu’elle traite à votre sujet, et retirer votre consentement (articles 35 à 37 de la PIPA).",
+   "r_2": "Comment faire une demande : envoyez par e-mail le nom de l’app et votre demande au contact ci-dessous ({mail}). L’app n’ayant pas de comptes, indiquez des informations permettant à TeamCP de retrouver l’enregistrement (par exemple la date approximative ou le numéro d’un signalement de problème). Un représentant légal ou une personne mandatée peut aussi faire la demande ; nous pouvons alors demander un justificatif de la représentation.",
+   "r_3": "Délai de réponse : nous vous communiquerons le résultat dans les 10 jours suivant la réception de la demande. Si la loi permet de la limiter ou de la refuser, ou si nous ne pouvons pas la traiter dans ce délai, nous vous indiquerons le motif et la manière de contester.",
+   "r_4": "Les informations enregistrées uniquement sur votre appareil (historique et réglages de l’app, etc.) ne sont pas conservées par TeamCP ; vous pouvez les supprimer vous-même avec les options de suppression de l’app, en effaçant le stockage de l’app dans les paramètres Android ou en désinstallant l’app.",
+   "r_5": "Pour les informations traitées par des prestataires externes comme les services publicitaires et Google, vous pouvez aussi contacter chaque prestataire à l’adresse indiquée dans l’avis de transfert à l’étranger ci-dessus.",
+   "r_6": "Recours en Corée : vous pouvez demander une médiation ou un conseil au Comité de médiation des litiges relatifs aux informations personnelles (+82-1833-6972, www.kopico.go.kr), au Centre de signalement des atteintes aux informations personnelles (118, privacy.kisa.or.kr), au Parquet suprême (1301, www.spo.go.kr) ou à l’Agence nationale de police coréenne (182, ecrm.police.go.kr).",
+   "c_h": "Enfants de moins de 14 ans et représentants légaux",
+   "c_law": "La loi coréenne sur la protection des informations personnelles exige le consentement du représentant légal lorsque les informations personnelles d’un enfant de moins de 14 ans sont traitées sur la base du consentement (article 22-2).",
+   "c_facts": "Cette app ne demande ni date de naissance ni âge, et ne dispose ni de vérification de l’âge ni de moyen de confirmer le consentement d’un représentant légal. Comme elle ne traite pas les utilisateurs différemment selon leur âge, le traitement décrit dans cette politique s’applique aussi aux utilisateurs de moins de 14 ans.",
+   "c_signal": "L’app indique aux services publicitaires, au niveau de l’app, qu’elle n’est « pas destinée aux enfants ». Ce n’est pas le résultat d’une vérification de l’âge de chaque utilisateur.",
+   "c_ads_choice": "Publicités personnalisées : au premier lancement, l’app demande si vous autorisez les publicités personnalisées et ne démarre pas le SDK publicitaire avant votre choix. Les utilisateurs de moins de 14 ans ne doivent pas autoriser les publicités personnalisées et doivent choisir l’option non personnalisée. Si elles ont déjà été autorisées, vous pouvez modifier ce choix dans les réglages de l’app.",
+   "c_ads_default_np": "Publicités personnalisées : lors d’une nouvelle installation, les publicités non personnalisées sont le réglage par défaut, et les publicités personnalisées ne s’appliquent que si vous les choisissez vous-même dans les réglages. Les utilisateurs de moins de 14 ans doivent conserver le réglage par défaut.",
+   "c_ads_eea": "Publicités personnalisées : l’écran de consentement aux publicités personnalisées de l’app ne s’affiche que dans l’Espace économique européen (EEE) et au Royaume-Uni, pas en Corée ni dans les autres régions. Les utilisateurs de moins de 14 ans doivent, avec un parent, supprimer l’identifiant publicitaire dans Paramètres Android > Confidentialité > Annonces afin qu’il ne serve pas aux publicités personnalisées.",
+   "c_ads_os": "Publicités personnalisées : les publicités personnalisées se gèrent dans les paramètres Android de confidentialité des annonces et d’identifiant publicitaire. Les utilisateurs de moins de 14 ans doivent, avec un parent, supprimer l’identifiant publicitaire dans les paramètres Android afin qu’il ne serve pas aux publicités personnalisées.",
+   "c_no_pi": "Les utilisateurs de moins de 14 ans ne doivent pas indiquer d’informations personnelles, comme leur nom ou leurs coordonnées, dans les signalements de problème ou les demandes.",
+   "c_guardian": "Droits du représentant légal et modalités d’exercice : le représentant légal peut demander l’accès, la rectification, la suppression ou la suspension du traitement des informations personnelles de l’enfant, et retirer le consentement. La méthode et le délai sont les mêmes que dans « Vos droits et comment les exercer » ci-dessus. Nous ne demandons que le minimum nécessaire pour confirmer la représentation et le supprimons après confirmation.",
+   "c_delete": "Si nous apprenons que des informations personnelles d’un enfant de moins de 14 ans ont été traitées sans le consentement de son représentant légal, nous supprimerons sans délai ces informations conservées par TeamCP.",
+   "s_h": "Mesures de sécurité des informations personnelles",
+   "s_device": "Stockage sur l’appareil : l’historique et les réglages de l’app sont enregistrés dans le stockage privé qu’Android sépare pour chaque app et ne sont pas envoyés à des serveurs exploités par TeamCP, sauf dans les cas décrits dans cette politique.",
+   "s_transport": "Transmission chiffrée : les informations que l’app envoie par Internet ({parts}) transitent par des connexions chiffrées (HTTPS/TLS).",
+   "p_ads": "demandes de publicités",
+   "p_google": "services Google",
+   "p_report": "signalements de problème",
+   "p_firebase": "parties en ligne",
+   "s_report": "Accès restreint au serveur de signalements : le serveur de signalements n’accepte que des signalements au format fixe envoyés par des apps enregistrées, et conserve les valeurs d’authentification des apps sous forme de hachages, et non en clair. L’accès administratif au serveur et à la base de données est limité au compte de l’exploitant de TeamCP. Les signalements n’incluent pas automatiquement l’identifiant publicitaire, le compte ni la localisation.",
+   "s_firebase": "Données des parties en ligne : enregistrées dans le projet Firebase de TeamCP via une connexion anonyme, sans nom ni adresse e-mail ; l’accès administratif au projet est limité au compte de l’exploitant de TeamCP.",
+   "s_min": "Minimisation : nous ne collectons ni inscription, ni mot de passe, ni nom, ni numéro de téléphone, ce qui limite au minimum les informations personnelles conservées par TeamCP.",
+   "s_ret_report": "Conservation et suppression : les signalements de problème sont supprimés 90 jours après leur réception, ou plus tôt si vous en demandez la suppression.",
+   "s_ret_fb": "Conservation et suppression : les données des parties en ligne sont conservées le temps nécessaire aux fonctions en ligne et à la prévention des abus, et supprimées sur demande.",
+   "s_ret_none": "Conservation et suppression : TeamCP n’exploite pas de serveur recevant les données de jeu ; les informations sur votre appareil y restent jusqu’à ce que vous les supprimiez.",
+   "s_ret_mail": "Les e-mails de demande sont supprimés lorsqu’ils ne sont plus nécessaires après notre réponse. Les informations personnelles ne sont conservées que sous forme de fichiers électroniques et sont supprimées à la fin de la durée de conservation.",
+   "s_third": "La sécurité des informations traitées par des prestataires externes comme les services publicitaires et Google relève de la politique de chaque prestataire.",
+   "o_h": "Responsable de la protection des données",
+   "o_contact": "Questions relatives à la vie privée et demandes d’accès, de rectification, de suppression ou de suspension du traitement : TeamCP · {mail}"
+  }
+ },
+ "xfer": {
+  "en": {
+   "h": "Detailed notice of overseas transfers (added November 23, 2026)",
+   "intro": "Under Articles 28-8 and 30 of Korea’s Personal Information Protection Act (PIPA), we list each kind of processing in this game in which personal information is transferred outside Korea. The information below is sent directly from your device to each provider without passing through any server operated by TeamCP. Provider details are based on each provider’s published policy.",
+   "L": [
+    "Recipient and contact",
+    "Destination countries",
+    "Data transferred",
+    "When and how",
+    "Purpose",
+    "Retention period",
+    "Legal basis",
+    "How to refuse and effect"
+   ],
+   "ads_t": "Ads — Unity LevelPlay, Unity Ads, ironSource Ads",
+   "u_who": "Unity Technologies (Unity Technologies S.F.) — operator of Unity LevelPlay, Unity Ads and ironSource Ads<br>Contact: <a href=\"mailto:DPO@unity3d.com\">DPO@unity3d.com</a> · 116 New Montgomery Street, Suite 200, San Francisco, CA 94105, United States",
+   "u_country": "The United States, plus countries where Unity has facilities (including Israel, where ironSource is headquartered) and countries with data centers of service providers Unity uses (such as Google Cloud Platform) — as stated in Unity’s Game Player and App User Privacy Policy",
+   "u_items": "Advertising identifiers (Google advertising ID, app set ID, etc., to the extent device settings allow), IP address and approximate location derived from it, device model, operating system, app version, language, network information, and ad request, impression, click, completed-view, error and diagnostic information (details in the ads section of this policy)",
+   "u_when": "Each time the ad SDK initializes or requests, shows or measures an ad while the app is running, sent directly from your device to Unity’s servers over the internet (encrypted connection)",
+   "u_why": "Ad mediation and delivery, frequency capping, performance measurement, fraud prevention, error diagnosis",
+   "u_keep": "Unity states that it keeps data for as long as needed for the processing purposes and may keep it longer when needed for legal obligations or for disputes or investigations (Unity policy section 10, “Retention”). Because Unity does not publish a fixed retention period for general ad data, this policy does not state a separate period.",
+   "u_basis": "PIPA Article 28-8(1)(iii)(a) — treated as outsourcing and storage needed to perform the contract for providing a free (ad-supported) game, with the transfer details disclosed in this policy",
+   "u_refuse": "If you turn off the internet connection, no ad requests or transfers take place. If you delete the advertising ID in Android settings, the advertising ID is not sent. If you do not want any transfer, you can stop using and uninstall the app; in that case you cannot use ads or ad rewards. To access or delete information already transferred, contact Unity (DPO@unity3d.com) or use the privacy icon in the ad.",
+   "g_who": "Google LLC<br>Contact: <a href=\"mailto:googlekrsupport@google.com\">googlekrsupport@google.com</a> · Domestic representative in Korea: Google Korea LLC (22F, 152 Teheran-ro, Gangnam-gu, Seoul · +82-2-722-7778 · data-access-requests@google.com) — as stated in Google’s “Additional privacy information for Korean residents”",
+   "g_country": "Google data centers outside Korea (such as the United States). See <a href=\"https://www.google.com/about/datacenters/locations/\">Google data center locations</a> for where they are.",
+   "g_when": "Sent to Google over the network (encrypted connection) at the same time the information is collected, when the feature is used (per Google)",
+   "g_keep_pgs": "Google account and Play Games data are kept until you delete them or for the period Google sets (“Retaining your information” in Google’s Privacy Policy).",
+   "g_keep_backup": "Google account backup data is kept until you delete it or for the period Google sets (“Retaining your information” in Google’s Privacy Policy).",
+   "g_basis_pgs": "PIPA Article 28-8(1)(iii)(a) — treated as outsourcing and storage needed to provide the game-linked features you choose, with the transfer details disclosed in this policy",
+   "g_basis_pgs_backup": " · Android Auto Backup depends on your device and Google account backup settings",
+   "g_basis_backup": "PIPA Article 28-8(1)(iii)(a) — this policy discloses that the app allows Android Auto Backup and the transfer details; whether a backup actually happens depends on your device and Google account backup settings",
+   "backup_item": "Android Auto Backup: if backup is on in your device settings, Android sends this app’s saved data and settings to your Google account’s backup storage (nothing is sent if you turn it off in device settings).",
+   "backup_why": "Device backup and restore",
+   "backup_refuse": "You can turn off or delete backups under Android Settings > Google > Backup; in that case data is not restored automatically when you reinstall or change devices.",
+   "pgs_label": "Google Play Games: ",
+   "pgs_t": "Google Play Games",
+   "backup_t": "Android Auto Backup",
+   "pgs_why_default": "Sign-in and Play Games features such as achievements and leaderboards",
+   "fb_t": "Online 1:1 matches — Google Firebase (anonymous authentication, Realtime Database)",
+   "fb_who": "Google LLC (Firebase) — <a href=\"https://firebase.google.com/support/troubleshooter/contact\">Firebase support</a> · <a href=\"mailto:googlekrsupport@google.com\">googlekrsupport@google.com</a> · Domestic representative in Korea: Google Korea LLC (same as the Google entry above)",
+   "fb_country": "Anonymous authentication: United States (Firebase states that Authentication is processed only in US data centers) · Match database: Singapore (the Realtime Database location the app uses is asia-southeast1)",
+   "fb_items": "Anonymous UID, display name, chosen cat, Elo rating, tier, wins, losses, draws and ranking, matchmaking status, room identifier, move coordinates, connection status, match results and processing times (same as section 4)",
+   "fb_when": "Sent in real time over the internet (encrypted connection) while you choose online play and are matched or playing",
+   "fb_why": "Matchmaking, real-time synchronization, result settlement, rankings, fraud prevention",
+   "fb_keep": "Profile, rating and match data are kept in TeamCP’s Firebase project as long as needed for online features and fraud prevention, and are deleted on request (section 9). Firebase states that it keeps IP addresses in authentication logs for a few weeks, and IP addresses and user agents for the database for a few days.",
+   "fb_basis": "PIPA Article 28-8(1)(iii)(a) — treated as outsourcing and storage needed to provide the online matches you choose, with the transfer details disclosed in this policy",
+   "fb_refuse": "Nothing is sent if you do not use online play. In that case you cannot use online matches or rankings, but you can keep playing AI matches and puzzles. You can ask for stored information to be deleted using the contact below.",
+   "dom": "The following processing takes place in Korea and is not an overseas transfer.",
+   "dom_report": "<strong>Problem reports</strong>: reports you send yourself are stored on the report server operated by TeamCP (web hosting: Cafe24, Republic of Korea) and are not transferred abroad.",
+   "dom_os": "<strong>ONE store in-app payments (ONE store version)</strong>: payments are processed by ONE store Co., Ltd. (Republic of Korea), and this game does not transfer payment information abroad."
+  },
+  "ja": {
+   "h": "国外移転の詳細なお知らせ（2026年11月23日追加）",
+   "intro": "韓国「個人情報保護法」第28条の8および第30条に基づき、このゲームで個人情報が国外に移転される処理を処理ごとにお知らせします。以下の情報は、TeamCPが運営するサーバーを経由せず、お客様の端末から各事業者に直接送信されます。事業者の情報は各事業者が公開している方針に基づいて記載しています。",
+   "L": [
+    "移転先・連絡先",
+    "移転先の国",
+    "移転する項目",
+    "移転の時期・方法",
+    "移転の目的",
+    "保有・利用期間",
+    "移転の根拠",
+    "拒否の方法と影響"
+   ],
+   "ads_t": "広告 — Unity LevelPlay・Unity Ads・ironSource Ads",
+   "u_who": "Unity Technologies（Unity Technologies S.F.）— Unity LevelPlay・Unity Ads・ironSource Adsの運営会社<br>連絡先：<a href=\"mailto:DPO@unity3d.com\">DPO@unity3d.com</a> · 116 New Montgomery Street, Suite 200, San Francisco, CA 94105, United States",
+   "u_country": "米国、およびUnityの施設がある国（ironSourceの本社があるイスラエルを含む）と、Unityが利用するサービス提供者（Google Cloud Platformなど）のデータセンターがある国 — Unityのゲームプレイヤー・アプリ利用者向けプライバシーポリシーの記載",
+   "u_items": "広告識別子（Google広告ID・アプリセットIDなど、端末の設定が許す範囲）、IPアドレスとそれによるおおよその位置、端末モデル・OS・アプリのバージョン・言語・ネットワーク情報、広告のリクエスト・表示・クリック・視聴完了・エラー・診断情報（詳細は本方針の広告の項目）",
+   "u_when": "アプリの実行中に広告SDKが初期化されるときや広告をリクエスト・表示・測定するたびに、お客様の端末からインターネット（暗号化通信）でUnityのサーバーへ直接送信",
+   "u_why": "広告の仲介・配信、表示頻度の管理、成果測定、不正利用の防止、エラー診断",
+   "u_keep": "Unityは処理目的に必要な期間保存し、法令上の義務や紛争・捜査への対応に必要な場合はさらに保存することがあると案内しています（Unityポリシー10節「Retention」）。Unityが一般的な広告情報の確定した保存期間を公開していないため、本方針では期間を別途記載していません。",
+   "u_basis": "韓国「個人情報保護法」第28条の8第1項第3号イ — 無料ゲーム（広告収益型）提供契約の履行に必要な処理委託・保管とし、移転事項を本方針で公開",
+   "u_refuse": "インターネット接続を切ると、広告のリクエストと送信は行われません。Androidの設定で広告IDを削除すると、広告IDは送信されません。送信自体を望まない場合はアプリの利用をやめて削除できますが、その場合は広告と広告報酬を利用できません。すでに移転された情報の閲覧・削除は、Unity（DPO@unity3d.com）または広告内のプライバシーアイコンから求めることができます。",
+   "g_who": "Google LLC<br>お問い合わせ：<a href=\"mailto:googlekrsupport@google.com\">googlekrsupport@google.com</a> · 韓国内代理人：Google Korea（ソウル特別市江南区テヘラン路152、22階 · +82-2-722-7778 · data-access-requests@google.com）— Google「韓国居住者向けの追加のプライバシー情報」の記載",
+   "g_country": "国外にあるGoogleのデータセンター（米国など）。所在地は<a href=\"https://www.google.com/about/datacenters/locations/\">Googleデータセンターの案内</a>をご覧ください。",
+   "g_when": "その機能が動作するとき、収集と同時に情報通信網（暗号化通信）でGoogleへ送信（Googleの案内）",
+   "g_keep_pgs": "GoogleアカウントとPlay ゲームのデータは、お客様が削除するまで、またはGoogleが定める期間保存されます（Googleプライバシーポリシーの「情報の保持」）。",
+   "g_keep_backup": "Googleアカウントのバックアップデータは、お客様が削除するまで、またはGoogleが定める期間保存されます（Googleプライバシーポリシーの「情報の保持」）。",
+   "g_basis_pgs": "韓国「個人情報保護法」第28条の8第1項第3号イ — お客様が選んだゲーム連携機能の提供に必要な処理委託・保管とし、移転事項を本方針で公開",
+   "g_basis_pgs_backup": " · Android自動バックアップはお客様の端末・Googleアカウントのバックアップ設定に従う",
+   "g_basis_backup": "韓国「個人情報保護法」第28条の8第1項第3号イ — このアプリがAndroid自動バックアップを許可している事実と移転事項を本方針で公開し、実際のバックアップの有無はお客様の端末・Googleアカウントのバックアップ設定に従う",
+   "backup_item": "Android自動バックアップ：端末のバックアップ設定がオンの場合、Androidがこのアプリの保存データと設定をお客様のGoogleアカウントのバックアップ領域に送ります（端末の設定でオフにすると送信されません）。",
+   "backup_why": "端末のバックアップ・復元",
+   "backup_refuse": "Androidの設定 > Google > バックアップでバックアップをオフにしたり削除したりできます。その場合、再インストールや機種変更の際に自動で復元されません。",
+   "pgs_label": "Google Play ゲーム：",
+   "pgs_t": "Google Play ゲーム",
+   "backup_t": "Android自動バックアップ",
+   "pgs_why_default": "ログインと実績・リーダーボードなどPlay ゲームの機能の提供",
+   "fb_t": "オンライン1対1対局 — Google Firebase（匿名認証・Realtime Database）",
+   "fb_who": "Google LLC（Firebase）— <a href=\"https://firebase.google.com/support/troubleshooter/contact\">Firebaseサポート</a> · <a href=\"mailto:googlekrsupport@google.com\">googlekrsupport@google.com</a> · 韓国内代理人：Google Korea（上記Googleの項目と同じ）",
+   "fb_country": "匿名認証：米国（Firebaseの案内：Authenticationは米国のデータセンターでのみ処理）· 対局データベース：シンガポール（アプリが使うRealtime Databaseの所在地 asia-southeast1）",
+   "fb_items": "匿名UID、表示名、選んだ猫、Eloレーティング・ティア・勝敗・引き分け・ランキング、マッチング状態、ルーム識別子、着手座標、接続状態、対局結果と処理時刻（4節と同じ）",
+   "fb_when": "お客様がオンライン対戦を選んでマッチング・対局している間、インターネット（暗号化通信）でリアルタイムに送信",
+   "fb_why": "マッチング、リアルタイム同期、結果の精算、ランキング、不正利用の防止",
+   "fb_keep": "プロフィール・レーティング・対局情報は、オンライン機能と不正利用防止に必要な間TeamCPのFirebaseプロジェクトに保存し、ご要望があれば削除します（9節）。Firebaseは、認証のIPアドレス記録を数週間、データベースのIPアドレス・ユーザーエージェントを数日間保存すると案内しています。",
+   "fb_basis": "韓国「個人情報保護法」第28条の8第1項第3号イ — お客様が選んだオンライン対局の提供に必要な処理委託・保管とし、移転事項を本方針で公開",
+   "fb_refuse": "オンライン対戦を利用しなければ送信されません。その場合、オンライン対局・ランキングは利用できませんが、AI対局とパズルは引き続き利用できます。保存された情報の削除は下記の連絡先に求めることができます。",
+   "dom": "次の処理は韓国国内で行われ、上記の国外移転には該当しません。",
+   "dom_report": "<strong>不具合報告</strong>：お客様が自分で送る報告は、TeamCPが運営する報告サーバー（Webホスティング：Cafe24、大韓民国）に保存され、国外に移転しません。",
+   "dom_os": "<strong>ONE storeアプリ内決済（ONE store版）</strong>：決済はONE store株式会社（大韓民国）が処理し、このゲームは決済情報を国外に移転しません。"
+  },
+  "es": {
+   "h": "Aviso detallado de transferencias internacionales (añadido el 23 de noviembre de 2026)",
+   "intro": "Conforme a los artículos 28-8 y 30 de la Ley de Protección de Información Personal de Corea (PIPA), indicamos, para cada tratamiento de este juego, cuándo se transfiere información personal fuera de Corea. La información siguiente se envía directamente desde tu dispositivo a cada proveedor sin pasar por ningún servidor gestionado por TeamCP. Los datos de los proveedores se basan en las políticas que cada uno publica.",
+   "L": [
+    "Destinatario y contacto",
+    "Países de destino",
+    "Datos transferidos",
+    "Momento y forma",
+    "Finalidad",
+    "Plazo de conservación",
+    "Base legal",
+    "Cómo negarse y efectos"
+   ],
+   "ads_t": "Anuncios — Unity LevelPlay, Unity Ads, ironSource Ads",
+   "u_who": "Unity Technologies (Unity Technologies S.F.) — operador de Unity LevelPlay, Unity Ads e ironSource Ads<br>Contacto: <a href=\"mailto:DPO@unity3d.com\">DPO@unity3d.com</a> · 116 New Montgomery Street, Suite 200, San Francisco, CA 94105, United States",
+   "u_country": "Estados Unidos y los países donde Unity tiene instalaciones (incluido Israel, sede de ironSource) y donde se encuentran los centros de datos de los proveedores de servicios que usa Unity (como Google Cloud Platform), según la política de privacidad de Unity para jugadores y usuarios de apps",
+   "u_items": "Identificadores publicitarios (ID de publicidad de Google, ID de conjunto de apps, etc., en la medida en que lo permitan los ajustes del dispositivo), dirección IP y ubicación aproximada derivada de ella, modelo de dispositivo, sistema operativo, versión de la app, idioma, información de red, e información de solicitudes, impresiones, clics, visualizaciones completas, errores y diagnóstico de anuncios (detalles en la sección de anuncios de esta política)",
+   "u_when": "Cada vez que el SDK de anuncios se inicializa o solicita, muestra o mide un anuncio mientras la app está en uso, enviado directamente desde tu dispositivo a los servidores de Unity por internet (conexión cifrada)",
+   "u_why": "Mediación y entrega de anuncios, control de frecuencia, medición de resultados, prevención de fraude, diagnóstico de errores",
+   "u_keep": "Unity indica que conserva los datos durante el tiempo necesario para los fines del tratamiento y que puede conservarlos más tiempo si lo exigen obligaciones legales o la atención de litigios o investigaciones (sección 10 de la política de Unity, «Retention»). Como Unity no publica un plazo fijo para los datos publicitarios generales, esta política no indica un plazo propio.",
+   "u_basis": "Artículo 28-8(1)(iii)(a) de la PIPA — se considera un encargo y almacenamiento necesarios para cumplir el contrato de prestación de un juego gratuito (financiado con anuncios), y los detalles de la transferencia se publican en esta política",
+   "u_refuse": "Si desactivas la conexión a internet, no se producen solicitudes de anuncios ni transferencias. Si eliminas el ID de publicidad en los ajustes de Android, no se envía. Si no quieres ninguna transferencia, puedes dejar de usar la app y desinstalarla; en ese caso no podrás usar los anuncios ni sus recompensas. Para acceder a la información ya transferida o eliminarla, contacta con Unity (DPO@unity3d.com) o usa el icono de privacidad del anuncio.",
+   "g_who": "Google LLC<br>Contacto: <a href=\"mailto:googlekrsupport@google.com\">googlekrsupport@google.com</a> · Representante en Corea: Google Korea LLC (planta 22, 152 Teheran-ro, Gangnam-gu, Seúl · +82-2-722-7778 · data-access-requests@google.com), según la «Información adicional de privacidad para residentes en Corea» de Google",
+   "g_country": "Centros de datos de Google fuera de Corea (como Estados Unidos). Consulta su ubicación en <a href=\"https://www.google.com/about/datacenters/locations/\">ubicaciones de los centros de datos de Google</a>.",
+   "g_when": "Enviado a Google por la red (conexión cifrada) al mismo tiempo que se recoge, cuando se usa la función (según Google)",
+   "g_keep_pgs": "Los datos de la cuenta de Google y de Play Juegos se conservan hasta que los elimines o durante el plazo que fije Google («Conservación de tu información» en la Política de Privacidad de Google).",
+   "g_keep_backup": "Los datos de copia de seguridad de la cuenta de Google se conservan hasta que los elimines o durante el plazo que fije Google («Conservación de tu información» en la Política de Privacidad de Google).",
+   "g_basis_pgs": "Artículo 28-8(1)(iii)(a) de la PIPA — se considera un encargo y almacenamiento necesarios para ofrecer las funciones vinculadas al juego que eliges, y los detalles de la transferencia se publican en esta política",
+   "g_basis_pgs_backup": " · la copia de seguridad automática de Android depende de los ajustes de copia de tu dispositivo y cuenta de Google",
+   "g_basis_backup": "Artículo 28-8(1)(iii)(a) de la PIPA — esta política publica que la app permite la copia de seguridad automática de Android y los detalles de la transferencia; que se haga realmente depende de los ajustes de copia de tu dispositivo y cuenta de Google",
+   "backup_item": "Copia de seguridad automática de Android: si la copia de seguridad está activada en tu dispositivo, Android envía los datos guardados y los ajustes de esta app al espacio de copia de tu cuenta de Google (si la desactivas, no se envía nada).",
+   "backup_why": "Copia de seguridad y restauración del dispositivo",
+   "backup_refuse": "Puedes desactivar o borrar la copia en Ajustes de Android > Google > Copia de seguridad; en ese caso, los datos no se restaurarán automáticamente al reinstalar o cambiar de dispositivo.",
+   "pgs_label": "Google Play Juegos: ",
+   "pgs_t": "Google Play Juegos",
+   "backup_t": "Copia de seguridad automática de Android",
+   "pgs_why_default": "Inicio de sesión y funciones de Play Juegos como logros y clasificaciones",
+   "fb_t": "Partidas en línea 1 contra 1 — Google Firebase (autenticación anónima, Realtime Database)",
+   "fb_who": "Google LLC (Firebase) — <a href=\"https://firebase.google.com/support/troubleshooter/contact\">soporte de Firebase</a> · <a href=\"mailto:googlekrsupport@google.com\">googlekrsupport@google.com</a> · Representante en Corea: Google Korea LLC (igual que en el apartado de Google)",
+   "fb_country": "Autenticación anónima: Estados Unidos (según Firebase, Authentication solo se procesa en centros de datos de EE. UU.) · Base de datos de partidas: Singapur (ubicación de la Realtime Database que usa la app: asia-southeast1)",
+   "fb_items": "UID anónimo, nombre visible, gato elegido, puntuación Elo, nivel, victorias, derrotas, empates y clasificación, estado de emparejamiento, identificador de sala, coordenadas de las jugadas, estado de conexión, resultados de las partidas y horas de procesamiento (igual que en la sección 4)",
+   "fb_when": "Enviado en tiempo real por internet (conexión cifrada) mientras eliges el juego en línea y te emparejas o juegas",
+   "fb_why": "Emparejamiento, sincronización en tiempo real, liquidación de resultados, clasificaciones, prevención de fraude",
+   "fb_keep": "El perfil, la puntuación y los datos de partidas se conservan en el proyecto de Firebase de TeamCP mientras sean necesarios para las funciones en línea y la prevención de fraude, y se eliminan si lo solicitas (sección 9). Firebase indica que conserva las direcciones IP de los registros de autenticación unas semanas, y las direcciones IP y agentes de usuario de la base de datos unos días.",
+   "fb_basis": "Artículo 28-8(1)(iii)(a) de la PIPA — se considera un encargo y almacenamiento necesarios para ofrecer las partidas en línea que eliges, y los detalles de la transferencia se publican en esta política",
+   "fb_refuse": "Si no usas el juego en línea, no se envía nada. En ese caso no podrás usar las partidas en línea ni las clasificaciones, pero puedes seguir jugando contra la IA y los rompecabezas. Puedes pedir que se elimine la información guardada mediante el contacto indicado abajo.",
+   "dom": "Los siguientes tratamientos se realizan en Corea y no son transferencias internacionales.",
+   "dom_report": "<strong>Informes de error</strong>: los informes que envías tú se guardan en el servidor de informes gestionado por TeamCP (alojamiento web: Cafe24, República de Corea) y no se transfieren al extranjero.",
+   "dom_os": "<strong>Pagos integrados de ONE store (versión de ONE store)</strong>: los pagos los procesa ONE store Co., Ltd. (República de Corea) y este juego no transfiere información de pago al extranjero."
+  },
+  "pt-br": {
+   "h": "Aviso detalhado de transferências internacionais (adicionado em 23 de novembro de 2026)",
+   "intro": "Conforme os artigos 28-8 e 30 da Lei de Proteção de Informações Pessoais da Coreia (PIPA), informamos, para cada tratamento deste jogo, quando informações pessoais são transferidas para fora da Coreia. As informações abaixo são enviadas diretamente do seu dispositivo a cada provedor, sem passar por servidores operados pela TeamCP. Os dados dos provedores se baseiam nas políticas publicadas por cada um.",
+   "L": [
+    "Destinatário e contato",
+    "Países de destino",
+    "Dados transferidos",
+    "Quando e como",
+    "Finalidade",
+    "Período de retenção",
+    "Base legal",
+    "Como recusar e efeitos"
+   ],
+   "ads_t": "Anúncios — Unity LevelPlay, Unity Ads, ironSource Ads",
+   "u_who": "Unity Technologies (Unity Technologies S.F.) — operadora do Unity LevelPlay, Unity Ads e ironSource Ads<br>Contato: <a href=\"mailto:DPO@unity3d.com\">DPO@unity3d.com</a> · 116 New Montgomery Street, Suite 200, San Francisco, CA 94105, United States",
+   "u_country": "Estados Unidos e países onde a Unity tem instalações (incluindo Israel, sede da ironSource) e onde ficam os data centers dos prestadores de serviço usados pela Unity (como o Google Cloud Platform), conforme a política de privacidade da Unity para jogadores e usuários de apps",
+   "u_items": "Identificadores de publicidade (ID de publicidade do Google, ID do conjunto de apps etc., na medida permitida pelas configurações do dispositivo), endereço IP e localização aproximada derivada dele, modelo do dispositivo, sistema operacional, versão do app, idioma, informações de rede e informações de solicitação, impressão, clique, visualização completa, erro e diagnóstico de anúncios (detalhes na seção de anúncios desta política)",
+   "u_when": "Sempre que o SDK de anúncios é inicializado ou solicita, exibe ou mede um anúncio enquanto o app está em uso, enviado diretamente do seu dispositivo aos servidores da Unity pela internet (conexão criptografada)",
+   "u_why": "Mediação e entrega de anúncios, controle de frequência, medição de desempenho, prevenção de fraude, diagnóstico de erros",
+   "u_keep": "A Unity informa que mantém os dados pelo tempo necessário às finalidades do tratamento e que pode mantê-los por mais tempo quando necessário para obrigações legais ou para disputas e investigações (seção 10 da política da Unity, “Retention”). Como a Unity não publica um prazo fixo para dados gerais de anúncios, esta política não indica um prazo próprio.",
+   "u_basis": "Artigo 28-8(1)(iii)(a) da PIPA — considerado terceirização e armazenamento necessários para cumprir o contrato de oferta de um jogo gratuito (com anúncios), com os detalhes da transferência publicados nesta política",
+   "u_refuse": "Se você desligar a conexão com a internet, não há solicitações de anúncios nem transferências. Se excluir o ID de publicidade nas configurações do Android, ele não é enviado. Se não quiser nenhuma transferência, você pode parar de usar e desinstalar o app; nesse caso, não poderá usar os anúncios nem suas recompensas. Para acessar ou excluir informações já transferidas, contate a Unity (DPO@unity3d.com) ou use o ícone de privacidade do anúncio.",
+   "g_who": "Google LLC<br>Contato: <a href=\"mailto:googlekrsupport@google.com\">googlekrsupport@google.com</a> · Representante na Coreia: Google Korea LLC (22º andar, 152 Teheran-ro, Gangnam-gu, Seul · +82-2-722-7778 · data-access-requests@google.com), conforme as “Informações adicionais de privacidade para residentes na Coreia” do Google",
+   "g_country": "Data centers do Google fora da Coreia (como os Estados Unidos). Veja onde ficam em <a href=\"https://www.google.com/about/datacenters/locations/\">locais dos data centers do Google</a>.",
+   "g_when": "Enviado ao Google pela rede (conexão criptografada) ao mesmo tempo em que é coletado, quando o recurso é usado (segundo o Google)",
+   "g_keep_pgs": "Os dados da Conta do Google e do Play Games são mantidos até você excluí-los ou pelo período definido pelo Google (“Retenção das suas informações” na Política de Privacidade do Google).",
+   "g_keep_backup": "Os dados de backup da Conta do Google são mantidos até você excluí-los ou pelo período definido pelo Google (“Retenção das suas informações” na Política de Privacidade do Google).",
+   "g_basis_pgs": "Artigo 28-8(1)(iii)(a) da PIPA — considerado terceirização e armazenamento necessários para oferecer os recursos vinculados ao jogo que você escolhe, com os detalhes da transferência publicados nesta política",
+   "g_basis_pgs_backup": " · o backup automático do Android depende das configurações de backup do seu dispositivo e da Conta do Google",
+   "g_basis_backup": "Artigo 28-8(1)(iii)(a) da PIPA — esta política informa que o app permite o backup automático do Android e os detalhes da transferência; se o backup ocorre de fato depende das configurações de backup do seu dispositivo e da Conta do Google",
+   "backup_item": "Backup automático do Android: se o backup estiver ativado no dispositivo, o Android envia os dados salvos e as configurações deste app para o espaço de backup da sua Conta do Google (nada é enviado se você desativá-lo).",
+   "backup_why": "Backup e restauração do dispositivo",
+   "backup_refuse": "Você pode desativar ou excluir o backup em Configurações do Android > Google > Backup; nesse caso, os dados não serão restaurados automaticamente ao reinstalar ou trocar de dispositivo.",
+   "pgs_label": "Google Play Games: ",
+   "pgs_t": "Google Play Games",
+   "backup_t": "Backup automático do Android",
+   "pgs_why_default": "Login e recursos do Play Games, como conquistas e placares",
+   "fb_t": "Partidas on-line 1 contra 1 — Google Firebase (autenticação anônima, Realtime Database)",
+   "fb_who": "Google LLC (Firebase) — <a href=\"https://firebase.google.com/support/troubleshooter/contact\">suporte do Firebase</a> · <a href=\"mailto:googlekrsupport@google.com\">googlekrsupport@google.com</a> · Representante na Coreia: Google Korea LLC (igual ao item do Google acima)",
+   "fb_country": "Autenticação anônima: Estados Unidos (segundo o Firebase, o Authentication é processado apenas em data centers dos EUA) · Banco de dados das partidas: Singapura (local do Realtime Database usado pelo app: asia-southeast1)",
+   "fb_items": "UID anônimo, nome de exibição, gato escolhido, pontuação Elo, nível, vitórias, derrotas, empates e ranking, status de pareamento, identificador da sala, coordenadas das jogadas, status de conexão, resultados das partidas e horários de processamento (igual à seção 4)",
+   "fb_when": "Enviado em tempo real pela internet (conexão criptografada) enquanto você escolhe jogar on-line e é pareado ou joga",
+   "fb_why": "Pareamento, sincronização em tempo real, apuração de resultados, rankings, prevenção de fraude",
+   "fb_keep": "Perfil, pontuação e dados das partidas são mantidos no projeto Firebase da TeamCP pelo tempo necessário para os recursos on-line e a prevenção de fraude, e excluídos mediante pedido (seção 9). O Firebase informa que mantém endereços IP dos registros de autenticação por algumas semanas, e endereços IP e user agents do banco de dados por alguns dias.",
+   "fb_basis": "Artigo 28-8(1)(iii)(a) da PIPA — considerado terceirização e armazenamento necessários para oferecer as partidas on-line que você escolhe, com os detalhes da transferência publicados nesta política",
+   "fb_refuse": "Nada é enviado se você não usar o jogo on-line. Nesse caso, não poderá usar partidas on-line nem rankings, mas pode continuar jogando contra a IA e os quebra-cabeças. Você pode pedir a exclusão das informações armazenadas pelo contato abaixo.",
+   "dom": "Os tratamentos a seguir ocorrem na Coreia e não são transferências internacionais.",
+   "dom_report": "<strong>Relatórios de problema</strong>: os relatórios que você mesmo envia são armazenados no servidor de relatórios operado pela TeamCP (hospedagem: Cafe24, República da Coreia) e não são transferidos para o exterior.",
+   "dom_os": "<strong>Pagamentos no app da ONE store (versão ONE store)</strong>: os pagamentos são processados pela ONE store Co., Ltd. (República da Coreia), e este jogo não transfere informações de pagamento para o exterior."
+  },
+  "zh-tw": {
+   "h": "國外移轉詳細告知（2026 年 11 月 23 日新增）",
+   "intro": "依韓國《個人資訊保護法》第 28 條之 8 及第 30 條，逐項告知本遊戲中個人資訊移轉至國外的處理。下列資訊不經 TeamCP 營運的伺服器，而是從您的裝置直接傳送給各業者。業者資訊依各業者公開的政策填寫。",
+   "L": [
+    "接收者與聯絡方式",
+    "移轉國家",
+    "移轉項目",
+    "移轉時間與方式",
+    "移轉目的",
+    "保存與使用期間",
+    "移轉依據",
+    "拒絕方式與影響"
+   ],
+   "ads_t": "廣告 — Unity LevelPlay・Unity Ads・ironSource Ads",
+   "u_who": "Unity Technologies（Unity Technologies S.F.）— Unity LevelPlay・Unity Ads・ironSource Ads 營運公司<br>聯絡方式：<a href=\"mailto:DPO@unity3d.com\">DPO@unity3d.com</a> · 116 New Montgomery Street, Suite 200, San Francisco, CA 94105, United States",
+   "u_country": "美國，以及 Unity 設有設施的國家（包括 ironSource 總部所在的以色列）與 Unity 使用之服務供應商（如 Google Cloud Platform）資料中心所在的國家 — 依 Unity 遊戲玩家與 App 使用者隱私權政策的說明",
+   "u_items": "廣告識別碼（Google 廣告 ID、應用程式集 ID 等，在裝置設定允許的範圍內）、IP 位址及據此推估的大略位置、裝置型號・作業系統・App 版本・語言・網路資訊、廣告請求・曝光・點擊・觀看完成・錯誤・診斷資訊（詳見本政策的廣告項目）",
+   "u_when": "App 執行中廣告 SDK 初始化，或每次請求・顯示・衡量廣告時，從您的裝置透過網際網路（加密連線）直接傳送至 Unity 伺服器",
+   "u_why": "廣告中介與投放、曝光頻率管理、成效衡量、防止不當使用、錯誤診斷",
+   "u_keep": "Unity 表示會在處理目的所需期間內保存，且在法律義務或因應爭議・調查所需時可能保存更久（Unity 政策第 10 節「Retention」）。由於 Unity 未公開一般廣告資訊的確定保存期間，本政策不另行記載期間。",
+   "u_basis": "韓國《個人資訊保護法》第 28 條之 8 第 1 項第 3 款第 1 目 — 視為履行免費（廣告營收）遊戲提供契約所需的委外處理與保管，並於本政策公開移轉事項",
+   "u_refuse": "關閉網際網路連線後，不會發生廣告請求與傳送。在 Android 設定中刪除廣告 ID 後，不會傳送廣告 ID。若不希望有任何傳送，可停止使用並刪除 App，此時將無法使用廣告與廣告獎勵。已移轉資訊的查閱・刪除，可向 Unity（DPO@unity3d.com）或透過廣告中的隱私權圖示提出。",
+   "g_who": "Google LLC<br>聯絡方式：<a href=\"mailto:googlekrsupport@google.com\">googlekrsupport@google.com</a> · 韓國境內代理人：Google Korea 有限公司（首爾特別市江南區德黑蘭路 152 號 22 樓 · +82-2-722-7778 · data-access-requests@google.com）— 依 Google「韓國居民適用的其他隱私權資訊」的說明",
+   "g_country": "位於國外的 Google 資料中心（如美國等）。資料中心位置請參閱 <a href=\"https://www.google.com/about/datacenters/locations/\">Google 資料中心介紹</a>。",
+   "g_when": "該功能運作時，於收集的同時透過網路（加密連線）傳送至 Google（依 Google 說明）",
+   "g_keep_pgs": "Google 帳戶與 Play 遊戲資料會保存到您刪除為止，或保存 Google 規定的期間（Google 隱私權政策的「資訊保留」）。",
+   "g_keep_backup": "Google 帳戶的備份資料會保存到您刪除為止，或保存 Google 規定的期間（Google 隱私權政策的「資訊保留」）。",
+   "g_basis_pgs": "韓國《個人資訊保護法》第 28 條之 8 第 1 項第 3 款第 1 目 — 視為提供您所選遊戲連動功能所需的委外處理與保管，並於本政策公開移轉事項",
+   "g_basis_pgs_backup": " · Android 自動備份依您的裝置與 Google 帳戶備份設定而定",
+   "g_basis_backup": "韓國《個人資訊保護法》第 28 條之 8 第 1 項第 3 款第 1 目 — 於本政策公開本 App 允許 Android 自動備份的事實與移轉事項，實際是否備份依您的裝置與 Google 帳戶備份設定而定",
+   "backup_item": "Android 自動備份：若裝置的備份設定已開啟，Android 會將本 App 的儲存資料與設定傳送到您 Google 帳戶的備份空間（在裝置設定中關閉後即不傳送）。",
+   "backup_why": "裝置備份與還原",
+   "backup_refuse": "可在 Android 設定 > Google > 備份中關閉或刪除備份；此時重新安裝或更換裝置時將不會自動還原。",
+   "pgs_label": "Google Play 遊戲：",
+   "pgs_t": "Google Play 遊戲",
+   "backup_t": "Android 自動備份",
+   "pgs_why_default": "提供登入以及成就、排行榜等 Play 遊戲功能",
+   "fb_t": "線上 1 對 1 對局 — Google Firebase（匿名驗證・Realtime Database）",
+   "fb_who": "Google LLC（Firebase）— <a href=\"https://firebase.google.com/support/troubleshooter/contact\">Firebase 支援</a> · <a href=\"mailto:googlekrsupport@google.com\">googlekrsupport@google.com</a> · 韓國境內代理人：Google Korea 有限公司（同上方 Google 項目）",
+   "fb_country": "匿名驗證：美國（依 Firebase 說明，Authentication 僅在美國資料中心處理）· 對局資料庫：新加坡（App 使用的 Realtime Database 位置為 asia-southeast1）",
+   "fb_items": "匿名 UID、顯示名稱、選擇的貓、Elo 積分・段位・勝敗・和局・排名、配對狀態、房間識別碼、落子座標、連線狀態、對局結果與處理時間（同第 4 節）",
+   "fb_when": "您選擇線上對戰並進行配對・對局期間，透過網際網路（加密連線）即時傳送",
+   "fb_why": "配對、即時同步、結果結算、排名、防止不當使用",
+   "fb_keep": "個人檔案・積分・對局資訊在線上功能與防止不當使用所需期間內保存在 TeamCP 的 Firebase 專案中，您要求時即刪除（第 9 節）。Firebase 表示驗證的 IP 位址紀錄保存數週，資料庫的 IP 位址・使用者代理程式保存數日。",
+   "fb_basis": "韓國《個人資訊保護法》第 28 條之 8 第 1 項第 3 款第 1 目 — 視為提供您所選線上對局所需的委外處理與保管，並於本政策公開移轉事項",
+   "fb_refuse": "不使用線上對戰就不會傳送。此時無法使用線上對局・排名，但仍可繼續使用 AI 對局與謎題。可透過下方聯絡方式要求刪除已保存的資訊。",
+   "dom": "下列處理在韓國境內進行，不屬於上述國外移轉。",
+   "dom_report": "<strong>錯誤回報</strong>：您自行送出的回報儲存在 TeamCP 營運的回報伺服器（網站代管：Cafe24，大韓民國），不會移轉至國外。",
+   "dom_os": "<strong>ONE store 應用程式內付款（ONE store 版）</strong>：付款由 ONE store 株式會社（大韓民國）處理，本遊戲不會將付款資訊移轉至國外。"
+  },
+  "de": {
+   "h": "Ausführlicher Hinweis zu Übermittlungen ins Ausland (ergänzt am 23. November 2026)",
+   "intro": "Nach Artikel 28-8 und 30 des koreanischen Gesetzes zum Schutz personenbezogener Daten (PIPA) nennen wir für jede Verarbeitung in diesem Spiel, bei der personenbezogene Daten ins Ausland übermittelt werden, die Einzelheiten. Die folgenden Daten werden direkt von deinem Gerät an den jeweiligen Anbieter gesendet, ohne über einen von TeamCP betriebenen Server zu laufen. Die Angaben zu den Anbietern beruhen auf deren veröffentlichten Richtlinien.",
+   "L": [
+    "Empfänger und Kontakt",
+    "Zielländer",
+    "Übermittelte Daten",
+    "Zeitpunkt und Art",
+    "Zweck",
+    "Speicherdauer",
+    "Rechtsgrundlage",
+    "Widerspruch und Folgen"
+   ],
+   "ads_t": "Werbung — Unity LevelPlay, Unity Ads, ironSource Ads",
+   "u_who": "Unity Technologies (Unity Technologies S.F.) — Betreiber von Unity LevelPlay, Unity Ads und ironSource Ads<br>Kontakt: <a href=\"mailto:DPO@unity3d.com\">DPO@unity3d.com</a> · 116 New Montgomery Street, Suite 200, San Francisco, CA 94105, United States",
+   "u_country": "Die USA sowie Länder, in denen Unity Einrichtungen hat (einschließlich Israel, Sitz von ironSource), und Länder mit Rechenzentren der von Unity genutzten Dienstleister (etwa Google Cloud Platform) — laut Unitys Datenschutzrichtlinie für Spieler und App-Nutzer",
+   "u_items": "Werbe-IDs (Google-Werbe-ID, App-Set-ID usw., soweit die Geräteeinstellungen es zulassen), IP-Adresse und daraus abgeleiteter ungefährer Standort, Gerätemodell, Betriebssystem, App-Version, Sprache, Netzwerkinformationen sowie Informationen zu Werbeanfragen, Einblendungen, Klicks, vollständigen Ansichten, Fehlern und Diagnose (Einzelheiten im Werbeabschnitt dieser Richtlinie)",
+   "u_when": "Jedes Mal, wenn das Werbe-SDK während der App-Nutzung startet oder eine Anzeige anfordert, zeigt oder misst, direkt von deinem Gerät über das Internet (verschlüsselte Verbindung) an Unitys Server",
+   "u_why": "Vermittlung und Auslieferung von Werbung, Frequenzsteuerung, Erfolgsmessung, Betrugsverhinderung, Fehlerdiagnose",
+   "u_keep": "Unity gibt an, Daten so lange zu speichern, wie es für die Verarbeitungszwecke nötig ist, und sie länger aufzubewahren, wenn rechtliche Pflichten oder Streitigkeiten bzw. Ermittlungen es erfordern (Unity-Richtlinie Abschnitt 10, „Retention“). Da Unity keine feste Speicherdauer für allgemeine Werbedaten veröffentlicht, nennt diese Richtlinie keine eigene Frist.",
+   "u_basis": "PIPA Artikel 28-8 Abs. 1 Nr. 3 Buchst. a — als Auftragsverarbeitung und Speicherung eingestuft, die zur Erfüllung des Vertrags über ein kostenloses (werbefinanziertes) Spiel nötig ist; die Einzelheiten der Übermittlung werden in dieser Richtlinie offengelegt",
+   "u_refuse": "Wenn du die Internetverbindung ausschaltest, finden keine Werbeanfragen und Übermittlungen statt. Wenn du die Werbe-ID in den Android-Einstellungen löschst, wird sie nicht gesendet. Wenn du gar keine Übermittlung möchtest, kannst du die App nicht mehr nutzen und deinstallieren; dann kannst du Werbung und Werbe-Belohnungen nicht nutzen. Auskunft über oder Löschung von bereits übermittelten Daten kannst du bei Unity (DPO@unity3d.com) oder über das Datenschutzsymbol in der Anzeige beantragen.",
+   "g_who": "Google LLC<br>Kontakt: <a href=\"mailto:googlekrsupport@google.com\">googlekrsupport@google.com</a> · Vertreter in Korea: Google Korea LLC (22. Stock, 152 Teheran-ro, Gangnam-gu, Seoul · +82-2-722-7778 · data-access-requests@google.com) — laut Googles „Zusätzliche Datenschutzinformationen für Einwohner Koreas“",
+   "g_country": "Google-Rechenzentren außerhalb Koreas (etwa in den USA). Die Standorte findest du unter <a href=\"https://www.google.com/about/datacenters/locations/\">Standorte der Google-Rechenzentren</a>.",
+   "g_when": "Bei Nutzung der Funktion zeitgleich mit der Erhebung über das Netz (verschlüsselte Verbindung) an Google gesendet (laut Google)",
+   "g_keep_pgs": "Daten des Google-Kontos und von Play Spiele werden gespeichert, bis du sie löschst, oder für den von Google festgelegten Zeitraum („Aufbewahrung deiner Daten“ in Googles Datenschutzerklärung).",
+   "g_keep_backup": "Sicherungsdaten des Google-Kontos werden gespeichert, bis du sie löschst, oder für den von Google festgelegten Zeitraum („Aufbewahrung deiner Daten“ in Googles Datenschutzerklärung).",
+   "g_basis_pgs": "PIPA Artikel 28-8 Abs. 1 Nr. 3 Buchst. a — als Auftragsverarbeitung und Speicherung eingestuft, die für die von dir gewählten spielbezogenen Funktionen nötig ist; die Einzelheiten der Übermittlung werden in dieser Richtlinie offengelegt",
+   "g_basis_pgs_backup": " · die automatische Android-Sicherung richtet sich nach den Sicherungseinstellungen deines Geräts und Google-Kontos",
+   "g_basis_backup": "PIPA Artikel 28-8 Abs. 1 Nr. 3 Buchst. a — diese Richtlinie legt offen, dass die App die automatische Android-Sicherung zulässt, sowie die Einzelheiten der Übermittlung; ob tatsächlich gesichert wird, hängt von den Sicherungseinstellungen deines Geräts und Google-Kontos ab",
+   "backup_item": "Automatische Android-Sicherung: Wenn die Sicherung in den Geräteeinstellungen aktiviert ist, sendet Android die gespeicherten Daten und Einstellungen dieser App an den Sicherungsspeicher deines Google-Kontos (deaktivierst du sie, wird nichts gesendet).",
+   "backup_why": "Sicherung und Wiederherstellung des Geräts",
+   "backup_refuse": "Du kannst die Sicherung unter Android-Einstellungen > Google > Sicherung deaktivieren oder löschen; dann werden Daten bei Neuinstallation oder Gerätewechsel nicht automatisch wiederhergestellt.",
+   "pgs_label": "Google Play Spiele: ",
+   "pgs_t": "Google Play Spiele",
+   "backup_t": "Automatische Android-Sicherung",
+   "pgs_why_default": "Anmeldung und Play-Spiele-Funktionen wie Erfolge und Bestenlisten",
+   "fb_t": "Online-1:1-Partien — Google Firebase (anonyme Authentifizierung, Realtime Database)",
+   "fb_who": "Google LLC (Firebase) — <a href=\"https://firebase.google.com/support/troubleshooter/contact\">Firebase-Support</a> · <a href=\"mailto:googlekrsupport@google.com\">googlekrsupport@google.com</a> · Vertreter in Korea: Google Korea LLC (wie im Google-Eintrag oben)",
+   "fb_country": "Anonyme Authentifizierung: USA (laut Firebase wird Authentication nur in US-Rechenzentren verarbeitet) · Partiedatenbank: Singapur (von der App genutzter Realtime-Database-Standort asia-southeast1)",
+   "fb_items": "Anonyme UID, Anzeigename, gewählte Katze, Elo-Wertung, Stufe, Siege, Niederlagen, Remis und Rangliste, Matchmaking-Status, Raumkennung, Zugkoordinaten, Verbindungsstatus, Partieergebnisse und Verarbeitungszeiten (wie Abschnitt 4)",
+   "fb_when": "In Echtzeit über das Internet (verschlüsselte Verbindung) gesendet, während du Online-Spiel wählst und zugeordnet wirst bzw. spielst",
+   "fb_why": "Matchmaking, Echtzeit-Synchronisierung, Ergebnisabrechnung, Ranglisten, Betrugsverhinderung",
+   "fb_keep": "Profil-, Wertungs- und Partiedaten werden im Firebase-Projekt von TeamCP gespeichert, solange es für die Online-Funktionen und die Betrugsverhinderung nötig ist, und auf Wunsch gelöscht (Abschnitt 9). Firebase gibt an, IP-Adressen in Authentifizierungsprotokollen einige Wochen sowie IP-Adressen und User-Agents der Datenbank einige Tage zu speichern.",
+   "fb_basis": "PIPA Artikel 28-8 Abs. 1 Nr. 3 Buchst. a — als Auftragsverarbeitung und Speicherung eingestuft, die für die von dir gewählten Online-Partien nötig ist; die Einzelheiten der Übermittlung werden in dieser Richtlinie offengelegt",
+   "fb_refuse": "Wenn du das Online-Spiel nicht nutzt, wird nichts gesendet. Dann kannst du keine Online-Partien und Ranglisten nutzen, aber weiter gegen die KI spielen und Rätsel lösen. Die Löschung gespeicherter Daten kannst du über den unten genannten Kontakt beantragen.",
+   "dom": "Die folgenden Verarbeitungen finden in Korea statt und sind keine Übermittlungen ins Ausland.",
+   "dom_report": "<strong>Fehlermeldungen</strong>: Meldungen, die du selbst sendest, werden auf dem von TeamCP betriebenen Meldeserver (Webhosting: Cafe24, Republik Korea) gespeichert und nicht ins Ausland übermittelt.",
+   "dom_os": "<strong>In-App-Zahlungen über ONE store (ONE-store-Version)</strong>: Zahlungen werden von ONE store Co., Ltd. (Republik Korea) abgewickelt; dieses Spiel übermittelt keine Zahlungsdaten ins Ausland."
+  },
+  "fr": {
+   "h": "Avis détaillé sur les transferts à l’étranger (ajouté le 23 novembre 2026)",
+   "intro": "Conformément aux articles 28-8 et 30 de la loi coréenne sur la protection des informations personnelles (PIPA), nous indiquons, pour chaque traitement de ce jeu, les cas où des informations personnelles sont transférées hors de Corée. Les informations ci-dessous sont envoyées directement de votre appareil à chaque prestataire, sans passer par un serveur exploité par TeamCP. Les informations sur les prestataires reposent sur les politiques qu’ils publient.",
+   "L": [
+    "Destinataire et contact",
+    "Pays de destination",
+    "Données transférées",
+    "Moment et modalités",
+    "Finalité",
+    "Durée de conservation",
+    "Base juridique",
+    "Refus et conséquences"
+   ],
+   "ads_t": "Publicités — Unity LevelPlay, Unity Ads, ironSource Ads",
+   "u_who": "Unity Technologies (Unity Technologies S.F.) — exploitant de Unity LevelPlay, Unity Ads et ironSource Ads<br>Contact : <a href=\"mailto:DPO@unity3d.com\">DPO@unity3d.com</a> · 116 New Montgomery Street, Suite 200, San Francisco, CA 94105, United States",
+   "u_country": "Les États-Unis, ainsi que les pays où Unity dispose d’installations (dont Israël, siège d’ironSource) et ceux où se trouvent les centres de données des prestataires utilisés par Unity (comme Google Cloud Platform), selon la politique de confidentialité d’Unity pour les joueurs et utilisateurs d’apps",
+   "u_items": "Identifiants publicitaires (identifiant publicitaire Google, ID de groupe d’apps, etc., dans la mesure permise par les réglages de l’appareil), adresse IP et localisation approximative qui en découle, modèle d’appareil, système d’exploitation, version de l’app, langue, informations réseau, et informations de demande, d’affichage, de clic, de visionnage complet, d’erreur et de diagnostic des publicités (détails dans la section publicités de cette politique)",
+   "u_when": "À chaque initialisation du SDK publicitaire ou à chaque demande, affichage ou mesure d’une publicité pendant l’utilisation de l’app, envoi direct de votre appareil vers les serveurs d’Unity via Internet (connexion chiffrée)",
+   "u_why": "Médiation et diffusion des publicités, gestion de la fréquence, mesure des performances, prévention de la fraude, diagnostic des erreurs",
+   "u_keep": "Unity indique conserver les données le temps nécessaire aux finalités du traitement et pouvoir les conserver plus longtemps en cas d’obligations légales ou pour traiter des litiges ou enquêtes (politique d’Unity, section 10 « Retention »). Unity ne publiant pas de durée fixe pour les données publicitaires générales, cette politique n’indique pas de durée propre.",
+   "u_basis": "Article 28-8, paragraphe 1, 3°, a) de la PIPA — considéré comme une sous-traitance et un stockage nécessaires à l’exécution du contrat de fourniture d’un jeu gratuit (financé par la publicité), les détails du transfert étant publiés dans cette politique",
+   "u_refuse": "Si vous coupez la connexion Internet, aucune demande de publicité ni aucun transfert n’a lieu. Si vous supprimez l’identifiant publicitaire dans les paramètres Android, il n’est pas envoyé. Si vous ne souhaitez aucun transfert, vous pouvez cesser d’utiliser l’app et la désinstaller ; vous ne pourrez alors plus utiliser les publicités ni leurs récompenses. Pour accéder aux informations déjà transférées ou les supprimer, contactez Unity (DPO@unity3d.com) ou utilisez l’icône de confidentialité de la publicité.",
+   "g_who": "Google LLC<br>Contact : <a href=\"mailto:googlekrsupport@google.com\">googlekrsupport@google.com</a> · Représentant en Corée : Google Korea LLC (22e étage, 152 Teheran-ro, Gangnam-gu, Séoul · +82-2-722-7778 · data-access-requests@google.com), selon les « Informations supplémentaires de confidentialité pour les résidents coréens » de Google",
+   "g_country": "Centres de données Google situés hors de Corée (comme aux États-Unis). Consultez leur emplacement sur <a href=\"https://www.google.com/about/datacenters/locations/\">emplacements des centres de données Google</a>.",
+   "g_when": "Envoyé à Google via le réseau (connexion chiffrée) au moment de la collecte, lorsque la fonction est utilisée (selon Google)",
+   "g_keep_pgs": "Les données du compte Google et de Play Jeux sont conservées jusqu’à ce que vous les supprimiez ou pendant la durée fixée par Google (« Conservation de vos informations » dans les Règles de confidentialité de Google).",
+   "g_keep_backup": "Les données de sauvegarde du compte Google sont conservées jusqu’à ce que vous les supprimiez ou pendant la durée fixée par Google (« Conservation de vos informations » dans les Règles de confidentialité de Google).",
+   "g_basis_pgs": "Article 28-8, paragraphe 1, 3°, a) de la PIPA — considéré comme une sous-traitance et un stockage nécessaires pour fournir les fonctions liées au jeu que vous choisissez, les détails du transfert étant publiés dans cette politique",
+   "g_basis_pgs_backup": " · la sauvegarde automatique Android dépend des réglages de sauvegarde de votre appareil et de votre compte Google",
+   "g_basis_backup": "Article 28-8, paragraphe 1, 3°, a) de la PIPA — cette politique indique que l’app autorise la sauvegarde automatique Android ainsi que les détails du transfert ; la sauvegarde effective dépend des réglages de sauvegarde de votre appareil et de votre compte Google",
+   "backup_item": "Sauvegarde automatique Android : si la sauvegarde est activée sur votre appareil, Android envoie les données enregistrées et les réglages de cette app vers l’espace de sauvegarde de votre compte Google (rien n’est envoyé si vous la désactivez).",
+   "backup_why": "Sauvegarde et restauration de l’appareil",
+   "backup_refuse": "Vous pouvez désactiver ou supprimer la sauvegarde dans Paramètres Android > Google > Sauvegarde ; les données ne seront alors pas restaurées automatiquement lors d’une réinstallation ou d’un changement d’appareil.",
+   "pgs_label": "Google Play Jeux : ",
+   "pgs_t": "Google Play Jeux",
+   "backup_t": "Sauvegarde automatique Android",
+   "pgs_why_default": "Connexion et fonctions de Play Jeux comme les succès et les classements",
+   "fb_t": "Parties en ligne en 1 contre 1 — Google Firebase (authentification anonyme, Realtime Database)",
+   "fb_who": "Google LLC (Firebase) — <a href=\"https://firebase.google.com/support/troubleshooter/contact\">assistance Firebase</a> · <a href=\"mailto:googlekrsupport@google.com\">googlekrsupport@google.com</a> · Représentant en Corée : Google Korea LLC (comme pour l’entrée Google ci-dessus)",
+   "fb_country": "Authentification anonyme : États-Unis (selon Firebase, Authentication n’est traité que dans des centres de données américains) · Base de données des parties : Singapour (emplacement de la Realtime Database utilisée par l’app : asia-southeast1)",
+   "fb_items": "UID anonyme, nom affiché, chat choisi, classement Elo, rang, victoires, défaites, nuls et classement, état de l’appariement, identifiant de salle, coordonnées des coups, état de connexion, résultats des parties et heures de traitement (comme à la section 4)",
+   "fb_when": "Envoyé en temps réel via Internet (connexion chiffrée) pendant que vous choisissez de jouer en ligne et êtes apparié ou jouez",
+   "fb_why": "Appariement, synchronisation en temps réel, calcul des résultats, classements, prévention de la fraude",
+   "fb_keep": "Le profil, le classement et les données de parties sont conservés dans le projet Firebase de TeamCP aussi longtemps que nécessaire aux fonctions en ligne et à la prévention de la fraude, et supprimés sur demande (section 9). Firebase indique conserver les adresses IP des journaux d’authentification quelques semaines, et les adresses IP et agents utilisateurs de la base de données quelques jours.",
+   "fb_basis": "Article 28-8, paragraphe 1, 3°, a) de la PIPA — considéré comme une sous-traitance et un stockage nécessaires pour fournir les parties en ligne que vous choisissez, les détails du transfert étant publiés dans cette politique",
+   "fb_refuse": "Rien n’est envoyé si vous n’utilisez pas le jeu en ligne. Vous ne pourrez alors pas utiliser les parties en ligne ni les classements, mais vous pourrez continuer à jouer contre l’IA et aux puzzles. Vous pouvez demander la suppression des informations conservées via le contact ci-dessous.",
+   "dom": "Les traitements suivants ont lieu en Corée et ne constituent pas un transfert à l’étranger.",
+   "dom_report": "<strong>Signalements de problème</strong> : les signalements que vous envoyez vous-même sont enregistrés sur le serveur de signalements exploité par TeamCP (hébergement web : Cafe24, République de Corée) et ne sont pas transférés à l’étranger.",
+   "dom_os": "<strong>Paiements intégrés ONE store (version ONE store)</strong> : les paiements sont traités par ONE store Co., Ltd. (République de Corée), et ce jeu ne transfère pas d’informations de paiement à l’étranger."
+  }
+ },
+ "xferKo": {
+  "date": "2026년 11월 23일",
+  "unity": {
+   "who": "Unity Technologies(Unity Technologies S.F.) — Unity LevelPlay·Unity Ads·ironSource Ads 운영사<br>연락처: <a href=\"mailto:DPO@unity3d.com\">DPO@unity3d.com</a> · 116 New Montgomery Street, Suite 200, San Francisco, CA 94105, United States",
+   "country": "미국, 그리고 Unity의 시설이 있는 국가(ironSource 본사가 있는 이스라엘 포함)와 Unity가 이용하는 서비스 제공자(Google Cloud Platform 등)의 데이터 센터가 있는 국가 — Unity 게임 이용자 개인정보처리방침의 안내",
+   "items": "광고 식별자(Google 광고 ID·앱 세트 ID 등, 기기 설정이 허용하는 범위), IP 주소와 이를 이용한 대략적 위치, 기기 모델·운영체제·앱 버전·언어·네트워크 정보, 광고 요청·노출·클릭·시청 완료·오류·진단 정보(세부는 이 방침의 광고 항목)",
+   "when": "앱 실행 중 광고 SDK가 초기화되거나 광고를 요청·표시·측정할 때마다, 이용자 기기에서 인터넷(암호화 통신)을 통해 Unity 서버로 직접 전송",
+   "why": "광고 중개·송출, 노출 빈도 관리, 성과 측정, 부정 이용 방지, 오류 진단",
+   "keep": "Unity는 처리 목적에 필요한 기간 동안 보관하고, 법령상 의무나 분쟁·수사 대응에 필요한 경우 더 보관할 수 있다고 안내합니다(Unity 방침 10절 “Retention”). Unity가 일반 광고 정보의 확정 보관 기간을 공개하지 않아 이 방침에 기간을 따로 적지 않습니다.",
+   "basis": "「개인정보 보호법」 제28조의8 제1항 제3호 가목 — 무료 게임 제공(광고 기반) 계약의 이행에 필요한 처리위탁·보관으로 보고, 이전 사항을 이 처리방침에 공개",
+   "refuse": "인터넷 연결을 끄면 광고 요청과 전송이 일어나지 않습니다. Android 설정에서 광고 ID를 삭제하면 광고 ID는 전송되지 않습니다. 전송 자체를 원하지 않으면 앱 이용을 중단하고 앱을 삭제할 수 있으며, 이 경우 광고와 광고 보상을 이용할 수 없습니다. 이미 이전된 정보의 열람·삭제는 Unity(DPO@unity3d.com)나 광고의 개인정보 아이콘으로 요청할 수 있습니다."
+  },
+  "google_who": "Google LLC<br>문의: <a href=\"mailto:googlekrsupport@google.com\">googlekrsupport@google.com</a> · 국내대리인: 구글코리아 유한회사(서울특별시 강남구 테헤란로 152, 22층 · 02-722-7778 · data-access-requests@google.com) — Google 「한국 거주자를 위한 개인정보 관련 추가 정보」의 안내",
+  "google_country": "국외에 있는 Google 데이터 센터(미국 등). 데이터 센터 위치는 <a href=\"https://www.google.com/about/datacenters/locations/\">Google 데이터 센터 안내</a>를 참고하세요.",
+  "google_when": "해당 기능이 동작할 때 수집과 동시에 정보통신망(암호화 통신)을 통해 Google로 전송(Google 안내)",
+  "google_keep_pgs": "Google 계정·Play 게임즈 데이터는 이용자가 삭제할 때까지 또는 Google이 정한 기간 동안 보관됩니다(Google 개인정보처리방침의 “정보 유지”).",
+  "google_keep_backup": "Google 계정 백업 데이터는 이용자가 삭제할 때까지 또는 Google이 정한 기간 동안 보관됩니다(Google 개인정보처리방침의 “정보 유지”).",
+  "basis_pgs": "「개인정보 보호법」 제28조의8 제1항 제3호 가목 — 이용자가 선택한 게임 연동 기능 제공에 필요한 처리위탁·보관으로 보고, 이전 사항을 이 처리방침에 공개",
+  "backup_item": "Android 자동 백업: 기기의 백업 설정이 켜져 있으면 Android가 이 앱의 저장 데이터와 설정을 이용자의 Google 계정 백업 공간으로 보냅니다(기기 설정에서 끄면 전송되지 않음).",
+  "intro": "「개인정보 보호법」 제28조의8 및 제30조에 따라 이 게임에서 개인정보가 국외로 이전되는 처리를 처리별로 알립니다. 아래 정보는 TeamCP가 운영하는 서버를 거치지 않고 이용자 기기에서 각 사업자에게 직접 전송됩니다. 사업자 정보는 각 사업자가 공개한 방침을 기준으로 적었습니다.",
+  "ads_t": "광고 — Unity LevelPlay·Unity Ads·ironSource Ads",
+  "pgs_why_default": "로그인과 업적·순위표 등 Play 게임즈 기능 제공",
+  "backup_why": "기기 백업·복원",
+  "backup_refuse": "Android 설정 > Google > 백업에서 백업을 끄거나 백업을 삭제할 수 있으며, 이 경우 재설치·기기 변경 때 자동 복원이 되지 않습니다.",
+  "basis_pgs_backup": " · Android 자동 백업은 이용자의 기기·Google 계정 백업 설정에 따름",
+  "basis_backup": "「개인정보 보호법」 제28조의8 제1항 제3호 가목 — 이 앱이 Android 자동 백업을 허용하는 사실과 이전 사항을 이 처리방침에 공개하며, 실제 백업 여부는 이용자의 기기·Google 계정 백업 설정에 따름",
+  "fb_t": "온라인 1:1 대국 — Google Firebase(익명 인증·Realtime Database)",
+  "fb": [
+   "Google LLC(Firebase) — <a href=\"https://firebase.google.com/support/troubleshooter/contact\">Firebase 지원 문의</a> · <a href=\"mailto:googlekrsupport@google.com\">googlekrsupport@google.com</a> · 국내대리인 구글코리아 유한회사(위 Google 항목과 같음)",
+   "익명 인증: 미국(Firebase 안내: Authentication은 미국 데이터 센터에서만 처리) · 대국 데이터베이스: 싱가포르(앱이 쓰는 Realtime Database 위치 asia-southeast1)",
+   "익명 UID, 표시 이름, 선택한 고양이, Elo 레이팅·티어·승패·무승부·랭킹, 매칭 상태, 방 식별자, 착수 좌표, 접속 상태, 대국 결과와 처리 시각(4절과 같음)",
+   "이용자가 온라인 대전을 선택해 매칭·대국하는 동안 실시간으로 인터넷(암호화 통신)을 통해 전송",
+   "매칭, 실시간 동기화, 결과 정산, 랭킹, 부정 이용 방지",
+   "프로필·레이팅·대국 정보는 온라인 기능과 부정 이용 방지에 필요한 동안 TeamCP의 Firebase 프로젝트에 보관하며 요청하면 삭제합니다(9절). Firebase는 인증의 IP 주소 기록을 몇 주, 데이터베이스의 IP 주소·사용자 에이전트를 며칠 보관한다고 안내합니다.",
+   "「개인정보 보호법」 제28조의8 제1항 제3호 가목 — 이용자가 선택한 온라인 대국 제공에 필요한 처리위탁·보관으로 보고, 이전 사항을 이 처리방침에 공개",
+   "온라인 대전을 이용하지 않으면 전송되지 않습니다. 이 경우 온라인 대국·랭킹을 이용할 수 없으며 AI 대국과 퍼즐은 계속 이용할 수 있습니다. 보관된 정보의 삭제는 아래 문의처로 요청할 수 있습니다."
+  ],
+  "dom": "다음 처리는 국내에서 이루어지며 위 국외 이전에 해당하지 않습니다.",
+  "dom_report": "<strong>오류 신고</strong>: 이용자가 직접 보내는 신고는 TeamCP가 운영하는 신고 서버(웹 호스팅: Cafe24, 대한민국)에 저장되며 국외로 이전하지 않습니다.",
+  "dom_os": "<strong>원스토어 인앱 결제(원스토어판)</strong>: 결제는 원스토어 주식회사(대한민국)가 처리하며, 이 게임은 결제 정보를 국외로 이전하지 않습니다."
+ },
+ "pgs": {
+  "cat-detective": {
+   "en": [
+    "(Google Play version only) Play Games sign-in status and player identifier, and, if you choose Google saving, cumulative progress snapshots (completed stages, records, daily, collection and practice progress, point use and reward records)",
+    "Google sign-in and optional cloud save and load",
+    "If you cancel sign-in or sign out in settings, you can play with on-device progress without Play Games transfers. In that case you cannot save and load across devices. Saved data can be deleted with the cloud-save delete option in the app settings or by deleting your Google Play Games data."
+   ],
+   "ja": [
+    "（Google Play版のみ）Play ゲームの認証状態とプレイヤー識別子、Google保存を選んだ場合の累積進行スナップショット（完了した段階・記録・デイリー・図鑑・練習の進行、ポイント使用・報酬の記録）",
+    "Googleログイン、任意のクラウド保存・読み込み",
+    "ログインをキャンセルするか設定でログアウトすると、Play ゲームへの送信なしに端末の進行でプレイできます。その場合、端末間の保存・読み込みは利用できません。保存されたデータは、アプリ設定のクラウド保存の削除やGoogle Play ゲームのデータ削除で消去できます。"
+   ],
+   "es": [
+    "(Solo versión de Google Play) Estado de inicio de sesión de Play Juegos e identificador del jugador y, si eliges guardar en Google, instantáneas acumuladas del progreso (fases completadas, registros, retos diarios, colección y progreso de práctica, uso de puntos y registros de recompensas)",
+    "Inicio de sesión de Google y guardado y carga opcionales en la nube",
+    "Si cancelas el inicio de sesión o cierras sesión en los ajustes, puedes jugar con el progreso del dispositivo sin transferencias a Play Juegos. En ese caso no podrás guardar ni cargar entre dispositivos. Los datos guardados se pueden borrar con la opción de eliminar el guardado en la nube de los ajustes de la app o eliminando tus datos de Google Play Juegos."
+   ],
+   "fr": [
+    "(Version Google Play uniquement) État de connexion Play Jeux et identifiant du joueur et, si vous choisissez la sauvegarde Google, instantanés cumulés de progression (étapes terminées, records, défis quotidiens, collection et progression des entraînements, utilisation de points et récompenses)",
+    "Connexion Google, sauvegarde et chargement facultatifs dans le cloud",
+    "Si vous annulez la connexion ou vous déconnectez dans les réglages, vous pouvez jouer avec la progression enregistrée sur l’appareil sans transfert vers Play Jeux. Vous ne pourrez alors pas sauvegarder ni charger entre appareils. Les données enregistrées peuvent être supprimées via l’option de suppression de la sauvegarde cloud dans les réglages de l’app ou en supprimant vos données Google Play Jeux."
+   ],
+   "de": [
+    "(Nur Google-Play-Version) Anmeldestatus bei Play Spiele und Spieler-ID sowie, wenn du das Speichern bei Google wählst, kumulierte Fortschritts-Snapshots (abgeschlossene Stufen, Rekorde, Tagesaufgaben, Sammlung und Übungsfortschritt, Punktenutzung und Belohnungen)",
+    "Google-Anmeldung, optionales Speichern und Laden in der Cloud",
+    "Wenn du die Anmeldung abbrichst oder dich in den Einstellungen abmeldest, kannst du mit dem Fortschritt auf dem Gerät ohne Übermittlung an Play Spiele spielen. Dann kannst du nicht geräteübergreifend speichern und laden. Gespeicherte Daten kannst du über die Option zum Löschen des Cloud-Speicherstands in den App-Einstellungen oder durch Löschen deiner Google-Play-Spiele-Daten entfernen."
+   ]
+  },
+  "cat-gomoku": {
+   "en": [
+    "Sign-in status, player identifier and display name, saved game (match record, puzzle and challenge progress, currency, cat and appearance unlocks, settings), and achievement unlocks and incremental progress",
+    "Optional sign-in, save and restore across devices, achievements",
+    "Nothing is sent if you do not connect Google Play Games, and you can still use the core game such as AI matches and puzzles. In that case you cannot save and restore across devices or use achievements. Saved data can be deleted with the Google Play data delete option in the app settings or through your Google account data controls."
+   ],
+   "ja": [
+    "認証状態、プレイヤー識別子と表示名、保存されたゲーム（戦績、パズル・チャレンジの進行度、通貨、猫・外見の解放、設定）と実績の達成・段階的な進行",
+    "任意のログイン、端末間の保存・復元、実績",
+    "Google Play ゲームに接続しなければ送信されず、AI対局・パズルなど基本のゲームは利用できます。その場合、端末間の保存・復元と実績は利用できません。保存されたデータは、アプリ設定のGoogle Playデータの削除やGoogleアカウントのデータ管理で消去できます。"
+   ],
+   "es": [
+    "Estado de inicio de sesión, identificador y nombre visible del jugador, partida guardada (historial, progreso de puzles y desafíos, moneda, gatos y aspectos desbloqueados, ajustes), y logros desbloqueados y su progreso",
+    "Inicio de sesión opcional, guardado y restauración entre dispositivos, logros",
+    "Si no conectas Google Play Juegos no se envía nada, y puedes seguir usando el juego básico, como las partidas contra la IA y los puzles. En ese caso no podrás guardar ni restaurar entre dispositivos ni usar logros. Los datos guardados se pueden borrar con la opción de eliminar datos de Google Play de los ajustes de la app o desde la gestión de datos de tu cuenta de Google."
+   ],
+   "pt-br": [
+    "Status de login, identificador e nome de exibição do jogador, jogo salvo (histórico, progresso de quebra-cabeças e desafios, moedas, gatos e visuais desbloqueados, configurações) e conquistas desbloqueadas e seu progresso",
+    "Login opcional, salvar e restaurar entre dispositivos, conquistas",
+    "Nada é enviado se você não conectar o Google Play Games, e você ainda pode usar o jogo básico, como partidas contra a IA e quebra-cabeças. Nesse caso, não poderá salvar e restaurar entre dispositivos nem usar conquistas. Os dados salvos podem ser excluídos pela opção de excluir dados do Google Play nas configurações do app ou pelo gerenciamento de dados da Conta do Google."
+   ],
+   "zh-tw": [
+    "驗證狀態、玩家識別碼與顯示名稱、已儲存的遊戲（戰績、謎題・挑戰進度、貨幣、貓咪・外觀解鎖、設定），以及成就達成與累進進度",
+    "選擇性登入、跨裝置儲存・還原、成就",
+    "不連結 Google Play 遊戲就不會傳送，仍可使用 AI 對局、謎題等基本遊戲。此時無法跨裝置儲存・還原及使用成就。已儲存的資料可透過 App 設定中的刪除 Google Play 資料，或 Google 帳戶的資料管理刪除。"
+   ],
+   "de": [
+    "Anmeldestatus, Spieler-ID und Anzeigename, gespeichertes Spiel (Partiebilanz, Fortschritt bei Rätseln und Herausforderungen, Währung, freigeschaltete Katzen und Aussehen, Einstellungen) sowie freigeschaltete Erfolge und deren Fortschritt",
+    "Optionale Anmeldung, geräteübergreifendes Speichern und Wiederherstellen, Erfolge",
+    "Wenn du Google Play Spiele nicht verbindest, wird nichts gesendet, und du kannst das Grundspiel wie KI-Partien und Rätsel weiter nutzen. Dann kannst du nicht geräteübergreifend speichern und wiederherstellen und keine Erfolge nutzen. Gespeicherte Daten kannst du über die Option zum Löschen der Google-Play-Daten in den App-Einstellungen oder über die Datenverwaltung deines Google-Kontos löschen."
+   ],
+   "fr": [
+    "État de connexion, identifiant et nom affiché du joueur, partie enregistrée (historique, progression des puzzles et défis, monnaie, chats et apparences débloqués, réglages), ainsi que succès débloqués et leur progression",
+    "Connexion facultative, sauvegarde et restauration entre appareils, succès",
+    "Rien n’est envoyé si vous ne connectez pas Google Play Jeux, et vous pouvez toujours utiliser le jeu de base comme les parties contre l’IA et les puzzles. Vous ne pourrez alors pas sauvegarder ni restaurer entre appareils ni utiliser les succès. Les données enregistrées peuvent être supprimées via l’option de suppression des données Google Play dans les réglages de l’app ou via la gestion des données de votre compte Google."
+   ]
+  },
+  "cat-pirates": {
+   "en": [
+    "Play Games player ID, gamer nickname and profile image, achievement records, leaderboard scores (Endless Night best record and total successful missions)",
+    null,
+    "Nothing is sent if you do not sign in to Play Games, and you can use the whole game. In that case no achievements or leaderboard records are kept."
+   ]
+  },
+  "nyang-merge": {
+   "en": [
+    "Play Games profile name (player name) and leaderboard best score",
+    null,
+    "Nothing is sent if you do not sign in to Play Games, and you can use the whole game. In that case no leaderboard records are kept."
+   ]
+  },
+  "dead-frequency": {
+   "en": [
+    "Play Games player ID, profile (gamer name and avatar), and unlocked achievements",
+    "Providing achievements",
+    "Nothing is sent if you do not sign in to Play Games, and you can use the whole game. In that case Play Games achievements are not recorded (unlock records stay on the device)."
+   ],
+   "ja": [
+    "Play ゲームのプレイヤーID、プロフィール（ゲーマー名・アバター）、達成した実績の記録",
+    "実績の提供",
+    "Play ゲームにログインしなければ送信されず、ゲーム全体を利用できます。その場合、Play ゲームの実績は記録されません（達成記録は端末に保存）。"
+   ],
+   "es": [
+    "ID de jugador de Play Juegos, perfil (nombre de jugador y avatar) y registro de logros desbloqueados",
+    "Ofrecer logros",
+    "Si no inicias sesión en Play Juegos no se envía nada, y puedes usar todo el juego. En ese caso los logros de Play Juegos no se registran (el registro de logros se guarda en el dispositivo)."
+   ],
+   "fr": [
+    "ID de joueur Play Jeux, profil (nom de joueur et avatar) et succès débloqués",
+    "Fournir les succès",
+    "Rien n’est envoyé si vous ne vous connectez pas à Play Jeux, et vous pouvez utiliser tout le jeu. Les succès Play Jeux ne sont alors pas enregistrés (les succès débloqués restent sur l’appareil)."
+   ],
+   "de": [
+    "Spieler-ID bei Play Spiele, Profil (Spielername und Avatar) und freigeschaltete Erfolge",
+    "Bereitstellung von Erfolgen",
+    "Wenn du dich nicht bei Play Spiele anmeldest, wird nichts gesendet, und du kannst das ganze Spiel nutzen. Dann werden keine Play-Spiele-Erfolge erfasst (die Freischaltungen bleiben auf dem Gerät gespeichert)."
+   ]
+  },
+  "indie-dev-tycoon": {
+   "en": [
+    "Play Games player ID, gamer nickname and profile image, achievement records, the “best score per run” leaderboard, and, if you sign in, cloud save files (your company in progress and records across runs)",
+    "Sign-in, achievements and leaderboards, cloud save and load",
+    "Nothing is sent if you do not sign in to Play Games, and you can use the whole game. In that case you cannot use achievements, leaderboards or cloud saves. Saved cloud data can be deleted under Settings > Google Play Games > Delete saved data."
+   ],
+   "ja": [
+    "Play ゲームのプレイヤーID、ゲーマーニックネーム・プロフィール画像、実績の達成記録、リーダーボード「周回最高スコア」、ログインした場合のクラウド保存ファイル（進行中の会社、周回間の記録）",
+    "ログイン、実績・リーダーボード、クラウド保存・読み込み",
+    "Play ゲームにログインしなければ送信されず、ゲーム全体を利用できます。その場合、実績・リーダーボード・クラウド保存は利用できません。保存されたクラウドデータは、設定 > Google Play ゲーム > 保存データの削除で消去できます。"
+   ],
+   "es": [
+    "ID de jugador de Play Juegos, apodo e imagen de perfil, registro de logros, la clasificación «mejor puntuación por partida» y, si inicias sesión, archivos guardados en la nube (tu empresa en curso y registros entre partidas)",
+    "Inicio de sesión, logros y clasificaciones, guardado y carga en la nube",
+    "Si no inicias sesión en Play Juegos no se envía nada, y puedes usar todo el juego. En ese caso no podrás usar logros, clasificaciones ni guardado en la nube. Los datos guardados en la nube se pueden borrar en Ajustes > Google Play Juegos > Eliminar datos guardados."
+   ],
+   "fr": [
+    "ID de joueur Play Jeux, pseudo et image de profil, succès débloqués, le classement « meilleur score par partie » et, si vous vous connectez, fichiers de sauvegarde cloud (votre entreprise en cours et les records entre parties)",
+    "Connexion, succès et classements, sauvegarde et chargement dans le cloud",
+    "Rien n’est envoyé si vous ne vous connectez pas à Play Jeux, et vous pouvez utiliser tout le jeu. Vous ne pourrez alors pas utiliser les succès, classements ni la sauvegarde cloud. Les données cloud enregistrées peuvent être supprimées dans Réglages > Google Play Jeux > Supprimer les données enregistrées."
+   ],
+   "de": [
+    "Spieler-ID bei Play Spiele, Spieler-Spitzname und Profilbild, Erfolge, die Bestenliste „Bestwert pro Durchgang“ sowie, wenn du dich anmeldest, Cloud-Speicherdateien (laufende Firma und Rekorde über Durchgänge hinweg)",
+    "Anmeldung, Erfolge und Bestenlisten, Speichern und Laden in der Cloud",
+    "Wenn du dich nicht bei Play Spiele anmeldest, wird nichts gesendet, und du kannst das ganze Spiel nutzen. Dann kannst du keine Erfolge, Bestenlisten oder Cloud-Speicherstände nutzen. Gespeicherte Cloud-Daten kannst du unter Einstellungen > Google Play Spiele > Gespeicherte Daten löschen entfernen."
+   ]
+  }
+ },
+ "officer": {
+  "ko": [
+   [
+    "개인정보 보호책임자",
+    "TeamCP 운영자"
+   ],
+   [
+    "개인정보 보호업무 및 고충처리 부서",
+    "TeamCP 개인정보 보호 담당"
+   ],
+   [
+    "연락처",
+    "이메일 {mail}"
+   ]
+  ],
+  "en": [
+   [
+    "Privacy officer",
+    "TeamCP operator"
+   ],
+   [
+    "Department for privacy matters and complaints",
+    "TeamCP Privacy Office"
+   ],
+   [
+    "Contact",
+    "Email {mail}"
+   ]
+  ],
+  "ja": [
+   [
+    "個人情報保護責任者",
+    "TeamCP 運営者"
+   ],
+   [
+    "個人情報保護業務および苦情処理の担当部署",
+    "TeamCP 個人情報保護担当"
+   ],
+   [
+    "連絡先",
+    "メール {mail}"
+   ]
+  ],
+  "es": [
+   [
+    "Responsable de privacidad",
+    "Operador de TeamCP"
+   ],
+   [
+    "Área de protección de datos y reclamaciones",
+    "Área de protección de datos de TeamCP"
+   ],
+   [
+    "Contacto",
+    "Correo electrónico {mail}"
+   ]
+  ],
+  "pt-br": [
+   [
+    "Responsável pela privacidade",
+    "Operador da TeamCP"
+   ],
+   [
+    "Setor de proteção de dados e reclamações",
+    "Setor de proteção de dados da TeamCP"
+   ],
+   [
+    "Contato",
+    "E-mail {mail}"
+   ]
+  ],
+  "zh-tw": [
+   [
+    "個人資訊保護負責人",
+    "TeamCP 營運者"
+   ],
+   [
+    "個人資訊保護業務及申訴處理部門",
+    "TeamCP 個人資訊保護窗口"
+   ],
+   [
+    "聯絡方式",
+    "電子郵件 {mail}"
+   ]
+  ],
+  "de": [
+   [
+    "Datenschutzverantwortlicher",
+    "Betreiber von TeamCP"
+   ],
+   [
+    "Stelle für Datenschutz und Beschwerden",
+    "TeamCP Datenschutzstelle"
+   ],
+   [
+    "Kontakt",
+    "E-Mail {mail}"
+   ]
+  ],
+  "fr": [
+   [
+    "Responsable de la protection des données",
+    "Exploitant de TeamCP"
+   ],
+   [
+    "Service chargé de la protection des données et des réclamations",
+    "Service protection des données de TeamCP"
+   ],
+   [
+    "Contact",
+    "E-mail {mail}"
+   ]
+  ]
+ },
+ "officerNote": {
+  "ko": "개인정보 보호 관련 문의, 불만 처리, 피해 구제는 위 연락처로 요청할 수 있으며, TeamCP는 지체 없이 답변·처리합니다.",
+  "en": "You can contact us at the address above about privacy questions, complaints, or remedies, and TeamCP will respond and handle them without delay.",
+  "ja": "個人情報保護に関するお問い合わせ、苦情処理、被害救済は上記の連絡先にご連絡ください。TeamCPは遅滞なく回答・対応します。",
+  "es": "Puedes escribir a la dirección anterior para consultas de privacidad, reclamaciones o reparación de daños; TeamCP responderá y las atenderá sin demora.",
+  "pt-br": "Você pode escrever para o endereço acima sobre dúvidas de privacidade, reclamações ou reparação de danos; a TeamCP responderá e tratará o pedido sem demora.",
+  "zh-tw": "個人資訊保護相關詢問、申訴處理及損害救濟，可透過上方聯絡方式提出，TeamCP 將立即回覆並處理。",
+  "de": "Fragen zum Datenschutz, Beschwerden oder Anliegen zur Abhilfe kannst du an die obige Adresse richten; TeamCP antwortet und bearbeitet sie unverzüglich.",
+  "fr": "Vous pouvez écrire à l’adresse ci-dessus pour toute question relative à la vie privée, réclamation ou demande de réparation ; TeamCP y répondra et la traitera sans délai."
+ },
+ "toc": {
+  "ko": "개인정보 보호법에 따른 추가 고지",
+  "en": "Additional notice under Korea’s PIPA",
+  "ja": "韓国個人情報保護法に基づく追加のお知らせ",
+  "es": "Aviso adicional conforme a la ley coreana",
+  "pt-br": "Aviso adicional conforme a lei coreana",
+  "zh-tw": "依韓國個資法的補充告知",
+  "de": "Zusätzlicher Hinweis nach koreanischem Recht",
+  "fr": "Avis complémentaire au titre de la loi coréenne"
+ },
+ "inserts": {
+  "cat-detective": {
+   "ko": [
+    {
+     "after": "이 안내는 공개 출시 완료를 의미하지 않습니다.</p>",
+     "html": "\n    <p class=\"version\">적용 판본(2026년 11월 23일 기준): Google Play판 1.0.1(빌드 22, com.teamcp.catdetective), 원스토어판 1.0.0(빌드 1, com.teamcp.catdetective.onestore). 두 판본의 광고 구성과 광고 선택(새 설치 비맞춤형 기본값)은 아래 4·5절과 같습니다. 원스토어판에는 Google Play 게임즈 로그인·클라우드 저장(3절)이 없고, 원스토어 인앱 결제(4-1)가 있습니다.</p>"
+    },
+    {
+     "after": "TeamCP가 게임 행동 분석 서버를 운영하는 것은 아닙니다.</p>",
+     "html": "\n      <h3 id=\"onestore-iap\">4-1. 원스토어판 인앱 결제</h3>\n      <p>원스토어판에는 다음 두 상품이 있습니다. Google Play판에는 결제 기능이 없습니다.</p>\n      <ul>\n        <li><strong>광고 제거</strong>(상품 ID catdetective.remove_ads, 한 번 구매하면 유지되는 비소모성 상품): 배너·전면 광고를 표시하지 않습니다. 이용자가 직접 선택해서 보는 보상 광고는 계속 이용할 수 있습니다.</li>\n        <li><strong>힌트 10개</strong>(상품 ID catdetective.hint_pack_10, 소모성 상품): 구매하면 힌트 10개를 지급하며, 받은 힌트는 이 기기에 보관됩니다.</li>\n      </ul>\n      <p>결제와 결제수단 정보 처리는 원스토어 주식회사가 원스토어 결제 화면에서 수행합니다. 앱은 원스토어 인앱결제 SDK로부터 상품 ID, 주문 번호, 구매 토큰, 구매 상태·구매 확인 여부, 구매 데이터와 서명을 기기에서 받아 서명을 검증하고, 광고 제거는 구매 확인 후 보유 상품 ID를 앱 전용 저장소에 저장하며, 힌트 묶음은 힌트를 지급한 뒤 소비 처리합니다. 상점의 ‘구매 복원’으로 광고 제거 구매를 다시 확인할 수 있습니다. 구매 정보를 TeamCP 서버로 보내지 않으며, 결제·환불 기록의 보관은 원스토어의 정책과 관련 법령을 따릅니다.</p>"
+    },
+    {
+     "after": "관련 문의·삭제 도움이 필요하면 연락해 주세요.</p>",
+     "html": "\n      <p><strong>만 13세 이용자와 맞춤형 광고(2026년 11월 23일 추가)</strong>: 앱은 나이를 묻지 않으며 연령별로 광고 설정을 나누지 않으므로, 만 13세 이용자에게도 모든 이용자와 같은 설정이 적용됩니다. 새 설치는 비맞춤형 광고가 기본값이며 광고 중개 서비스(Unity LevelPlay)에 개인화 동의 거부와 판매·공유 거부 신호를 보냅니다. 맞춤형 광고는 이용자가 설정에서 직접 고를 때만 적용됩니다. 앱은 앱 단위로 ‘어린이 대상 아님’ 신호를 보내며, 이는 개별 이용자의 나이를 확인한 결과가 아닙니다. 앱에는 법정대리인(보호자) 동의를 확인하는 기능이 없으므로, 만 14세 미만 이용자는 맞춤형 광고를 고르지 말고 기본값(비맞춤형)을 유지해 주세요. 이미 맞춤형으로 바꾼 경우 설정에서 비맞춤형으로 되돌릴 수 있고, 보호자는 위 문의처로 설정 변경과 광고 사업자의 삭제 요청 방법을 안내받을 수 있습니다.</p>"
+    }
+   ]
+  }
+ }
+}

@@ -3,7 +3,7 @@
   "title": "Cat Bento Sort Privacy Policy",
   "description": "How Cat Bento Sort stores data on your device, how ads and ad consent work, issue reports, and how to delete data.",
   "back": "Cat Bento Sort game information",
-  "date": "Last updated: November 18, 2026",
+  "date": "Last updated: November 23, 2026",
   "version": "Applies to version 1.0.0. We update this page and its date whenever features or the ad setup change.",
   "summary": "You play without signing up or logging in, and your game records stay on your device. There are no in-app purchases. The ad service (Unity LevelPlay) processes device information and advertising identifiers needed to deliver ads; on first launch the game asks whether you allow personalized ads and does not start the ad SDK before you choose. An issue report is sent to TeamCP's report server only when you send one yourself from Settings.",
   "contents": "Contents",

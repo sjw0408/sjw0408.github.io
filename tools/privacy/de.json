@@ -3,7 +3,7 @@
   "title": "Datenschutzhinweise für Katzendetektiv",
   "description": "Lokaler Fortschritt, optionale Google-Speicherung, Werbeauswahl und Datenlöschung in Katzendetektiv.",
   "back": "Informationen zu Katzendetektiv",
-  "date": "Aktualisiert: 7. September 2026",
+  "date": "Aktualisiert: 23. November 2026",
   "version": "Versionshinweis: 1.0.0, Build 10, führt die automatische Google-Anmeldung und kontextbezogene Werbung als Standard ein, ohne Werbeauswahl beim Start oder neue Option Später entscheiden. Die drei Optionen in Build 9 und bereits gespeicherte Aufschübe werden unten unterschieden. Android-Backup-Ausschlüsse gelten seit Build 9. Dieser Hinweis bedeutet nicht, dass die allgemeine Veröffentlichung abgeschlossen ist.",
   "summary": "Ein eigenes Spielkonto ist nicht erforderlich. Die App versucht beim Start eine Google-Anmeldung; bei Abbruch, Fehler oder offline ist lokales Spielen weiterhin möglich. Cloud-Speicherung bleibt eine gesonderte Wahl. Neue Installationen nutzen standardmäßig kontextbezogene Werbung. Spiel und Ermittlungspunkte funktionieren ohne das Ansehen von Belohnungswerbung.",
   "contents": "Auf dieser Seite",

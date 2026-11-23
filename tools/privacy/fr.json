@@ -3,7 +3,7 @@
   "title": "Politique de confidentialité de Chat Détective",
   "description": "Progression locale, sauvegarde Google facultative, publicité et suppression des données dans Chat Détective.",
   "back": "Informations sur Chat Détective",
-  "date": "Mise à jour : 7 septembre 2026",
+  "date": "Mise à jour : 23 novembre 2026",
   "version": "Versions : 1.0.0, build 10, introduit la connexion Google automatique et les annonces contextuelles par défaut, sans choix publicitaire au démarrage ni nouvelle option Choisir plus tard. Les trois choix du build 9 et les reports déjà enregistrés sont distingués ci-dessous. L'exclusion de la sauvegarde Android s'applique depuis le build 9. Cet avis ne signifie pas que la publication générale est terminée.",
   "summary": "Aucune inscription propre au jeu n'est requise. L'application tente une connexion Google au démarrage, mais l'annulation, un échec ou l'absence de réseau permettent toujours de jouer localement ; la sauvegarde cloud est un choix distinct. Les nouvelles installations utilisent les annonces contextuelles par défaut. Le jeu et les points d'enquête sont utilisables sans regarder de publicité récompensée.",
   "contents": "Sur cette page",

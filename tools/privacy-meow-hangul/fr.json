@@ -3,7 +3,7 @@
   "title": "Politique de confidentialité de Meow Hangul",
   "description": "Comment Meow Hangul stocke des données sur votre appareil, comment fonctionnent le micro et les enregistrements, les publicités et le consentement publicitaire, les signalements de problèmes et comment supprimer vos données.",
   "back": "Accueil TeamCP Games",
-  "date": "Dernière mise à jour : 19 novembre 2026",
+  "date": "Dernière mise à jour : 23 novembre 2026",
   "version": "S’applique à la version 1.0.0. Nous mettons à jour cette page et sa date chaque fois que les fonctionnalités ou la configuration publicitaire changent.",
   "summary": "Vous apprenez sans inscription ni connexion, et vos données d’apprentissage restent sur votre appareil. Il n’y a pas d’achats intégrés. Les publicités sont diffusées via Unity LevelPlay (Unity Ads et ironSource) ; Google AdMob n’est pas utilisé. Les services publicitaires traitent les informations sur l’appareil et les identifiants publicitaires nécessaires à la diffusion des publicités ; au premier lancement, l’application vous demande si vous acceptez les publicités personnalisées et ne démarre pas le SDK publicitaire avant votre choix. Le micro n’est utilisé que lorsque vous touchez Enregistrer dans la fonction facultative « Écouter et répéter », et les enregistrements ne quittent jamais votre appareil. Un signalement de problème n’est envoyé au serveur de signalements de TeamCP que lorsque vous l’envoyez vous-même.",
   "contents": "Sommaire",

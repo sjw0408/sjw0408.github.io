@@ -3,7 +3,7 @@
   "title": "Cat Detective Privacy Policy",
   "description": "Local progress, optional Google saves, advertising choices and data deletion in Cat Detective.",
   "back": "Cat Detective game information",
-  "date": "Updated: September 7, 2026",
+  "date": "Updated: November 23, 2026",
   "version": "Version note: 1.0.0 build 10 introduces automatic Google sign-in and a contextual-ad default, without a startup ad-choice prompt or a new Choose later option. Build 9's three choices and previously saved deferrals are distinguished below. Android backup exclusions apply from build 9. This notice does not mean a public release is complete.",
   "summary": "No separate game registration is required. The app tries Google sign-in at startup, but cancellation, failure or offline use still allow local play; cloud saving is a separate choice. New installations default to contextual ads. You can play and use investigation points without watching rewarded ads.",
   "contents": "On this page",

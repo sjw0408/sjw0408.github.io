@@ -3,7 +3,7 @@
   "title": "Política de privacidade do Yarn Tangle Cats",
   "description": "Como o Yarn Tangle Cats armazena dados no seu dispositivo, como funcionam os anúncios e o consentimento de anúncios, os relatos de erro e como excluir dados.",
   "back": "Informações do jogo Yarn Tangle Cats",
-  "date": "Última atualização: 18 de novembro de 2026",
+  "date": "Última atualização: 23 de novembro de 2026",
   "version": "Aplica-se à versão 1.0.0. Atualizamos esta página e a data sempre que os recursos ou a configuração de anúncios mudam.",
   "summary": "Você joga sem cadastro nem login, e seus registros de jogo ficam só no seu dispositivo. Não há compras no app. O serviço de anúncios (Unity LevelPlay) trata informações do dispositivo e identificadores de publicidade necessários para exibir anúncios; na primeira abertura, o jogo pergunta se você permite anúncios personalizados e não inicia o SDK de anúncios antes da sua escolha. Um relato de erro só é enviado ao servidor de relatos da TeamCP quando você mesmo o envia em Configurações.",
   "contents": "Sumário",

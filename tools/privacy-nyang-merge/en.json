@@ -3,7 +3,7 @@
   "title": "Nyang Merge Privacy Policy",
   "description": "How Nyang Merge handles on-device storage, Google Play Games, Android backup, ads and ad consent, problem reports, and data deletion.",
   "back": "Nyang Merge game info",
-  "date": "Last updated: November 19, 2026",
+  "date": "Last updated: November 23, 2026",
   "version": "Applies to version 1.0.0. We update this page and its date when features or ad setup change.",
   "summary": "You play without creating an account, and your game records are stored on your device. If you sign in to Google Play Games, your best score is stored on Google's leaderboard. TeamCP runs no server that receives your game records, and the game has no in-app purchases. The ad services (Unity LevelPlay and Unity Ads) process device information and advertising identifiers needed to deliver ads; on first launch we ask whether you consent to personalized ads and do not start the ad SDK until you choose. Report content is sent to TeamCP's report server only when you send a problem report yourself from Settings.",
   "contents": "Contents",

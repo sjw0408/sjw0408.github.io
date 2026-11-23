@@ -3,7 +3,7 @@
   "title": "Meow Hangul Privacy Policy",
   "description": "How Meow Hangul stores data on your device, how the microphone and recordings work, how ads and ad consent work, problem reports, and how to delete data.",
   "back": "TeamCP Games home",
-  "date": "Last updated: November 19, 2026",
+  "date": "Last updated: November 23, 2026",
   "version": "Applies to version 1.0.0. We update this page and its date whenever features or the ad setup change.",
   "summary": "You learn without signing up or logging in, and your learning records stay on your device. There are no in-app purchases. Ads are delivered through Unity LevelPlay (Unity Ads and ironSource); Google AdMob is not used. The ad services process device information and advertising identifiers needed to deliver ads; on first launch the app asks whether you allow personalized ads and does not start the ad SDK before you choose. The microphone is used only when you tap Record in the optional “Listen and repeat” feature, and recordings never leave your device. A problem report is sent to TeamCP's report server only when you send one yourself.",
   "contents": "Contents",
