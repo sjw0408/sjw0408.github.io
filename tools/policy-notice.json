@@ -934,7 +934,7 @@
   "ko": [
    [
     "개인정보 보호책임자",
-    "TeamCP 운영자"
+    "TeamCP 개인정보 보호 담당"
    ],
    [
     "개인정보 보호업무 및 고충처리 부서",
@@ -948,7 +948,7 @@
   "en": [
    [
     "Privacy officer",
-    "TeamCP operator"
+    "TeamCP Privacy Officer (privacy team)"
    ],
    [
     "Department for privacy matters and complaints",
@@ -962,7 +962,7 @@
   "ja": [
    [
     "個人情報保護責任者",
-    "TeamCP 運営者"
+    "TeamCP 個人情報保護担当（プライバシーチーム）"
    ],
    [
     "個人情報保護業務および苦情処理の担当部署",
@@ -976,7 +976,7 @@
   "es": [
    [
     "Responsable de privacidad",
-    "Operador de TeamCP"
+    "Responsable de privacidad de TeamCP (equipo de privacidad)"
    ],
    [
     "Área de protección de datos y reclamaciones",
@@ -990,7 +990,7 @@
   "pt-br": [
    [
     "Responsável pela privacidade",
-    "Operador da TeamCP"
+    "Encarregado de privacidade da TeamCP (equipe de privacidade)"
    ],
    [
     "Setor de proteção de dados e reclamações",
@@ -1004,7 +1004,7 @@
   "zh-tw": [
    [
     "個人資訊保護負責人",
-    "TeamCP 營運者"
+    "TeamCP 個人資訊保護負責人（隱私團隊）"
    ],
    [
     "個人資訊保護業務及申訴處理部門",
@@ -1018,7 +1018,7 @@
   "de": [
    [
     "Datenschutzverantwortlicher",
-    "Betreiber von TeamCP"
+    "Datenschutzbeauftragter von TeamCP (Datenschutzteam)"
    ],
    [
     "Stelle für Datenschutz und Beschwerden",
@@ -1032,7 +1032,7 @@
   "fr": [
    [
     "Responsable de la protection des données",
-    "Exploitant de TeamCP"
+    "Responsable de la protection des données de TeamCP (équipe confidentialité)"
    ],
    [
     "Service chargé de la protection des données et des réclamations",
