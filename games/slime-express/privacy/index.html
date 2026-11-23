@@ -92,7 +92,7 @@
   <main>
     <a class="back" href="../">← 슬라임 택배 게임 정보</a>
     <h1>슬라임 택배 개인정보처리방침</h1>
-    <p class="effective">시행일: 2026년 11월 6일</p>
+    <p class="effective">시행일: 2026년 11월 23일</p>
 
     <p class="notice">
       슬라임 택배는 회원가입 없이 플레이할 수 있습니다. 최고 점수·별·스킨·미션·설정은 기본적으로 기기에 저장됩니다.
@@ -102,7 +102,7 @@
 
     <h2>1. 개인정보처리자 및 적용 범위</h2>
     <p>TeamCP(이하 “개발자”)는 Android 앱 “슬라임 택배(Slime Express)”의 개인정보 처리에 관해 이 방침을 적용합니다. Google Play판의 패키지명은 <code>com.teamcp.slimeexpress</code>, 원스토어판의 패키지명은 <code>com.teamcp.slimeexpress.onestore</code>입니다. 두 설치본의 게임 기록은 각 앱의 기기 저장소에 따로 보관됩니다.</p>
-    <p>앱은 이름, 이메일 주소, 전화번호를 직접 입력받는 자체 회원가입 기능을 제공하지 않으며, Google 계정 비밀번호를 수집하거나 보관하지 않습니다. 원스토어판은 원스토어 계정 연동·결제 SDK를 포함하지 않으며, 앱이 원스토어 회원정보나 결제정보를 직접 받지 않습니다. 원스토어의 회원·설치·다운로드 정보 처리는 원스토어의 정책이 적용됩니다.</p>
+    <p>앱은 이름, 이메일 주소, 전화번호를 직접 입력받는 자체 회원가입 기능을 제공하지 않으며, Google 계정 비밀번호를 수집하거나 보관하지 않습니다. 원스토어판 1.2.0부터는 광고 제거 상품 판매를 위해 원스토어 인앱결제 SDK(ONE store IAP SDK)를 포함합니다(2.4 참조). 원스토어 계정 연동 기능은 없으며, 앱은 원스토어 회원정보나 카드·계좌 등 결제수단 정보를 직접 받지 않습니다. 원스토어의 회원·설치·다운로드 정보 처리는 원스토어의 정책이 적용됩니다.</p>
 
     <h2>2. 처리하는 정보</h2>
     <h3>2.1 기기에 저장되는 정보</h3>
@@ -131,12 +131,21 @@
     </ul>
     <p>실제 처리 범위는 이용 지역, Android 개인정보 설정 및 각 광고 사업자의 정책에 따라 달라질 수 있습니다. 광고를 불러오지 못해도 게임 진행이 막히지 않도록 구성합니다.</p>
 
+    <h3>2.4 원스토어 인앱 결제 — 원스토어판 1.2.0부터</h3>
+    <p>원스토어판에는 <strong>광고 제거</strong> 상품(상품 ID slime.remove_ads, 한 번 구매하면 유지되는 비소모성 상품)이 있습니다. 구매하면 하단 배너 광고를 요청·표시하지 않으며, 추가 점수를 위한 선택형 보상 광고는 계속 이용할 수 있습니다(이 게임에는 전면 광고가 없습니다). 같은 원스토어 계정으로 상점의 ‘구매 복원’을 누르면 구매를 다시 확인합니다.</p>
+    <p>결제와 결제수단 정보 처리는 원스토어 주식회사가 원스토어 결제 화면에서 수행합니다. 앱은 원스토어 인앱결제 SDK로부터 구매 확인에 필요한 다음 정보를 기기에서 받습니다.</p>
+    <ul>
+      <li>상품 ID, 주문 번호, 구매 토큰, 구매 상태·구매 확인(acknowledge) 여부, 구매 데이터와 서명</li>
+    </ul>
+    <p>앱은 이 정보로 기기 안에서 서명을 검증하고 구매 확인을 원스토어에 전달한 뒤, 보유 중인 상품 ID만 앱 전용 저장소에 저장합니다. 구매 정보를 TeamCP 서버로 보내지 않습니다. 결제·환불 기록의 보관은 원스토어의 정책과 관련 법령을 따릅니다.</p>
+
     <h2>3. 이용 목적</h2>
     <ul>
       <li>게임 진행, 설정, 스킨, 미션 및 최고 점수 저장</li>
       <li>Google Play판에서 사용자가 선택한 Google Play Games 순위표 제공</li>
       <li>배너 및 선택형 보상 광고 제공, 성과 측정 및 부정 이용 방지</li>
       <li>서비스 오류 진단과 보안 유지</li>
+      <li>원스토어판 광고 제거 상품의 구매 확인과 복원</li>
     </ul>
 
     <h2>4. 외부 서비스와 정보 처리</h2>
@@ -156,12 +165,44 @@
             <td>두 배포판의 배너·선택형 보상 광고 중개·제공, 광고 측정 및 부정 이용 방지</td>
             <td><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener">Unity 게임 이용자 개인정보처리방침</a></td>
           </tr>
+          <tr>
+            <td>원스토어 인앱결제(ONE store IAP SDK)</td>
+            <td>원스토어판 1.2.0부터 광고 제거 상품의 결제·구매 확인·복원(원스토어 주식회사, 대한민국)</td>
+            <td><a href="https://www.onestore.co.kr" target="_blank" rel="noopener">원스토어</a> 개인정보처리방침</td>
+          </tr>
         </tbody>
       </table>
     </div>
     <p>외부 서비스 제공자는 각자의 방침에 따라 정보를 보관하거나 국외에서 처리할 수 있습니다. Unity는 미국·이스라엘 등 해외의 자사 시설과 서비스 제공업체에서 정보를 처리할 수 있다고 안내합니다. 처리 국가·권리 행사 방법 등 자세한 내용은 위 사업자 방침에서 확인할 수 있습니다. 개발자는 이용자의 개인정보를 판매하지 않습니다.</p>
 
-    <h2>5. 보관 및 삭제</h2>
+    
+<style>.xfer{margin:1.2em 0 0;padding:1em 1.1em;border:1px solid rgba(127,127,127,.35);border-radius:12px}.xfer h3{margin-top:0}.xfer-item{margin:1em 0}.xfer-item h4{margin:.2em 0 .4em;font-size:1em}.xfer dl{display:grid;grid-template-columns:minmax(7.5em,max-content) 1fr;gap:.35em .9em;margin:0}.xfer dt{font-weight:600}.xfer dd{margin:0;overflow-wrap:anywhere}@media (max-width:560px){.xfer dl{grid-template-columns:1fr}.xfer dd{margin-bottom:.5em}}</style>
+<div class="xfer" id="overseas-transfer">
+<h3>국외 이전 세부 고지 (2026년 11월 23일 추가)</h3>
+<p>「개인정보 보호법」 제28조의8 및 제30조에 따라 이 게임에서 개인정보가 국외로 이전되는 처리를 처리별로 알립니다. 아래 정보는 TeamCP가 운영하는 서버를 거치지 않고 이용자 기기에서 각 사업자에게 직접 전송됩니다. 사업자 정보는 각 사업자가 공개한 방침을 기준으로 적었습니다.</p>
+<div class="xfer-item" id="xfer-ads"><h4>광고 — Unity LevelPlay·Unity Ads·ironSource Ads</h4><dl>
+<dt>이전받는 자·연락처</dt><dd>Unity Technologies(Unity Technologies S.F.) — Unity LevelPlay·Unity Ads·ironSource Ads 운영사<br>연락처: <a href="mailto:DPO@unity3d.com">DPO@unity3d.com</a> · 116 New Montgomery Street, Suite 200, San Francisco, CA 94105, United States</dd>
+<dt>이전 국가</dt><dd>미국, 그리고 Unity의 시설이 있는 국가(ironSource 본사가 있는 이스라엘 포함)와 Unity가 이용하는 서비스 제공자(Google Cloud Platform 등)의 데이터 센터가 있는 국가 — Unity 게임 이용자 개인정보처리방침의 안내</dd>
+<dt>이전 항목</dt><dd>광고 식별자(Google 광고 ID·앱 세트 ID 등, 기기 설정이 허용하는 범위), IP 주소와 이를 이용한 대략적 위치, 기기 모델·운영체제·앱 버전·언어·네트워크 정보, 광고 요청·노출·클릭·시청 완료·오류·진단 정보(세부는 이 방침의 광고 항목)</dd>
+<dt>이전 시기·방법</dt><dd>앱 실행 중 광고 SDK가 초기화되거나 광고를 요청·표시·측정할 때마다, 이용자 기기에서 인터넷(암호화 통신)을 통해 Unity 서버로 직접 전송</dd>
+<dt>이전 목적</dt><dd>광고 중개·송출, 노출 빈도 관리, 성과 측정, 부정 이용 방지, 오류 진단</dd>
+<dt>보유·이용 기간</dt><dd>Unity는 처리 목적에 필요한 기간 동안 보관하고, 법령상 의무나 분쟁·수사 대응에 필요한 경우 더 보관할 수 있다고 안내합니다(Unity 방침 10절 “Retention”). Unity가 일반 광고 정보의 확정 보관 기간을 공개하지 않아 이 방침에 기간을 따로 적지 않습니다.</dd>
+<dt>이전 근거</dt><dd>「개인정보 보호법」 제28조의8 제1항 제3호 가목 — 무료 게임 제공(광고 기반) 계약의 이행에 필요한 처리위탁·보관으로 보고, 이전 사항을 이 처리방침에 공개</dd>
+<dt>거부 방법과 효과</dt><dd>인터넷 연결을 끄면 광고 요청과 전송이 일어나지 않습니다. Android 설정에서 광고 ID를 삭제하면 광고 ID는 전송되지 않습니다. 전송 자체를 원하지 않으면 앱 이용을 중단하고 앱을 삭제할 수 있으며, 이 경우 광고와 광고 보상을 이용할 수 없습니다. 이미 이전된 정보의 열람·삭제는 Unity(DPO@unity3d.com)나 광고의 개인정보 아이콘으로 요청할 수 있습니다.</dd>
+</dl></div>
+<div class="xfer-item" id="xfer-google"><h4>Google — Google Play 게임즈 · Android 자동 백업</h4><dl>
+<dt>이전받는 자·연락처</dt><dd>Google LLC<br>문의: <a href="mailto:googlekrsupport@google.com">googlekrsupport@google.com</a> · 국내대리인: 구글코리아 유한회사(서울특별시 강남구 테헤란로 152, 22층 · 02-722-7778 · data-access-requests@google.com) — Google 「한국 거주자를 위한 개인정보 관련 추가 정보」의 안내</dd>
+<dt>이전 국가</dt><dd>국외에 있는 Google 데이터 센터(미국 등). 데이터 센터 위치는 <a href="https://www.google.com/about/datacenters/locations/">Google 데이터 센터 안내</a>를 참고하세요.</dd>
+<dt>이전 항목</dt><dd>Google Play 게임즈: (Google Play판만) Google 계정 인증 상태, 플레이어 식별자·표시 이름, 리더보드에 제출하는 최고 점수<br>Android 자동 백업: 기기의 백업 설정이 켜져 있으면 Android가 이 앱의 저장 데이터와 설정을 이용자의 Google 계정 백업 공간으로 보냅니다(기기 설정에서 끄면 전송되지 않음).</dd>
+<dt>이전 시기·방법</dt><dd>해당 기능이 동작할 때 수집과 동시에 정보통신망(암호화 통신)을 통해 Google로 전송(Google 안내)</dd>
+<dt>이전 목적</dt><dd>선택형 로그인과 최고 점수 순위표, 기기 백업·복원</dd>
+<dt>보유·이용 기간</dt><dd>Google 계정·Play 게임즈 데이터는 이용자가 삭제할 때까지 또는 Google이 정한 기간 동안 보관됩니다(Google 개인정보처리방침의 “정보 유지”).</dd>
+<dt>이전 근거</dt><dd>「개인정보 보호법」 제28조의8 제1항 제3호 가목 — 이용자가 선택한 게임 연동 기능 제공에 필요한 처리위탁·보관으로 보고, 이전 사항을 이 처리방침에 공개 · Android 자동 백업은 이용자의 기기·Google 계정 백업 설정에 따름</dd>
+<dt>거부 방법과 효과</dt><dd>Google Play Games를 연결하지 않으면 전송되지 않으며 싱글 플레이를 이용할 수 있습니다. 이 경우 순위표를 이용할 수 없습니다. 원스토어판에는 이 기능이 없습니다. Android 설정 > Google > 백업에서 백업을 끄거나 백업을 삭제할 수 있으며, 이 경우 재설치·기기 변경 때 자동 복원이 되지 않습니다.</dd>
+</dl></div>
+<p>다음 처리는 국내에서 이루어지며 위 국외 이전에 해당하지 않습니다.</p><ul><li><strong>원스토어 인앱 결제(원스토어판)</strong>: 결제는 원스토어 주식회사(대한민국)가 처리하며, 이 게임은 결제 정보를 국외로 이전하지 않습니다.</li></ul>
+</div>
+<h2>5. 보관 및 삭제</h2>
     <ul>
       <li><strong>기기 저장 정보:</strong> Android 설정에서 해당 배포판의 앱 데이터를 삭제하거나 앱을 삭제하여 기기에서 제거할 수 있습니다. 운영체제 백업본은 백업 서비스의 설정에서 별도로 관리해야 하며, 복원이 켜져 있으면 재설치 시 기록이 다시 나타날 수 있습니다.</li>
       <li><strong>Google Play Games 저장 정보(Play판만):</strong> Google 계정의 Play 게임 데이터 관리 기능을 통해 관리할 수 있으며 Google의 보관 정책이 적용됩니다.</li>
