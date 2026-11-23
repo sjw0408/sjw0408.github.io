@@ -41,6 +41,7 @@
    "pgs_why": "Google 로그인, 선택형 클라우드 저장·불러오기",
    "pgs_refuse": "로그인을 취소하거나 설정에서 로그아웃하면 Play 게임즈 전송 없이 기기 진행으로 플레이할 수 있습니다. 이 경우 기기 간 저장·불러오기를 이용할 수 없습니다. 저장된 데이터는 앱 설정의 클라우드 저장 삭제나 Google Play 게임즈 데이터 삭제로 지울 수 있습니다.",
    "onestore_iap": true,
+   "report": true,
    "pgs_label": "Google Play 게임즈(Google Play판만): "
   },
   "cat-gomoku": {

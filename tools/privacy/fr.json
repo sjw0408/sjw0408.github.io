@@ -3,9 +3,9 @@
   "title": "Politique de confidentialité de Chat Détective",
   "description": "Progression locale, sauvegarde Google facultative, publicité et suppression des données dans Chat Détective.",
   "back": "Informations sur Chat Détective",
-  "date": "Mise à jour : 23 novembre 2026",
+  "date": "Mise à jour : 24 novembre 2026",
   "version": "Versions : 1.0.0, build 10, introduit la connexion Google automatique et les annonces contextuelles par défaut, sans choix publicitaire au démarrage ni nouvelle option Choisir plus tard. Les trois choix du build 9 et les reports déjà enregistrés sont distingués ci-dessous. L'exclusion de la sauvegarde Android s'applique depuis le build 9. Cet avis ne signifie pas que la publication générale est terminée.",
-  "summary": "Aucune inscription propre au jeu n'est requise. L'application tente une connexion Google au démarrage, mais l'annulation, un échec ou l'absence de réseau permettent toujours de jouer localement ; la sauvegarde cloud est un choix distinct. Les nouvelles installations utilisent les annonces contextuelles par défaut. Le jeu et les points d'enquête sont utilisables sans regarder de publicité récompensée.",
+  "summary": "Aucune inscription propre au jeu n'est requise. L'application tente une connexion Google au démarrage, mais l'annulation, un échec ou l'absence de réseau permettent toujours de jouer localement ; la sauvegarde cloud est un choix distinct. Les nouvelles installations utilisent les annonces contextuelles par défaut. Le jeu et les points d'enquête sont utilisables sans regarder de publicité récompensée. Un signalement n’est envoyé au serveur de signalements de TeamCP que lorsque vous l’envoyez vous-même depuis les Paramètres (section 10).",
   "contents": "Sur cette page",
   "resources": "Politiques des prestataires et demandes de confidentialité",
   "contact": "Contact confidentialité",
@@ -95,7 +95,8 @@
         "Google : connectez-vous dans les réglages, choisissez Supprimer la sauvegarde cloud et confirmez. L'instantané du jeu est supprimé et la synchronisation automatique désactivée ; progression locale, partie en cours et compte Google restent présents. Une reconnexion et un transfert peuvent créer une nouvelle sauvegarde.",
         "Sans l'application : utilisez les instructions Google Play Games ci-dessous pour gérer les données du jeu. Ce n'est pas la suppression de tout votre compte Google.",
         "Publicité : utilisez l'icône de confidentialité de l'annonce ou la procédure d'accès/suppression de la politique Unity. Désinstaller, se déconnecter ou limiter les annonces n'efface pas à lui seul les données déjà traitées par un prestataire.",
-        "Aide : écrivez à teamcp.channel@gmail.com avec le nom du jeu et le type de données (appareil/Google/publicités). N'envoyez ni mot de passe, ni code de vérification, ni pièce d'identité inutile. Pour les données non détenues par TeamCP, nous indiquons la procédure du prestataire."
+        "Aide : écrivez à teamcp.channel@gmail.com avec le nom du jeu et le type de données (appareil/Google/publicités). N'envoyez ni mot de passe, ni code de vérification, ni pièce d'identité inutile. Pour les données non détenues par TeamCP, nous indiquons la procédure du prestataire.",
+        "Signalements de problèmes : les signalements stockés sur le serveur sont supprimés 90 jours après leur réception. Pour en faire supprimer un plus tôt, écrivez à teamcp.channel@gmail.com en indiquant la date d’envoi et le modèle de l’appareil."
       ],
       "paragraphs": [
         "La progression et les réglages locaux restent jusqu'à leur suppression ; il n'y a pas d'effacement automatique après 90 jours. Un changement publicitaire met à jour le choix actuel et sa date. Les politiques des prestataires régissent les durées, critères et exceptions légales/de sécurité des données cloud et publicitaires."
@@ -118,10 +119,25 @@
       ]
     },
     {
-      "id": "updates",
-      "title": "10. Sécurité et modifications",
+      "id": "reports",
+      "title": "10. Signalements de problèmes",
       "paragraphs": [
-        "Les données locales sont conservées dans l'espace privé Android de l'application. Les transmissions Google et publicitaires utilisent les mécanismes de sécurité de leurs prestataires respectifs.",
+        "Un signalement n’est envoyé que lorsque vous rédigez une description dans Paramètres > « Signaler un problème » et touchez Envoyer. Il n’y a ni signalement automatique ni rapport de plantage. Un signalement contient :"
+      ],
+      "items": [
+        "La description que vous rédigez (2 000 caractères au maximum) et le type de signalement que vous choisissez",
+        "Joint automatiquement : identifiant et version de l’application, nom de l’écran depuis lequel vous avez fait le signalement, langue de l’application, nom du modèle de l’appareil et un numéro de signalement aléatoire créé pour chaque signalement"
+      ],
+      "after": [
+        "Les signalements n’incluent jamais votre identifiant publicitaire, un compte, vos données de jeu ni votre position. Veuillez ne pas écrire d’informations personnelles, comme votre nom ou vos coordonnées, dans la description. Les signalements sont envoyés via une connexion chiffrée (HTTPS) et stockés sur un serveur de signalements exploité par TeamCP (hébergement web : Cafe24, République de Corée) ; ils servent uniquement à trouver et à corriger les problèmes. Le serveur et l’hébergeur peuvent traiter votre adresse IP dans les journaux de connexion lors de la communication. Les signalements stockés sur le serveur sont conservés 90 jours à compter de leur réception, puis supprimés ; si vous demandez leur suppression plus tôt, nous les supprimons immédiatement.",
+        "S’il n’y a pas de connexion ou si l’envoi échoue, le signalement est conservé sur votre appareil (50 au maximum) et renvoyé tant que le jeu est ouvert. Les signalements conservés sur l’appareil ne sont pas inclus dans les sauvegardes Android et sont supprimés lorsque vous effacez les données de l’application."
+      ]
+    },
+    {
+      "id": "updates",
+      "title": "11. Sécurité et modifications",
+      "paragraphs": [
+        "Les données locales sont conservées dans l'espace privé Android de l'application. Les transmissions Google et publicitaires utilisent les mécanismes de sécurité de leurs prestataires respectifs. Les signalements de problèmes sont envoyés via une connexion chiffrée (HTTPS).",
         "Si les fonctions, SDK ou traitements changent, nous mettons à jour la politique et sa date et annonçons les changements importants dans l'application ou ici. Toutes les langues couvrent le même périmètre ; vous pouvez signaler une différence de traduction."
       ]
     }

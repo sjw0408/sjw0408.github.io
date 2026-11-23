@@ -3,9 +3,9 @@
   "title": "Cat Detective Privacy Policy",
   "description": "Local progress, optional Google saves, advertising choices and data deletion in Cat Detective.",
   "back": "Cat Detective game information",
-  "date": "Updated: November 23, 2026",
+  "date": "Updated: November 24, 2026",
   "version": "Version note: 1.0.0 build 10 introduces automatic Google sign-in and a contextual-ad default, without a startup ad-choice prompt or a new Choose later option. Build 9's three choices and previously saved deferrals are distinguished below. Android backup exclusions apply from build 9. This notice does not mean a public release is complete.",
-  "summary": "No separate game registration is required. The app tries Google sign-in at startup, but cancellation, failure or offline use still allow local play; cloud saving is a separate choice. New installations default to contextual ads. You can play and use investigation points without watching rewarded ads.",
+  "summary": "No separate game registration is required. The app tries Google sign-in at startup, but cancellation, failure or offline use still allow local play; cloud saving is a separate choice. New installations default to contextual ads. You can play and use investigation points without watching rewarded ads. A problem report is sent to TeamCP’s report server only when you send one yourself from Settings (Section 10).",
   "contents": "On this page",
   "resources": "Provider policies and privacy requests",
   "contact": "Privacy contact",
@@ -95,7 +95,8 @@
         "Google cloud progress: connect in Settings, select Delete cloud save and confirm. This deletes Cat Detective's snapshot and disconnects automatic sync, not your local progress/current run or Google Account. Reconnecting and transferring later can create a new save.",
         "Without the app: use the Google Play Games deletion instructions below to manage this game's data. This is different from deleting your entire Google Account.",
         "Advertising data: use the ad's privacy icon or the access/deletion instructions in Unity's policy below. Uninstalling, logging out or limiting ads does not itself erase data already processed by a provider.",
-        "Deletion help: email teamcp.channel@gmail.com with the game name and data type (device/Google/ads). Do not send passwords, verification codes or unnecessary identity documents. For data TeamCP does not hold, we direct you to the provider's verification/deletion process."
+        "Deletion help: email teamcp.channel@gmail.com with the game name and data type (device/Google/ads). Do not send passwords, verification codes or unnecessary identity documents. For data TeamCP does not hold, we direct you to the provider's verification/deletion process.",
+        "Problem reports: reports stored on the server are deleted 90 days after they are received. To have one deleted sooner, email teamcp.channel@gmail.com with the date you sent it and your device model."
       ],
       "paragraphs": [
         "Local progress/settings remain until you delete them; there is no automatic 90-day deletion. Changing an ad choice updates the current choice and last-choice time. Provider policies govern cloud/ad retention periods, criteria and legal/security exceptions."
@@ -118,10 +119,25 @@
       ]
     },
     {
-      "id": "updates",
-      "title": "10. Security and changes",
+      "id": "reports",
+      "title": "10. Issue reports",
       "paragraphs": [
-        "Local information is stored in Android app-private storage. Google saving and advertising transmissions use the respective providers' security mechanisms.",
+        "A report is sent only when you write a description in Settings > “Report an issue” and tap send. There are no automatic reports or crash reports. A report contains:"
+      ],
+      "items": [
+        "The description you write (up to 2,000 characters) and the report type you pick",
+        "Attached automatically: app identifier and version, the name of the screen you reported from, app language, device model name, and a random report number created for each report"
+      ],
+      "after": [
+        "Reports never include your advertising ID, an account, your game records or your location. Please do not write personal information such as your name or contact details in the description. Reports are sent over an encrypted connection (HTTPS) and stored on a report server operated by TeamCP (web hosting: Cafe24, Republic of Korea), and are used only to find and fix problems. The server and the hosting company may process your IP address in connection logs while the request is handled. Reports stored on the server are kept for 90 days from the day they are received and then deleted; if you ask us to delete one sooner, we delete it right away.",
+        "If there is no connection or sending fails, the report is kept on your device (up to 50 reports) and sent again while the game is open. Reports kept on your device are not included in Android backups and are removed when you clear the app data."
+      ]
+    },
+    {
+      "id": "updates",
+      "title": "11. Security and changes",
+      "paragraphs": [
+        "Local information is stored in Android app-private storage. Google saving and advertising transmissions use the respective providers' security mechanisms. Problem reports are sent over an encrypted connection (HTTPS).",
         "When features, SDKs or processing change, we update this policy and its date and announce important changes in the app or here. Each language page covers the same scope; you can contact us about translation differences."
       ]
     }

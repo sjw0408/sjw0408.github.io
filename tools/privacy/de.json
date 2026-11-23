@@ -3,9 +3,9 @@
   "title": "Datenschutzhinweise für Katzendetektiv",
   "description": "Lokaler Fortschritt, optionale Google-Speicherung, Werbeauswahl und Datenlöschung in Katzendetektiv.",
   "back": "Informationen zu Katzendetektiv",
-  "date": "Aktualisiert: 23. November 2026",
+  "date": "Aktualisiert: 24. November 2026",
   "version": "Versionshinweis: 1.0.0, Build 10, führt die automatische Google-Anmeldung und kontextbezogene Werbung als Standard ein, ohne Werbeauswahl beim Start oder neue Option Später entscheiden. Die drei Optionen in Build 9 und bereits gespeicherte Aufschübe werden unten unterschieden. Android-Backup-Ausschlüsse gelten seit Build 9. Dieser Hinweis bedeutet nicht, dass die allgemeine Veröffentlichung abgeschlossen ist.",
-  "summary": "Ein eigenes Spielkonto ist nicht erforderlich. Die App versucht beim Start eine Google-Anmeldung; bei Abbruch, Fehler oder offline ist lokales Spielen weiterhin möglich. Cloud-Speicherung bleibt eine gesonderte Wahl. Neue Installationen nutzen standardmäßig kontextbezogene Werbung. Spiel und Ermittlungspunkte funktionieren ohne das Ansehen von Belohnungswerbung.",
+  "summary": "Ein eigenes Spielkonto ist nicht erforderlich. Die App versucht beim Start eine Google-Anmeldung; bei Abbruch, Fehler oder offline ist lokales Spielen weiterhin möglich. Cloud-Speicherung bleibt eine gesonderte Wahl. Neue Installationen nutzen standardmäßig kontextbezogene Werbung. Spiel und Ermittlungspunkte funktionieren ohne das Ansehen von Belohnungswerbung. Eine Fehlermeldung wird nur dann an den Meldungsserver von TeamCP gesendet, wenn du sie selbst in den Einstellungen sendest (Abschnitt 10).",
   "contents": "Auf dieser Seite",
   "resources": "Anbieterhinweise und Datenschutzanfragen",
   "contact": "Datenschutzkontakt",
@@ -95,7 +95,8 @@
         "Google-Cloud: In den Einstellungen verbinden, Cloud-Spielstand löschen wählen und bestätigen. Der Snapshot dieses Spiels wird gelöscht und automatische Synchronisierung deaktiviert. Lokaler Fortschritt, laufende Runde und Google-Konto bleiben bestehen. Erneutes Verbinden und Übertragen kann einen neuen Spielstand anlegen.",
         "Ohne App: Die unten verlinkte Google Play Games-Anleitung ermöglicht die Verwaltung der Spieldaten. Das ist nicht die Löschung des gesamten Google-Kontos.",
         "Werbedaten: Nutze das Datenschutzsymbol der Anzeige oder Unitys Verfahren für Auskunft/Löschung. Deinstallation, Abmeldung oder Werbeeinschränkung löschen nicht automatisch bereits beim Anbieter verarbeitete Daten.",
-        "Hilfe: E-Mail an teamcp.channel@gmail.com mit Spielname und Datenart (Gerät/Google/Werbung). Keine Passwörter, Bestätigungscodes oder unnötigen Ausweisdokumente senden. Für Daten, die TeamCP nicht besitzt, verweisen wir auf das Prüf- und Löschverfahren des Anbieters."
+        "Hilfe: E-Mail an teamcp.channel@gmail.com mit Spielname und Datenart (Gerät/Google/Werbung). Keine Passwörter, Bestätigungscodes oder unnötigen Ausweisdokumente senden. Für Daten, die TeamCP nicht besitzt, verweisen wir auf das Prüf- und Löschverfahren des Anbieters.",
+        "Fehlermeldungen: Auf dem Server gespeicherte Meldungen werden 90 Tage nach Eingang gelöscht. Für eine frühere Löschung schreib an teamcp.channel@gmail.com und nenne das Sendedatum und das Gerätemodell."
       ],
       "paragraphs": [
         "Lokaler Fortschritt und Einstellungen bleiben bis zu deiner Löschung gespeichert; keine automatische Löschung nach 90 Tagen. Eine geänderte Werbeauswahl aktualisiert die aktuelle Wahl und ihren letzten Zeitpunkt. Anbieterhinweise regeln Fristen, Kriterien und rechtliche/Sicherheitsausnahmen für Cloud- und Werbedaten."
@@ -118,10 +119,25 @@
       ]
     },
     {
-      "id": "updates",
-      "title": "10. Sicherheit und Änderungen",
+      "id": "reports",
+      "title": "10. Fehlermeldungen",
       "paragraphs": [
-        "Lokale Informationen liegen im app-privaten Android-Speicher. Google-Speicherung und Werbeübertragungen nutzen die jeweiligen Sicherheitsverfahren der Anbieter.",
+        "Eine Meldung wird nur gesendet, wenn du unter Einstellungen > „Fehler melden“ eine Beschreibung schreibst und auf Senden tippst. Es gibt keine automatischen Meldungen und keine Absturzberichte. Eine Meldung enthält:"
+      ],
+      "items": [
+        "Die von dir geschriebene Beschreibung (bis zu 2.000 Zeichen) und die von dir gewählte Art der Meldung",
+        "Automatisch angehängt: Kennung und Version der App, Name des Bildschirms, von dem aus du gemeldet hast, App-Sprache, Modellname des Geräts und eine zufällige Meldungsnummer, die für jede Meldung neu erzeugt wird"
+      ],
+      "after": [
+        "Meldungen enthalten nie deine Werbe-ID, ein Konto, deine Spielstände oder deinen Standort. Bitte schreib keine personenbezogenen Daten wie deinen Namen oder deine Kontaktdaten in die Beschreibung. Meldungen werden über eine verschlüsselte Verbindung (HTTPS) übertragen, auf einem von TeamCP betriebenen Meldungsserver gespeichert (Webhosting: Cafe24, Republik Korea) und nur verwendet, um Fehler zu finden und zu beheben. Der Server und der Hosting-Anbieter können deine IP-Adresse bei der Übertragung in Verbindungsprotokollen verarbeiten. Auf dem Server gespeicherte Meldungen werden ab dem Eingang 90 Tage aufbewahrt und danach gelöscht; wenn du die Löschung früher verlangst, löschen wir sie sofort.",
+        "Ohne Verbindung oder bei einem Sendefehler wird die Meldung auf deinem Gerät gespeichert (bis zu 50 Meldungen) und erneut gesendet, solange das Spiel geöffnet ist. Auf dem Gerät gespeicherte Meldungen sind nicht in Android-Sicherungen enthalten und werden beim Löschen der App-Daten entfernt."
+      ]
+    },
+    {
+      "id": "updates",
+      "title": "11. Sicherheit und Änderungen",
+      "paragraphs": [
+        "Lokale Informationen liegen im app-privaten Android-Speicher. Google-Speicherung und Werbeübertragungen nutzen die jeweiligen Sicherheitsverfahren der Anbieter. Fehlermeldungen werden über eine verschlüsselte Verbindung (HTTPS) übertragen.",
         "Bei Änderungen an Funktionen, SDKs oder Verarbeitung aktualisieren wir diese Hinweise und ihr Datum. Wichtige Änderungen werden in der App oder hier mitgeteilt. Alle Sprachseiten decken denselben Umfang ab; Übersetzungsunterschiede kannst du uns melden."
       ]
     }

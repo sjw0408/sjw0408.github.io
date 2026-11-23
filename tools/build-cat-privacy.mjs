@@ -8,7 +8,7 @@ import { applyPolicyNotice } from './policy-notice.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const languages = { ko: '한국어', en: 'English', ja: '日本語', es: 'Español', fr: 'Français', de: 'Deutsch' };
-const ids = ['scope', 'local', 'google', 'ads', 'choices', 'providers', 'delete-data', 'rights', 'young-users', 'updates'];
+const ids = ['scope', 'local', 'google', 'ads', 'choices', 'providers', 'delete-data', 'rights', 'young-users', 'reports', 'updates'];
 const base = '/games/cat-detective/privacy/';
 const origin = 'https://sjw0408.github.io';
 const route = code => code === 'ko' ? base : `${base}${code}/`;

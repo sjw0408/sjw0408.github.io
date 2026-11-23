@@ -3,9 +3,9 @@
   "title": "Política de privacidad de Detective Felino",
   "description": "Progreso local, guardado de Google opcional, anuncios y eliminación de datos en Detective Felino.",
   "back": "Información de Detective Felino",
-  "date": "Actualizada: 23 de noviembre de 2026",
+  "date": "Actualizada: 24 de noviembre de 2026",
   "version": "Versiones: 1.0.0, compilación 10, introduce el acceso automático con Google y anuncios contextuales por defecto, sin aviso publicitario inicial ni una nueva opción Elegir más tarde. Abajo distinguimos las tres opciones de la compilación 9 y los aplazamientos ya guardados. La exclusión del respaldo de Android se aplica desde la compilación 9. Este aviso no significa que el lanzamiento público esté completado.",
-  "summary": "No necesitas una cuenta propia del juego. La aplicación intenta acceder con Google al iniciarse, pero puedes jugar localmente si cancelas, falla o estás sin conexión; guardar en la nube es una elección aparte. Las instalaciones nuevas usan anuncios contextuales por defecto. Puedes jugar y usar puntos sin ver anuncios con recompensa.",
+  "summary": "No necesitas una cuenta propia del juego. La aplicación intenta acceder con Google al iniciarse, pero puedes jugar localmente si cancelas, falla o estás sin conexión; guardar en la nube es una elección aparte. Las instalaciones nuevas usan anuncios contextuales por defecto. Puedes jugar y usar puntos sin ver anuncios con recompensa. Un informe de error se envía al servidor de informes de TeamCP solo cuando lo envías tú mismo desde Ajustes (sección 10).",
   "contents": "En esta página",
   "resources": "Políticas de proveedores y solicitudes de privacidad",
   "contact": "Contacto de privacidad",
@@ -95,7 +95,8 @@
         "Nube de Google: conecta en Ajustes, elige Eliminar guardado en la nube y confirma. Se elimina la instantánea del juego y se desconecta la sincronización automática, pero se conservan el progreso local, la partida actual y tu cuenta de Google. Volver a conectar y transferir puede crear otro guardado.",
         "Sin la aplicación: utiliza las instrucciones de Google Play Games enlazadas para gestionar los datos del juego. No equivale a eliminar toda tu cuenta de Google.",
         "Publicidad: usa el icono de privacidad del anuncio o el procedimiento de acceso/eliminación en la política de Unity. Desinstalar, cerrar sesión o limitar anuncios no borra por sí solo datos ya tratados por el proveedor.",
-        "Ayuda: escribe a teamcp.channel@gmail.com con el nombre del juego y el tipo de datos (dispositivo/Google/anuncios). No envíes contraseñas, códigos ni documentos de identidad innecesarios. Si TeamCP no tiene los datos, te orientamos al procedimiento del proveedor."
+        "Ayuda: escribe a teamcp.channel@gmail.com con el nombre del juego y el tipo de datos (dispositivo/Google/anuncios). No envíes contraseñas, códigos ni documentos de identidad innecesarios. Si TeamCP no tiene los datos, te orientamos al procedimiento del proveedor.",
+        "Informes de errores: los informes guardados en el servidor se eliminan 90 días después de su recepción. Para eliminar uno antes, escribe a teamcp.channel@gmail.com indicando la fecha de envío y el modelo del dispositivo."
       ],
       "paragraphs": [
         "El progreso y los ajustes locales se conservan hasta que los elimines; no se borran automáticamente a los 90 días. Cambiar la elección publicitaria actualiza la opción y su última fecha. Las políticas de cada proveedor rigen los plazos, criterios y excepciones legales o de seguridad para datos de nube y anuncios."
@@ -118,10 +119,25 @@
       ]
     },
     {
-      "id": "updates",
-      "title": "10. Seguridad y cambios",
+      "id": "reports",
+      "title": "10. Informes de errores",
       "paragraphs": [
-        "La información local se guarda en el espacio privado de la aplicación en Android. Google y los servicios publicitarios utilizan sus respectivos mecanismos de seguridad en las transmisiones.",
+        "Solo se envía un informe cuando escribes una descripción en Ajustes > «Informar de un error» y tocas enviar. No hay informes automáticos ni informes de fallos. Un informe contiene:"
+      ],
+      "items": [
+        "La descripción que escribes (hasta 2000 caracteres) y el tipo de informe que eliges",
+        "Adjuntado automáticamente: identificador y versión de la aplicación, nombre de la pantalla desde la que informaste, idioma de la aplicación, nombre del modelo del dispositivo y un número de informe aleatorio que se crea para cada informe"
+      ],
+      "after": [
+        "Los informes nunca incluyen tu ID de publicidad, una cuenta, tus registros de juego ni tu ubicación. No escribas en la descripción datos personales como tu nombre o tus datos de contacto. Los informes se envían mediante una conexión cifrada (HTTPS) y se guardan en un servidor de informes gestionado por TeamCP (alojamiento web: Cafe24, República de Corea), y solo se usan para localizar y corregir problemas. El servidor y la empresa de alojamiento pueden tratar tu dirección IP en los registros de conexión durante la comunicación. Los informes guardados en el servidor se conservan durante 90 días desde su recepción y después se eliminan; si nos pides eliminar uno antes, lo eliminamos de inmediato.",
+        "Si no hay conexión o el envío falla, el informe se guarda en tu dispositivo (hasta 50 informes) y se reenvía mientras el juego está abierto. Los informes guardados en el dispositivo no se incluyen en las copias de seguridad de Android y se eliminan al borrar los datos de la aplicación."
+      ]
+    },
+    {
+      "id": "updates",
+      "title": "11. Seguridad y cambios",
+      "paragraphs": [
+        "La información local se guarda en el espacio privado de la aplicación en Android. Google y los servicios publicitarios utilizan sus respectivos mecanismos de seguridad en las transmisiones. Los informes de errores se envían mediante una conexión cifrada (HTTPS).",
         "Si cambian las funciones, los SDK o el tratamiento, actualizamos la política y su fecha y avisamos de cambios importantes en la aplicación o aquí. Todas las páginas de idiomas cubren el mismo alcance; puedes consultar diferencias de traducción."
       ]
     }
