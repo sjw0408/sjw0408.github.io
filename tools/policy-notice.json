@@ -823,6 +823,16 @@
     "(Nur Google-Play-Version) Anmeldestatus bei Play Spiele und Spieler-ID sowie, wenn du das Speichern bei Google wählst, kumulierte Fortschritts-Snapshots (abgeschlossene Stufen, Rekorde, Tagesaufgaben, Sammlung und Übungsfortschritt, Punktenutzung und Belohnungen)",
     "Google-Anmeldung, optionales Speichern und Laden in der Cloud",
     "Wenn du die Anmeldung abbrichst oder dich in den Einstellungen abmeldest, kannst du mit dem Fortschritt auf dem Gerät ohne Übermittlung an Play Spiele spielen. Dann kannst du nicht geräteübergreifend speichern und laden. Gespeicherte Daten kannst du über die Option zum Löschen des Cloud-Speicherstands in den App-Einstellungen oder durch Löschen deiner Google-Play-Spiele-Daten entfernen."
+   ],
+   "pt-br": [
+    "(somente na versão do Google Play) Estado de login no Play Games e identificador do jogador e, se você escolher o salvamento no Google, instantâneos do progresso acumulado (fases concluídas, recordes, progresso do desafio diário, da coleção e do treino, uso de pontos e registros de recompensas)",
+    "Login do Google e salvamento e carregamento opcionais na nuvem",
+    "Se você cancelar o login ou sair da conta nas configurações, poderá jogar com o progresso do dispositivo sem transferências para o Play Games. Nesse caso, não será possível salvar e carregar entre dispositivos. Os dados salvos podem ser excluídos pela opção de excluir o salvamento na nuvem nas configurações do app ou excluindo seus dados do Google Play Games."
+   ],
+   "zh-tw": [
+    "（僅限 Google Play 版）Play 遊戲的驗證狀態與玩家識別碼，以及你選擇 Google 儲存時的累計進度快照（已完成階段、紀錄、每日挑戰、圖鑑與練習進度、點數使用與獎勵紀錄）",
+    "Google 登入、選用的雲端儲存與載入",
+    "若你取消登入或在設定中登出，即可在不傳送至 Play 遊戲的情況下以裝置進度遊玩。此時無法跨裝置儲存與載入。儲存的資料可透過應用程式設定中的刪除雲端儲存選項，或刪除你的 Google Play 遊戲資料來清除。"
    ]
   },
   "cat-gomoku": {

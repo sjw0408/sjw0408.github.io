@@ -1,0 +1,145 @@
+{
+  "language": "pt-BR",
+  "title": "Política de privacidade do Gato Detetive",
+  "description": "Progresso local, salvamentos opcionais no Google, escolhas de anúncios e exclusão de dados no Gato Detetive.",
+  "back": "Informações do jogo Gato Detetive",
+  "date": "Atualizada em: 24 de novembro de 2026",
+  "version": "Nota de versão: a versão 1.0.0, build 10, introduz o login automático do Google e o padrão de anúncios não personalizados, sem tela de escolha de anúncios na inicialização e sem o novo botão Escolher depois. As três escolhas do build 9 e os adiamentos salvos anteriormente são tratados separadamente abaixo. As exclusões do backup automático do Android valem a partir do build 9. Este aviso não significa que o lançamento público esteja concluído.",
+  "summary": "Não é necessário criar uma conta própria do jogo. O app tenta o login do Google ao iniciar, mas cancelamento, falha ou uso offline ainda permitem jogar localmente; o salvamento na nuvem é uma escolha separada. Novas instalações usam anúncios não personalizados por padrão. Você pode jogar e usar pontos de investigação sem assistir a anúncios com recompensa. Um relato de erro só é enviado ao servidor de relatos da TeamCP quando você mesmo o envia em Configurações (seção 10).",
+  "contents": "Nesta página",
+  "resources": "Políticas dos provedores e solicitações de privacidade",
+  "contact": "Contato sobre privacidade",
+  "links": [
+    "Política de Privacidade do Google",
+    "Excluir dados do Google Play Games",
+    "Gerenciar sua Conta do Google",
+    "Política de privacidade da Unity para jogadores e solicitações de privacidade"
+  ],
+  "sections": [
+    {
+      "id": "scope",
+      "title": "1. Abrangência e operador",
+      "paragraphs": [
+        "A TeamCP desenvolve e opera o Gato Detetive para Android (com.teamcp.catdetective). Esta política explica o tratamento de dados do jogo e as suas escolhas. Contato: teamcp.channel@gmail.com.",
+        "Não há conta própria do jogo nem servidor de jogo operado pela desenvolvedora. O app não pede seu nome, e-mail ou telefone e não coleta senhas do Google nem dados de cartão de pagamento ou conta bancária. Se você escrever para o suporte por e-mail, seu endereço de resposta e sua mensagem serão usados para atender à sua solicitação."
+      ]
+    },
+    {
+      "id": "local",
+      "title": "2. Informações no seu dispositivo",
+      "items": [
+        "A partida atual, fases concluídas, recordes e o progresso de casos, coleção, desafio diário e tutorial",
+        "Pontos de investigação ganhos e gastos e recompensas de anúncios resgatadas",
+        "Configurações de idioma e som, estado do login no app e da conexão de salvamento do Google, escolha explícita de anúncios, versão do aviso e horário da última escolha"
+      ],
+      "paragraphs": [
+        "O armazenamento privado do app no Android permite jogar, retomar o progresso e evitar recompensas duplicadas. As escolhas de anúncios ficam em cada dispositivo; não há servidor separado de registro de consentimento. O app de lançamento não envia coordenadas de toques nas respostas nem análises de tempo de resposta a nenhum servidor externo e não usa o Firebase Analytics.",
+        "A versão 1.0.0 configura os arquivos e as preferências do app para ficarem fora do backup automático e da transferência de dispositivo do Android. Isso não garante o comportamento de transferência de todos os fabricantes. Use o salvamento opcional no Google para transferir o progresso."
+      ]
+    },
+    {
+      "id": "google",
+      "title": "3. Login automático do Google e salvamento opcional",
+      "paragraphs": [
+        "A partir do build 10, a inicialização normal verifica a autenticação existente do Google Play Games e, se necessário, solicita uma vez a tela de login do Google. Durante esse processo, o Google trata a autenticação e os identificadores da conta. Cancelar o login ou uma falha de autenticação/comunicação leva ao jogo local; você pode se reconectar em Configurações.",
+        "Após a autenticação bem-sucedida, o app verifica se existe um salvamento na nuvem, mas o login por si só não envia o progresso local nem substitui um salvamento existente na primeira conexão. Carregar, transferir o progresso do dispositivo e excluir o salvamento na nuvem são escolhas separadas. Uma conexão de salvamento já ativada tenta sincronizar automaticamente. Registros conflitantes de gasto de pontos exigem uma escolha.",
+        "Os dados salvos incluem a conclusão acumulada de fases, recordes, progresso do desafio diário, da coleção e do treino, gastos de pontos e recompensas resgatadas. A partida atual, as configurações do app, a escolha de anúncios, fotos, áudio e capturas de tela não fazem parte desse instantâneo.",
+        "Sair da conta em Configurações desconecta o salvamento do app e leva você à tela de título. Isso não exclui a Conta do Google do dispositivo nem o progresso existente. Tocar em Iniciar ou abrir o app novamente tenta o login do Google outra vez. A autenticação do Google e a personalização de anúncios são independentes."
+      ]
+    },
+    {
+      "id": "ads",
+      "title": "4. Anúncios e informações tratadas",
+      "items": [
+        "Endereço IP e localização aproximada baseada no IP; modelo do dispositivo, versão do sistema e do app, idioma e informações de rede",
+        "Identificadores do dispositivo, de publicidade e do SDK, quando as configurações do dispositivo e a lei aplicável permitirem",
+        "Solicitações, exibições, cliques e conclusões de anúncios, erros e diagnósticos",
+        "A categoria de histórico de compras nas divulgações do Unity Ads; o próprio Gato Detetive não tem compras com dinheiro real"
+      ],
+      "paragraphs": [
+        "A configuração de anúncios da versão 1.0.0 usa Unity LevelPlay e Unity Ads, sem AdMob, Google UMP nem o SDK AdQuality. Consulte a política da Unity abaixo para os provedores envolvidos na entrega, mediação e medição de anúncios.",
+        "Em uma nova instalação do build 10, o padrão não personalizado pode iniciar o SDK de anúncios e pré-carregar anúncios antes de você fazer uma escolha. Um estado Escolher depois salvo anteriormente é uma exceção e é mantido. Dicas, continuações e bônus com recompensa são opcionais. Banners podem aparecer no lobby, nas configurações, nos casos, no desafio diário, na coleção, na introdução do treino e nos resultados, mas não no título, no login do título nem durante a partida, incluindo carregamento, respostas e continuações."
+      ],
+      "after": [
+        "As finalidades incluem entrega de anúncios, controle de frequência, medição, prevenção de fraudes e diagnósticos. O alcance varia conforme a região, o dispositivo, as escolhas e o serviço. O Google e os serviços de anúncios podem fazer seus próprios diagnósticos e melhorias de produto; a TeamCP não opera um servidor de análise de comportamento no jogo."
+      ]
+    },
+    {
+      "id": "choices",
+      "title": "5. Suas escolhas sobre anúncios",
+      "items": [
+        "Anúncios não personalizados (padrão): nega o consentimento de personalização e envia sinais de recusa de venda/compartilhamento. Isso não interrompe todo o tratamento de dados, incluindo o possível acesso aos identificadores de publicidade.",
+        "Anúncios personalizados permitidos: envia o consentimento de personalização somente quando você o escolhe explicitamente sob o aviso atual. Você pode retirar o consentimento de personalização mudando para anúncios não personalizados em Configurações."
+      ],
+      "paragraphs": [
+        "O build 10 aplica anúncios não personalizados sem uma tela na inicialização. Esse padrão automático não é registrado como consentimento afirmativo nem como horário de escolha do usuário. As Configurações oferecem dois modos de anúncios. Escolhas de personalização de avisos anteriores passam a ser não personalizadas; somente uma escolha explícita sob o aviso atual é mantida como personalizada.",
+        "Um estado Escolher depois já salvo no build 9 ou em outro build anterior é mantido após a atualização. Nesse estado, o SDK de anúncios não é inicializado e os anúncios não são solicitados nem exibidos. Escolher explicitamente qualquer um dos modos de anúncios em Configurações ativa os anúncios; o build 10 não tem botão para adiar de novo.",
+        "Trocar de modo evita que o app reutilize anúncios já preparados e retornos tardios de recompensa. Mudar para anúncios não personalizados não encerra um SDK que já esteja em execução, não cancela todas as transmissões nem apaga dados já enviados.",
+        "O padrão não personalizado ainda envolve tratamento de dados e não substitui nenhum consentimento ou verificação exigidos por lei para menores. As configurações de ID de publicidade/privacidade do Android, os procedimentos de direitos dos provedores abaixo e nosso endereço de contato continuam disponíveis."
+      ]
+    },
+    {
+      "id": "providers",
+      "title": "6. Serviços de terceiros e tratamento internacional",
+      "paragraphs": [
+        "O Google Play Games e os serviços da Unity têm políticas próprias. A função e o tratamento de cada um variam conforme a conta, o anúncio e o serviço; nem todo provedor atua apenas como operador da TeamCP.",
+        "As informações da nuvem e de anúncios podem ser tratadas fora do seu país. As políticas dos provedores indicadas abaixo explicam os destinatários, os locais de tratamento, as salvaguardas de transferência e as bases do tratamento. Este aviso não substitui nenhum consentimento exigido para determinados tratamentos ou transferências.",
+        "A TeamCP não mantém cópias do progresso nem dos identificadores de publicidade em um servidor de jogo próprio nem vende uma lista separada de clientes. Ainda assim, o tratamento de publicidade pode configurar uma “venda” ou “compartilhamento” legal, quando aplicável. Consulte os sinais de restrição de anúncios e as instruções de recusa e de direitos dos provedores."
+      ]
+    },
+    {
+      "id": "delete-data",
+      "title": "7. Exclusão e retenção",
+      "items": [
+        "Dados do dispositivo: desinstale o app ou limpe os dados dele nas configurações do Android. Isso pode ser irreversível, então verifique antes se o progresso que você quer manter foi salvo.",
+        "Progresso na nuvem do Google: conecte-se em Configurações, selecione Excluir salvamento na nuvem e confirme. Isso exclui o instantâneo do Gato Detetive e desconecta a sincronização automática, mas não o progresso local/partida atual nem a Conta do Google. Reconectar e transferir depois pode criar um novo salvamento.",
+        "Sem o app: use as instruções de exclusão do Google Play Games abaixo para gerenciar os dados deste jogo. Isso é diferente de excluir toda a sua Conta do Google.",
+        "Dados de anúncios: use o ícone de privacidade do anúncio ou as instruções de acesso/exclusão na política da Unity abaixo. Desinstalar, sair da conta ou limitar anúncios não apaga por si só os dados já tratados por um provedor.",
+        "Ajuda para exclusão: escreva para teamcp.channel@gmail.com com o nome do jogo e o tipo de dado (dispositivo/Google/anúncios). Não envie senhas, códigos de verificação nem documentos de identidade desnecessários. Para dados que a TeamCP não mantém, indicamos o processo de verificação/exclusão do provedor.",
+        "Relatos de erro: os relatos armazenados no servidor são excluídos 90 dias após o recebimento. Para excluir um antes, escreva para teamcp.channel@gmail.com informando a data de envio e o modelo do dispositivo."
+      ],
+      "paragraphs": [
+        "O progresso e as configurações locais permanecem até você excluí-los; não há exclusão automática após 90 dias. Alterar uma escolha de anúncios atualiza a escolha atual e o horário da última escolha. As políticas dos provedores regem os prazos e critérios de retenção na nuvem e de anúncios e as exceções legais e de segurança."
+      ]
+    },
+    {
+      "id": "rights",
+      "title": "8. Escolhas e direitos",
+      "paragraphs": [
+        "Conforme a lei aplicável e as condições do tratamento, você pode ter direitos de acesso, correção, exclusão, restrição, oposição, portabilidade, retirada de consentimento, recusa de venda/compartilhamento ou reclamação a uma autoridade supervisora. Nem todos os direitos se aplicam da mesma forma a todo tratamento.",
+        "Entre em contato informando o nome do jogo, o tipo de solicitação e um endereço de resposta. Não envie documentos sensíveis primeiro. Os provedores podem exigir sua própria verificação de identidade para os dados que mantêm. A conexão com o Google e o consentimento para personalização de anúncios não são necessários para jogar, mas os anúncios não personalizados padrão de uma nova instalação ainda podem tratar informações."
+      ]
+    },
+    {
+      "id": "young-users",
+      "title": "9. Jovens jogadores e responsáveis",
+      "paragraphs": [
+        "O Gato Detetive é voltado a adolescentes de 13 anos ou mais e a adultos, não especificamente a crianças. Uma classificação de conteúdo para todas as idades não estabelece a elegibilidade para consentir com o tratamento de dados. As regras para menores, o consentimento dos responsáveis e a publicidade variam conforme a região.",
+        "O app não coleta datas de nascimento nem documentos de identidade e não verifica o consentimento dos responsáveis. Esta política e os botões de escolha de anúncios não substituem essa verificação. Entre em contato para dúvidas ou ajuda com exclusão."
+      ]
+    },
+    {
+      "id": "reports",
+      "title": "10. Relatos de erro",
+      "items": [
+        "A descrição que você escreve (até 2.000 caracteres) e o tipo de relato que você escolhe",
+        "Anexado automaticamente: identificador e versão do app, nome da tela de onde você fez o relato, idioma do app, nome do modelo do dispositivo e um número de relato aleatório criado para cada relato"
+      ],
+      "paragraphs": [
+        "Um relato só é enviado quando você escreve uma descrição em Configurações > “Relatar erro” e toca em enviar. Não há relatos automáticos nem relatórios de falhas. Um relato contém:"
+      ],
+      "after": [
+        "Os relatos nunca incluem seu ID de publicidade, uma conta, seus registros de jogo nem sua localização. Não escreva na descrição informações pessoais como seu nome ou dados de contato. Os relatos são enviados por conexão criptografada (HTTPS) e armazenados em um servidor de relatos operado pela TeamCP (hospedagem web: Cafe24, República da Coreia), e são usados somente para encontrar e corrigir problemas. O servidor e a empresa de hospedagem podem tratar seu endereço IP em registros de conexão durante a comunicação. Os relatos armazenados no servidor são mantidos por 90 dias a partir do recebimento e depois excluídos; se você pedir a exclusão antes disso, nós os excluímos imediatamente.",
+        "Se não houver conexão ou o envio falhar, o relato é mantido no seu dispositivo (até 50 relatos) e enviado novamente enquanto o jogo estiver aberto. Os relatos mantidos no dispositivo não são incluídos nos backups do Android e são removidos quando você limpa os dados do app."
+      ]
+    },
+    {
+      "id": "updates",
+      "title": "11. Segurança e alterações",
+      "paragraphs": [
+        "As informações locais ficam no armazenamento privado do app no Android. O salvamento no Google e as transmissões de anúncios usam os mecanismos de segurança dos respectivos provedores. Os relatos de erro são enviados por conexão criptografada (HTTPS).",
+        "Quando recursos, SDKs ou o tratamento mudarem, atualizamos esta política e sua data e anunciamos as mudanças importantes no app ou aqui. Cada página de idioma cobre o mesmo escopo; você pode nos contatar sobre diferenças de tradução."
+      ]
+    }
+  ]
+}

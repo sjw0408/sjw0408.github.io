@@ -7,7 +7,7 @@ import { policyStyle } from './policy-style.mjs';
 import { applyPolicyNotice } from './policy-notice.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const languages = { ko: '한국어', en: 'English', ja: '日本語', es: 'Español', fr: 'Français', de: 'Deutsch' };
+const languages = { ko: '한국어', en: 'English', ja: '日本語', es: 'Español', 'pt-BR': 'Português (Brasil)', 'zh-TW': '中文（繁體）', fr: 'Français', de: 'Deutsch' };
 const ids = ['scope', 'local', 'google', 'ads', 'choices', 'providers', 'delete-data', 'rights', 'young-users', 'reports', 'updates'];
 const base = '/games/cat-detective/privacy/';
 const origin = 'https://sjw0408.github.io';
@@ -107,4 +107,4 @@ ${resources.map((href, i) => `        <li><a href="${href}">${esc(data.links[i])
   }
 }
 if (process.argv.includes('--check') && changed) process.exitCode = 1;
-else console.log(`Privacy documents: 6 languages, ${changed} ${process.argv.includes('--check') ? 'out of date' : 'updated'}.`);
+else console.log(`Privacy documents: 8 languages, ${changed} ${process.argv.includes('--check') ? 'out of date' : 'updated'}.`);
