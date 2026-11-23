@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0d111d">
+  <title>3분 냥냥 던전 (CatRush 3) - TeamCP</title>
+  <meta name="robots" content="noindex">
+  <meta name="description" content="고양이와 함께 3분 동안 던전을 돌파하는 Android 캐주얼 로그라이트, 3분 냥냥 던전의 공식 정보 페이지입니다.">
+  <style>
+    :root {
+      font-family: Pretendard, "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #e2e8f0;
+      background: #0d111d;
+      color-scheme: dark;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 80% 8%, rgb(245 158 11 / 14%), transparent 26rem),
+        radial-gradient(circle at 15% 30%, rgb(56 189 248 / 10%), transparent 24rem),
+        linear-gradient(175deg, #131929, #0a0d16);
+      line-height: 1.65;
+    }
+    main {
+      width: min(820px, calc(100% - 32px));
+      margin: 32px auto;
+      padding: clamp(26px, 6vw, 56px);
+      border: 1px solid #232c45;
+      border-radius: 28px;
+      background: rgb(18 24 38 / 92%);
+      box-shadow: 0 24px 64px rgb(0 0 0 / 45%);
+    }
+    .hero { margin: 24px 0 38px; }
+    .badge {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 13px;
+      border-radius: 999px;
+      background: rgb(245 158 11 / 16%);
+      color: #fbbf24;
+      font-size: 0.8rem;
+      font-weight: 900;
+    }
+    h1 {
+      margin: 0;
+      color: #f8fafc;
+      font-size: clamp(2.4rem, 8vw, 4.6rem);
+      line-height: 1.08;
+      letter-spacing: -0.055em;
+    }
+    .subtitle { margin: 10px 0 0; color: #94a3b8; font-weight: 700; }
+    .lead {
+      max-width: 620px;
+      margin: 24px 0 0;
+      color: #cbd5e1;
+      font-size: 1.08rem;
+      word-break: keep-all;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin: 34px 0;
+    }
+    .feature {
+      padding: 18px;
+      border: 1px solid #232c45;
+      border-radius: 18px;
+      background: #161d2e;
+    }
+    .feature strong { display: block; margin-bottom: 5px; color: #fbbf24; }
+    .feature span { color: #a3b0c2; font-size: 0.88rem; word-break: keep-all; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; }
+    .button {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 19px;
+      border: 1px solid #38bdf8;
+      border-radius: 14px;
+      background: transparent;
+      color: #38bdf8;
+      font-weight: 800;
+      text-decoration: none;
+    }
+    .meta {
+      margin-top: 42px;
+      padding-top: 22px;
+      border-top: 1px solid #232c45;
+      color: #8592a6;
+      font-size: 0.86rem;
+    }
+    .meta p { margin: 4px 0; }
+    .meta a { color: #38bdf8; font-weight: 700; }
+    .en { color: #94a3b8; font-size: 0.92rem; margin: 6px 0 0; word-break: keep-all; }
+    .feature .en { display: block; margin-top: 4px; font-size: 0.8rem; }
+    @media (max-width: 640px) {
+      main { margin: 16px auto; border-radius: 24px; }
+      .features { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <span class="badge">TeamCP</span>
+      <h1>3분 냥냥 던전</h1>
+      <p class="subtitle">CatRush 3 · 3분 던전 로그라이트 / 3-minute dungeon roguelite</p>
+      <p class="lead">고양이와 함께 짧고 진한 던전 모험을 떠나세요. 자동 공격에 터치를 더해 몬스터를 물리치고, 레벨이 오를 때마다 새로운 성장 방향을 골라 나만의 조합을 완성하는 한 판 게임입니다.</p>
+      <p class="en">Team up with cats for a short, intense dungeon run. Add taps to auto-attacks, pick a new upgrade on every level-up and build your own combo.</p>
+    </section>
+
+    <section class="features" aria-label="주요 특징 / Features">
+      <div class="feature">
+        <strong>3분 도전</strong>
+        <span>짧은 탐험 속 중간 보스와 마지막 보스를 상대하세요.</span>
+        <span class="en">Face mid-bosses and a final boss in a quick run.</span>
+      </div>
+      <div class="feature">
+        <strong>성장 조합</strong>
+        <span>강화 선택과 유물의 시너지로 나만의 전투 방식을 만드세요.</span>
+        <span class="en">Combine upgrades and relics into your own build.</span>
+      </div>
+      <div class="feature">
+        <strong>고양이 수집</strong>
+        <span>다양한 고양이를 해금하고 모은 재화로 영구 강화를 하세요.</span>
+        <span class="en">Unlock cats and power them up between runs.</span>
+      </div>
+    </section>
+
+    <div class="actions">
+      <a class="button" href="../privacy/">개인정보처리방침 / Privacy</a>
+      <a class="button" href="mailto:teamcp.channel@gmail.com">문의 및 지원 / Support</a>
+    </div>
+
+    <footer class="meta">
+      <p>원스토어판 / ONE store edition · com.teamcp.catrush3</p>
+      <p>개발 및 문의 / Developer: TeamCP · <a href="mailto:teamcp.channel@gmail.com">teamcp.channel@gmail.com</a></p>
+    </footer>
+  </main>
+</body>
+</html>
