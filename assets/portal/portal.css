@@ -125,6 +125,11 @@ small{font-size:13px;line-height:1.4;color:var(--muted)}
 .cover{display:block;width:100%;height:auto;aspect-ratio:5/8;object-fit:contain;margin:0 auto 15px;max-width:168px;border-radius:6px}
 .book-format{font-size:14px}
 .book-title{overflow-wrap:anywhere}
+.book-copy{display:flex;flex:1;flex-direction:column;min-width:0}
+.book-card .primary-action{justify-content:center;padding-inline:11px}
+.home-books{margin-top:28px}
+.featured-book{display:grid;grid-template-columns:clamp(54px,20%,112px) minmax(0,1fr);align-items:start;gap:12px}
+.featured-book .cover{margin:0}
 .contact{margin-bottom:29px}
 .support-index{padding:0;margin:0;list-style:none}
 .support-index .panel{padding:14px}

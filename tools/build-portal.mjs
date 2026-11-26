@@ -110,7 +110,14 @@ const policyProducts = [
   { slug: 'cat-ring-twist', name: ['냥냥 고리 돌리기', 'Cat Ring Twist'] },
   { slug: 'meow-hangul', name: ['냥이랑 한글', 'Meow Hangul'] },
 ];
-const gumroad = ['galnnk', 'alrjwl', 'lwctnc', 'miyypj', 'zlsticu', 'gfxkid'];
+const storyVolumes = [
+  { volume: 1, gumroad: 'galnnk', asin: 'B0HPCRPFTN' },
+  { volume: 2, gumroad: 'alrjwl', asin: 'B0HQGFZ1V6' },
+  { volume: 3, gumroad: 'lwctnc', asin: 'B0HJQ8V9F4' },
+  { volume: 4, gumroad: 'miyypj', asin: 'B0HR1RGY8V' },
+  { volume: 5, gumroad: 'zlsticu', asin: 'B0HRNNRW4K' },
+  { volume: 6, gumroad: 'gfxkid' },
+];
 
 function pageURL(language, section = '') {
   const prefix = language === 'ko' ? '/' : '/en/';
@@ -171,6 +178,24 @@ function build(language) {
         ${cards.join('\n        ')}
       </${tag}>
     </section>`;
+  }
+
+  function storyCard({ volume, gumroad, asin }, featured = false) {
+    const title = `Mia and Charlie — Easy English Stories Vol. ${volume}`;
+    const storeButton = (store, href) =>
+      link(store, href, `class="button primary-action" aria-label="${escape(store + ' · ' + title)}"`);
+    return `<article class="panel catalog-card book-card${featured ? ' featured-book' : ''}">
+          <img class="cover" src="/assets/portal/books/vol-${volume}.webp" alt="" width="400" height="640">
+          <div class="book-copy">
+            <h3 class="book-title" lang="en">${escape(title)}</h3>
+            <p>${local(['짧은 이야기로 쉬운 영어 읽기를 연습하는 전자책.', 'An e-book for practicing English with short, easy stories.'])}</p>
+            <p class="book-format">EPUB · PDF${asin ? ' · Kindle' : ''}</p>
+            ${actions(
+              storeButton('Gumroad', 'https://channelteam.gumroad.com/l/' + gumroad),
+              asin && storeButton('Amazon', 'https://www.amazon.com/dp/' + asin),
+            )}
+          </div>
+        </article>`;
   }
 
   function page(section, title, description, body) {
@@ -271,6 +296,13 @@ function build(language) {
         </a>`;
         }).join('\n        ')}
       </div>
+    </section>
+    <section class="home-books" aria-labelledby="home-books-title">
+      <div class="section-head">
+        <h2 id="home-books-title">${sectionLabel('books')}</h2>
+        <a class="button secondary-action" href="${url('books')}">${local(['전체 책 보기', 'All books'])} ${arrow}</a>
+      </div>
+      ${storyCard(storyVolumes[0], true)}
     </section>`));
 
   const gamesDescription = local(['TeamCP가 만든 게임을 둘러보고 이용할 수 있는 스토어를 찾아보세요.', 'Explore TeamCP’s games and find them in your app store.']);
@@ -296,16 +328,7 @@ function build(language) {
     actions(button(t('home'), url()), secondaryAction(sectionLabel('support'), url('support')))));
 
   const booksDescription = local(['미아와 찰리의 이야기로 쉬운 영어 읽기를 연습해 보세요.', 'Practice reading English with easy stories about Mia and Charlie.']);
-  const bookCards = gumroad.map((slug, index) => {
-    const volume = index + 1;
-    return `<article class="panel catalog-card">
-          <img class="cover" src="/assets/portal/books/vol-${volume}.webp" alt="" width="400" height="640">
-          <h3 class="book-title" lang="en">Mia and Charlie — Easy English Stories Vol. ${volume}</h3>
-          <p>${local(['짧은 이야기로 쉬운 영어 읽기를 연습하는 전자책.', 'An e-book for practicing English with short, easy stories.'])}</p>
-          <p class="book-format">EPUB · PDF</p>
-          ${actions(button(local(['Gumroad에서 보기', 'View on Gumroad']), 'https://channelteam.gumroad.com/l/' + slug))}
-        </article>`;
-  });
+  const bookCards = storyVolumes.map(book => storyCard(book));
   writePage(url('books'), page('books', sectionLabel('books'), booksDescription,
     intro(sectionLabel('books'), booksDescription) + '\n    ' +
     catalog(local(['Mia and Charlie 시리즈', 'Mia and Charlie series']), bookCards)));
