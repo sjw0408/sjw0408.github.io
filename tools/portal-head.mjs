@@ -3,9 +3,14 @@ export const escape = value => String(value).replace(/[&<>"']/g, char => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
 })[char]);
 
+const locales = {
+  ko: 'ko_KR', en: 'en_US', ja: 'ja_JP', es: 'es_ES',
+  'pt-BR': 'pt_BR', 'zh-TW': 'zh_TW', de: 'de_DE', fr: 'fr_FR',
+};
+
 export function shareTags(title, description, path, language, image = '/assets/portal/share.png') {
   return `  <meta property="og:type" content="website">
-  <meta property="og:locale" content="${language === 'ko' ? 'ko_KR' : 'en_US'}">
+  <meta property="og:locale" content="${locales[language]}">
   <meta property="og:title" content="${escape(title)}">
   <meta property="og:description" content="${escape(description)}">
   <meta property="og:image" content="${escape(origin + image)}">

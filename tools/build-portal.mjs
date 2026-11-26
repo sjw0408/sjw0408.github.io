@@ -87,7 +87,7 @@ const upcoming = [
   },
   {
     slug: 'cat-way-out',
-    name: ['냥냥 길 비켜', 'CatWayOut'],
+    name: ['냥냥 길 비켜', 'Cat Way Out'],
     description: ['고양이가 바라보는 방향을 살펴 출구까지 길을 여는 퍼즐.', 'Look where each cat is facing and clear its path to the exit.'],
   },
   {
@@ -349,7 +349,7 @@ ${indexable ? '' : '  <meta name="robots" content="noindex">\n'}  <link rel="sty
           ${actions(detailLink(game), policyLink(game))}
         </article>`);
   const upcomingCards = upcoming.map(game => `<article class="panel catalog-card">
-          <h3>${escape(local(game.name))}</h3>
+          <div class="item-heading">${existsSync(siteFile(gameIcon(game).slice(1))) ? icon(game) : ''}<h3>${escape(local(game.name))}</h3></div>
           <p>${escape(local(game.description))}</p>
           ${actions(...(game.detail === false ? [] : [detailLink(game)]), policyLink(game))}
         </article>`);
@@ -436,6 +436,10 @@ ${indexable ? '' : '  <meta name="robots" content="noindex">\n'}  <link rel="sty
     });
     const primaryPolicy = policy(game, language);
     const policyQuery = oneStore ? '?from=onestore' : '';
+    const status = oneStore && !game.oneStore
+      ? local(['원스토어 출시 준비 중', 'Coming soon to ONE store'])
+      : !game.package && local(['출시 준비 중', 'In development']);
+    const preview = (isEnglish && copy.englishPreview) || 'preview.webp';
     const otherPolicy = policy(game, other);
     const extraPolicies = oneStore ? [] : [
       ...(otherPolicy.href !== primaryPolicy.href
@@ -451,7 +455,7 @@ ${indexable ? '' : '  <meta name="robots" content="noindex">\n'}  <link rel="sty
         <header>
           <img class="detail-icon" src="${gameIcon(game)}" width="96" height="96" alt="">
           <h1>${escape(title)}</h1>
-          ${game.package || oneStore ? '' : `<p class="label">${local(['출시 준비 중', 'In development'])}</p>`}
+          ${status ? `<p class="label">${escape(status)}</p>` : ''}
           <p>${escape(description)}</p>
         </header>
         <p>${escape(local(copy.feature))}</p>
@@ -463,7 +467,7 @@ ${indexable ? '' : '  <meta name="robots" content="noindex">\n'}  <link rel="sty
         )}
       </div>
       <figure class="game-preview">
-        <img src="${path}preview.webp" alt="${escape(local(copy.imageAlt))}">
+        <img src="${path}${preview}" alt="${escape(local(copy.imageAlt))}">
       </figure>
     </section>
     ${extraPolicies.length ? `<section class="detail-policy panel">

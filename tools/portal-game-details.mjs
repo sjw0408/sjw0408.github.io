@@ -18,12 +18,13 @@ export const detailCopy = {
       '장애물을 피하고 콤보를 쌓으며 최고 점수에 도전하세요. 매일 새로 바뀌는 미션과 스킨을 모아 보세요.',
       'Dodge obstacles, build combos, and go for a high score. Try the missions that refresh daily and collect skins.',
     ],
-    imageAlt: ['슬라임이 택배를 운반하는 게임 화면', 'A slime carrying a parcel in Slime Express'],
+    englishPreview: 'preview-en.webp',
+    imageAlt: ['슬라임이 택배를 운반하는 게임 화면', 'Color-coded delivery zones in Slime Express'],
   },
   'cat-rush3': {
     feature: [
       '자동 공격에 터치를 더해 몬스터를 물리치세요. 레벨이 오를 때마다 기술을 골라 한 판의 성장 방향을 바꿀 수 있습니다.',
-      'Tap to supplement auto-attacks. Choose upgrades as you level up to build a different combination on each run.',
+      'Tap to boost your auto-attacks. Choose upgrades as you level up to build a different combination on each run.',
     ],
     imageAlt: ['고양이 기사의 원정 준비 화면', 'Preparing a cat knight for a dungeon run'],
   },

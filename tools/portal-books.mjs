@@ -67,8 +67,8 @@ export const planners = [
     title: '2027 Weekly Planner PDF',
     gumroad: 'siogq',
     image: 'planner-2027-pdf',
-    dimensions: [600, 776],
-    imageAlt: ['2027년 주간 플래너 PDF 첫 페이지', 'First page of the 2027 Weekly Planner PDF'],
+    dimensions: [600, 900],
+    imageAlt: ['붓꽃이 그려진 2027년 주간 플래너 PDF 앞표지', 'Front cover of the 2027 Weekly Planner PDF with an iris illustration'],
     description: [
       '한 주의 일정과 할 일을 정리하는 2027년 인쇄용 플래너.',
       'A printable 2027 planner for organizing your weekly schedule and to-do list.',
