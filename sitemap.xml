@@ -2,32 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://sjw0408.github.io/</loc></url>
   <url><loc>https://sjw0408.github.io/apps/</loc></url>
-  <url><loc>https://sjw0408.github.io/apps/cat-water-buddy/</loc></url>
   <url><loc>https://sjw0408.github.io/books/</loc></url>
   <url><loc>https://sjw0408.github.io/en/</loc></url>
   <url><loc>https://sjw0408.github.io/en/apps/</loc></url>
-  <url><loc>https://sjw0408.github.io/en/apps/cat-water-buddy/</loc></url>
   <url><loc>https://sjw0408.github.io/en/books/</loc></url>
   <url><loc>https://sjw0408.github.io/en/games/</loc></url>
-  <url><loc>https://sjw0408.github.io/en/games/cat-bento-sort/</loc></url>
   <url><loc>https://sjw0408.github.io/en/games/cat-detective/</loc></url>
   <url><loc>https://sjw0408.github.io/en/games/cat-gomoku/</loc></url>
-  <url><loc>https://sjw0408.github.io/en/games/cat-pirates/</loc></url>
-  <url><loc>https://sjw0408.github.io/en/games/cat-ring-twist/</loc></url>
   <url><loc>https://sjw0408.github.io/en/games/cat-rush3/</loc></url>
-  <url><loc>https://sjw0408.github.io/en/games/cat-rush3/onestore/</loc></url>
-  <url><loc>https://sjw0408.github.io/en/games/cat-way-out/</loc></url>
   <url><loc>https://sjw0408.github.io/en/games/dead-frequency/</loc></url>
   <url><loc>https://sjw0408.github.io/en/games/indie-dev-tycoon/</loc></url>
-  <url><loc>https://sjw0408.github.io/en/games/nyan-churu-bus/</loc></url>
-  <url><loc>https://sjw0408.github.io/en/games/nyang-merge/</loc></url>
   <url><loc>https://sjw0408.github.io/en/games/slime-express/</loc></url>
   <url><loc>https://sjw0408.github.io/en/games/slime-express/onestore/</loc></url>
-  <url><loc>https://sjw0408.github.io/en/games/yarn-tangle-cats/</loc></url>
   <url><loc>https://sjw0408.github.io/en/privacy/</loc></url>
   <url><loc>https://sjw0408.github.io/en/support/</loc></url>
   <url><loc>https://sjw0408.github.io/games/</loc></url>
-  <url><loc>https://sjw0408.github.io/games/cat-bento-sort/</loc></url>
   <url><loc>https://sjw0408.github.io/games/cat-bento-sort/privacy/</loc></url>
   <url><loc>https://sjw0408.github.io/games/cat-bento-sort/privacy/de/</loc></url>
   <url><loc>https://sjw0408.github.io/games/cat-bento-sort/privacy/en/</loc></url>
@@ -62,10 +51,8 @@
   <url><loc>https://sjw0408.github.io/games/cat-gomoku/privacy/ja/</loc></url>
   <url><loc>https://sjw0408.github.io/games/cat-gomoku/privacy/pt-br/</loc></url>
   <url><loc>https://sjw0408.github.io/games/cat-gomoku/privacy/zh-tw/</loc></url>
-  <url><loc>https://sjw0408.github.io/games/cat-pirates/</loc></url>
   <url><loc>https://sjw0408.github.io/games/cat-pirates/privacy/</loc></url>
   <url><loc>https://sjw0408.github.io/games/cat-pirates/privacy/en/</loc></url>
-  <url><loc>https://sjw0408.github.io/games/cat-ring-twist/</loc></url>
   <url><loc>https://sjw0408.github.io/games/cat-ring-twist/privacy/</loc></url>
   <url><loc>https://sjw0408.github.io/games/cat-ring-twist/privacy/de/</loc></url>
   <url><loc>https://sjw0408.github.io/games/cat-ring-twist/privacy/en/</loc></url>
@@ -75,7 +62,6 @@
   <url><loc>https://sjw0408.github.io/games/cat-ring-twist/privacy/pt-br/</loc></url>
   <url><loc>https://sjw0408.github.io/games/cat-ring-twist/privacy/zh-tw/</loc></url>
   <url><loc>https://sjw0408.github.io/games/cat-rush3/</loc></url>
-  <url><loc>https://sjw0408.github.io/games/cat-rush3/onestore/</loc></url>
   <url><loc>https://sjw0408.github.io/games/cat-rush3/privacy/</loc></url>
   <url><loc>https://sjw0408.github.io/games/cat-rush3/privacy/en/</loc></url>
   <url><loc>https://sjw0408.github.io/games/cat-water-buddy/privacy/</loc></url>
@@ -86,7 +72,6 @@
   <url><loc>https://sjw0408.github.io/games/cat-water-buddy/privacy/ja/</loc></url>
   <url><loc>https://sjw0408.github.io/games/cat-water-buddy/privacy/pt-br/</loc></url>
   <url><loc>https://sjw0408.github.io/games/cat-water-buddy/privacy/zh-tw/</loc></url>
-  <url><loc>https://sjw0408.github.io/games/cat-way-out/</loc></url>
   <url><loc>https://sjw0408.github.io/games/cat-way-out/privacy/</loc></url>
   <url><loc>https://sjw0408.github.io/games/cat-way-out/privacy/de/</loc></url>
   <url><loc>https://sjw0408.github.io/games/cat-way-out/privacy/en/</loc></url>
@@ -117,7 +102,6 @@
   <url><loc>https://sjw0408.github.io/games/meow-hangul/privacy/ja/</loc></url>
   <url><loc>https://sjw0408.github.io/games/meow-hangul/privacy/pt-br/</loc></url>
   <url><loc>https://sjw0408.github.io/games/meow-hangul/privacy/zh-tw/</loc></url>
-  <url><loc>https://sjw0408.github.io/games/nyan-churu-bus/</loc></url>
   <url><loc>https://sjw0408.github.io/games/nyan-churu-bus/privacy/</loc></url>
   <url><loc>https://sjw0408.github.io/games/nyan-churu-bus/privacy/de/</loc></url>
   <url><loc>https://sjw0408.github.io/games/nyan-churu-bus/privacy/en/</loc></url>
@@ -126,14 +110,12 @@
   <url><loc>https://sjw0408.github.io/games/nyan-churu-bus/privacy/ja/</loc></url>
   <url><loc>https://sjw0408.github.io/games/nyan-churu-bus/privacy/pt-br/</loc></url>
   <url><loc>https://sjw0408.github.io/games/nyan-churu-bus/privacy/zh-tw/</loc></url>
-  <url><loc>https://sjw0408.github.io/games/nyang-merge/</loc></url>
   <url><loc>https://sjw0408.github.io/games/nyang-merge/privacy/</loc></url>
   <url><loc>https://sjw0408.github.io/games/nyang-merge/privacy/en/</loc></url>
   <url><loc>https://sjw0408.github.io/games/slime-express/</loc></url>
   <url><loc>https://sjw0408.github.io/games/slime-express/onestore/</loc></url>
   <url><loc>https://sjw0408.github.io/games/slime-express/privacy/</loc></url>
   <url><loc>https://sjw0408.github.io/games/slime-express/privacy/en/</loc></url>
-  <url><loc>https://sjw0408.github.io/games/yarn-tangle-cats/</loc></url>
   <url><loc>https://sjw0408.github.io/games/yarn-tangle-cats/privacy/</loc></url>
   <url><loc>https://sjw0408.github.io/games/yarn-tangle-cats/privacy/de/</loc></url>
   <url><loc>https://sjw0408.github.io/games/yarn-tangle-cats/privacy/en/</loc></url>
