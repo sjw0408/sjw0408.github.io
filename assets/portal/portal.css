@@ -2,15 +2,17 @@
 :root{font-family:system-ui,-apple-system,"Malgun Gothic","Apple SD Gothic Neo",sans-serif;font-synthesis:none}
 body{margin:0}
 a{color:inherit;text-decoration:none}
+a:active{opacity:.85}
 a:focus-visible{outline:3px solid var(--focus);outline-offset:4px}
 .wrap{width:min(1184px,calc(100% - 96px));margin-inline:auto}
-.skip{position:absolute;left:12px;top:8px;padding:12px;background:#fff;color:#171523;z-index:10;transform:translateY(-140%)}
+.skip{display:inline-flex;align-items:center;min-width:48px;min-height:48px;position:absolute;left:12px;top:8px;padding:12px;background:#fff;color:#171523;z-index:10;transform:translateY(-140%)}
 .skip:focus{transform:translateY(0)}
 .header{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:80px}
-.brand{display:inline-flex;flex:none;align-items:center;gap:11px;font-size:23px;letter-spacing:-.055em;font-weight:850}
+.brand{display:inline-flex;min-height:48px;flex:none;align-items:center;gap:11px;font-size:23px;letter-spacing:-.055em;font-weight:850}
 .mark{display:grid;place-items:center;width:38px;height:38px;font-size:15px;letter-spacing:-.07em}
-.navigation{display:flex;flex-wrap:wrap;gap:30px;align-items:center;font-size:15px;font-weight:750}
-.navigation a,.lang{display:inline-flex;align-items:center;min-height:44px}
+.navigation{display:flex;flex-wrap:wrap;gap:14px;align-items:center;font-size:15px;font-weight:750}
+.navigation a,.lang{display:inline-flex;align-items:center;justify-content:center;min-width:48px;min-height:48px}
+.navigation a{padding-inline:8px}
 .lang{padding:0 14px;border:1px solid var(--edge);border-radius:30px;background:transparent;color:inherit;font:inherit;font-size:13px;font-weight:800;cursor:pointer}
 h1,h2,h3,p{margin:0}
 h1{letter-spacing:-.075em;line-height:1.115;font-weight:850}
@@ -18,7 +20,7 @@ h2{font-size:28px;letter-spacing:-.055em;line-height:1.25}
 p{line-height:1.65}
 :lang(ko) :is(p,h1,h2,h3,small){word-break:keep-all;overflow-wrap:anywhere}
 [id]{scroll-margin-top:16px}
-.button{display:inline-flex;align-items:center;justify-content:space-between;gap:20px;min-height:46px;padding:0 17px;border-radius:9px;font-size:14px;font-weight:800}
+.button{display:inline-flex;align-items:center;justify-content:space-between;gap:20px;min-width:48px;min-height:48px;padding:0 17px;border-radius:9px;font-size:14px;font-weight:800}
 .arrow{align-self:start;flex:none;font-size:19px;line-height:1}
 .games-grid,.tiles{display:grid;gap:14px}
 .games-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
@@ -30,18 +32,18 @@ small{font-size:13px;line-height:1.4;color:var(--muted)}
 .tile,.game{transition:transform .18s ease,border-color .18s ease}
 .tile:hover,.game:hover{transform:translateY(-3px);border-color:var(--focus)}
 .section-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:15px}
-.section-head a{display:inline-flex;align-items:center;gap:9px;min-height:44px;font-size:14px;font-weight:750}
+.section-head .button{gap:9px}
 .footer{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-block:15px 24px;border-top:1px solid var(--edge);color:var(--muted);font-size:14px}
-.footer a,.text-link{text-decoration:underline;text-underline-offset:4px}
-@media(max-width:820px){.wrap{width:min(100% - 44px,680px)}.navigation{gap:15px}.games-grid{grid-template-columns:1fr}}
+.footer a{text-decoration:underline;text-underline-offset:4px}
+@media(max-width:820px){.wrap{width:min(100% - 44px,680px)}.navigation{gap:4px}.games-grid{grid-template-columns:1fr}}
 @media(max-width:560px){
  .wrap{width:calc(100% - 36px)}
  .header{min-height:96px;display:grid;grid-template-columns:1fr auto;gap:0}
- .brand{font-size:21px;min-height:44px}
+ .brand{font-size:21px;justify-self:start}
  .mark{width:34px;height:34px}
  .navigation{grid-row:2;grid-column:1/-1;justify-content:space-between;gap:6px;font-size:13px}
- .navigation a,.lang{min-height:44px}
- .lang{grid-column:2;grid-row:1;min-width:47px;justify-content:center}
+ .navigation a{padding-inline:6px}
+ .lang{grid-column:2;grid-row:1;justify-content:center}
  .footer{flex-wrap:wrap}
  .section-head{margin-bottom:9px}
  h2{font-size:24px}
@@ -100,7 +102,7 @@ small{font-size:13px;line-height:1.4;color:var(--muted)}
 
 .site-main{padding-bottom:40px}
 .footer-links{display:flex;flex-wrap:wrap;gap:8px 20px}
-.footer a{display:inline-flex;align-items:center;min-height:44px}
+.footer a{display:inline-flex;align-items:center;min-width:48px;min-height:48px}
 .navigation a[aria-current]{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px}
 .page-intro{padding:35px 38px;margin-bottom:24px;border-radius:24px;background:#eee6ff}
 .page-intro h1{font-size:clamp(36px,5vw,62px)}
@@ -114,16 +116,16 @@ small{font-size:13px;line-height:1.4;color:var(--muted)}
 .panel p{margin-top:10px;color:var(--muted)}
 .item-heading{display:flex;align-items:center;gap:12px}
 .item-heading .game-icon{width:58px;height:58px}
-.item-actions{display:flex;flex-wrap:wrap;gap:4px 13px;margin-top:auto;padding-top:12px;align-items:center}
-.item-actions .text-link{display:inline-flex;align-items:center;min-height:44px;color:#513492;font-size:14px;font-weight:700;overflow-wrap:anywhere}
+.item-actions{display:flex;flex-wrap:wrap;gap:6px 8px;margin-top:auto;padding-top:12px;align-items:center}
+.secondary-action{width:max-content;max-width:100%;padding:7px 11px;border:1px solid #9c89b9;color:#513492;background:#f7f1ff;overflow-wrap:anywhere}
+.secondary-action:hover,.secondary-action:active{border-color:var(--focus);background:#eee3ff}
 .catalog-card{display:flex;flex-direction:column}
-.primary-action{width:max-content;max-width:100%;min-height:44px;padding:8px 13px;color:white;background:#372457}
+.primary-action{width:max-content;max-width:100%;padding:8px 13px;color:white;background:#372457}
 .item-actions + .item-actions{padding-top:2px}
 .cover{display:block;width:100%;height:auto;aspect-ratio:5/8;object-fit:contain;margin:0 auto 15px;max-width:168px;border-radius:6px}
 .book-format{font-size:14px}
 .book-title{overflow-wrap:anywhere}
 .contact{margin-bottom:29px}
-.contact .text-link{overflow-wrap:anywhere}
 .support-index{padding:0;margin:0;list-style:none}
 .support-index .panel{padding:14px}
 .support-index .item-actions{padding-top:5px}

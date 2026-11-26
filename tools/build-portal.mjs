@@ -1,6 +1,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { commonPrivacy } from './common-privacy.mjs';
 
 const check = process.argv.includes('--check');
 const origin = 'https://sjw0408.github.io';
@@ -21,7 +22,7 @@ const shared = {
   skip: ['본문으로 건너뛰기', 'Skip to content'],
   home: ['홈', 'Home'],
   privacy: ['개인정보처리방침', 'Privacy policy'],
-  commonPolicy: ['TeamCP 공통 개인정보처리방침', 'TeamCP general privacy policy (Korean)'],
+  commonPolicy: ['TeamCP 공통 개인정보처리방침', 'TeamCP general privacy policy'],
   gameInfo: ['게임 정보', 'Game information'],
   gameInfoKorean: ['게임 정보', 'Game information (Korean)'],
   policyKorean: ['개인정보처리방침', 'Privacy policy (Korean)'],
@@ -150,7 +151,8 @@ function build(language) {
   const otherLabel = isEnglish ? '한국어로 보기' : 'Switch to English';
   const sectionLabel = section => local(sections[section]);
   const link = (label, href, attributes = '') => `<a href="${escape(href)}"${attributes ? ' ' + attributes : ''}>${escape(label)}</a>`;
-  const textLink = (label, href, attributes = '') => link(label, href, `class="text-link" ${attributes}`.trim());
+  const secondaryAction = (label, href, attributes = '') => link(label, href, `class="button secondary-action" ${attributes}`.trim());
+  const commonPolicyAttributes = `hreflang="${language}"`;
   const arrow = '<span aria-hidden="true">→</span>';
   const button = (label, href) => `<a class="button primary-action" href="${escape(href)}">${escape(label)} ${arrow}</a>`;
   const actions = (...links) => `<div class="item-actions">${links.filter(Boolean).join('\n        ')}</div>`;
@@ -204,7 +206,7 @@ function build(language) {
     <span>TeamCP</span>
     <div class="footer-links">
       ${link(sectionLabel('support'), url('support'))}
-      ${link(isEnglish ? t('policyKorean') : t('privacy'), '/privacy/', 'hreflang="ko"')}
+      ${link(t('privacy'), url('privacy'), commonPolicyAttributes)}
     </div>
   </footer>
 </body>
@@ -217,12 +219,12 @@ function build(language) {
     const koreanFallback = isEnglish && target.language === 'ko';
     const label = key === 'privacy' && koreanFallback
       ? t('policyKorean') : t(key) + (koreanFallback ? ' (Korean)' : '');
-    return textLink(label, target.href + hash, `hreflang="${target.language}"`);
+    return secondaryAction(label, target.href + hash, `hreflang="${target.language}"`);
   }
   function detailLink(game) {
     const localized = game.slug === 'cat-gomoku';
     const href = localized ? url('games/cat-gomoku') : `/games/${game.slug}/`;
-    return textLink(t(isEnglish && !localized ? 'gameInfoKorean' : 'gameInfo'), href, `hreflang="${localized ? language : 'ko'}"`);
+    return secondaryAction(t(isEnglish && !localized ? 'gameInfoKorean' : 'gameInfo'), href, `hreflang="${localized ? language : 'ko'}"`);
   }
 
   const homeDescription = local(['게임, 일상을 돕는 앱, 이야기를 담은 책을 만드는 작은 스튜디오입니다.', 'We are a small studio making games, everyday apps, and books.']);
@@ -256,7 +258,7 @@ function build(language) {
     <section id="games" aria-labelledby="games-title">
       <div class="section-head">
         <h2 id="games-title">${local(['TeamCP 게임', 'TeamCP games'])}</h2>
-        <a href="${url('games')}">${local(['전체 게임 보기', 'All games'])} ${arrow}</a>
+        <a class="button secondary-action" href="${url('games')}">${local(['전체 게임 보기', 'All games'])} ${arrow}</a>
       </div>
       <div class="games-grid">
         ${featured.map(([game, caption]) => {
@@ -275,7 +277,7 @@ function build(language) {
   const gameCards = games.map(game => `<article class="panel catalog-card">
           <div class="item-heading">${icon(game)}<h3>${escape(local(game.name))}</h3></div>
           <p>${escape(local(game.description))}</p>
-          ${actions(button('Google Play', play(game)), ...(game.oneStore ? [textLink(t('oneStore'), 'https://m.onestore.co.kr/v2/ko-kr/app/' + game.oneStore, 'hreflang="ko"')] : []))}
+          ${actions(button('Google Play', play(game)), ...(game.oneStore ? [secondaryAction(t('oneStore'), 'https://m.onestore.co.kr/v2/ko-kr/app/' + game.oneStore, 'hreflang="ko"')] : []))}
           ${actions(detailLink(game), policyLink(game))}
         </article>`);
   const upcomingCards = upcoming.map(game => `<article class="panel catalog-card">
@@ -291,7 +293,7 @@ function build(language) {
   const appsDescription = local(['공개 앱을 준비하고 있어요.', 'Our apps are in preparation.']);
   writePage(url('apps'), page('apps', sectionLabel('apps'), appsDescription,
     intro(sectionLabel('apps'), appsDescription) + '\n    ' +
-    actions(button(t('home'), url()), textLink(sectionLabel('support'), url('support')))));
+    actions(button(t('home'), url()), secondaryAction(sectionLabel('support'), url('support')))));
 
   const booksDescription = local(['미아와 찰리의 이야기로 쉬운 영어 읽기를 연습해 보세요.', 'Practice reading English with easy stories about Mia and Charlie.']);
   const bookCards = gumroad.map((slug, index) => {
@@ -316,25 +318,27 @@ function build(language) {
     const hasAnchor = id => new RegExp(`\\bid=["']${id}["']`).test(html);
     const access = local(['개인정보 열람·삭제', 'Data access or deletion']);
     const reportLink = hasAnchor('reports')
-      ? policyLink(product, 'report', '#reports') : textLink(t('report'), mail(subjectName + ' · ' + t('report')));
+      ? policyLink(product, 'report', '#reports') : secondaryAction(t('report'), mail(subjectName + ' · ' + t('report')));
     const deletionLink = hasAnchor('delete-data') ? policyLink(product, 'deletion', '#delete-data') : '';
     return `<li class="panel">
           <h3>${escape(subjectName)}</h3>
-          ${actions(policyLink(product), reportLink, deletionLink, textLink(t('access'), mail(subjectName + ' · ' + access)))}
+          ${actions(policyLink(product), reportLink, deletionLink, secondaryAction(t('access'), mail(subjectName + ' · ' + access)))}
         </li>`;
   });
   writePage(url('support'), page('support', sectionLabel('support'), supportDescription, `${intro(sectionLabel('support'), supportDescription)}
     <section class="panel contact">
       <h2>${local(['이메일 문의', 'Email support'])}</h2>
       <p>${local(['문의나 오류 신고에는 제품 이름, 버전, 어떤 일이 있었는지 적어 주세요.', 'Include the product name, version, and what happened in your message.'])}</p>
-      ${actions(textLink(email, mail()), textLink(t('commonPolicy'), '/privacy/', 'hreflang="ko"'))}
+      ${actions(secondaryAction(email, mail()), secondaryAction(t('commonPolicy'), url('privacy'), commonPolicyAttributes))}
     </section>
     ${catalog(local(['제품별 지원과 개인정보처리방침', 'Product support and privacy policies']), supportCards, true)}`));
+
+  writePage(url('privacy'), commonPrivacy(language, slug => policy({ slug }, language)));
 
   const gomoku = games[1];
   writePage(url('games/cat-gomoku'), page('games/cat-gomoku', local(gomoku.name), local(gomoku.description),
     intro(local(gomoku.name), local(gomoku.description)) + '\n    ' +
-    actions(button('Google Play', play(gomoku)), policyLink(gomoku), textLink(sectionLabel('games'), url('games')))));
+    actions(button('Google Play', play(gomoku)), policyLink(gomoku), secondaryAction(sectionLabel('games'), url('games')))));
 }
 
 for (const language of ['ko', 'en']) build(language);

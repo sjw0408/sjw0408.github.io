@@ -9,12 +9,13 @@ import { fileURLToPath } from 'node:url';
 
 const D = JSON.parse(readFileSync(resolve(dirname(fileURLToPath(import.meta.url)), 'policy-notice.json'), 'utf8'));
 const NL = '\n';
+export const policyContactLink = D.mail;
 
 const ul = xs => '<ul>' + xs.map(x => `<li>${x}</li>`).join('') + '</ul>';
 const dl = (title, idattr, labels, vals) => [`<div class="xfer-item" id="${idattr}"><h4>${title}</h4><dl>`,
   ...vals.map((v, i) => `<dt>${labels[i]}</dt><dd>${v}</dd>`), '</dl></div>'].join(NL);
 
-function officerHtml(lang) {
+export function officerHtml(lang) {
   const colon = ['ja', 'zh-tw'].includes(lang) ? '：' : lang === 'fr' ? ' : ' : ': ';
   const rows = D.officer[lang].map(([k, v]) => `<li><strong>${k}</strong>${colon}${v.replaceAll('{mail}', D.mail)}</li>`).join('');
   return `<ul class="pipa-officer">${rows}</ul>${NL}<p>${D.officerNote[lang]}</p>`;
