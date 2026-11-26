@@ -14,7 +14,7 @@ const escape = value => String(value).replace(/[&<>"']/g, char => ({
 const sections = {
   games: ['게임', 'Games'],
   apps: ['앱', 'Apps'],
-  books: ['전자책', 'Books'],
+  books: ['책', 'Books'],
   support: ['고객지원', 'Support'],
 };
 const shared = {
@@ -96,19 +96,43 @@ const upcoming = [
     name: ['냥이 낚시 어항', 'Cat Fishing Aquarium'],
     description: ['물고기를 잡고 도감을 채우며 나만의 어항을 꾸미는 게임.', 'Catch fish, complete your collection, and decorate your own aquarium.'],
   },
+];
+
+const waterBuddy = {
+  slug: 'cat-water-buddy',
+  name: ['냥이 물그릇', 'Cat Water Buddy'],
+  description: ['물을 마실 때마다 한 잔씩 기록하고, 하루 목표와 물 마실 시간을 챙기는 앱.', 'Log each glass of water, track your daily goal, and set reminders to drink.'],
+  detail: true,
+  privacy: true,
+};
+const meowHangul = {
+  slug: 'meow-hangul',
+  name: ['냥이랑 한글', 'Meow Hangul'],
+  description: ['한글 자모와 받침을 익히고, 듣기 문제와 복습으로 읽기를 연습하는 학습 앱.', 'Learn Hangul letters and final consonants, then practice reading with listening exercises and spaced review.'],
+  privacy: true,
+};
+const apps = [
+  waterBuddy,
+  meowHangul,
   {
-    slug: 'cat-water-buddy', detail: false,
-    name: ['냥이 물그릇', 'Cat Water Buddy'],
-    description: ['마신 물을 기록할 때마다 고양이 물그릇을 채우는 앱.', 'Fill a cat’s water bowl every time you log a glass of water.'],
+    slug: 'dayknot',
+    name: ['날매듭', 'DayKnot'],
+    description: ['기념일이나 시험까지 남은 날을 기록하고 홈 화면 위젯에서 보는 앱.', 'Track the days until anniversaries, exams, and other dates on a home screen widget.'],
+  },
+  {
+    slug: 'steadygrid',
+    name: ['꾸준표', 'SteadyGrid'],
+    description: ['하루 한 번 습관을 체크하고 연속 기록과 통계를 보는 앱.', 'Check off daily habits and follow your streaks and progress.'],
   },
 ];
 
 const policyProducts = [
   ...games,
   ...upcoming,
+  waterBuddy,
   { slug: 'yarn-tangle-cats', name: ['냥이 털실 풀기', 'Yarn Tangle Cats'] },
   { slug: 'cat-ring-twist', name: ['냥냥 고리 돌리기', 'Cat Ring Twist'] },
-  { slug: 'meow-hangul', name: ['냥이랑 한글', 'Meow Hangul'] },
+  meowHangul,
 ];
 const storyVolumes = [
   { volume: 1, gumroad: 'galnnk', asin: 'B0HPCRPFTN' },
@@ -117,6 +141,30 @@ const storyVolumes = [
   { volume: 4, gumroad: 'miyypj', asin: 'B0HR1RGY8V' },
   { volume: 5, gumroad: 'zlsticu', asin: 'B0HRNNRW4K' },
   { volume: 6, gumroad: 'gfxkid' },
+];
+
+const paperbacks = [
+  {
+    title: '2027 Weekly Planner',
+    asin: 'B0HSNGMZMF',
+    image: 'planner-2027',
+    dimensions: [599, 899],
+    description: [
+      '월간 달력과 주간 계획, 우선순위와 메모를 담은 2027년 날짜형 플래너.',
+      'A dated 2027 planner with monthly calendars and weekly space for plans, priorities, and notes.',
+    ],
+  },
+  {
+    title: 'Mileage Log Book for Taxes',
+    asin: 'B0H3QBNL5S',
+    image: 'mileage-log',
+    dimensions: [637, 900],
+    imageAlt: ['주행 기록장 속지', 'Mileage log interior page'],
+    description: [
+      '날짜, 이동 목적, 출발·도착 계기판 수치와 주행거리를 정리하는 기록장.',
+      'Record trip dates, purposes, starting and ending odometer readings, and mileage.',
+    ],
+  },
 ];
 
 function pageURL(language, section = '') {
@@ -180,28 +228,39 @@ function build(language) {
     </section>`;
   }
 
-  function storyCard({ volume, gumroad, asin }, featured = false) {
-    const title = `Mia and Charlie — Easy English Stories Vol. ${volume}`;
+  function bookCard({ title, image, dimensions, imageAlt, description, format, gumroad, asin }, featured = false) {
     const storeButton = (store, href) =>
       link(store, href, `class="button primary-action" aria-label="${escape(store + ' · ' + title)}"`);
     return `<article class="panel catalog-card book-card${featured ? ' featured-book' : ''}">
-          <img class="cover" src="/assets/portal/books/vol-${volume}.webp" alt="" width="400" height="640">
+          <img class="cover" src="/assets/portal/books/${image}.webp" alt="${imageAlt ? escape(local(imageAlt)) : ''}" width="${dimensions[0]}" height="${dimensions[1]}">
           <div class="book-copy">
             <h3 class="book-title" lang="en">${escape(title)}</h3>
-            <p>${local(['짧은 이야기로 쉬운 영어 읽기를 연습하는 전자책.', 'An e-book for practicing English with short, easy stories.'])}</p>
-            <p class="book-format">EPUB · PDF${asin ? ' · Kindle' : ''}</p>
+            <p>${escape(local(description))}</p>
+            <p class="book-format">${escape(format)}</p>
             ${actions(
-              storeButton('Gumroad', 'https://channelteam.gumroad.com/l/' + gumroad),
+              gumroad && storeButton('Gumroad', 'https://channelteam.gumroad.com/l/' + gumroad),
               asin && storeButton('Amazon', 'https://www.amazon.com/dp/' + asin),
             )}
           </div>
         </article>`;
   }
 
+  function storyCard({ volume, gumroad, asin }, featured = false) {
+    return bookCard({
+      title: `Mia and Charlie — Easy English Stories Vol. ${volume}`,
+      image: `vol-${volume}`,
+      dimensions: [400, 640],
+      description: ['짧은 이야기로 쉬운 영어 읽기를 연습하는 전자책.', 'An e-book for practicing English with short, easy stories.'],
+      format: `EPUB · PDF${asin ? ' · Kindle' : ''}`,
+      gumroad,
+      asin,
+    }, featured);
+  }
+
   function page(section, title, description, body) {
     const path = url(section);
     const otherPath = pageURL(other, section);
-    const currentSection = section === 'games/cat-gomoku' ? 'games' : section;
+    const currentSection = section.split('/')[0];
     const currentLink = currentSection === section ? 'aria-current="page"' : 'aria-current="location"';
     return `<!doctype html>
 <html lang="${language}">
@@ -254,11 +313,16 @@ function build(language) {
 
   const homeDescription = local(['게임, 일상을 돕는 앱, 이야기를 담은 책을 만드는 작은 스튜디오입니다.', 'We are a small studio making games, everyday apps, and books.']);
   const heading = isEnglish ? 'Small joys,<br>made by TeamCP' : '작은 즐거움을<br>만드는 TeamCP';
+  const comingSoon = local(['출시 예정', 'Coming soon']);
+  const appStatus = app => app.released ? '' : comingSoon;
+  const waterBuddyPath = 'apps/' + waterBuddy.slug;
+  const waterBuddyName = local(waterBuddy.name);
+  const waterBuddyStatus = appStatus(waterBuddy);
   const tiles = [
-    ['games', '🎮', ['게임 모아보기', 'Browse our games']],
-    ['apps', '', ['TeamCP가 만든 앱', 'Apps by TeamCP']],
-    ['books', '', ['TeamCP가 펴낸 책', 'Books by TeamCP']],
-    ['support', '', ['문의·개인정보', 'Contact and privacy']],
+    ['games', '🎮', local(['게임 모아보기', 'Browse our games'])],
+    ['apps', '', [waterBuddyName, waterBuddyStatus].filter(Boolean).join(' · ')],
+    ['books', '', local(['TeamCP가 펴낸 책', 'Books by TeamCP'])],
+    ['support', '', local(['문의·개인정보', 'Contact and privacy'])],
   ];
   const featured = [
     [games[0], ['장면 속 단서를 찾는 관찰 추리', 'A hidden-clue mystery']],
@@ -276,7 +340,7 @@ function build(language) {
     <div class="tiles">
       ${tiles.map(([key, symbol, caption]) => `<a href="${url(key)}" class="tile ${key}">
         <span class="tile-icon" aria-hidden="true">${symbol}</span>
-        <span class="tile-copy"><strong>${sectionLabel(key)}</strong><small>${local(caption)}</small></span>
+        <span class="tile-copy"><strong>${sectionLabel(key)}</strong><small>${escape(caption)}</small></span>
         <span class="arrow" aria-hidden="true">→</span>
       </a>`).join('\n      ')}
     </div>
@@ -322,16 +386,40 @@ function build(language) {
     catalog(local(['출시 게임', 'Available now']), gameCards) + '\n    ' +
     catalog(local(['출시 준비 중', 'In development']), upcomingCards)));
 
-  const appsDescription = local(['공개 앱을 준비하고 있어요.', 'Our apps are in preparation.']);
+  const appsDescription = local(['일상과 학습을 돕는 TeamCP 앱을 둘러보세요.', 'Explore TeamCP apps for everyday life and learning.']);
+  const appStoreLink = app => app.released && app.package && button('Google Play', play(app));
+  const appCards = apps.map(app => {
+    const status = appStatus(app);
+    const links = [
+      appStoreLink(app),
+      app.detail && secondaryAction(local(['앱 정보', 'App information']), url('apps/' + app.slug)),
+      app.privacy && policyLink(app),
+    ].filter(Boolean);
+    return `<article class="panel catalog-card">
+          <h2>${escape(local(app.name))}</h2>
+          <p>${escape(local(app.description))}</p>${status ? `
+          <span class="label">${status}</span>` : ''}${links.length ? `
+          ${actions(...links)}` : ''}
+        </article>`;
+  });
   writePage(url('apps'), page('apps', sectionLabel('apps'), appsDescription,
     intro(sectionLabel('apps'), appsDescription) + '\n    ' +
-    actions(button(t('home'), url()), secondaryAction(sectionLabel('support'), url('support')))));
+    `<div class="catalog-grid apps-grid">
+      ${appCards.join('\n      ')}
+    </div>`));
 
-  const booksDescription = local(['미아와 찰리의 이야기로 쉬운 영어 읽기를 연습해 보세요.', 'Practice reading English with easy stories about Mia and Charlie.']);
+  const waterBuddyDescription = local(waterBuddy.description);
+  writePage(url(waterBuddyPath), page(waterBuddyPath, waterBuddyName, waterBuddyDescription, `${intro(waterBuddyName, waterBuddyDescription)}
+    ${waterBuddyStatus ? `<p class="label">${waterBuddyStatus}</p>` : ''}
+    ${actions(appStoreLink(waterBuddy), policyLink(waterBuddy), secondaryAction(sectionLabel('apps'), url('apps')))}`));
+
+  const booksDescription = local(['쉬운 영어 이야기부터 플래너와 기록장까지 TeamCP가 펴낸 책을 만나보세요.', 'Explore TeamCP books, from easy English stories to planners and logbooks.']);
   const bookCards = storyVolumes.map(book => storyCard(book));
+  const paperbackCards = paperbacks.map(book => bookCard({ ...book, format: local(['종이책', 'Paperback']) }));
   writePage(url('books'), page('books', sectionLabel('books'), booksDescription,
     intro(sectionLabel('books'), booksDescription) + '\n    ' +
-    catalog(local(['Mia and Charlie 시리즈', 'Mia and Charlie series']), bookCards)));
+    catalog(local(['Mia and Charlie 전자책', 'Mia and Charlie e-books']), bookCards) + '\n    ' +
+    catalog(local(['종이책', 'Paperbacks']), paperbackCards)));
 
   const supportDescription = local(['제품 문의, 오류 신고, 개인정보 열람과 삭제를 도와드립니다.', 'Get help with our products, report an issue, or ask to access or delete your data.']);
   const supportCards = policyProducts.map(product => {
@@ -365,3 +453,23 @@ function build(language) {
 }
 
 for (const language of ['ko', 'en']) build(language);
+
+const appPath = '/apps/' + waterBuddy.slug + '/';
+writePage('/games/' + waterBuddy.slug + '/', `<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="0; url=${appPath}">
+  <link rel="canonical" href="${origin}${appPath}">
+  <link rel="stylesheet" href="/assets/portal/portal.css">
+  <title>${escape(waterBuddy.name[0])} · TeamCP</title>
+</head>
+<body>
+  <main class="wrap site-main">
+    <h1>${escape(waterBuddy.name[0])}</h1>
+    <a class="button primary-action" href="${appPath}">앱 정보 보기</a>
+  </main>
+</body>
+</html>
+`);

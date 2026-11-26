@@ -120,6 +120,8 @@ small{font-size:13px;line-height:1.4;color:var(--muted)}
 .secondary-action{width:max-content;max-width:100%;padding:7px 11px;border:1px solid #9c89b9;color:#513492;background:#f7f1ff;overflow-wrap:anywhere}
 .secondary-action:hover,.secondary-action:active{border-color:var(--focus);background:#eee3ff}
 .catalog-card{display:flex;flex-direction:column}
+.apps-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.apps-grid h2{font-size:19px}
 .primary-action{width:max-content;max-width:100%;padding:8px 13px;color:white;background:#372457}
 .item-actions + .item-actions{padding-top:2px}
 .cover{display:block;width:100%;height:auto;aspect-ratio:5/8;object-fit:contain;margin:0 auto 15px;max-width:168px;border-radius:6px}
