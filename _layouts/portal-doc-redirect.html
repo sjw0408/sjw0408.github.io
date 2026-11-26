@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>문서 이동 · TeamCP</title>
+  <link rel="canonical" href="https://sjw0408.github.io{{ page.redirect_target | uri_escape }}">
+  <noscript><meta http-equiv="refresh" content="0; url={{ page.redirect_target | uri_escape }}"></noscript>
+</head>
+<body>
+  <main><a id="document-link" href="{{ page.redirect_target | uri_escape }}">문서 열기</a></main>
+  <script>
+    const target = document.getElementById('document-link');
+    location.replace(target.href + location.search + location.hash);
+  </script>
+</body>
+</html>
