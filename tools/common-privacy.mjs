@@ -6,13 +6,14 @@ const games = [
   ['slime-express', '슬라임 택배 (Slime Express)', 'Slime Express'],
   ['dead-frequency', 'DEAD FREQUENCY', 'DEAD FREQUENCY'],
   ['cat-rush3', '3분 냥냥 던전 (CatRush 3)', 'CatRush 3'],
+  ['indie-dev-tycoon', '인디 개발 타이쿤 (Indie Dev Tycoon)', 'Indie Dev Tycoon'],
 ];
 
 const policyCopy = {
   ko: {
     title: 'TeamCP 개인정보처리방침',
     description: 'TeamCP 게임과 Google Play Games 연동에 관한 개인정보처리방침입니다.',
-    effective: '시행일: 2026년 9월 19일',
+    effective: '시행일: 2026년 11월 26일',
     intro: 'TeamCP는 Android 게임을 개발·운영합니다. 이 문서는 TeamCP 게임 전반과 Google Play Games 연동에 공통으로 적용되는 안내입니다.',
     gameDetails: '게임별로 처리하는 정보가 다를 수 있으므로, 각 게임의 상세 방침도 함께 확인하세요.',
     operator: '1. 운영자',
@@ -36,12 +37,14 @@ const policyCopy = {
     childrenDetails: 'TeamCP 게임은 아동 전용 서비스가 아니며, 스토어 타겟층은 만 13세 이상을 기준으로 합니다. 콘텐츠 연령 등급은 개인정보 동의 자격을 의미하지 않습니다.',
     changes: '7. 변경',
     changeDetails: '처리 항목이나 연동 서비스가 바뀌면 이 페이지와 각 게임 방침의 시행일을 갱신합니다.',
+    currentRevision: '2026년 11월 26일 — 제공하는 게임 목록에 인디 개발 타이쿤을 추가하고 개인정보 보호책임자 안내를 반영했습니다.',
+    previousEffective: '2026년 9월 19일 — 이전 시행일',
     officer: '8. 개인정보 보호책임자',
   },
   en: {
     title: 'TeamCP Privacy Policy',
     description: 'Privacy policy for TeamCP games and Google Play Games integration.',
-    effective: 'Effective date: September 19, 2026',
+    effective: 'Effective date: November 26, 2026',
     intro: 'TeamCP develops and operates Android games. This policy covers TeamCP games in general and their Google Play Games integration.',
     gameDetails: 'See the policy for each game for details about the information it handles.',
     operator: '1. Operator',
@@ -65,6 +68,8 @@ const policyCopy = {
     childrenDetails: 'TeamCP games are designed for a general audience, with a store target age of 13 and above. Content age ratings do not determine whether someone can consent to personal data processing.',
     changes: '7. Changes',
     changeDetails: 'When the types of information we process or the services we use change, we update the effective date on this page and on each game’s policy.',
+    currentRevision: 'November 26, 2026 — Added Indie Dev Tycoon to the game list and included privacy officer information.',
+    previousEffective: 'September 19, 2026 — Previous effective date',
     officer: '8. Privacy officer',
   },
 };
@@ -215,6 +220,10 @@ ${gameLinks}
 
     <h2>${copy.changes}</h2>
     <p>${copy.changeDetails}</p>
+    <ul>
+      <li>${copy.currentRevision}</li>
+      <li>${copy.previousEffective}</li>
+    </ul>
 
     <section aria-labelledby="privacy-officer">
       <h2 id="privacy-officer">${copy.officer}</h2>
