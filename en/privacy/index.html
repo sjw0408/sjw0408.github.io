@@ -3,10 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
+  <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#fff8ed">
   <title>TeamCP Privacy Policy</title>
-  <meta name="description" content="Privacy policy for TeamCP games and Google Play Games integration.">
+  <meta name="description" content="General privacy policy for TeamCP games, apps, books, and the official website.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="TeamCP Privacy Policy">
+  <meta property="og:description" content="General privacy policy for TeamCP games, apps, books, and the official website.">
+  <meta property="og:image" content="https://sjw0408.github.io/assets/portal/share.png">
+  <meta property="og:url" content="https://sjw0408.github.io/en/privacy/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="canonical" href="https://sjw0408.github.io/en/privacy/">
   <link rel="alternate" hreflang="ko" href="https://sjw0408.github.io/privacy/">
   <link rel="alternate" hreflang="en" href="https://sjw0408.github.io/en/privacy/">
@@ -82,38 +90,49 @@
       font-size: 0.86rem;
     }
     footer p { margin: 4px 0; }
+    @media (prefers-color-scheme: dark) {
+      :root { color-scheme: dark; background: #171425; color: #f4ebff; }
+      main { background: #211b31; border-color: #56466d; }
+      h1, h2 { color: #efdbff; }
+      .effective, footer { color: #ddcfe8; }
+      .notice, .policy-nav a, .link-list a { background: #382851; border-color: #775e9e; }
+      .policy-nav a:hover, .policy-nav a:active, .link-list a:hover, .link-list a:active { background: #50386f; }
+      a { color: #e3c6ff; }
+      a:focus-visible { outline-color: #c5a2ff; }
+      footer { border-color: #56466d; }
+    }
   </style>
 </head>
 <body>
   <main>
     <div class="policy-nav">
-      <a class="back" href="/en/">← TeamCP Games</a>
+      <a class="back" href="/en/">← TeamCP</a>
       <a class="lang" href="/privacy/" lang="ko" hreflang="ko">한국어</a>
     </div>
     <h1>TeamCP Privacy Policy</h1>
     <p class="effective">Effective date: November 26, 2026</p>
 
     <p class="notice">
-      TeamCP develops and operates Android games. This policy covers TeamCP games in general and their Google Play Games integration.
-      See the policy for each game for details about the information it handles.
+      This general policy covers TeamCP games and apps, book and PDF listings, and the official website.
+      Data handling may vary by product. Check the product’s own policy for details. If you buy a book or PDF from a retailer, check that retailer’s privacy policy.
     </p>
 
     <h2>1. Operator</h2>
     <p>Data controller: TeamCP</p>
     <p>Inquiries: <a href="mailto:teamcp.channel@gmail.com">teamcp.channel@gmail.com</a></p>
-    <p>TeamCP does not operate its own game accounts or ask players to enter their name, email address, phone number, or payment information directly in its apps.</p>
+    <p>TeamCP does not operate its own game accounts. If you contact support by email, we use the sender’s address and message to respond.</p>
 
-    <h2>2. Our games</h2>
+    <h2>2. Privacy policies for released games</h2>
     <ul class="link-list">
       <li><a href="/games/cat-gomoku/privacy/en/" hreflang="en">Cat Gomoku</a></li>
       <li><a href="/games/cat-detective/privacy/en/" hreflang="en">Cat Detective</a></li>
-      <li><a href="/games/slime-express/privacy/" hreflang="ko">Slime Express (Korean)</a></li>
+      <li><a href="/games/slime-express/privacy/en/" hreflang="en">Slime Express</a></li>
       <li><a href="/games/dead-frequency/privacy/en/" hreflang="en">DEAD FREQUENCY</a></li>
-      <li><a href="/games/cat-rush3/privacy/" hreflang="ko">CatRush 3 (Korean)</a></li>
+      <li><a href="/games/cat-rush3/privacy/en/" hreflang="en">Cat Dungeon: 3-Min Rush</a></li>
       <li><a href="/games/indie-dev-tycoon/privacy/en/" hreflang="en">Indie Dev Tycoon</a></li>
     </ul>
 
-    <h2>3. Information commonly processed</h2>
+    <h2>3. Information games and apps may handle</h2>
     <ul>
       <li><strong>Device storage:</strong> Game progress, settings, rewards, and unlocks are kept in Android app-specific storage.</li>
       <li><strong>Google Play Games (optional):</strong> Google may process authentication information and some game progress for sign-in, player identification, leaderboards, and saves. Single-player play is available without connecting.</li>
@@ -133,11 +152,12 @@
     <p>You can remove locally stored information by clearing Android app data or uninstalling the app. For Google Play Games and advertising information, the providers’ retention, deletion, and rights procedures apply. To request access, correction, or deletion, email us with the app name and the type of request.</p>
 
     <h2>6. Children</h2>
-    <p>TeamCP games are designed for a general audience, with a store target age of 13 and above. Content age ratings do not determine whether someone can consent to personal data processing.</p>
+    <p>Under Korea’s Personal Information Protection Act, processing the personal information of a child under 14 on the basis of consent requires consent from the child’s legal representative. See the relevant product policy for its data handling practices.</p>
 
     <h2>7. Changes</h2>
-    <p>When the types of information we process or the services we use change, we update the effective date on this page and on each game’s policy.</p>
+    <p>When the types of information we process or the services we use change, we update the effective date on this page and in the relevant product policy.</p>
     <ul>
+      <li>November 26, 2026 — Clarified the scope of this policy and the consent rule for children under 14.</li>
       <li>November 26, 2026 — Added Indie Dev Tycoon to the game list and included privacy officer information.</li>
       <li>September 19, 2026 — Previous effective date</li>
     </ul>
@@ -149,7 +169,7 @@
     </section>
 
     <footer>
-      <p>TeamCP Games · <a href="/en/">sjw0408.github.io</a></p>
+      <p>TeamCP · <a href="/en/">sjw0408.github.io</a></p>
     </footer>
   </main>
 </body>

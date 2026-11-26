@@ -1,0 +1,78 @@
+    :root {
+      color-scheme: only light;
+      font-family: Pretendard, "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #4b382f;
+      background: #fff8ed;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; line-height: 1.75; }
+    main {
+      width: min(820px, calc(100% - 32px));
+      margin: 38px auto;
+      padding: clamp(26px, 6vw, 54px);
+      border: 1px solid rgb(118 80 61 / 14%);
+      border-radius: 30px;
+      background: #fffdf8;
+      box-shadow: 0 18px 56px rgb(93 67 45 / 11%);
+    }
+    .back {
+      color: #8d5e45;
+      font-size: 0.9rem;
+      font-weight: 800;
+      text-decoration: none;
+    }
+    h1 {
+      margin: 38px 0 6px;
+      color: #76503d;
+      font-size: clamp(1.9rem, 6vw, 2.8rem);
+      line-height: 1.2;
+      letter-spacing: -0.045em;
+      word-break: keep-all;
+    }
+    h2 {
+      margin: 38px 0 10px;
+      color: #76503d;
+      font-size: 1.22rem;
+      letter-spacing: -0.02em;
+    }
+    h3 { margin: 24px 0 8px; font-size: 1rem; }
+    p, li, td, th { word-break: keep-all; }
+    code { overflow-wrap: anywhere; }
+    .effective { margin: 0 0 28px; color: #715c50; }
+    .notice {
+      margin: 0 0 34px;
+      padding: 18px 20px;
+      border: 1px solid #ead7bd;
+      border-radius: 18px;
+      background: #fff2d8;
+    }
+    ul { padding-left: 22px; }
+    li + li { margin-top: 6px; }
+    .table-wrap { overflow-x: auto; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #eadfce;
+      font-size: 0.94rem;
+    }
+    th, td {
+      padding: 13px 14px;
+      border-bottom: 1px solid #eadfce;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #fff4e2; color: #76503d; }
+    tr:last-child td { border-bottom: 0; }
+    a { color: #a65b45; text-underline-offset: 3px; }
+    footer {
+      margin-top: 42px;
+      padding-top: 20px;
+      border-top: 1px solid #ead7bd;
+      color: #715c50;
+      font-size: 0.86rem;
+    }
+    footer p { margin: 4px 0; }
+    @media (max-width: 560px) {
+      main { margin: 16px auto; border-radius: 22px; }
+      th, td { min-width: 138px; padding: 11px; }
+    }

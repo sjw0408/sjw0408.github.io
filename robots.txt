@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /docs/
+Disallow: /tools/
+Disallow: /README.md
+Sitemap: https://sjw0408.github.io/sitemap.xml

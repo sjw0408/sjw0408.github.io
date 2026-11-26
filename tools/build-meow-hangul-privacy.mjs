@@ -70,7 +70,7 @@ ${policyStyle(root, base)}
 </head>
 <body>
   <main>
-    <a class="back" href="/">← ${esc(data.back)}</a>
+    <a class="back" href="${code === 'en' ? '/en/' : '/'}">← TeamCP</a>
     <nav class="languages" aria-label="Language">
 ${Object.entries(languages).map(([lang, name]) => `      <a href="${route(lang)}" lang="${lang}" hreflang="${lang}"${lang === code ? ' aria-current="page"' : ''}>${esc(name)}</a>`).join('\n')}
     </nav>

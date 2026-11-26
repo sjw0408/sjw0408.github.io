@@ -7,7 +7,6 @@ import hashlib
 from html.parser import HTMLParser
 import json
 from pathlib import Path
-import re
 from urllib.error import HTTPError
 from urllib.parse import quote, unquote, urljoin, urlsplit, urlunsplit
 from urllib.request import HTTPRedirectHandler, Request, build_opener
@@ -20,8 +19,6 @@ class Document(HTMLParser):
     def __init__(self, contents):
         super().__init__(convert_charrefs=True)
         self.anchors = set()
-        self.refresh = None
-        self.document_link = None
         self.feed(contents.decode('utf-8', errors='replace'))
 
     def handle_starttag(self, tag, attributes):
@@ -30,12 +27,7 @@ class Document(HTMLParser):
             self.anchors.add(attrs['id'])
         if tag == 'a' and 'name' in attrs:
             self.anchors.add(attrs['name'])
-        if tag == 'a' and attrs.get('id') == 'document-link':
-            self.document_link = attrs.get('href')
-        if tag == 'meta' and (attrs.get('http-equiv') or '').lower() == 'refresh':
-            refresh = re.fullmatch(r'0\s*;\s*url=(.+)', attrs.get('content', ''), re.I)
-            if refresh:
-                self.refresh = refresh[1]
+
 
 
 class NoRedirect(HTTPRedirectHandler):
@@ -51,13 +43,11 @@ def encoded_url(url):
     return urlunsplit(parts._replace(path=path, query=query, fragment=fragment))
 
 
-def resolve_redirect(url, destination, preserve_query=False):
+def resolve_redirect(url, destination):
     result = urlsplit(urljoin(url, destination))
     source = urlsplit(url)
     if '#' not in destination:
         result = result._replace(fragment=source.fragment)
-    if preserve_query and '?' not in destination:
-        result = result._replace(query=source.query)
     return encoded_url(urlunsplit(result))
 
 
@@ -84,7 +74,9 @@ def check(row, base):
     start = encoded_url(urljoin(base, row['request']))
     expected = encoded_url(urljoin(base, row['expected']))
     source = urlsplit(start)
-    is_doc_alias = row['request'].endswith('.md') and row['expected'].endswith('.html')
+    retired_doc_alias = source.path.startswith('/docs/tasks/') and row['baselineStatus'] == 404
+    if retired_doc_alias:
+        expected = start
     current = start
     result = {
         **row, 'requestUrl': start, 'expectedUrl': expected,
@@ -95,6 +87,11 @@ def check(row, base):
         for _ in range(6):
             status, headers, body = fetch(current)
             result['steps'].append({'url': current, 'status': status})
+            if retired_doc_alias:
+                result['finalStatus'], result['finalUrl'] = status, current
+                if status != 404:
+                    errors.append(f'Expected retired document alias to return HTTP 404, got {status}')
+                break
             if status in (301, 302, 303, 307, 308) and headers.get('Location'):
                 current = resolve_redirect(current, headers['Location'])
                 continue
@@ -103,12 +100,6 @@ def check(row, base):
                 errors.append(f'HTTP {status}')
                 break
             document = Document(body) if headers.get_content_type() == 'text/html' else None
-            if is_doc_alias and not equivalent(current, expected) and document:
-                redirect_to = document.refresh
-                if redirect_to and redirect_to == document.document_link:
-                    result['steps'][-1]['documentRedirect'] = redirect_to
-                    current = resolve_redirect(current, redirect_to, preserve_query=True)
-                    continue
             anchors = []
             if source.fragment:
                 anchors.append(unquote(source.fragment))
@@ -145,16 +136,19 @@ def main():
     parser.add_argument('result', type=Path, help='Path to the JSON result')
     args = parser.parse_args()
     rows = json.loads(INVENTORY.read_text(encoding='utf-8'))
-    if len(rows) != 167 or len({row['request'] for row in rows}) != 167:
-        parser.error('expected exactly 167 unique URL contracts')
+    if len(rows) != 159 or len({row['request'] for row in rows}) != 159:
+        parser.error('expected exactly 159 unique URL contracts')
     with ThreadPoolExecutor(max_workers=8) as pool:
         results = list(pool.map(lambda row: check(row, args.base_url), rows))
     passed = sum(not item['errors'] for item in results)
-    fixed = sum(not item['errors'] and item['baselineStatus'] == 404 for item in results)
+    fixed = sum(not item['errors'] and item['baselineStatus'] == 404 and item['finalStatus'] == 200
+                for item in results)
+    retired = sum(not item['errors'] and item['finalStatus'] == 404 for item in results)
     report = {'baseUrl': args.base_url, 'total': len(results), 'passed': passed,
-              'failed': len(results) - passed, 'baseline404Resolved': fixed, 'rows': results}
+              'failed': len(results) - passed, 'baseline404Resolved': fixed,
+              'retiredDocumentAliases': retired, 'rows': results}
     args.result.write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    print(f'{passed}/{len(results)} passed; {fixed}/7 baseline 404s resolved. {args.result}')
+    print(f'{passed}/{len(results)} passed; {fixed} public paths restored, {retired} retired document aliases return 404. {args.result}')
     for result in results:
         if result['errors']:
             print(result['request'], '|', ', '.join(result['errors']))

@@ -58,11 +58,19 @@
     footer p { margin: 8px 0; }
     @media (max-width: 560px) { main { margin-block: 12px; border-radius: 18px; } }
     @media print { :root { background: white; color: black; } main { width: 100%; border: 0; margin: 0; padding: 0; background: white; } h1, h2 { color: black; } .languages, .contents, .back { display: none; } h2 { break-after: avoid; } }
+    .back, .languages a, .contents a {
+          display: inline-flex;
+          align-items: center;
+          min-width: 48px;
+          min-height: 48px;
+          max-width: 100%;
+          overflow-wrap: anywhere;
+        }
   </style>
 </head>
 <body>
   <main>
-    <a class="back" href="/">← Inicio de TeamCP</a>
+    <a class="back" href="/">← TeamCP</a>
     <nav class="languages" aria-label="Language">
       <a href="/games/cat-water-buddy/privacy/" lang="ko" hreflang="ko">한국어</a>
       <a href="/games/cat-water-buddy/privacy/en/" lang="en" hreflang="en">English</a>

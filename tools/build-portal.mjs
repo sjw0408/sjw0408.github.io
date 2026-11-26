@@ -1,15 +1,15 @@
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { commonPrivacy } from './common-privacy.mjs';
+import { storyVolumes, picturebooks, planners } from './portal-books.mjs';
+import { detailCopy } from './portal-game-details.mjs';
+import { escape, origin, shareTags } from './portal-head.mjs';
 
 const check = process.argv.includes('--check');
-const origin = 'https://sjw0408.github.io';
 const email = 'teamcp.channel@gmail.com';
 const siteFile = path => fileURLToPath(new URL('../' + path, import.meta.url));
-const escape = value => String(value).replace(/[&<>"']/g, char => ({
-  '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
-})[char]);
+const sitemap = new Set();
 
 const sections = {
   games: ['게임', 'Games'],
@@ -24,7 +24,6 @@ const shared = {
   privacy: ['개인정보처리방침', 'Privacy policy'],
   commonPolicy: ['TeamCP 공통 개인정보처리방침', 'TeamCP general privacy policy'],
   gameInfo: ['게임 정보', 'Game information'],
-  gameInfoKorean: ['게임 정보', 'Game information (Korean)'],
   policyKorean: ['개인정보처리방침', 'Privacy policy (Korean)'],
   oneStore: ['원스토어', 'ONE store'],
   access: ['열람·삭제 요청', 'Request access or deletion'],
@@ -50,7 +49,7 @@ const games = [
   },
   {
     slug: 'cat-rush3', package: 'catrush3',
-    name: ['3분 냥냥 던전', 'CatRush 3'],
+    name: ['3분 냥냥 던전', 'Cat Dungeon: 3-Min Rush'],
     description: ['고양이 기사와 함께 3분 안에 성장하고 던전 보스에 도전하는 액션 RPG.', 'Power up your cat knight and take on the dungeon boss in a three-minute action RPG run.'],
   },
   {
@@ -68,7 +67,7 @@ const games = [
 const upcoming = [
   {
     slug: 'cat-pirates',
-    name: ['냥냥 해적단', 'Cat Pirates: Midnight Snack Heist'],
+    name: ['냥냥 해적단: 야식 대작전', 'Cat Pirates: Midnight Snack Heist'],
     description: ['낮에는 집을 정찰하고, 밤에는 고양이 원정대를 꾸려 경비를 피해 간식을 노리는 잠입 퍼즐.', 'Scout the house by day and lead a crew of cats on a stealthy snack heist by night.'],
   },
   {
@@ -90,6 +89,16 @@ const upcoming = [
     slug: 'cat-way-out',
     name: ['냥냥 길 비켜', 'CatWayOut'],
     description: ['고양이가 바라보는 방향을 살펴 출구까지 길을 여는 퍼즐.', 'Look where each cat is facing and clear its path to the exit.'],
+  },
+  {
+    slug: 'yarn-tangle-cats',
+    name: ['냥이 털실 풀기', 'Yarn Tangle Cats'],
+    description: ['캣타워 핀에 엉킨 털실의 끝 고리를 옮겨 모든 실을 푸는 퍼즐.', 'Move loops between pegs on a cat tower to untangle the yarn.'],
+  },
+  {
+    slug: 'cat-ring-twist',
+    name: ['냥냥 고리 돌리기', 'Cat Ring Twist'],
+    description: ['타워의 고리를 돌려 고양이가 한 층씩 내려오도록 돕는 퍼즐.', 'Rotate rings on a tower to help a cat climb down one floor at a time.'],
   },
   {
     slug: 'cat-fishing-aquarium', detail: false,
@@ -130,46 +139,11 @@ const policyProducts = [
   ...games,
   ...upcoming,
   waterBuddy,
-  { slug: 'yarn-tangle-cats', name: ['냥이 털실 풀기', 'Yarn Tangle Cats'] },
-  { slug: 'cat-ring-twist', name: ['냥냥 고리 돌리기', 'Cat Ring Twist'] },
   meowHangul,
 ];
-const storyVolumes = [
-  { volume: 1, gumroad: 'galnnk', asin: 'B0HPCRPFTN' },
-  { volume: 2, gumroad: 'alrjwl', asin: 'B0HQGFZ1V6' },
-  { volume: 3, gumroad: 'lwctnc', asin: 'B0HJQ8V9F4' },
-  { volume: 4, gumroad: 'miyypj', asin: 'B0HR1RGY8V' },
-  { volume: 5, gumroad: 'zlsticu', asin: 'B0HRNNRW4K' },
-  { volume: 6, gumroad: 'gfxkid' },
-];
-
-const paperbacks = [
-  {
-    title: '2027 Weekly Planner',
-    asin: 'B0HSNGMZMF',
-    image: 'planner-2027',
-    dimensions: [599, 899],
-    description: [
-      '월간 달력과 주간 계획, 우선순위와 메모를 담은 2027년 날짜형 플래너.',
-      'A dated 2027 planner with monthly calendars and weekly space for plans, priorities, and notes.',
-    ],
-  },
-  {
-    title: 'Mileage Log Book for Taxes',
-    asin: 'B0H3QBNL5S',
-    image: 'mileage-log',
-    dimensions: [637, 900],
-    imageAlt: ['주행 기록장 속지', 'Mileage log interior page'],
-    description: [
-      '날짜, 이동 목적, 출발·도착 계기판 수치와 주행거리를 정리하는 기록장.',
-      'Record trip dates, purposes, starting and ending odometer readings, and mileage.',
-    ],
-  },
-];
-
 function pageURL(language, section = '') {
   const prefix = language === 'ko' ? '/' : '/en/';
-  return prefix + (section ? section + '/' : '');
+  return prefix + section + (section && !section.endsWith('.html') ? '/' : '');
 }
 
 function policy(product, language) {
@@ -181,17 +155,22 @@ function policy(product, language) {
   return { href: root, language: 'ko' };
 }
 
-function writePage(url, html) {
-  const file = siteFile(url.slice(1) + 'index.html');
+function writePage(url, html, indexable = true) {
+  if (indexable) sitemap.add(url);
+  writeOutput(url.endsWith('/') ? url + 'index.html' : url, html.replace(/^ +$/gm, ''));
+}
+
+function writeOutput(url, contents) {
+  const file = siteFile(url.slice(1));
   if (check) {
-    if (!existsSync(file) || readFileSync(file, 'utf8') !== html) {
+    if (!existsSync(file) || readFileSync(file, 'utf8') !== contents) {
       console.error('Out of date:', url);
       process.exitCode = 1;
     }
     return;
   }
   mkdirSync(dirname(file), { recursive: true });
-  writeFileSync(file, html);
+  writeFileSync(file, contents);
 }
 
 function build(language) {
@@ -211,8 +190,11 @@ function build(language) {
   const arrow = '<span aria-hidden="true">→</span>';
   const button = (label, href) => `<a class="button primary-action" href="${escape(href)}">${escape(label)} ${arrow}</a>`;
   const actions = (...links) => `<div class="item-actions">${links.filter(Boolean).join('\n        ')}</div>`;
-  const icon = game => `<img class="game-icon" src="/games/${game.slug}/icon.png" alt="" width="128" height="128">`;
+  const gameIcon = game => `/games/${game.slug}/icon.png`;
+  const icon = game => `<img class="game-icon" src="${gameIcon(game)}" alt="" width="128" height="128">`;
   const play = game => 'https://play.google.com/store/apps/details?id=com.teamcp.' + game.package;
+  const oneStoreAction = game => game.oneStore && secondaryAction(t('oneStore'),
+    'https://m.onestore.co.kr/v2/ko-kr/app/' + game.oneStore, 'hreflang="ko"');
   const mail = subject => `mailto:${email}${subject ? '?subject=' + encodeURIComponent(subject) : ''}`;
   const intro = (title, description) => `<header class="page-intro">
       <h1>${escape(title)}</h1>
@@ -232,11 +214,11 @@ function build(language) {
     const storeButton = (store, href) =>
       link(store, href, `class="button primary-action" aria-label="${escape(store + ' · ' + title)}"`);
     return `<article class="panel catalog-card book-card${featured ? ' featured-book' : ''}">
-          <img class="cover" src="/assets/portal/books/${image}.webp" alt="${imageAlt ? escape(local(imageAlt)) : ''}" width="${dimensions[0]}" height="${dimensions[1]}">
+          <img class="cover" src="/assets/portal/books/${image}.webp" alt="${escape(local(imageAlt))}" width="${dimensions[0]}" height="${dimensions[1]}"${featured ? '' : ' loading="lazy"'}>
           <div class="book-copy">
             <h3 class="book-title" lang="en">${escape(title)}</h3>
             <p>${escape(local(description))}</p>
-            <p class="book-format">${escape(format)}</p>
+            <p class="book-format">${escape(Array.isArray(format) ? local(format) : format)}</p>
             ${actions(
               gumroad && storeButton('Gumroad', 'https://channelteam.gumroad.com/l/' + gumroad),
               asin && storeButton('Amazon', 'https://www.amazon.com/dp/' + asin),
@@ -245,34 +227,24 @@ function build(language) {
         </article>`;
   }
 
-  function storyCard({ volume, gumroad, asin }, featured = false) {
-    return bookCard({
-      title: `Mia and Charlie — Easy English Stories Vol. ${volume}`,
-      image: `vol-${volume}`,
-      dimensions: [400, 640],
-      description: ['짧은 이야기로 쉬운 영어 읽기를 연습하는 전자책.', 'An e-book for practicing English with short, easy stories.'],
-      format: `EPUB · PDF${asin ? ' · Kindle' : ''}`,
-      gumroad,
-      asin,
-    }, featured);
-  }
-
-  function page(section, title, description, body) {
+  function page(section, title, description, body, { image, indexable = true } = {}) {
     const path = url(section);
     const otherPath = pageURL(other, section);
     const currentSection = section.split('/')[0];
     const currentLink = currentSection === section ? 'aria-current="page"' : 'aria-current="location"';
+    const pageTitle = title ? title + ' · TeamCP' : 'TeamCP';
     return `<!doctype html>
 <html lang="${language}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>${escape(title ? title + ' · TeamCP' : 'TeamCP')}</title>
+  <title>${escape(pageTitle)}</title>
   <meta name="description" content="${escape(description)}">
+${shareTags(pageTitle, description, path, language, image)}
+${indexable ? '' : '  <meta name="robots" content="noindex">\n'}  <link rel="stylesheet" href="/assets/portal/portal.css">
   <link rel="canonical" href="${origin}${path}">
   <link rel="alternate" hreflang="ko" href="${origin}${pageURL('ko', section)}">
   <link rel="alternate" hreflang="en" href="${origin}${pageURL('en', section)}">
-  <link rel="stylesheet" href="/assets/portal/portal.css">
 </head>
 <body>
   ${link(t('skip'), '#main', 'class="skip"')}
@@ -292,6 +264,10 @@ function build(language) {
       ${link(sectionLabel('support'), url('support'))}
       ${link(t('privacy'), url('privacy'), commonPolicyAttributes)}
     </div>
+    <small class="trademarks">${local([
+      'Google Play는 Google LLC의 상표입니다. 다른 상표는 각 소유자에게 속합니다.',
+      'Google Play is a trademark of Google LLC. Other trademarks belong to their respective owners.',
+    ])}</small>
   </footer>
 </body>
 </html>
@@ -306,9 +282,7 @@ function build(language) {
     return secondaryAction(label, target.href + hash, `hreflang="${target.language}"`);
   }
   function detailLink(game) {
-    const localized = game.slug === 'cat-gomoku';
-    const href = localized ? url('games/cat-gomoku') : `/games/${game.slug}/`;
-    return secondaryAction(t(isEnglish && !localized ? 'gameInfoKorean' : 'gameInfo'), href, `hreflang="${localized ? language : 'ko'}"`);
+    return secondaryAction(t('gameInfo'), url('games/' + game.slug), `hreflang="${language}"`);
   }
 
   const homeDescription = local(['게임, 일상을 돕는 앱, 이야기를 담은 책을 만드는 작은 스튜디오입니다.', 'We are a small studio making games, everyday apps, and books.']);
@@ -351,9 +325,7 @@ function build(language) {
       </div>
       <div class="games-grid">
         ${featured.map(([game, caption]) => {
-          const href = game.slug === 'cat-gomoku' ? url('games/cat-gomoku') : `/games/${game.slug}/`;
-          const destinationLanguage = game.slug === 'cat-gomoku' ? language : 'ko';
-          return `<a class="game" href="${href}" hreflang="${destinationLanguage}">
+          return `<a class="game" href="${url('games/' + game.slug)}" hreflang="${language}">
           ${icon(game)}
           <span class="game-copy"><strong>${local(game.name)}</strong><small>${local(caption)}</small></span>
           <span class="arrow" aria-hidden="true">→</span>
@@ -366,14 +338,14 @@ function build(language) {
         <h2 id="home-books-title">${sectionLabel('books')}</h2>
         <a class="button secondary-action" href="${url('books')}">${local(['전체 책 보기', 'All books'])} ${arrow}</a>
       </div>
-      ${storyCard(storyVolumes[0], true)}
+      ${bookCard(storyVolumes[0], true)}
     </section>`));
 
   const gamesDescription = local(['TeamCP가 만든 게임을 둘러보고 이용할 수 있는 스토어를 찾아보세요.', 'Explore TeamCP’s games and find them in your app store.']);
   const gameCards = games.map(game => `<article class="panel catalog-card">
           <div class="item-heading">${icon(game)}<h3>${escape(local(game.name))}</h3></div>
           <p>${escape(local(game.description))}</p>
-          ${actions(button('Google Play', play(game)), ...(game.oneStore ? [secondaryAction(t('oneStore'), 'https://m.onestore.co.kr/v2/ko-kr/app/' + game.oneStore, 'hreflang="ko"')] : []))}
+          ${actions(button('Google Play', play(game)), oneStoreAction(game))}
           ${actions(detailLink(game), policyLink(game))}
         </article>`);
   const upcomingCards = upcoming.map(game => `<article class="panel catalog-card">
@@ -413,13 +385,12 @@ function build(language) {
     ${waterBuddyStatus ? `<p class="label">${waterBuddyStatus}</p>` : ''}
     ${actions(appStoreLink(waterBuddy), policyLink(waterBuddy), secondaryAction(sectionLabel('apps'), url('apps')))}`));
 
-  const booksDescription = local(['쉬운 영어 이야기부터 플래너와 기록장까지 TeamCP가 펴낸 책을 만나보세요.', 'Explore TeamCP books, from easy English stories to planners and logbooks.']);
-  const bookCards = storyVolumes.map(book => storyCard(book));
-  const paperbackCards = paperbacks.map(book => bookCard({ ...book, format: local(['종이책', 'Paperback']) }));
+  const booksDescription = local(['쉬운 영어 이야기, 어린이 그림책, 2027년 플래너를 만나보세요.', 'Browse easy English stories, children’s picture books, and planners for 2027.']);
   writePage(url('books'), page('books', sectionLabel('books'), booksDescription,
     intro(sectionLabel('books'), booksDescription) + '\n    ' +
-    catalog(local(['Mia and Charlie 전자책', 'Mia and Charlie e-books']), bookCards) + '\n    ' +
-    catalog(local(['종이책', 'Paperbacks']), paperbackCards)));
+    catalog(local(['Mia and Charlie 전자책', 'Mia and Charlie e-books']), storyVolumes.map(book => bookCard(book))) + '\n    ' +
+    catalog(local(['Mia and Charlie 그림책 · 종이책', 'Mia and Charlie picture books · Paperback']), picturebooks.map(book => bookCard(book))) + '\n    ' +
+    catalog(local(['2027년 플래너', '2027 planners']), planners.map(book => bookCard(book)))));
 
   const supportDescription = local(['제품 문의, 오류 신고, 개인정보 열람과 삭제를 도와드립니다.', 'Get help with our products, report an issue, or ask to access or delete your data.']);
   const supportCards = policyProducts.map(product => {
@@ -446,10 +417,71 @@ function build(language) {
 
   writePage(url('privacy'), commonPrivacy(language, slug => policy({ slug }, language)));
 
-  const gomoku = games[1];
-  writePage(url('games/cat-gomoku'), page('games/cat-gomoku', local(gomoku.name), local(gomoku.description),
-    intro(local(gomoku.name), local(gomoku.description)) + '\n    ' +
-    actions(button('Google Play', play(gomoku)), policyLink(gomoku), secondaryAction(sectionLabel('games'), url('games')))));
+  function writeGame(game, oneStore = false) {
+    const section = `games/${game.slug}${oneStore ? '/onestore' : ''}`;
+    const copy = detailCopy[game.slug];
+    const name = local(game.name);
+    const title = oneStore ? `${name} · ${local(['원스토어판', 'ONE store edition'])}` : name;
+    const description = local(game.description);
+    const path = '/games/' + game.slug + '/';
+    const policyDirectories = readdirSync(siteFile(path.slice(1) + 'privacy/'));
+    const moreLanguages = [
+      ['ja', '日本語'], ['es', 'Español'], ['pt-BR', 'Português'], ['zh-TW', '中文（繁體）'],
+      ['de', 'Deutsch'], ['fr', 'Français'],
+    ].flatMap(([code, label]) => {
+      const dir = policyDirectories.find(name => name.toLowerCase() === code.toLowerCase());
+      const href = dir && path + 'privacy/' + dir + '/';
+      return href && existsSync(siteFile(href.slice(1) + 'index.html'))
+        ? [secondaryAction(label, href, `lang="${code}" hreflang="${code}"`)] : [];
+    });
+    const primaryPolicy = policy(game, language);
+    const policyQuery = oneStore ? '?from=onestore' : '';
+    const otherPolicy = policy(game, other);
+    const extraPolicies = oneStore ? [] : [
+      ...(otherPolicy.href !== primaryPolicy.href
+        ? [secondaryAction(isEnglish ? '한국어' : 'English', otherPolicy.href,
+          `lang="${other}" hreflang="${other}"`)] : []),
+      ...moreLanguages,
+    ];
+
+    writePage(url(section), page(section, title, description, `
+    ${secondaryAction(local(['← 게임 목록', '← Back to games']), url('games'))}
+    <section class="game-detail">
+      <div class="game-detail-copy">
+        <header>
+          <img class="detail-icon" src="${gameIcon(game)}" width="96" height="96" alt="">
+          <h1>${escape(title)}</h1>
+          ${game.package || oneStore ? '' : `<p class="label">${local(['출시 준비 중', 'In development'])}</p>`}
+          <p>${escape(description)}</p>
+        </header>
+        <p>${escape(local(copy.feature))}</p>
+        ${actions(
+          !oneStore && game.package && button('Google Play', play(game)),
+          game.oneStore && oneStoreAction(game),
+          policyLink(game, 'privacy', policyQuery),
+          secondaryAction(local(['문의 및 지원', 'Contact support']), mail(name)),
+        )}
+      </div>
+      <figure class="game-preview">
+        <img src="${path}preview.webp" alt="${escape(local(copy.imageAlt))}">
+      </figure>
+    </section>
+    ${extraPolicies.length ? `<section class="detail-policy panel">
+      <h2>${local(['다른 언어의 개인정보처리방침', 'Privacy policy in other languages'])}</h2>
+      ${actions(...extraPolicies)}
+    </section>` : ''}`, { image: path + 'share.jpg' }));
+  }
+  for (const game of [...games, ...upcoming]) {
+    if (detailCopy[game.slug]) writeGame(game);
+  }
+  for (const slug of ['slime-express', 'cat-rush3']) writeGame(games.find(game => game.slug === slug), true);
+
+  const notFoundTitle = local(['페이지를 찾을 수 없습니다', 'Page not found']);
+  const notFoundDescription = local(['주소를 확인하거나 홈에서 원하는 페이지를 찾아보세요.', 'Check the address or visit our home page to find what you need.']);
+  writePage(url('404.html'), page('404.html', notFoundTitle, notFoundDescription,
+    intro(notFoundTitle, notFoundDescription) + actions(button(t('home'), url())),
+    { indexable: false }), false);
+
 }
 
 for (const language of ['ko', 'en']) build(language);
@@ -464,6 +496,8 @@ writePage('/games/' + waterBuddy.slug + '/', `<!doctype html>
   <link rel="canonical" href="${origin}${appPath}">
   <link rel="stylesheet" href="/assets/portal/portal.css">
   <title>${escape(waterBuddy.name[0])} · TeamCP</title>
+  <meta name="description" content="${escape(waterBuddy.description[0])}">
+${shareTags(waterBuddy.name[0] + ' · TeamCP', waterBuddy.description[0], appPath, 'ko')}
 </head>
 <body>
   <main class="wrap site-main">
@@ -472,4 +506,25 @@ writePage('/games/' + waterBuddy.slug + '/', `<!doctype html>
   </main>
 </body>
 </html>
+`, false);
+
+for (const game of policyProducts) {
+  const root = '/games/' + game.slug + '/privacy/';
+  if (existsSync(siteFile(root.slice(1) + 'index.html'))) sitemap.add(root);
+  for (const entry of readdirSync(siteFile(root.slice(1)), { withFileTypes: true })) {
+    if (entry.isDirectory() && existsSync(siteFile(root.slice(1) + entry.name + '/index.html'))) {
+      sitemap.add(root + entry.name + '/');
+    }
+  }
+}
+writeOutput('/sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${[...sitemap].sort().map(path => `  <url><loc>${escape(origin + path)}</loc></url>`).join('\n')}
+</urlset>
+`);
+writeOutput('/robots.txt', `User-agent: *
+Disallow: /docs/
+Disallow: /tools/
+Disallow: /README.md
+Sitemap: ${origin}/sitemap.xml
 `);

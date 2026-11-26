@@ -3,155 +3,62 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
-  <meta name="theme-color" content="#e8f8d8">
-  <title>슬라임 택배 (Slime Express) - TeamCP</title>
-  <meta name="robots" content="noindex">
-  <meta name="description" content="슬라임을 조종해 택배를 배달하는 Android 2D 캐주얼 로그라이트, 슬라임 택배의 공식 정보 페이지입니다.">
-  <style>
-    :root {
-      font-family: Pretendard, "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: #3d342f;
-      background: #eef8e4;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      min-height: 100vh;
-      background:
-        radial-gradient(circle at 18% 10%, rgb(186 255 140 / 46%), transparent 24rem),
-        linear-gradient(160deg, #f7fff0, #e4f3c8);
-      line-height: 1.65;
-    }
-    main {
-      width: min(820px, calc(100% - 32px));
-      margin: 32px auto;
-      padding: clamp(26px, 6vw, 56px);
-      border: 1px solid rgb(74 112 48 / 16%);
-      border-radius: 32px;
-      background: rgb(255 255 255 / 82%);
-      box-shadow: 0 22px 64px rgb(74 112 48 / 13%);
-    }
-    .back {
-      color: #4a7030;
-      font-size: 0.9rem;
-      font-weight: 800;
-      text-decoration: none;
-    }
-    .hero { margin: 50px 0 38px; }
-    .badge {
-      display: inline-block;
-      margin-bottom: 16px;
-      padding: 6px 13px;
-      border-radius: 999px;
-      background: #e8f6c4;
-      color: #4a7030;
-      font-size: 0.8rem;
-      font-weight: 900;
-    }
-    h1 {
-      margin: 0;
-      color: #35551d;
-      font-size: clamp(2.4rem, 8vw, 4.6rem);
-      line-height: 1.08;
-      letter-spacing: -0.055em;
-    }
-    .subtitle {
-      margin: 10px 0 0;
-      color: #6f8070;
-      font-weight: 700;
-    }
-    .lead {
-      max-width: 620px;
-      margin: 24px 0 0;
-      color: #5f5a55;
-      font-size: 1.08rem;
-      word-break: keep-all;
-    }
-    .features {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 12px;
-      margin: 34px 0;
-    }
-    .feature {
-      padding: 18px;
-      border: 1px solid rgb(74 112 48 / 12%);
-      border-radius: 18px;
-      background: #f4fbe8;
-    }
-    .feature strong { display: block; margin-bottom: 5px; color: #35551d; }
-    .feature span { color: #6e7d67; font-size: 0.88rem; word-break: keep-all; }
-    .actions { display: flex; flex-wrap: wrap; gap: 10px; }
-    .button {
-      display: inline-flex;
-      min-height: 48px;
-      align-items: center;
-      justify-content: center;
-      padding: 11px 19px;
-      border: 1px solid #35551d;
-      border-radius: 14px;
-      background: #35551d;
-      color: white;
-      font-weight: 800;
-      text-decoration: none;
-    }
-    .button.secondary { background: transparent; color: #35551d; }
-    .meta {
-      margin-top: 42px;
-      padding-top: 22px;
-      border-top: 1px solid rgb(74 112 48 / 15%);
-      color: #76827d;
-      font-size: 0.86rem;
-    }
-    .meta p { margin: 4px 0; }
-    .meta a { color: #4a7030; font-weight: 700; }
-    .en { color: #6f8070; font-size: 0.92rem; margin: 6px 0 0; word-break: keep-all; }
-    .feature .en { display: block; margin-top: 4px; font-size: 0.8rem; }
-    @media (max-width: 640px) {
-      main { margin: 16px auto; border-radius: 24px; }
-      .hero { margin-top: 36px; }
-      .features { grid-template-columns: 1fr; }
-    }
-  </style>
+  <title>슬라임 택배 · 원스토어판 · TeamCP</title>
+  <meta name="description" content="슬라임을 조종해 장애물을 피하고 택배를 배달하는 점수 도전 게임.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:title" content="슬라임 택배 · 원스토어판 · TeamCP">
+  <meta property="og:description" content="슬라임을 조종해 장애물을 피하고 택배를 배달하는 점수 도전 게임.">
+  <meta property="og:image" content="https://sjw0408.github.io/games/slime-express/share.jpg">
+  <meta property="og:url" content="https://sjw0408.github.io/games/slime-express/onestore/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="stylesheet" href="/assets/portal/portal.css">
+  <link rel="canonical" href="https://sjw0408.github.io/games/slime-express/onestore/">
+  <link rel="alternate" hreflang="ko" href="https://sjw0408.github.io/games/slime-express/onestore/">
+  <link rel="alternate" hreflang="en" href="https://sjw0408.github.io/en/games/slime-express/onestore/">
 </head>
 <body>
-  <main>
-    <section class="hero">
-      <span class="badge">TeamCP</span>
-      <h1>슬라임 택배</h1>
-      <p class="subtitle">Slime Express · 2D 캐주얼 배달 로그라이트 / Casual delivery roguelite</p>
-      <p class="lead">슬라임을 조종해 택배를 집어 목적지까지 배달하세요. 장애물을 피하고 콤보를 쌓으며 최고 점수에 도전하는 짧은 한 판 게임입니다.</p>
-      <p class="en">Guide your slime, pick up parcels and deliver them on time. Dodge obstacles, build combos and chase your best score in quick rounds.</p>
+  <a href="#main" class="skip">본문으로 건너뛰기</a>
+  <header class="wrap header">
+    <a class="brand" href="/" aria-label="TeamCP 홈"><span class="mark" aria-hidden="true">CP</span>TeamCP</a>
+    <nav class="navigation" aria-label="주 메뉴">
+      <a href="/games/" aria-current="location">게임</a>
+      <a href="/apps/">앱</a>
+      <a href="/books/">책</a>
+      <a href="/support/">고객지원</a>
+    </nav>
+    <a href="/en/games/slime-express/onestore/" class="lang" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
+  </header>
+  <main id="main" class="wrap site-main" tabindex="-1">
+
+    <a href="/games/" class="button secondary-action">← 게임 목록</a>
+    <section class="game-detail">
+      <div class="game-detail-copy">
+        <header>
+          <img class="detail-icon" src="/games/slime-express/icon.png" width="96" height="96" alt="">
+          <h1>슬라임 택배 · 원스토어판</h1>
+
+          <p>슬라임을 조종해 장애물을 피하고 택배를 배달하는 점수 도전 게임.</p>
+        </header>
+        <p>장애물을 피하고 콤보를 쌓으며 최고 점수에 도전하세요. 매일 새로 바뀌는 미션과 스킨을 모아 보세요.</p>
+        <div class="item-actions"><a href="https://m.onestore.co.kr/v2/ko-kr/app/0001012149" class="button secondary-action" hreflang="ko">원스토어</a>
+        <a href="/games/slime-express/privacy/?from=onestore" class="button secondary-action" hreflang="ko">개인정보처리방침</a>
+        <a href="mailto:teamcp.channel@gmail.com?subject=%EC%8A%AC%EB%9D%BC%EC%9E%84%20%ED%83%9D%EB%B0%B0" class="button secondary-action">문의 및 지원</a></div>
+      </div>
+      <figure class="game-preview">
+        <img src="/games/slime-express/preview.webp" alt="슬라임이 택배를 운반하는 게임 화면">
+      </figure>
     </section>
 
-    <section class="features" aria-label="주요 특징 / Features">
-      <div class="feature">
-        <strong>한 판 배달</strong>
-        <span>짧은 라운드로 택배를 나르고, 레벨업 카드로 다음 판을 바꿉니다.</span>
-        <span class="en">Short delivery runs with level-up cards that change every round.</span>
-      </div>
-      <div class="feature">
-        <strong>오늘의 미션</strong>
-        <span>매일 새로 바뀌는 미션과 스킨을 모아 보세요.</span>
-        <span class="en">New daily missions and skins to collect.</span>
-      </div>
-      <div class="feature">
-        <strong>로그인 없이 바로</strong>
-        <span>가입이나 로그인 없이 바로 플레이할 수 있습니다.</span>
-        <span class="en">Play instantly, no sign-up or login needed.</span>
-      </div>
-    </section>
-
-    <div class="actions">
-      <a class="button secondary" href="../privacy/?from=onestore">개인정보처리방침 / Privacy</a>
-      <a class="button secondary" href="mailto:teamcp.channel@gmail.com">문의 및 지원 / Support</a>
-    </div>
-
-    <footer class="meta">
-      <p>원스토어판 / ONE store edition · com.teamcp.slimeexpress.onestore</p>
-      <p>개발 및 문의 / Developer: TeamCP · <a href="mailto:teamcp.channel@gmail.com">teamcp.channel@gmail.com</a></p>
-    </footer>
   </main>
+  <footer class="wrap footer">
+    <span>TeamCP</span>
+    <div class="footer-links">
+      <a href="/support/">고객지원</a>
+      <a href="/privacy/" hreflang="ko">개인정보처리방침</a>
+    </div>
+    <small class="trademarks">Google Play는 Google LLC의 상표입니다. 다른 상표는 각 소유자에게 속합니다.</small>
+  </footer>
 </body>
 </html>
